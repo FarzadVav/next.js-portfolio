@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 
 import "./globals.css"
 import { PropsWithChildren } from "react"
+import { Theme } from "@radix-ui/themes"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,7 +12,9 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="fa" dir="rtl">
-      <body>{children}</body>
+      <body>
+        <Theme>{children}</Theme>
+      </body>
     </html>
   )
 }
