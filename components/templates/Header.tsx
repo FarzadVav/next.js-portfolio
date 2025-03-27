@@ -10,7 +10,7 @@ export function Header() {
 
   return (
     <>
-      <header className="border-b">
+      <header>
         <Container h={60}>
           <Group justify="space-between" h="100%">
             <h1>لوگوی وبسایت</h1>
