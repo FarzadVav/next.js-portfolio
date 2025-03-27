@@ -1,5 +1,15 @@
-const HomePage = () => {
-  return <div>HomePage</div>
-}
+import { Container, Space } from "@mantine/core";
 
-export default HomePage
+const HomePage = () => {
+  return (
+    <>
+      <Space h="xl" />
+
+      <Container>
+        <h1>Home Page</h1>
+      </Container>
+    </>
+  );
+};
+
+export default HomePage;
