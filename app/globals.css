@@ -1,1 +1,32 @@
-/* Hello css */
+@import "tailwindcss";
+
+@font-face {
+  font-family: "xxx";
+  src: url("/fonts/xxx.woff2");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "xxx-bold";
+  src: url("/fonts/xxx-bold.woff2");
+}
+
+@font-face {
+  font-family: "xxx-black";
+  src: url("/fonts/xxx-black.woff2");
+}
+
+@layer base {
+  html {
+    font-family: "xxx";
+    scroll-behavior: smooth;
+  }
+}
+
+@utility xxx-bold {
+  font-family: "xxx-bold";
+}
+
+@utility xxx-black {
+  font-family: "xxx-black";
+}

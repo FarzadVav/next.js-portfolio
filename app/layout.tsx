@@ -1,30 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { PropsWithChildren } from "react";
-import { createTheme, MantineProvider } from "@mantine/core";
-import "@mantine/core/styles.css";
 
 import "./globals.css";
-import { Header } from "root/components/templates/Header";
-
-const kookFont = localFont({
-  src: "./kook.woff2",
-  display: "swap",
-});
-const kookBoldFont = localFont({
-  src: "./kook-bold.woff2",
-  display: "swap",
-});
-
-const theme = createTheme({
-  fontFamily: kookFont.style.fontFamily,
-  headings: {
-    fontFamily: kookBoldFont.style.fontFamily,
-  },
-  autoContrast: true,
-  luminanceThreshold: 0.3,
-  cursorType: "pointer",
-});
+import Header from "root/components/templates/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,12 +11,10 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <html className={kookFont.className} lang="fa" dir="rtl">
+    <html lang="fa" dir="rtl">
       <body>
-        <MantineProvider theme={theme} defaultColorScheme="dark">
-          <Header />
-          {children}
-        </MantineProvider>
+        <Header />
+        {children}
       </body>
     </html>
   );
