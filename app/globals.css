@@ -16,10 +16,25 @@
   src: url("/fonts/vazir-black.woff2");
 }
 
+@theme {
+  --color-*: initial;
+  --color-background: hsl(223 78% 98%);
+  --color-foreground: hsl(0 0% 10%);
+  --color-primary: hsl(225 89% 27%);
+  --color-secondary: hsl(188 68% 58%);
+  --color-success: hsl(113 100% 27%);
+  --color-warning: hsl(45 100% 53%);
+  --color-danger: hsl(0 100% 42%);
+
+  --font-*: initial;
+  --font-vazir: "vazir";
+  --font-vazir-bold: "vazir-bold";
+  --font-vazir-black: "vazir-black";
+}
+
 @layer base {
   html {
-    font-family: "vazir";
-    scroll-behavior: smooth;
+    @apply font-vazir scroll-smooth bg-background text-foreground;
   }
 
   * {
@@ -30,11 +45,11 @@
   a,
   span,
   label {
-    display: inline-block;
+    @apply inline-block;
   }
 
   button {
-    cursor: pointer;
+    @apply cursor-pointer;
   }
 }
 

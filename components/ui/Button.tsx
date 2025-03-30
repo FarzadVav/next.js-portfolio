@@ -9,50 +9,50 @@ import {
 
 // Constants
 const baseClasses =
-  "center-items rounded-full transition-all border hover:brightness-90 active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed";
+  "center-items rounded-full transition-all border active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed";
 
 const styles: Record<ColorVariants, Record<ShapeVariants, string>> = {
   primary: {
-    fill: "bg-blue-500 text-white hover:bg-blue-600",
-    ghost: "text-blue-500 border-none hover:bg-blue-100",
-    soft: "bg-blue-100 text-blue-700",
-    outline: "border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white",
+    fill: "bg-primary text-background border-primary hover:bg-primary/90",
+    soft: "bg-primary/10 text-primary border-transparent hover:bg-primary/20",
+    outline: "border-primary text-primary hover:bg-primary hover:text-background",
+    ghost: "text-primary border-transparent hover:bg-primary/10",
   },
   secondary: {
-    fill: "bg-gray-500 text-white hover:bg-gray-600",
-    ghost: "text-gray-500 border-none hover:bg-gray-100",
-    soft: "bg-gray-100 text-gray-700",
-    outline: "border-gray-500 text-gray-500 hover:bg-gray-500 hover:text-white",
+    fill: "bg-secondary text-background border-secondary hover:bg-secondary/90",
+    soft: "bg-secondary/10 text-secondary border-transparent hover:bg-secondary/20",
+    outline: "border-secondary text-secondary hover:bg-secondary hover:text-background",
+    ghost: "text-secondary border-transparent hover:bg-secondary/10",
   },
   danger: {
-    fill: "bg-red-500 text-white hover:bg-red-600",
-    ghost: "text-red-500 border-none hover:bg-red-100",
-    soft: "bg-red-100 text-red-700",
-    outline: "border-red-500 text-red-500 hover:bg-red-500 hover:text-white",
+    fill: "bg-danger text-background border-danger hover:bg-danger/90",
+    soft: "bg-danger/10 text-danger border-transparent hover:bg-danger/20",
+    outline: "border-danger text-danger hover:bg-danger hover:text-background",
+    ghost: "text-danger border-transparent hover:bg-danger/10",
   },
   success: {
-    fill: "bg-green-500 text-white hover:bg-green-600",
-    ghost: "text-green-500 border-none hover:bg-green-100",
-    soft: "bg-green-100 text-green-700",
-    outline: "border-green-500 text-green-500 hover:bg-green-500 hover:text-white",
+    fill: "bg-success text-background border-success hover:bg-success/90",
+    soft: "bg-success/10 text-success border-transparent hover:bg-success/20",
+    outline: "border-success text-success hover:bg-success hover:text-background",
+    ghost: "text-success border-transparent hover:bg-success/10",
   },
   warning: {
-    fill: "bg-yellow-500 text-white hover:bg-yellow-600",
-    ghost: "text-yellow-500 border-none hover:bg-yellow-100",
-    soft: "bg-yellow-100 text-yellow-700",
-    outline: "border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white",
+    fill: "bg-warning text-background border-warning hover:bg-warning/90",
+    soft: "bg-warning/10 text-warning border-transparent hover:bg-warning/20",
+    outline: "border-warning text-warning hover:bg-warning hover:text-background",
+    ghost: "text-warning border-transparent hover:bg-warning/10",
   },
   background: {
-    fill: "bg-black text-white hover:bg-gray-800",
-    ghost: "text-black hover border-none:bg-gray-200",
-    soft: "bg-gray-200 text-black",
-    outline: "border-black text-black hover:bg-black hover:text-white",
+    fill: "bg-background text-foreground border-background hover:bg-background/90",
+    soft: "bg-background/10 text-background border-transparent hover:bg-background/20",
+    outline: "border-background text-background hover:bg-background hover:text-foreground",
+    ghost: "text-background border-transparent hover:bg-background/10",
   },
   foreground: {
-    fill: "bg-white text-black hover:bg-gray-100",
-    ghost: "text-white hover border-none:bg-gray-600",
-    soft: "bg-gray-100 text-black",
-    outline: "border-white text-white hover:bg-white hover:text-black",
+    fill: "bg-foreground text-background border-foreground hover:bg-foreground/90",
+    soft: "bg-foreground/10 text-foreground border-transparent hover:bg-foreground/20",
+    outline: "border-foreground text-foreground hover:bg-foreground hover:text-background",
+    ghost: "text-foreground border-transparent hover:bg-foreground/10",
   },
 };
 
