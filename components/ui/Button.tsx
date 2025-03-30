@@ -1,16 +1,17 @@
 import { getVariantClasses } from "root/utils/ui.utils";
 import {
   ColorVariants,
-  StyleVariants,
+  ShapeVariants,
   SizeVariants,
   RoundedVariants,
   VariantsProps,
 } from "root/types/ui.types";
 
 // Constants
-const baseClasses = "rounded-full transition-all border hover:brightness-90 active:scale-90";
+const baseClasses =
+  "center-items rounded-full transition-all border hover:brightness-90 active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed";
 
-const styles: Record<ColorVariants, Record<StyleVariants, string>> = {
+const styles: Record<ColorVariants, Record<ShapeVariants, string>> = {
   primary: {
     fill: "bg-blue-500 text-white hover:bg-blue-600",
     ghost: "text-blue-500 border-none hover:bg-blue-100",
@@ -56,9 +57,9 @@ const styles: Record<ColorVariants, Record<StyleVariants, string>> = {
 };
 
 const sizeVariants: Record<SizeVariants, string> = {
-  sm: "px-3 h-8 text-sm",
-  normal: "px-5 h-10 text-base",
-  lg: "px-6 h-12 text-lg",
+  sm: "px-3 h-8 text-sm gap-2",
+  normal: "px-5 h-10 text-base gap-3",
+  lg: "px-6 h-12 text-lg gap-4",
 };
 
 const roundedVariants: Record<RoundedVariants, string> = {
@@ -69,10 +70,8 @@ const roundedVariants: Record<RoundedVariants, string> = {
 };
 
 // Component
-
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & VariantsProps;
 
-// Then modify your Button component:
 const Button: React.FC<ButtonProps> = ({ className, children, ...props }) => {
   const classes = getVariantClasses(props, {
     base: baseClasses,

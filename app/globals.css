@@ -21,6 +21,21 @@
     font-family: "vazir";
     scroll-behavior: smooth;
   }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary)) transparent;
+  }
+
+  a,
+  span,
+  label {
+    display: inline-block;
+  }
+
+  button {
+    cursor: pointer;
+  }
 }
 
 @utility vazir-bold {
@@ -29,4 +44,12 @@
 
 @utility vazir-black {
   font-family: "vazir-black";
+}
+
+@utility row-items {
+  @apply flex items-center;
+}
+
+@utility center-items {
+  @apply flex items-center justify-center;
 }
