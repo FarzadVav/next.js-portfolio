@@ -2,18 +2,34 @@
 
 @font-face {
   font-family: "vazir";
-  src: url("/fonts/vazir.woff2");
+  src: url("/fonts/vazir/vazir.woff2");
   font-weight: 100;
 }
 
 @font-face {
   font-family: "vazir-bold";
-  src: url("/fonts/vazir-bold.woff2");
+  src: url("/fonts/vazir/vazir-bold.woff2");
 }
 
 @font-face {
   font-family: "vazir-black";
-  src: url("/fonts/vazir-black.woff2");
+  src: url("/fonts/vazir/vazir-black.woff2");
+}
+
+@font-face {
+  font-family: "kalameh";
+  src: url("/fonts/kalameh/kalameh.woff2");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "kalameh-bold";
+  src: url("/fonts/kalameh/kalameh-bold.woff2");
+}
+
+@font-face {
+  font-family: "kalameh-black";
+  src: url("/fonts/kalameh/kalameh-black.woff2");
 }
 
 @theme {
@@ -30,6 +46,9 @@
   --font-vazir: "vazir";
   --font-vazir-bold: "vazir-bold";
   --font-vazir-black: "vazir-black";
+  --font-kalameh: "kalameh";
+  --font-kalameh-bold: "kalameh-bold";
+  --font-kalameh-black: "kalameh-black";
 }
 
 @layer base {
