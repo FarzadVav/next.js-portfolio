@@ -9,50 +9,50 @@ import {
 
 // Constants
 const baseClasses =
-  "center-items rounded-full transition-all border active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed";
+  "center-items rounded-full transition-all active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed";
 
 const styles: Record<ColorVariants, Record<ShapeVariants, string>> = {
   primary: {
-    fill: "bg-primary text-background border-primary hover:bg-primary/90",
-    soft: "bg-primary/10 text-primary border-transparent hover:bg-primary/20",
-    outline: "border-primary text-primary hover:bg-primary hover:text-background",
-    ghost: "text-primary border-transparent hover:bg-primary/10",
+    fill: "bg-primary text-background hover:bg-primary/90",
+    soft: "bg-primary/10 text-primary hover:bg-primary/20",
+    outline: "border border-primary text-primary hover:bg-primary hover:text-background",
+    ghost: "text-primary hover:bg-primary/10",
   },
   secondary: {
-    fill: "bg-secondary text-background border-secondary hover:bg-secondary/90",
-    soft: "bg-secondary/10 text-secondary border-transparent hover:bg-secondary/20",
-    outline: "border-secondary text-secondary hover:bg-secondary hover:text-background",
-    ghost: "text-secondary border-transparent hover:bg-secondary/10",
+    fill: "bg-secondary text-background-secondary/90",
+    soft: "bg-secondary/10 text-secondary hover:bg-secondary/20",
+    outline: "border border-secondary text-secondary hover:bg-secondary hover:text-background",
+    ghost: "text-secondary hover:bg-secondary/10",
   },
   danger: {
-    fill: "bg-danger text-background border-danger hover:bg-danger/90",
-    soft: "bg-danger/10 text-danger border-transparent hover:bg-danger/20",
-    outline: "border-danger text-danger hover:bg-danger hover:text-background",
-    ghost: "text-danger border-transparent hover:bg-danger/10",
+    fill: "bg-danger text-background hover:bg-danger/90",
+    soft: "bg-danger/10 text-danger hover:bg-danger/20",
+    outline: "border border-danger text-danger hover:bg-danger hover:text-background",
+    ghost: "text-danger hover:bg-danger/10",
   },
   success: {
-    fill: "bg-success text-background border-success hover:bg-success/90",
-    soft: "bg-success/10 text-success border-transparent hover:bg-success/20",
-    outline: "border-success text-success hover:bg-success hover:text-background",
-    ghost: "text-success border-transparent hover:bg-success/10",
+    fill: "bg-success text-background hover:bg-success/90",
+    soft: "bg-success/10 text-success hover:bg-success/20",
+    outline: "border border-success text-success hover:bg-success hover:text-background",
+    ghost: "text-success hover:bg-success/10",
   },
   warning: {
-    fill: "bg-warning text-background border-warning hover:bg-warning/90",
-    soft: "bg-warning/10 text-warning border-transparent hover:bg-warning/20",
-    outline: "border-warning text-warning hover:bg-warning hover:text-background",
-    ghost: "text-warning border-transparent hover:bg-warning/10",
+    fill: "bg-warning text-background hover:bg-warning/90",
+    soft: "bg-warning/10 text-warning hover:bg-warning/20",
+    outline: "border border-warning text-warning hover:bg-warning hover:text-background",
+    ghost: "text-warning hover:bg-warning/10",
   },
   background: {
-    fill: "bg-background text-foreground border-background hover:bg-background/90",
-    soft: "bg-background/10 text-background border-transparent hover:bg-background/20",
-    outline: "border-background text-background hover:bg-background hover:text-foreground",
-    ghost: "text-background border-transparent hover:bg-background/10",
+    fill: "bg-background text-foreground hover:bg-background/90",
+    soft: "bg-background/10 text-background hover:bg-background/20",
+    outline: "border border-background text-background hover:bg-background hover:text-foreground",
+    ghost: "text-background hover:bg-background/10",
   },
   foreground: {
-    fill: "bg-foreground text-background border-foreground hover:bg-foreground/90",
-    soft: "bg-foreground/10 text-foreground border-transparent hover:bg-foreground/20",
-    outline: "border-foreground text-foreground hover:bg-foreground hover:text-background",
-    ghost: "text-foreground border-transparent hover:bg-foreground/10",
+    fill: "bg-foreground text-background hover:bg-foreground/90",
+    soft: "bg-foreground/10 text-foreground hover:bg-foreground/20",
+    outline: "border border-foreground text-foreground hover:bg-foreground hover:text-background",
+    ghost: "text-foreground hover:bg-foreground/10",
   },
 };
 
@@ -72,7 +72,7 @@ const roundedVariants: Record<RoundedVariants, string> = {
 // Component
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & VariantsProps;
 
-const Button: React.FC<ButtonProps> = ({ className, children, ...props }) => {
+const Button: React.FC<ButtonProps> = (props) => {
   const classes = getVariantClasses(props, {
     base: baseClasses,
     style: styles,
@@ -80,11 +80,7 @@ const Button: React.FC<ButtonProps> = ({ className, children, ...props }) => {
     rounded: roundedVariants,
   });
 
-  return (
-    <button className={classes} {...props}>
-      {children}
-    </button>
-  );
+  return <button className={classes} {...props} />;
 };
 
 export default Button;

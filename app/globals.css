@@ -53,12 +53,8 @@
   }
 }
 
-@utility vazir-bold {
-  font-family: "vazir-bold";
-}
-
-@utility vazir-black {
-  font-family: "vazir-black";
+@utility container {
+  @apply max-w-5xl px-3 mx-auto;
 }
 
 @utility row-items {
