@@ -48,10 +48,10 @@ const justifyVariants: Record<Justify, string> = {
 const Flex: React.FC<FlexProps> = ({ className, ...props }) => {
   const currentClass = classMerge(
     baseClasses,
-    spacingVariants[props.space || "normal"],
-    directionVariants[props.direction || "row"],
-    alignVariants[props.align || "center"],
-    justifyVariants[props.justify || "start"],
+    spacingVariants[props.space ?? "normal"],
+    directionVariants[props.direction ?? "row"],
+    alignVariants[props.align ?? "center"],
+    justifyVariants[props.justify ?? "start"],
     className
   );
 

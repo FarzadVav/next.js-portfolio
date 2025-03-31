@@ -1,4 +1,5 @@
-// Base variants that are shared across components
+// Base variants type that are shared across components
+
 export type ShapeVariants = "fill" | "soft" | "outline" | "ghost";
 
 export type ColorVariants =
@@ -13,12 +14,3 @@ export type ColorVariants =
 export type SizeVariants = "sm" | "normal" | "lg";
 
 export type RoundedVariants = "sm" | "normal" | "lg" | "full";
-
-// Base properties that can be shared
-export interface VariantsProps {
-  shape?: ShapeVariants;
-  color?: ColorVariants;
-  size?: SizeVariants;
-  rounded?: RoundedVariants;
-  className?: string;
-}

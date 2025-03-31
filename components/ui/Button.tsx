@@ -1,13 +1,15 @@
-import { getVariantClasses } from "root/utils/ui.utils";
-import {
-  ColorVariants,
-  ShapeVariants,
-  SizeVariants,
-  RoundedVariants,
-  VariantsProps,
-} from "root/types/ui.types";
+import classMerge from "root/lib/classMerge";
+import { ColorVariants, ShapeVariants, SizeVariants, RoundedVariants } from "root/types/ui.types";
 
-// Constants
+/* Types */
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  shape?: ShapeVariants;
+  color?: ColorVariants;
+  size?: SizeVariants;
+  rounded?: RoundedVariants;
+};
+
+/* Constants */
 const baseClasses =
   "center-items rounded-full transition-all active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed";
 
@@ -69,18 +71,17 @@ const roundedVariants: Record<RoundedVariants, string> = {
   full: "rounded-full",
 };
 
-// Component
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & VariantsProps;
+/* Component */
+const Button: React.FC<ButtonProps> = ({ className, ...props }) => {
+  const currentClass = classMerge(
+    baseClasses,
+    styleVariants[props.color ?? "primary"][props.shape ?? "fill"],
+    sizeVariants[props.size ?? "normal"],
+    roundedVariants[props.rounded ?? "normal"],
+    className
+  );
 
-const Button: React.FC<ButtonProps> = (props) => {
-  const classes = getVariantClasses(props, {
-    base: baseClasses,
-    style: styleVariants,
-    size: sizeVariants,
-    rounded: roundedVariants,
-  });
-
-  return <button {...props} className={classes} />;
+  return <button className={currentClass} {...props} />;
 };
 
 export default Button;
