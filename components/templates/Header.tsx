@@ -8,7 +8,7 @@ const Header = () => {
     <header className="border-b border-foreground/10">
       <nav className="container row-items gap-3 h-20">
         <Link href={"/"}>
-          <Button>شروع پروژه</Button>
+          <Button className="font-vazir-bold">شروع پروژه</Button>
         </Link>
         <Link href={"/"}>
           <Button shape="ghost">

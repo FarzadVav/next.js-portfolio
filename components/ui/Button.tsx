@@ -11,7 +11,7 @@ import {
 const baseClasses =
   "center-items rounded-full transition-all active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed";
 
-const styles: Record<ColorVariants, Record<ShapeVariants, string>> = {
+const styleVariants: Record<ColorVariants, Record<ShapeVariants, string>> = {
   primary: {
     fill: "bg-primary text-background hover:bg-primary/90",
     soft: "bg-primary/10 text-primary hover:bg-primary/20",
@@ -75,12 +75,12 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & VariantsProps
 const Button: React.FC<ButtonProps> = (props) => {
   const classes = getVariantClasses(props, {
     base: baseClasses,
-    style: styles,
+    style: styleVariants,
     size: sizeVariants,
     rounded: roundedVariants,
   });
 
-  return <button className={classes} {...props} />;
+  return <button {...props} className={classes} />;
 };
 
 export default Button;

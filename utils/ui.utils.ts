@@ -14,6 +14,7 @@ export const getVariantClasses = (
     config.base,
     config.style[props.color ?? "primary"][props.shape ?? "fill"],
     config.size[props.size ?? "normal"],
-    config.rounded[props.rounded ?? "normal"]
+    config.rounded[props.rounded ?? "normal"],
+    props.className
   );
 };
