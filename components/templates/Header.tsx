@@ -2,11 +2,12 @@ import Link from "next/link";
 import { IconUser } from "@tabler/icons-react";
 
 import Button from "../ui/Button";
+import Flex from "../ui/Flex";
 
 const Header = () => {
   return (
     <header className="border-b border-foreground/10">
-      <nav className="container row-items gap-3 h-20">
+      <Flex className="container h-20">
         <Link href={"/"}>
           <Button className="font-vazir-bold">شروع پروژه</Button>
         </Link>
@@ -16,7 +17,7 @@ const Header = () => {
           </Button>
         </Link>
 
-        <div className="row-items mx-auto gap-3">
+        <Flex className="mx-auto">
           <Link href={"/"}>
             <Button shape="ghost" color="foreground">
               مقالات
@@ -32,12 +33,12 @@ const Header = () => {
               ارتباط با من
             </Button>
           </Link>
-        </div>
+        </Flex>
 
         <Link href={"/"}>
           <Button shape="outline">تیکت پشتیبانی</Button>
         </Link>
-      </nav>
+      </Flex>
     </header>
   );
 };
