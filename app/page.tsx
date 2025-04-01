@@ -25,7 +25,7 @@ const HomePage = () => {
         </p>
         <div className="w-1/2 h-10 px-5 rounded-full border border-foreground/10 mx-auto mt-6"></div>
 
-        <Flex className="mt-6 w-3/4 mx-auto flex-wrap" justify="center">
+        <Flex className="mt-6 w-3/4 mx-auto" justify="center" wrap="wrap">
           <div className="h-5 w-32 rounded-full bg-foreground/10"></div>
           <div className="h-5 w-24 rounded-full bg-foreground/10"></div>
           <div className="h-5 w-40 rounded-full bg-foreground/10"></div>

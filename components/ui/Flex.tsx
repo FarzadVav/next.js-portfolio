@@ -8,11 +8,14 @@ type Align = "start" | "center" | "end";
 
 type Justify = "start" | "center" | "end" | "around" | "evenly" | "between";
 
+type Wrap = "wrap" | "reverse" | "nowrap";
+
 type FlexProps = React.ButtonHTMLAttributes<HTMLDivElement> & {
   space?: SizeVariants;
   direction?: Direction;
   align?: Align;
   justify?: Justify;
+  wrap?: Wrap;
 };
 
 /* Constants */
@@ -44,6 +47,12 @@ const justifyVariants: Record<Justify, string> = {
   between: "justify-between",
 };
 
+const wrapVariants: Record<Wrap, string> = {
+  wrap: "flex-wrap",
+  nowrap: "flex-nowrap",
+  reverse: "flex-wrap-reverse",
+};
+
 /* Component */
 const Flex: React.FC<FlexProps> = ({ className, ...props }) => {
   const currentClass = classMerge(
@@ -52,6 +61,7 @@ const Flex: React.FC<FlexProps> = ({ className, ...props }) => {
     directionVariants[props.direction ?? "row"],
     alignVariants[props.align ?? "center"],
     justifyVariants[props.justify ?? "start"],
+    wrapVariants[props.wrap ?? "nowrap"],
     className
   );
 
