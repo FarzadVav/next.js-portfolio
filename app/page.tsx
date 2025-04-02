@@ -1,4 +1,10 @@
-import { IconHash, IconSearch } from "@tabler/icons-react";
+import {
+  IconArrowLeft,
+  IconChevronLeft,
+  IconHash,
+  IconSearch,
+  IconSend2,
+} from "@tabler/icons-react";
 
 import Flex from "root/components/ui/Flex";
 import Badge from "root/components/ui/Badge";
@@ -84,7 +90,7 @@ const HomePage = () => {
       </div>
 
       <Flex className="container mt-20" space="lg">
-        <Flex justify="center" direction="column" className="w-1/4">
+        <Flex justify="center" direction="column" className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3">
           <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
           <h2 className="font-vazir-bold text-xl mt-3">رزومه فعالیتی</h2>
           <p className="text-center text-sm leading-relaxed">
@@ -95,7 +101,7 @@ const HomePage = () => {
             <Button color="foreground">مشاهده</Button>
           </Link>
         </Flex>
-        <Flex justify="center" direction="column" className="w-1/4">
+        <Flex justify="center" direction="column" className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3">
           <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
           <h2 className="font-vazir-bold text-xl mt-3">ابزار ها</h2>
           <p className="text-center text-sm leading-relaxed">
@@ -106,7 +112,7 @@ const HomePage = () => {
             <Button color="foreground">مشاهده</Button>
           </Link>
         </Flex>
-        <Flex justify="center" direction="column" className="w-1/4">
+        <Flex justify="center" direction="column" className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3">
           <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
           <h2 className="font-vazir-bold text-xl mt-3">خدمات</h2>
           <p className="text-center text-sm leading-relaxed">
@@ -117,7 +123,7 @@ const HomePage = () => {
             <Button color="foreground">مشاهده</Button>
           </Link>
         </Flex>
-        <Flex justify="center" direction="column" className="w-1/4">
+        <Flex justify="center" direction="column" className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3">
           <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
           <h2 className="font-vazir-bold text-xl mt-3">محصولات ما</h2>
           <p className="text-center text-sm leading-relaxed">
@@ -129,6 +135,45 @@ const HomePage = () => {
           </Link>
         </Flex>
       </Flex>
+
+      <div className="container mt-20 rounded-xl p-6 border border-foreground ring-8 ring-transparent transition-shadow hover:ring-foreground/10">
+        <h3 className="text-xl font-vazir-black">راهنمایی میخواهید؟ تیکت بزنید</h3>
+        <p className="mt-3">
+          معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا
+          صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در
+          آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از
+          آنجایی که طراحان عموما نویسنده متن نیستند
+        </p>
+        <Flex className="mt-3">
+          <Badge color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>مشاوره</span>
+          </Badge>
+          <Badge color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>مسیر یادگیری</span>
+          </Badge>
+          <Badge color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>همکاری</span>
+          </Badge>
+        </Flex>
+        <Link href={"/"} className="mt-3">
+          <Button color="foreground">
+            <span>تیکت بزنید</span>
+            <IconSend2 className="h-1/2 aspect-square -scale-x-100" />
+          </Button>
+        </Link>
+
+        <Flex className="mt-3" justify="end">
+          <Link href={"/"}>
+            <Button color="foreground" shape="ghost">
+              <span>متنی برای راه های ارتباط با ما</span>
+              <IconArrowLeft className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+      </div>
     </>
   );
 };
