@@ -5,7 +5,6 @@ export type ShapeVariants = "fill" | "soft" | "outline" | "ghost";
 export type ColorVariants =
   | "foreground"
   | "primary"
-  | "secondary"
   | "danger"
   | "success"
   | "warning";

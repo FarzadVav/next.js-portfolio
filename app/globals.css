@@ -34,13 +34,12 @@
 
 @theme {
   --color-*: initial;
-  --color-background: hsl(223 78% 98%);
-  --color-foreground: hsl(0 0% 10%);
-  --color-primary: hsl(225 89% 27%);
-  --color-secondary: hsl(188 68% 58%);
-  --color-success: hsl(113 100% 27%);
-  --color-warning: hsl(45 100% 53%);
-  --color-danger: hsl(0 100% 42%);
+  --color-background: hsl(223, 78%, 98%);
+  --color-foreground: hsl(0, 0%, 15%);
+  --color-primary: hsl(227, 74%, 50%);
+  --color-success: hsl(113, 100%, 27%);
+  --color-warning: hsl(45, 100%, 53%);
+  --color-danger: hsl(0, 100%, 42%);
 
   --font-*: initial;
   --font-vazir: "vazir";

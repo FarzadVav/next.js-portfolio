@@ -20,12 +20,6 @@ const styleVariants: Record<ColorVariants, Record<ShapeVariants, string>> = {
     outline: "text-primary border border-primary focus-within:ring-primary/10",
     ghost: "text-primary focus-within:ring-primary/10",
   },
-  secondary: {
-    fill: "bg-secondary text-background focus-within:ring-secondary/10",
-    soft: "bg-secondary/10 text-secondary focus-within:bg-transparent focus-within:ring-secondary/10",
-    outline: "text-secondary border border-secondary focus-within:ring-secondary/10",
-    ghost: "text-secondary focus-within:ring-secondary/10",
-  },
   danger: {
     fill: "bg-danger text-background focus-within:ring-danger/10",
     soft: "bg-danger/10 text-danger focus-within:bg-transparent focus-within:ring-danger/10",

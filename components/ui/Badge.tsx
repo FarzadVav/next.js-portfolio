@@ -14,7 +14,6 @@ const baseClasses = "center-items";
 
 const colorVariants: Record<ColorVariants, string> = {
   primary: "bg-primary/10 text-primary",
-  secondary: "bg-secondary/10 text-secondary",
   danger: "bg-danger/10 text-danger",
   success: "bg-success/10 text-success",
   warning: "bg-warning/10 text-warning",
