@@ -57,11 +57,12 @@
   }
 
   * {
+    @apply select-none;
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--primary)) transparent;
 
     &:focus {
-      outline: none;
+      @apply outline-none;
     }
   }
 

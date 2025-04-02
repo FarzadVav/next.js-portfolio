@@ -10,8 +10,7 @@ type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
 };
 
 /* Constants */
-const baseClasses =
-  "bg-transparent w-full h-full peer disabled:opacity-25 disabled:cursor-not-allowed";
+const baseClasses = "bg-transparent w-full h-full peer";
 
 /* Component */
 const Input: React.FC<InputProps> = ({ className, ...props }) => {

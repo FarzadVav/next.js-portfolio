@@ -1,4 +1,20 @@
-import { IconSearch } from "@tabler/icons-react";
+import {
+  IconCode,
+  IconFile,
+  IconHandFinger,
+  IconHash,
+  IconInvoice,
+  IconNews,
+  IconPaperBag,
+  IconRefresh,
+  IconRepeat,
+  IconSearch,
+  IconSparkles,
+  IconTag,
+  IconTicket,
+  IconUser,
+} from "@tabler/icons-react";
+import Badge from "root/components/ui/Badge";
 import Flex from "root/components/ui/Flex";
 import Input from "root/components/ui/Input";
 import InputWrapper from "root/components/ui/InputWrapper";
@@ -21,10 +37,10 @@ const HomePage = () => {
           مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
         </h1>
         <p className="mt-6 w-3/4 text-center mx-auto">
-          لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است 🌐 و برای شرایط فعلی تکنولوژی مورد نیاز، و
-          کاربردهای متنوع با هدف بهبود باشد، کتابهای ✌️ زیادی در شصت و سه درصد گذشته حال و آینده 🔥
-          شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان
-          رایانه ای...
+          لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و
+          کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥
+          شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای
+          طراحان رایانه ای...
         </p>
         <InputWrapper className="w-1/2 mx-auto mt-6">
           <Input placeholder="جستجوی هرچی میخوای..." />
@@ -32,20 +48,50 @@ const HomePage = () => {
         </InputWrapper>
 
         <Flex className="mt-6 w-3/4 mx-auto" justify="center" wrap="wrap">
-          <div className="h-5 w-32 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-24 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-40 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-32 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-24 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-24 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-40 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-24 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-9 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-24 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-32 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-24 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-52 rounded-full bg-foreground/10"></div>
-          <div className="h-5 w-24 rounded-full bg-foreground/10"></div>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>بررسی آپدیت های جدید</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>یادگیری موارد جدید</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>ارائه خدمات وب</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>مشاوره خدمات</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>تیکت پشتیبانی</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>چیت شیت های فارسی</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>محصولات استارتاپی</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>مشاوره مسیر برنامه نویسی</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>پروژه های اوپن سورس</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>ایونت های جامعه</span>
+          </Badge>
+          <Badge rounded="full" color="foreground">
+            <IconHash className="h-1/2 aspect-square" />
+            <span>رزومه قابل اطمینان</span>
+          </Badge>
         </Flex>
       </div>
     </>
