@@ -4,6 +4,8 @@ import Flex from "root/components/ui/Flex";
 import Badge from "root/components/ui/Badge";
 import Input from "root/components/ui/Input";
 import InputWrapper from "root/components/ui/InputWrapper";
+import Link from "next/link";
+import Button from "root/components/ui/Button";
 
 const HomePage = () => {
   return (
@@ -81,12 +83,52 @@ const HomePage = () => {
         </Flex>
       </div>
 
-      <div className="w-full mt-25 relative">
-        <div className="w-[calc(100%-2.5rem)] h-[100vh] absolute rounded-[100%] -top-5 left-1/2 -translate-x-1/2 border-t-4 border-foreground/5"></div>
-        <div className="w-[calc(100%-1.25rem)] h-[100vh] absolute rounded-[100%] -top-10 left-1/2 -translate-x-1/2 border-t-2 border-foreground/5"></div>
-        <div className="w-full h-[100vh] absolute rounded-[100%] -top-15 left-1/2 -translate-x-1/2 border-t border-foreground/5"></div>
-        <div className="h-screen">lorem</div>
-      </div>
+      <Flex className="container mt-20" space="lg">
+        <Flex justify="center" direction="column" className="w-1/4">
+          <div className="w-2/3 aspect-square rounded-full bg-foreground/10"></div>
+          <h2 className="font-vazir-bold text-xl mt-3">رزومه فعالیتی</h2>
+          <p className="text-center text-sm leading-relaxed">
+            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
+            بهبود ظاهری.
+          </p>
+          <Link className="mt-3" href={"/"}>
+            <Button>مشاهده</Button>
+          </Link>
+        </Flex>
+        <Flex justify="center" direction="column" className="w-1/4">
+          <div className="w-2/3 aspect-square rounded-full bg-foreground/10"></div>
+          <h2 className="font-vazir-bold text-xl mt-3">ابزار ها</h2>
+          <p className="text-center text-sm leading-relaxed">
+            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
+            بهبود ظاهری.
+          </p>
+          <Link className="mt-3" href={"/"}>
+            <Button>مشاهده</Button>
+          </Link>
+        </Flex>
+        <Flex justify="center" direction="column" className="w-1/4">
+          <div className="w-2/3 aspect-square rounded-full bg-foreground/10"></div>
+          <h2 className="font-vazir-bold text-xl mt-3">خدمات</h2>
+          <p className="text-center text-sm leading-relaxed">
+            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
+            بهبود ظاهری.
+          </p>
+          <Link className="mt-3" href={"/"}>
+            <Button>مشاهده</Button>
+          </Link>
+        </Flex>
+        <Flex justify="center" direction="column" className="w-1/4">
+          <div className="w-2/3 aspect-square rounded-full bg-foreground/10"></div>
+          <h2 className="font-vazir-bold text-xl mt-3">محصولات ما</h2>
+          <p className="text-center text-sm leading-relaxed">
+            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
+            بهبود ظاهری.
+          </p>
+          <Link className="mt-3" href={"/"}>
+            <Button>مشاهده</Button>
+          </Link>
+        </Flex>
+      </Flex>
     </>
   );
 };
