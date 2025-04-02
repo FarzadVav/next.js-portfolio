@@ -3,6 +3,7 @@ import { PropsWithChildren } from "react";
 
 import "./globals.css";
 import Header from "root/components/templates/Header";
+import Footer from "root/components/templates/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
