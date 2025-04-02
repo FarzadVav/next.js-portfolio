@@ -1,9 +1,13 @@
 import {
   IconArrowLeft,
+  IconCheck,
   IconChevronLeft,
   IconHash,
+  IconPencil,
+  IconPlus,
   IconSearch,
   IconSend2,
+  IconTicket,
 } from "@tabler/icons-react";
 
 import Flex from "root/components/ui/Flex";
@@ -90,7 +94,11 @@ const HomePage = () => {
       </div>
 
       <Flex className="container mt-20" space="lg">
-        <Flex justify="center" direction="column" className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3">
+        <Flex
+          justify="center"
+          direction="column"
+          className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3"
+        >
           <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
           <h2 className="font-vazir-bold text-xl mt-3">رزومه فعالیتی</h2>
           <p className="text-center text-sm leading-relaxed">
@@ -98,10 +106,16 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground">مشاهده</Button>
+            <Button color="foreground" shape="outline">
+              مشاهده
+            </Button>
           </Link>
         </Flex>
-        <Flex justify="center" direction="column" className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3">
+        <Flex
+          justify="center"
+          direction="column"
+          className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3"
+        >
           <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
           <h2 className="font-vazir-bold text-xl mt-3">ابزار ها</h2>
           <p className="text-center text-sm leading-relaxed">
@@ -109,10 +123,16 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground">مشاهده</Button>
+            <Button color="foreground" shape="outline">
+              مشاهده
+            </Button>
           </Link>
         </Flex>
-        <Flex justify="center" direction="column" className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3">
+        <Flex
+          justify="center"
+          direction="column"
+          className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3"
+        >
           <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
           <h2 className="font-vazir-bold text-xl mt-3">خدمات</h2>
           <p className="text-center text-sm leading-relaxed">
@@ -120,10 +140,16 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground">مشاهده</Button>
+            <Button color="foreground" shape="outline">
+              مشاهده
+            </Button>
           </Link>
         </Flex>
-        <Flex justify="center" direction="column" className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3">
+        <Flex
+          justify="center"
+          direction="column"
+          className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3"
+        >
           <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
           <h2 className="font-vazir-bold text-xl mt-3">محصولات ما</h2>
           <p className="text-center text-sm leading-relaxed">
@@ -131,12 +157,14 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground">مشاهده</Button>
+            <Button color="foreground" shape="outline">
+              مشاهده
+            </Button>
           </Link>
         </Flex>
       </Flex>
 
-      <div className="container mt-20 rounded-xl p-6 border border-foreground ring-8 ring-transparent transition-shadow hover:ring-foreground/10">
+      <div className="container mt-20 rounded-xl p-6 ring-8 ring-transparent transition-shadow hover:ring-foreground/10">
         <h3 className="text-xl font-vazir-black">راهنمایی میخواهید؟ تیکت بزنید</h3>
         <p className="mt-3">
           معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا
@@ -146,15 +174,15 @@ const HomePage = () => {
         </p>
         <Flex className="mt-3">
           <Badge color="foreground">
-            <IconHash className="h-1/2 aspect-square" />
+            <IconCheck className="h-1/2 aspect-square" />
             <span>مشاوره</span>
           </Badge>
           <Badge color="foreground">
-            <IconHash className="h-1/2 aspect-square" />
+            <IconCheck className="h-1/2 aspect-square" />
             <span>مسیر یادگیری</span>
           </Badge>
           <Badge color="foreground">
-            <IconHash className="h-1/2 aspect-square" />
+            <IconCheck className="h-1/2 aspect-square" />
             <span>همکاری</span>
           </Badge>
         </Flex>
@@ -174,6 +202,133 @@ const HomePage = () => {
           </Link>
         </Flex>
       </div>
+
+      <Flex className="container mt-20" justify="center">
+        <Link href={"/"}>
+          <Button color="foreground">اخبار</Button>
+        </Link>
+        <Link href={"/"}>
+          <Button color="foreground" shape="outline">
+            آموزش
+          </Button>
+        </Link>
+        <Link href={"/"}>
+          <Button color="foreground" shape="outline">
+            چیت شیت
+          </Button>
+        </Link>
+        <Link href={"/"}>
+          <Button color="foreground" shape="outline">
+            تحلیل و بررسی
+          </Button>
+        </Link>
+        <Link href={"/"}>
+          <Button color="foreground" shape="outline">
+            آپدیت
+          </Button>
+        </Link>
+      </Flex>
+      <Flex className="container mt-5">
+        <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
+        <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
+        <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
+        <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
+      </Flex>
+      <Flex className="container mt-5" justify="center">
+        <Link href={"/"}>
+          <Button color="foreground" shape="ghost">
+            <span>مشاهده همه مقالات</span>
+            <IconArrowLeft className="h-1/2 aspect-square" />
+          </Button>
+        </Link>
+      </Flex>
+
+      <div className="container mt-20">
+        <Flex
+          justify="between"
+          className="p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <p className="font-vazir-bold">
+            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+          </p>
+          <Link href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>بررسی</span>
+              <IconChevronLeft className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+        <Flex
+          justify="between"
+          className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <p className="font-vazir-bold">
+            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+          </p>
+          <Link href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>بررسی</span>
+              <IconChevronLeft className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+        <Flex
+          justify="between"
+          className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <p className="font-vazir-bold">
+            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+          </p>
+          <Link href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>بررسی</span>
+              <IconChevronLeft className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+        <Flex
+          justify="between"
+          className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <p className="font-vazir-bold">
+            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+          </p>
+          <Link href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>بررسی</span>
+              <IconChevronLeft className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+        <Flex
+          justify="between"
+          className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <p className="font-vazir-bold">
+            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+          </p>
+          <Link href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>بررسی</span>
+              <IconChevronLeft className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+      </div>
+      <Flex className="container mt-6" justify="center">
+        <Link href={"/"}>
+          <Button color="foreground" shape="ghost">
+            <span>مشاهده همه سوالات</span>
+            <IconArrowLeft className="h-1/2 aspect-square" />
+          </Button>
+        </Link>
+        <Link href={"/"}>
+          <Button color="foreground" shape="ghost">
+            <span>سوال خودتان را بپرسید</span>
+            <IconPencil className="h-1/2 aspect-square" />
+          </Button>
+        </Link>
+      </Flex>
     </>
   );
 };
