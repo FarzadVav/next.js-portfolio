@@ -1,21 +1,7 @@
-import {
-  IconCode,
-  IconFile,
-  IconHandFinger,
-  IconHash,
-  IconInvoice,
-  IconNews,
-  IconPaperBag,
-  IconRefresh,
-  IconRepeat,
-  IconSearch,
-  IconSparkles,
-  IconTag,
-  IconTicket,
-  IconUser,
-} from "@tabler/icons-react";
-import Badge from "root/components/ui/Badge";
+import { IconHash, IconSearch } from "@tabler/icons-react";
+
 import Flex from "root/components/ui/Flex";
+import Badge from "root/components/ui/Badge";
 import Input from "root/components/ui/Input";
 import InputWrapper from "root/components/ui/InputWrapper";
 
@@ -93,6 +79,13 @@ const HomePage = () => {
             <span>رزومه قابل اطمینان</span>
           </Badge>
         </Flex>
+      </div>
+
+      <div className="w-full mt-25 relative">
+        <div className="w-[calc(100%-2.5rem)] h-[100vh] absolute rounded-[100%] -top-5 left-1/2 -translate-x-1/2 border-t-4 border-foreground/5"></div>
+        <div className="w-[calc(100%-1.25rem)] h-[100vh] absolute rounded-[100%] -top-10 left-1/2 -translate-x-1/2 border-t-2 border-foreground/5"></div>
+        <div className="w-full h-[100vh] absolute rounded-[100%] -top-15 left-1/2 -translate-x-1/2 border-t border-foreground/5"></div>
+        <div className="h-screen">lorem</div>
       </div>
     </>
   );
