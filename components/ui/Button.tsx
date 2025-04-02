@@ -11,50 +11,52 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 /* Constants */
 const baseClasses =
-  "center-items transition-all active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed";
+  "center-items transition-all ring-4 ring-transparent active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed";
 
 const styleVariants: Record<ColorVariants, Record<ShapeVariants, string>> = {
   primary: {
-    fill: "bg-primary text-background hover:bg-primary/90",
-    soft: "bg-primary/10 text-primary hover:bg-primary/5",
-    outline: "border border-primary text-primary hover:bg-primary hover:text-background",
-    ghost: "text-primary hover:bg-primary/10",
+    fill: "bg-primary text-background hover:bg-primary/90 focus:ring-primary/10",
+    soft: "bg-primary/10 text-primary hover:bg-primary/5 focus:bg-transparent focus:ring-primary/10",
+    outline:
+      "border border-primary text-primary hover:bg-primary hover:text-background focus:ring-primary/10",
+    ghost: "text-primary hover:bg-primary/10 focus:hover:bg-transparent focus:ring-primary/10",
   },
   secondary: {
-    fill: "bg-secondary text-background-secondary/90",
-    soft: "bg-secondary/10 text-secondary hover:bg-secondary/5",
-    outline: "border border-secondary text-secondary hover:bg-secondary hover:text-background",
-    ghost: "text-secondary hover:bg-secondary/10",
+    fill: "bg-secondary text-background-secondary/90 focus:ring-secondary/10",
+    soft: "bg-secondary/10 text-secondary hover:bg-secondary/5 focus:bg-transparent focus:ring-secondary/10",
+    outline:
+      "border border-secondary text-secondary hover:bg-secondary hover:text-background focus:ring-secondary/10",
+    ghost:
+      "text-secondary hover:bg-secondary/10 focus:hover:bg-transparent focus:ring-secondary/10",
   },
   danger: {
-    fill: "bg-danger text-background hover:bg-danger/90",
-    soft: "bg-danger/10 text-danger hover:bg-danger/5",
-    outline: "border border-danger text-danger hover:bg-danger hover:text-background",
-    ghost: "text-danger hover:bg-danger/10",
+    fill: "bg-danger text-background hover:bg-danger/90 focus:ring-danger/10",
+    soft: "bg-danger/10 text-danger hover:bg-danger/5 focus:bg-transparent focus:ring-danger/10",
+    outline:
+      "border border-danger text-danger hover:bg-danger hover:text-background focus:ring-danger/10",
+    ghost: "text-danger hover:bg-danger/10 focus:hover:bg-transparent focus:ring-danger/10",
   },
   success: {
-    fill: "bg-success text-background hover:bg-success/90",
-    soft: "bg-success/10 text-success hover:bg-success/5",
-    outline: "border border-success text-success hover:bg-success hover:text-background",
-    ghost: "text-success hover:bg-success/10",
+    fill: "bg-success text-background hover:bg-success/90 focus:ring-success/10",
+    soft: "bg-success/10 text-success hover:bg-success/5 focus:bg-transparent focus:ring-success/10",
+    outline:
+      "border border-success text-success hover:bg-success hover:text-background focus:ring-success/10",
+    ghost: "text-success hover:bg-success/10 focus:hover:bg-transparent focus:ring-success/10",
   },
   warning: {
-    fill: "bg-warning text-background hover:bg-warning/90",
-    soft: "bg-warning/10 text-warning hover:bg-warning/5",
-    outline: "border border-warning text-warning hover:bg-warning hover:text-background",
-    ghost: "text-warning hover:bg-warning/10",
-  },
-  background: {
-    fill: "bg-background text-foreground hover:bg-background/90",
-    soft: "bg-background/10 text-background hover:bg-background/5",
-    outline: "border border-background text-background hover:bg-background hover:text-foreground",
-    ghost: "text-background hover:bg-background/10",
+    fill: "bg-warning text-background hover:bg-warning/90 focus:ring-warning/10",
+    soft: "bg-warning/10 text-warning hover:bg-warning/5 focus:bg-transparent focus:ring-warning/10",
+    outline:
+      "border border-warning text-warning hover:bg-warning hover:text-background focus:ring-warning/10",
+    ghost: "text-warning hover:bg-warning/10 focus:hover:bg-transparent focus:ring-warning/10",
   },
   foreground: {
-    fill: "bg-foreground text-background hover:bg-foreground/90",
-    soft: "bg-foreground/10 text-foreground hover:bg-foreground/5",
-    outline: "border border-foreground text-foreground hover:bg-foreground hover:text-background",
-    ghost: "text-foreground hover:bg-foreground/10",
+    fill: "bg-foreground text-background hover:bg-foreground/90 focus:ring-foreground/10",
+    soft: "bg-foreground/10 text-foreground hover:bg-foreground/5 focus:bg-transparent focus:ring-foreground/10",
+    outline:
+      "border border-foreground text-foreground hover:bg-foreground hover:text-background focus:ring-foreground/10",
+    ghost:
+      "text-foreground hover:bg-foreground/10 focus:hover:bg-transparent focus:ring-foreground/10",
   },
 };
 

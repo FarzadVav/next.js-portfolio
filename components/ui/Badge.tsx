@@ -18,7 +18,6 @@ const colorVariants: Record<ColorVariants, string> = {
   danger: "bg-danger/10 text-danger",
   success: "bg-success/10 text-success",
   warning: "bg-warning/10 text-warning",
-  background: "bg-background/10 text-background",
   foreground: "bg-foreground/10 text-foreground",
 };
 

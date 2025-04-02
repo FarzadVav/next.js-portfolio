@@ -44,12 +44,6 @@ const styleVariants: Record<ColorVariants, Record<ShapeVariants, string>> = {
     outline: "text-warning border border-warning focus-within:ring-warning/10",
     ghost: "text-warning focus-within:ring-warning/10",
   },
-  background: {
-    fill: "bg-background text-foreground focus-within:ring-background/10",
-    soft: "bg-background/10 text-background focus-within:bg-transparent focus-within:ring-background/10",
-    outline: "text-background border border-background focus-within:ring-background/10",
-    ghost: "text-background focus-within:ring-background/10",
-  },
   foreground: {
     fill: "bg-foreground text-background focus-within:ring-foreground/10",
     soft: "bg-foreground/10 text-foreground focus-within:bg-transparent focus-within:ring-foreground/10",
