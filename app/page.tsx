@@ -8,6 +8,7 @@ import {
   IconSearch,
   IconSend2,
   IconTicket,
+  IconUsersGroup,
 } from "@tabler/icons-react";
 
 import Flex from "root/components/ui/Flex";
@@ -248,9 +249,9 @@ const HomePage = () => {
           justify="between"
           className="p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
-          <p className="font-vazir-bold">
+          <h4 className="font-vazir-bold">
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </p>
+          </h4>
           <Link href={"/"}>
             <Button color="foreground" shape="outline">
               <span>بررسی</span>
@@ -262,9 +263,9 @@ const HomePage = () => {
           justify="between"
           className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
-          <p className="font-vazir-bold">
+          <h4 className="font-vazir-bold">
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </p>
+          </h4>
           <Link href={"/"}>
             <Button color="foreground" shape="outline">
               <span>بررسی</span>
@@ -276,9 +277,9 @@ const HomePage = () => {
           justify="between"
           className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
-          <p className="font-vazir-bold">
+          <h4 className="font-vazir-bold">
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </p>
+          </h4>
           <Link href={"/"}>
             <Button color="foreground" shape="outline">
               <span>بررسی</span>
@@ -290,9 +291,9 @@ const HomePage = () => {
           justify="between"
           className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
-          <p className="font-vazir-bold">
+          <h4 className="font-vazir-bold">
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </p>
+          </h4>
           <Link href={"/"}>
             <Button color="foreground" shape="outline">
               <span>بررسی</span>
@@ -304,9 +305,9 @@ const HomePage = () => {
           justify="between"
           className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
-          <p className="font-vazir-bold">
+          <h4 className="font-vazir-bold">
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </p>
+          </h4>
           <Link href={"/"}>
             <Button color="foreground" shape="outline">
               <span>بررسی</span>
@@ -328,6 +329,109 @@ const HomePage = () => {
             <IconPencil className="h-1/2 aspect-square" />
           </Button>
         </Link>
+      </Flex>
+
+      <Flex className="container mt-20" wrap="wrap" justify="center" space="lg">
+        <Flex
+          justify="center"
+          direction="column"
+          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <Flex>
+            <IconUsersGroup className="size-7" />
+            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+          </Flex>
+          <p className="text-center">
+            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
+            بهبود ظاهری.
+          </p>
+          <Link className="mt-3" href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>شرکت کنید</span>
+              <IconPlus className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+        <Flex
+          justify="center"
+          direction="column"
+          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <Flex>
+            <IconUsersGroup className="size-7" />
+            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+          </Flex>
+          <p className="text-center">
+            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
+            بهبود ظاهری.
+          </p>
+          <Link className="mt-3" href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>شرکت کنید</span>
+              <IconPlus className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+        <Flex
+          justify="center"
+          direction="column"
+          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <Flex>
+            <IconUsersGroup className="size-7" />
+            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+          </Flex>
+          <p className="text-center">
+            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
+            بهبود ظاهری.
+          </p>
+          <Link className="mt-3" href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>شرکت کنید</span>
+              <IconPlus className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+        <Flex
+          justify="center"
+          direction="column"
+          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <Flex>
+            <IconUsersGroup className="size-7" />
+            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+          </Flex>
+          <p className="text-center">
+            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
+            بهبود ظاهری.
+          </p>
+          <Link className="mt-3" href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>شرکت کنید</span>
+              <IconPlus className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
+        <Flex
+          justify="center"
+          direction="column"
+          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
+        >
+          <Flex>
+            <IconUsersGroup className="size-7" />
+            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+          </Flex>
+          <p className="text-center">
+            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
+            بهبود ظاهری.
+          </p>
+          <Link className="mt-3" href={"/"}>
+            <Button color="foreground" shape="outline">
+              <span>شرکت کنید</span>
+              <IconPlus className="h-1/2 aspect-square" />
+            </Button>
+          </Link>
+        </Flex>
       </Flex>
     </>
   );
