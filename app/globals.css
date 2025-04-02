@@ -59,6 +59,10 @@
   * {
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--primary)) transparent;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   a,

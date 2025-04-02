@@ -1,4 +1,7 @@
+import { IconSearch } from "@tabler/icons-react";
 import Flex from "root/components/ui/Flex";
+import Input from "root/components/ui/Input";
+import InputWrapper from "root/components/ui/InputWrapper";
 
 const HomePage = () => {
   return (
@@ -23,7 +26,10 @@ const HomePage = () => {
           شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان
           رایانه ای...
         </p>
-        <div className="w-1/2 h-10 px-5 rounded-full border border-foreground/10 mx-auto mt-6"></div>
+        <InputWrapper className="w-1/2 mx-auto mt-6">
+          <Input placeholder="جستجوی هرچی میخوای..." />
+          <IconSearch className="size-5" />
+        </InputWrapper>
 
         <Flex className="mt-6 w-3/4 mx-auto" justify="center" wrap="wrap">
           <div className="h-5 w-32 rounded-full bg-foreground/10"></div>

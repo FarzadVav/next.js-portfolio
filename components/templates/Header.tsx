@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { IconUser } from "@tabler/icons-react";
 
-import Button from "../ui/Button";
 import Flex from "../ui/Flex";
+import Button from "../ui/Button";
 
 const Header = () => {
   return (
