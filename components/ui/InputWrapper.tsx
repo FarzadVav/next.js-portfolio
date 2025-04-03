@@ -14,11 +14,11 @@ const baseClasses =
   "ring-4 ring-transparent w-full row-items cursor-pointer transition-all relative disabled:opacity-50 disabled:cursor-not-allowed";
 
 const styleVariants: Record<ColorVariants, Record<ShapeVariants, string>> = {
-  primary: {
-    fill: "bg-primary text-background focus-within:ring-primary/10",
-    soft: "bg-primary/10 text-primary focus-within:bg-transparent focus-within:ring-primary/10",
-    outline: "text-primary border border-primary focus-within:ring-primary/10",
-    ghost: "text-primary focus-within:ring-primary/10",
+  foreground: {
+    fill: "bg-foreground text-background focus-within:ring-foreground/10",
+    soft: "bg-foreground/10 text-foreground focus-within:bg-transparent focus-within:ring-foreground/10",
+    outline: "text-foreground border border-foreground focus-within:ring-foreground/10",
+    ghost: "text-foreground focus-within:ring-foreground/10",
   },
   danger: {
     fill: "bg-danger text-background focus-within:ring-danger/10",
@@ -37,12 +37,6 @@ const styleVariants: Record<ColorVariants, Record<ShapeVariants, string>> = {
     soft: "bg-warning/10 text-warning focus-within:bg-transparent focus-within:ring-warning/10",
     outline: "text-warning border border-warning focus-within:ring-warning/10",
     ghost: "text-warning focus-within:ring-warning/10",
-  },
-  foreground: {
-    fill: "bg-foreground text-background focus-within:ring-foreground/10",
-    soft: "bg-foreground/10 text-foreground focus-within:bg-transparent focus-within:ring-foreground/10",
-    outline: "text-foreground border border-foreground focus-within:ring-foreground/10",
-    ghost: "text-foreground focus-within:ring-foreground/10",
   },
 };
 
@@ -63,7 +57,7 @@ const roundedVariants: Record<RoundedVariants, string> = {
 const InputWrapper: React.FC<InputWrapperProps> = ({ className, ...props }) => {
   const currentClass = classMerge(
     baseClasses,
-    styleVariants[props.color ?? "primary"][props.shape ?? "outline"],
+    styleVariants[props.color ?? "foreground"][props.shape ?? "outline"],
     sizeVariants[props.size ?? "normal"],
     roundedVariants[props.rounded ?? "normal"],
     className

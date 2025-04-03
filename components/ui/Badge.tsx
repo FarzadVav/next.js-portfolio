@@ -13,11 +13,10 @@ type BadgeProps = React.HTMLAttributes<HTMLDivElement> & {
 const baseClasses = "center-items";
 
 const colorVariants: Record<ColorVariants, string> = {
-  primary: "bg-primary/10 text-primary",
+  foreground: "bg-foreground/10 text-foreground",
   danger: "bg-danger/10 text-danger",
   success: "bg-success/10 text-success",
   warning: "bg-warning/10 text-warning",
-  foreground: "bg-foreground/10 text-foreground",
 };
 
 const sizeVariants: Record<SizeVariants, string> = {
@@ -37,7 +36,7 @@ const roundedVariants: Record<RoundedVariants, string> = {
 const Badge: React.FC<BadgeProps> = ({ className, ...props }) => {
   const currentClass = classMerge(
     baseClasses,
-    colorVariants[props.color ?? "primary"],
+    colorVariants[props.color ?? "foreground"],
     sizeVariants[props.size ?? "normal"],
     roundedVariants[props.rounded ?? "normal"],
     className

@@ -19,19 +19,13 @@ const Header = () => {
 
         <Flex className="mx-auto">
           <Link href={"/"}>
-            <Button shape="ghost" color="foreground">
-              مقالات
-            </Button>
+            <Button shape="ghost">مقالات</Button>
           </Link>
           <Link href={"/"}>
-            <Button shape="ghost" color="foreground">
-              درباره من
-            </Button>
+            <Button shape="ghost">درباره من</Button>
           </Link>
           <Link href={"/"}>
-            <Button shape="ghost" color="foreground">
-              ارتباط با من
-            </Button>
+            <Button shape="ghost">ارتباط با من</Button>
           </Link>
         </Flex>
 

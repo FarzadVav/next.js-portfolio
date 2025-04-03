@@ -22,15 +22,15 @@ const HomePage = () => {
   return (
     <>
       <div className="container mt-20 relative">
-        <div className="size-9 rounded-lg bg-primary/10 ring-8 ring-primary/5 absolute top-0 right-0"></div>
-        <div className="size-16 rounded-lg bg-primary/10 ring-8 ring-primary/5 absolute top-18 -right-18"></div>
-        <div className="size-9 rounded-lg bg-primary/10 ring-8 ring-primary/5 absolute top-36 right-6"></div>
-        <div className="size-12 rounded-lg bg-primary/10 ring-8 ring-primary/5 absolute top-54 -right-16"></div>
+        <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-0 right-0"></div>
+        <div className="size-16 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-18 -right-18"></div>
+        <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-36 right-6"></div>
+        <div className="size-12 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-54 -right-16"></div>
 
-        <div className="size-9 rounded-lg bg-primary/10 ring-8 ring-primary/5 absolute top-0 left-0"></div>
-        <div className="size-16 rounded-lg bg-primary/10 ring-8 ring-primary/5 absolute top-18 -left-18"></div>
-        <div className="size-9 rounded-lg bg-primary/10 ring-8 ring-primary/5 absolute top-36 left-6"></div>
-        <div className="size-12 rounded-lg bg-primary/10 ring-8 ring-primary/5 absolute top-54 -left-16"></div>
+        <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-0 left-0"></div>
+        <div className="size-16 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-18 -left-18"></div>
+        <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-36 left-6"></div>
+        <div className="size-12 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-54 -left-16"></div>
 
         <h1 className="text-4xl font-kalameh-black text-center leading-relaxed">
           مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
@@ -47,47 +47,47 @@ const HomePage = () => {
         </InputWrapper>
 
         <Flex className="mt-6 w-3/4 mx-auto" justify="center" wrap="wrap">
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>بررسی آپدیت های جدید</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>یادگیری موارد جدید</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>ارائه خدمات وب</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>مشاوره خدمات</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>تیکت پشتیبانی</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>چیت شیت های فارسی</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>محصولات استارتاپی</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>مشاوره مسیر برنامه نویسی</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>پروژه های اوپن سورس</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>ایونت های جامعه</span>
           </Badge>
-          <Badge rounded="full" color="foreground">
+          <Badge rounded="full">
             <IconHash className="h-1/2 aspect-square" />
             <span>رزومه قابل اطمینان</span>
           </Badge>
@@ -107,9 +107,7 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground" shape="outline">
-              مشاهده
-            </Button>
+            <Button shape="outline">مشاهده</Button>
           </Link>
         </Flex>
         <Flex
@@ -124,9 +122,7 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground" shape="outline">
-              مشاهده
-            </Button>
+            <Button shape="outline">مشاهده</Button>
           </Link>
         </Flex>
         <Flex
@@ -141,9 +137,7 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground" shape="outline">
-              مشاهده
-            </Button>
+            <Button shape="outline">مشاهده</Button>
           </Link>
         </Flex>
         <Flex
@@ -158,9 +152,7 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground" shape="outline">
-              مشاهده
-            </Button>
+            <Button shape="outline">مشاهده</Button>
           </Link>
         </Flex>
       </Flex>
@@ -174,21 +166,21 @@ const HomePage = () => {
           آنجایی که طراحان عموما نویسنده متن نیستند
         </p>
         <Flex className="mt-3">
-          <Badge color="foreground">
+          <Badge>
             <IconCheck className="h-1/2 aspect-square" />
             <span>مشاوره</span>
           </Badge>
-          <Badge color="foreground">
+          <Badge>
             <IconCheck className="h-1/2 aspect-square" />
             <span>مسیر یادگیری</span>
           </Badge>
-          <Badge color="foreground">
+          <Badge>
             <IconCheck className="h-1/2 aspect-square" />
             <span>همکاری</span>
           </Badge>
         </Flex>
         <Link href={"/"} className="mt-3">
-          <Button color="foreground">
+          <Button>
             <span>تیکت بزنید</span>
             <IconSend2 className="h-1/2 aspect-square -scale-x-100" />
           </Button>
@@ -196,7 +188,7 @@ const HomePage = () => {
 
         <Flex className="mt-3" justify="end">
           <Link href={"/"}>
-            <Button color="foreground" shape="ghost">
+            <Button shape="ghost">
               <span>متنی برای راه های ارتباط با ما</span>
               <IconArrowLeft className="h-1/2 aspect-square" />
             </Button>
@@ -206,27 +198,19 @@ const HomePage = () => {
 
       <Flex className="container mt-20" justify="center">
         <Link href={"/"}>
-          <Button color="foreground">اخبار</Button>
+          <Button>اخبار</Button>
         </Link>
         <Link href={"/"}>
-          <Button color="foreground" shape="outline">
-            آموزش
-          </Button>
+          <Button shape="outline">آموزش</Button>
         </Link>
         <Link href={"/"}>
-          <Button color="foreground" shape="outline">
-            چیت شیت
-          </Button>
+          <Button shape="outline">چیت شیت</Button>
         </Link>
         <Link href={"/"}>
-          <Button color="foreground" shape="outline">
-            تحلیل و بررسی
-          </Button>
+          <Button shape="outline">تحلیل و بررسی</Button>
         </Link>
         <Link href={"/"}>
-          <Button color="foreground" shape="outline">
-            آپدیت
-          </Button>
+          <Button shape="outline">آپدیت</Button>
         </Link>
       </Flex>
       <Flex className="container mt-5">
@@ -237,7 +221,7 @@ const HomePage = () => {
       </Flex>
       <Flex className="container mt-5" justify="center">
         <Link href={"/"}>
-          <Button color="foreground" shape="ghost">
+          <Button shape="ghost">
             <span>مشاهده همه مقالات</span>
             <IconArrowLeft className="h-1/2 aspect-square" />
           </Button>
@@ -253,7 +237,7 @@ const HomePage = () => {
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
           </h4>
           <Link href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>بررسی</span>
               <IconChevronLeft className="h-1/2 aspect-square" />
             </Button>
@@ -267,7 +251,7 @@ const HomePage = () => {
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
           </h4>
           <Link href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>بررسی</span>
               <IconChevronLeft className="h-1/2 aspect-square" />
             </Button>
@@ -281,7 +265,7 @@ const HomePage = () => {
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
           </h4>
           <Link href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>بررسی</span>
               <IconChevronLeft className="h-1/2 aspect-square" />
             </Button>
@@ -295,7 +279,7 @@ const HomePage = () => {
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
           </h4>
           <Link href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>بررسی</span>
               <IconChevronLeft className="h-1/2 aspect-square" />
             </Button>
@@ -309,7 +293,7 @@ const HomePage = () => {
             چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
           </h4>
           <Link href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>بررسی</span>
               <IconChevronLeft className="h-1/2 aspect-square" />
             </Button>
@@ -318,13 +302,13 @@ const HomePage = () => {
       </div>
       <Flex className="container mt-6" justify="center">
         <Link href={"/"}>
-          <Button color="foreground" shape="ghost">
+          <Button shape="ghost">
             <span>مشاهده همه سوالات</span>
             <IconArrowLeft className="h-1/2 aspect-square" />
           </Button>
         </Link>
         <Link href={"/"}>
-          <Button color="foreground" shape="ghost">
+          <Button shape="ghost">
             <span>سوال خودتان را بپرسید</span>
             <IconPencil className="h-1/2 aspect-square" />
           </Button>
@@ -346,7 +330,7 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>شرکت کنید</span>
               <IconPlus className="h-1/2 aspect-square" />
             </Button>
@@ -366,7 +350,7 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>شرکت کنید</span>
               <IconPlus className="h-1/2 aspect-square" />
             </Button>
@@ -386,7 +370,7 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>شرکت کنید</span>
               <IconPlus className="h-1/2 aspect-square" />
             </Button>
@@ -406,7 +390,7 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>شرکت کنید</span>
               <IconPlus className="h-1/2 aspect-square" />
             </Button>
@@ -426,7 +410,7 @@ const HomePage = () => {
             بهبود ظاهری.
           </p>
           <Link className="mt-3" href={"/"}>
-            <Button color="foreground" shape="outline">
+            <Button shape="outline">
               <span>شرکت کنید</span>
               <IconPlus className="h-1/2 aspect-square" />
             </Button>

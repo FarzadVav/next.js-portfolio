@@ -36,7 +36,6 @@
   --color-*: initial;
   --color-background: hsl(223, 78%, 98%);
   --color-foreground: hsl(0, 0%, 15%);
-  --color-primary: hsl(227, 74%, 50%);
   --color-success: hsl(113, 100%, 27%);
   --color-warning: hsl(45, 100%, 53%);
   --color-danger: hsl(0, 100%, 42%);
@@ -58,7 +57,7 @@
   * {
     @apply select-none;
     scrollbar-width: thin;
-    scrollbar-color: hsl(var(--primary)) transparent;
+    scrollbar-color: hsl(var(--foreground)) transparent;
 
     &:focus {
       @apply outline-none;

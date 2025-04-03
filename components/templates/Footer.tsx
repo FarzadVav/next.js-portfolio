@@ -7,24 +7,16 @@ const Footer = () => {
     <footer className="container py-10 border-t border-foreground/10 mt-10">
       <Flex justify="center">
         <Link href={"/"}>
-          <Button color="foreground" shape="ghost">
-            لینک
-          </Button>
+          <Button shape="ghost">لینک</Button>
         </Link>
         <Link href={"/"}>
-          <Button color="foreground" shape="ghost">
-            لینک
-          </Button>
+          <Button shape="ghost">لینک</Button>
         </Link>
         <Link href={"/"}>
-          <Button color="foreground" shape="ghost">
-            لینک
-          </Button>
+          <Button shape="ghost">لینک</Button>
         </Link>
         <Link href={"/"}>
-          <Button color="foreground" shape="ghost">
-            لینک
-          </Button>
+          <Button shape="ghost">لینک</Button>
         </Link>
       </Flex>
     </footer>
