@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DynamicIcon } from "lucide-react/dynamic";
 
 import Flex from "root/components/ui/Flex";
 import Space from "root/components/ui/Space";
@@ -6,7 +7,8 @@ import Badge from "root/components/ui/Badge";
 import Input from "root/components/ui/Input";
 import Button from "root/components/ui/Button";
 import InputWrapper from "root/components/ui/InputWrapper";
-import { DynamicIcon } from "lucide-react/dynamic";
+import Box from "root/components/ui/Box";
+import Image from "next/image";
 
 const HomePage = () => {
   return (
@@ -88,72 +90,65 @@ const HomePage = () => {
 
       <Space />
 
-      <Flex className="container" space="lg">
-        <Flex
-          justify="center"
-          direction="column"
-          className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3"
-        >
-          <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
-          <h2 className="font-vazir-bold text-xl mt-3">رزومه فعالیتی</h2>
-          <p className="text-center text-sm leading-relaxed">
-            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
-            بهبود ظاهری.
-          </p>
-          <Link className="mt-3" href={"/"}>
-            <Button shape="outline">مشاهده</Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="center"
-          direction="column"
-          className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3"
-        >
-          <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
-          <h2 className="font-vazir-bold text-xl mt-3">ابزار ها</h2>
-          <p className="text-center text-sm leading-relaxed">
-            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
-            بهبود ظاهری.
-          </p>
-          <Link className="mt-3" href={"/"}>
-            <Button shape="outline">مشاهده</Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="center"
-          direction="column"
-          className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3"
-        >
-          <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
-          <h2 className="font-vazir-bold text-xl mt-3">خدمات</h2>
-          <p className="text-center text-sm leading-relaxed">
-            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
-            بهبود ظاهری.
-          </p>
-          <Link className="mt-3" href={"/"}>
-            <Button shape="outline">مشاهده</Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="center"
-          direction="column"
-          className="w-1/4 ring-8 ring-transparent transition-shadow hover:ring-foreground/10 rounded-xl p-3"
-        >
-          <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
-          <h2 className="font-vazir-bold text-xl mt-3">محصولات ما</h2>
-          <p className="text-center text-sm leading-relaxed">
-            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
-            بهبود ظاهری.
-          </p>
-          <Link className="mt-3" href={"/"}>
-            <Button shape="outline">مشاهده</Button>
-          </Link>
-        </Flex>
+      <Flex className="container">
+        <Box className="w-1/4">
+          <Flex justify="center" direction="column">
+            <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
+            <h2 className="font-vazir-bold text-xl mt-3">رزومه فعالیتی</h2>
+            <p className="text-center text-sm leading-relaxed">
+              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
+              برای بهبود ظاهری.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">مشاهده</Button>
+            </Link>
+          </Flex>
+        </Box>
+
+        <Box className="w-1/4">
+          <Flex justify="center" direction="column">
+            <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
+            <h2 className="font-vazir-bold text-xl mt-3">ابزار ها</h2>
+            <p className="text-center text-sm leading-relaxed">
+              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
+              برای بهبود ظاهری.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">مشاهده</Button>
+            </Link>
+          </Flex>
+        </Box>
+        <Box className="w-1/4">
+          <Flex justify="center" direction="column">
+            <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
+            <h2 className="font-vazir-bold text-xl mt-3">خدمات</h2>
+            <p className="text-center text-sm leading-relaxed">
+              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
+              برای بهبود ظاهری.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">مشاهده</Button>
+            </Link>
+          </Flex>
+        </Box>
+        <Box className="w-1/4">
+          <Flex justify="center" direction="column">
+            <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
+            <h2 className="font-vazir-bold text-xl mt-3">محصولات ما</h2>
+            <p className="text-center text-sm leading-relaxed">
+              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
+              برای بهبود ظاهری.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">مشاهده</Button>
+            </Link>
+          </Flex>
+        </Box>
       </Flex>
 
       <Space />
 
-      <div className="container rounded-xl p-6 ring-8 ring-transparent transition-shadow hover:ring-foreground/10">
+      <Box className="container" size="lg">
         <h3 className="text-xl font-vazir-black">راهنمایی میخواهید؟ تیکت بزنید</h3>
         <p className="mt-3">
           معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا
@@ -190,7 +185,7 @@ const HomePage = () => {
             </Button>
           </Link>
         </Flex>
-      </div>
+      </Box>
 
       <Space />
 
@@ -215,10 +210,70 @@ const HomePage = () => {
       <Space size="sm" />
 
       <Flex className="container">
-        <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
-        <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
-        <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
-        <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
+        <Box className="w-1/4">
+          <Flex justify="center" direction="column">
+            <div className="w-full aspect-square bg-foreground/10 rounded-xl" />
+            <span className="font-vazir-bold text-center">
+              چگونه کارخانه خود را یک سیستم آنلاین کنیم؟
+            </span>
+            <p className="line-clamp-3 mt-1 text-center text-sm">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز است.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">بخوانید</Button>
+            </Link>
+          </Flex>
+        </Box>
+        <Box className="w-1/4">
+          <Flex justify="center" direction="column">
+            <div className="w-full aspect-square bg-foreground/10 rounded-xl" />
+            <span className="font-vazir-bold text-center">
+              چگونه کارخانه خود را یک سیستم آنلاین کنیم؟
+            </span>
+            <p className="line-clamp-3 mt-1 text-center text-sm">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز است.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">بخوانید</Button>
+            </Link>
+          </Flex>
+        </Box>
+        <Box className="w-1/4">
+          <Flex justify="center" direction="column">
+            <div className="w-full aspect-square bg-foreground/10 rounded-xl" />
+            <span className="font-vazir-bold text-center">
+              چگونه کارخانه خود را یک سیستم آنلاین کنیم؟
+            </span>
+            <p className="line-clamp-3 mt-1 text-center text-sm">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز است.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">بخوانید</Button>
+            </Link>
+          </Flex>
+        </Box>
+        <Box className="w-1/4">
+          <Flex justify="center" direction="column">
+            <div className="w-full aspect-square bg-foreground/10 rounded-xl" />
+            <span className="font-vazir-bold text-center">
+              چگونه کارخانه خود را یک سیستم آنلاین کنیم؟
+            </span>
+            <p className="line-clamp-3 mt-1 text-center text-sm">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز است.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">بخوانید</Button>
+            </Link>
+          </Flex>
+        </Box>
       </Flex>
 
       <Space size="sm" />
@@ -235,76 +290,83 @@ const HomePage = () => {
       <Space />
 
       <div className="container">
-        <Flex
-          justify="between"
-          className="p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <h4 className="font-vazir-bold">
-            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </h4>
-          <Link href={"/"}>
-            <Button shape="outline">
-              <span>بررسی</span>
-              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
-            </Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="between"
-          className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <h4 className="font-vazir-bold">
-            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </h4>
-          <Link href={"/"}>
-            <Button shape="outline">
-              <span>بررسی</span>
-              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
-            </Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="between"
-          className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <h4 className="font-vazir-bold">
-            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </h4>
-          <Link href={"/"}>
-            <Button shape="outline">
-              <span>بررسی</span>
-              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
-            </Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="between"
-          className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <h4 className="font-vazir-bold">
-            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </h4>
-          <Link href={"/"}>
-            <Button shape="outline">
-              <span>بررسی</span>
-              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
-            </Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="between"
-          className="p-6 mt-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <h4 className="font-vazir-bold">
-            چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-          </h4>
-          <Link href={"/"}>
-            <Button shape="outline">
-              <span>بررسی</span>
-              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
-            </Button>
-          </Link>
-        </Flex>
+        <Box>
+          <Flex justify="between">
+            <h4 className="font-vazir-bold">
+              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+            </h4>
+            <Link href={"/"}>
+              <Button shape="outline">
+                <span>بررسی</span>
+                <DynamicIcon className="compatible-icon-size" name="chevron-left" />
+              </Button>
+            </Link>
+          </Flex>
+        </Box>
+
+        <Space size="sm" />
+
+        <Box>
+          <Flex justify="between">
+            <h4 className="font-vazir-bold">
+              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+            </h4>
+            <Link href={"/"}>
+              <Button shape="outline">
+                <span>بررسی</span>
+                <DynamicIcon className="compatible-icon-size" name="chevron-left" />
+              </Button>
+            </Link>
+          </Flex>
+        </Box>
+
+        <Space size="sm" />
+
+        <Box>
+          <Flex justify="between">
+            <h4 className="font-vazir-bold">
+              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+            </h4>
+            <Link href={"/"}>
+              <Button shape="outline">
+                <span>بررسی</span>
+                <DynamicIcon className="compatible-icon-size" name="chevron-left" />
+              </Button>
+            </Link>
+          </Flex>
+        </Box>
+
+        <Space size="sm" />
+
+        <Box>
+          <Flex justify="between">
+            <h4 className="font-vazir-bold">
+              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+            </h4>
+            <Link href={"/"}>
+              <Button shape="outline">
+                <span>بررسی</span>
+                <DynamicIcon className="compatible-icon-size" name="chevron-left" />
+              </Button>
+            </Link>
+          </Flex>
+        </Box>
+
+        <Space size="sm" />
+
+        <Box>
+          <Flex justify="between">
+            <h4 className="font-vazir-bold">
+              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+            </h4>
+            <Link href={"/"}>
+              <Button shape="outline">
+                <span>بررسی</span>
+                <DynamicIcon className="compatible-icon-size" name="chevron-left" />
+              </Button>
+            </Link>
+          </Flex>
+        </Box>
       </div>
 
       <Space size="sm" />
@@ -327,106 +389,96 @@ const HomePage = () => {
       <Space />
 
       <Flex className="container" wrap="wrap" justify="center" space="lg">
-        <Flex
-          justify="center"
-          direction="column"
-          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <Flex>
-            <DynamicIcon className="size-7" name="users" />
-            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+        <Box className="w-[calc(33%-1rem)]">
+          <Flex justify="center" direction="column">
+            <Flex>
+              <DynamicIcon className="size-7" name="users" />
+              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+            </Flex>
+            <p className="text-center">
+              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
+              برای بهبود ظاهری.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">
+                <span>شرکت کنید</span>
+                <DynamicIcon className="compatible-icon-size" name="plus" />
+              </Button>
+            </Link>
           </Flex>
-          <p className="text-center">
-            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
-            بهبود ظاهری.
-          </p>
-          <Link className="mt-3" href={"/"}>
-            <Button shape="outline">
-              <span>شرکت کنید</span>
-              <DynamicIcon className="compatible-icon-size" name="plus" />
-            </Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="center"
-          direction="column"
-          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <Flex>
-            <DynamicIcon className="size-7" name="users" />
-            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+        </Box>
+        <Box className="w-[calc(33%-1rem)]">
+          <Flex justify="center" direction="column">
+            <Flex>
+              <DynamicIcon className="size-7" name="users" />
+              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+            </Flex>
+            <p className="text-center">
+              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
+              برای بهبود ظاهری.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">
+                <span>شرکت کنید</span>
+                <DynamicIcon className="compatible-icon-size" name="plus" />
+              </Button>
+            </Link>
           </Flex>
-          <p className="text-center">
-            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
-            بهبود ظاهری.
-          </p>
-          <Link className="mt-3" href={"/"}>
-            <Button shape="outline">
-              <span>شرکت کنید</span>
-              <DynamicIcon className="compatible-icon-size" name="plus" />
-            </Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="center"
-          direction="column"
-          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <Flex>
-            <DynamicIcon className="size-7" name="users" />
-            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+        </Box>
+        <Box className="w-[calc(33%-1rem)]">
+          <Flex justify="center" direction="column">
+            <Flex>
+              <DynamicIcon className="size-7" name="users" />
+              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+            </Flex>
+            <p className="text-center">
+              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
+              برای بهبود ظاهری.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">
+                <span>شرکت کنید</span>
+                <DynamicIcon className="compatible-icon-size" name="plus" />
+              </Button>
+            </Link>
           </Flex>
-          <p className="text-center">
-            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
-            بهبود ظاهری.
-          </p>
-          <Link className="mt-3" href={"/"}>
-            <Button shape="outline">
-              <span>شرکت کنید</span>
-              <DynamicIcon className="compatible-icon-size" name="plus" />
-            </Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="center"
-          direction="column"
-          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <Flex>
-            <DynamicIcon className="size-7" name="users" />
-            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+        </Box>
+        <Box className="w-[calc(33%-1rem)]">
+          <Flex justify="center" direction="column">
+            <Flex>
+              <DynamicIcon className="size-7" name="users" />
+              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+            </Flex>
+            <p className="text-center">
+              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
+              برای بهبود ظاهری.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">
+                <span>شرکت کنید</span>
+                <DynamicIcon className="compatible-icon-size" name="plus" />
+              </Button>
+            </Link>
           </Flex>
-          <p className="text-center">
-            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
-            بهبود ظاهری.
-          </p>
-          <Link className="mt-3" href={"/"}>
-            <Button shape="outline">
-              <span>شرکت کنید</span>
-              <DynamicIcon className="compatible-icon-size" name="plus" />
-            </Button>
-          </Link>
-        </Flex>
-        <Flex
-          justify="center"
-          direction="column"
-          className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
-        >
-          <Flex>
-            <DynamicIcon className="size-7" name="users" />
-            <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+        </Box>
+        <Box className="w-[calc(33%-1rem)]">
+          <Flex justify="center" direction="column">
+            <Flex>
+              <DynamicIcon className="size-7" name="users" />
+              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
+            </Flex>
+            <p className="text-center">
+              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
+              برای بهبود ظاهری.
+            </p>
+            <Link className="mt-3" href={"/"}>
+              <Button shape="outline">
+                <span>شرکت کنید</span>
+                <DynamicIcon className="compatible-icon-size" name="plus" />
+              </Button>
+            </Link>
           </Flex>
-          <p className="text-center">
-            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل برای
-            بهبود ظاهری.
-          </p>
-          <Link className="mt-3" href={"/"}>
-            <Button shape="outline">
-              <span>شرکت کنید</span>
-              <DynamicIcon className="compatible-icon-size" name="plus" />
-            </Button>
-          </Link>
-        </Flex>
+        </Box>
       </Flex>
     </>
   );
