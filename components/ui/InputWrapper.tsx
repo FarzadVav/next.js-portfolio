@@ -2,7 +2,8 @@ import classMerge from "root/lib/classMerge";
 import { ColorVariants, ShapeVariants, SizeVariants, RoundedVariants } from "root/types/ui.types";
 
 /* Types */
-type InputWrapperProps = React.HTMLAttributes<HTMLDivElement> & {
+type InputWrapperProps = Omit<React.LabelHTMLAttributes<HTMLLabelElement>, "htmlFor"> & {
+  htmlFor: string;
   shape?: ShapeVariants;
   color?: ColorVariants;
   size?: SizeVariants;
@@ -63,7 +64,7 @@ const InputWrapper: React.FC<InputWrapperProps> = ({ className, ...props }) => {
     className
   );
 
-  return <div className={currentClass} {...props} />;
+  return <label className={currentClass} {...props} />;
 };
 
 export default InputWrapper;

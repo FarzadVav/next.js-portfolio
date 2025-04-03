@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   IconArrowLeft,
   IconCheck,
@@ -14,9 +15,8 @@ import {
 import Flex from "root/components/ui/Flex";
 import Badge from "root/components/ui/Badge";
 import Input from "root/components/ui/Input";
-import InputWrapper from "root/components/ui/InputWrapper";
-import Link from "next/link";
 import Button from "root/components/ui/Button";
+import InputWrapper from "root/components/ui/InputWrapper";
 
 const HomePage = () => {
   return (
@@ -41,8 +41,8 @@ const HomePage = () => {
           شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای
           طراحان رایانه ای...
         </p>
-        <InputWrapper className="w-1/2 mx-auto mt-6">
-          <Input placeholder="جستجوی هرچی میخوای..." />
+        <InputWrapper className="w-1/2 mx-auto mt-6" htmlFor="global-search">
+          <Input placeholder="جستجوی هرچی میخوای..." id="global-search" />
           <IconSearch className="size-5" />
         </InputWrapper>
 
