@@ -1,15 +1,4 @@
 import Link from "next/link";
-import {
-  IconArrowLeft,
-  IconCheck,
-  IconChevronLeft,
-  IconHash,
-  IconPencil,
-  IconPlus,
-  IconSearch,
-  IconSend2,
-  IconUsersGroup,
-} from "@tabler/icons-react";
 
 import Flex from "root/components/ui/Flex";
 import Space from "root/components/ui/Space";
@@ -17,6 +6,7 @@ import Badge from "root/components/ui/Badge";
 import Input from "root/components/ui/Input";
 import Button from "root/components/ui/Button";
 import InputWrapper from "root/components/ui/InputWrapper";
+import { DynamicIcon } from "lucide-react/dynamic";
 
 const HomePage = () => {
   return (
@@ -45,52 +35,52 @@ const HomePage = () => {
         </p>
         <InputWrapper className="w-1/2 mx-auto mt-6" htmlFor="global-search">
           <Input placeholder="جستجوی هرچی میخوای..." id="global-search" />
-          <IconSearch className="size-5" />
+          <DynamicIcon className="compatible-icon-size" name="search" />
         </InputWrapper>
 
         <Flex className="mt-6 w-3/4 mx-auto" justify="center" wrap="wrap">
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>بررسی آپدیت های جدید</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>یادگیری موارد جدید</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>ارائه خدمات وب</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>مشاوره خدمات</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>تیکت پشتیبانی</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>چیت شیت های فارسی</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>محصولات استارتاپی</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>مشاوره مسیر برنامه نویسی</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>پروژه های اوپن سورس</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>ایونت های جامعه</span>
           </Badge>
           <Badge rounded="full">
-            <IconHash className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>رزومه قابل اطمینان</span>
           </Badge>
         </Flex>
@@ -173,22 +163,22 @@ const HomePage = () => {
         </p>
         <Flex className="mt-3">
           <Badge>
-            <IconCheck className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="check" />
             <span>مشاوره</span>
           </Badge>
           <Badge>
-            <IconCheck className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="check" />
             <span>مسیر یادگیری</span>
           </Badge>
           <Badge>
-            <IconCheck className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="check" />
             <span>همکاری</span>
           </Badge>
         </Flex>
         <Link href={"/"} className="mt-3">
           <Button>
             <span>تیکت بزنید</span>
-            <IconSend2 className="h-1/2 aspect-square -scale-x-100" />
+            <DynamicIcon className="compatible-icon-size -scale-x-100" name="send-horizonal" />
           </Button>
         </Link>
 
@@ -196,7 +186,7 @@ const HomePage = () => {
           <Link href={"/"}>
             <Button shape="ghost">
               <span>متنی برای راه های ارتباط با ما</span>
-              <IconArrowLeft className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="arrow-left" />
             </Button>
           </Link>
         </Flex>
@@ -237,7 +227,7 @@ const HomePage = () => {
         <Link href={"/"}>
           <Button shape="ghost">
             <span>مشاهده همه مقالات</span>
-            <IconArrowLeft className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="arrow-left" />
           </Button>
         </Link>
       </Flex>
@@ -255,7 +245,7 @@ const HomePage = () => {
           <Link href={"/"}>
             <Button shape="outline">
               <span>بررسی</span>
-              <IconChevronLeft className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
             </Button>
           </Link>
         </Flex>
@@ -269,7 +259,7 @@ const HomePage = () => {
           <Link href={"/"}>
             <Button shape="outline">
               <span>بررسی</span>
-              <IconChevronLeft className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
             </Button>
           </Link>
         </Flex>
@@ -283,7 +273,7 @@ const HomePage = () => {
           <Link href={"/"}>
             <Button shape="outline">
               <span>بررسی</span>
-              <IconChevronLeft className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
             </Button>
           </Link>
         </Flex>
@@ -297,7 +287,7 @@ const HomePage = () => {
           <Link href={"/"}>
             <Button shape="outline">
               <span>بررسی</span>
-              <IconChevronLeft className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
             </Button>
           </Link>
         </Flex>
@@ -311,7 +301,7 @@ const HomePage = () => {
           <Link href={"/"}>
             <Button shape="outline">
               <span>بررسی</span>
-              <IconChevronLeft className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="chevron-left" />
             </Button>
           </Link>
         </Flex>
@@ -323,13 +313,13 @@ const HomePage = () => {
         <Link href={"/"}>
           <Button shape="ghost">
             <span>مشاهده همه سوالات</span>
-            <IconArrowLeft className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="arrow-left" />
           </Button>
         </Link>
         <Link href={"/"}>
           <Button shape="ghost">
             <span>سوال خودتان را بپرسید</span>
-            <IconPencil className="h-1/2 aspect-square" />
+            <DynamicIcon className="compatible-icon-size" name="pencil" />
           </Button>
         </Link>
       </Flex>
@@ -343,7 +333,7 @@ const HomePage = () => {
           className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
           <Flex>
-            <IconUsersGroup className="size-7" />
+            <DynamicIcon className="size-7" name="users" />
             <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
           </Flex>
           <p className="text-center">
@@ -353,7 +343,7 @@ const HomePage = () => {
           <Link className="mt-3" href={"/"}>
             <Button shape="outline">
               <span>شرکت کنید</span>
-              <IconPlus className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="plus" />
             </Button>
           </Link>
         </Flex>
@@ -363,7 +353,7 @@ const HomePage = () => {
           className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
           <Flex>
-            <IconUsersGroup className="size-7" />
+            <DynamicIcon className="size-7" name="users" />
             <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
           </Flex>
           <p className="text-center">
@@ -373,7 +363,7 @@ const HomePage = () => {
           <Link className="mt-3" href={"/"}>
             <Button shape="outline">
               <span>شرکت کنید</span>
-              <IconPlus className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="plus" />
             </Button>
           </Link>
         </Flex>
@@ -383,7 +373,7 @@ const HomePage = () => {
           className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
           <Flex>
-            <IconUsersGroup className="size-7" />
+            <DynamicIcon className="size-7" name="users" />
             <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
           </Flex>
           <p className="text-center">
@@ -393,7 +383,7 @@ const HomePage = () => {
           <Link className="mt-3" href={"/"}>
             <Button shape="outline">
               <span>شرکت کنید</span>
-              <IconPlus className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="plus" />
             </Button>
           </Link>
         </Flex>
@@ -403,7 +393,7 @@ const HomePage = () => {
           className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
           <Flex>
-            <IconUsersGroup className="size-7" />
+            <DynamicIcon className="size-7" name="users" />
             <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
           </Flex>
           <p className="text-center">
@@ -413,7 +403,7 @@ const HomePage = () => {
           <Link className="mt-3" href={"/"}>
             <Button shape="outline">
               <span>شرکت کنید</span>
-              <IconPlus className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="plus" />
             </Button>
           </Link>
         </Flex>
@@ -423,7 +413,7 @@ const HomePage = () => {
           className="w-[calc(33%-1rem)] p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
         >
           <Flex>
-            <IconUsersGroup className="size-7" />
+            <DynamicIcon className="size-7" name="users" />
             <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
           </Flex>
           <p className="text-center">
@@ -433,7 +423,7 @@ const HomePage = () => {
           <Link className="mt-3" href={"/"}>
             <Button shape="outline">
               <span>شرکت کنید</span>
-              <IconPlus className="h-1/2 aspect-square" />
+              <DynamicIcon className="compatible-icon-size" name="plus" />
             </Button>
           </Link>
         </Flex>

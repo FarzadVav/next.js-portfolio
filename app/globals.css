@@ -86,3 +86,7 @@
 @utility center-items {
   @apply flex items-center justify-center;
 }
+
+@utility compatible-icon-size {
+  @apply h-1/2 aspect-square;
+}

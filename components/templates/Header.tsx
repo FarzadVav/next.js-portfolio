@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IconUser } from "@tabler/icons-react";
+import { DynamicIcon } from "lucide-react/dynamic";
 
 import Flex from "../ui/Flex";
 import Button from "../ui/Button";
@@ -13,7 +13,7 @@ const Header = () => {
         </Link>
         <Link href={"/"}>
           <Button shape="ghost">
-            <IconUser className="size-5" />
+            <DynamicIcon className="compatible-icon-size" name="user" />
           </Button>
         </Link>
 
