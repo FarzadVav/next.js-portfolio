@@ -8,11 +8,11 @@ import {
   IconPlus,
   IconSearch,
   IconSend2,
-  IconTicket,
   IconUsersGroup,
 } from "@tabler/icons-react";
 
 import Flex from "root/components/ui/Flex";
+import Space from "root/components/ui/Space";
 import Badge from "root/components/ui/Badge";
 import Input from "root/components/ui/Input";
 import Button from "root/components/ui/Button";
@@ -21,7 +21,9 @@ import InputWrapper from "root/components/ui/InputWrapper";
 const HomePage = () => {
   return (
     <>
-      <div className="container mt-20 relative">
+      <Space />
+
+      <div className="container relative">
         <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-0 right-0"></div>
         <div className="size-16 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-18 -right-18"></div>
         <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-36 right-6"></div>
@@ -94,7 +96,9 @@ const HomePage = () => {
         </Flex>
       </div>
 
-      <Flex className="container mt-20" space="lg">
+      <Space />
+
+      <Flex className="container" space="lg">
         <Flex
           justify="center"
           direction="column"
@@ -157,7 +161,9 @@ const HomePage = () => {
         </Flex>
       </Flex>
 
-      <div className="container mt-20 rounded-xl p-6 ring-8 ring-transparent transition-shadow hover:ring-foreground/10">
+      <Space />
+
+      <div className="container rounded-xl p-6 ring-8 ring-transparent transition-shadow hover:ring-foreground/10">
         <h3 className="text-xl font-vazir-black">راهنمایی میخواهید؟ تیکت بزنید</h3>
         <p className="mt-3">
           معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا
@@ -196,7 +202,9 @@ const HomePage = () => {
         </Flex>
       </div>
 
-      <Flex className="container mt-20" justify="center">
+      <Space />
+
+      <Flex className="container" justify="center">
         <Link href={"/"}>
           <Button>اخبار</Button>
         </Link>
@@ -213,13 +221,19 @@ const HomePage = () => {
           <Button shape="outline">آپدیت</Button>
         </Link>
       </Flex>
-      <Flex className="container mt-5">
+
+      <Space size="sm" />
+
+      <Flex className="container">
         <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
         <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
         <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
         <div className="w-1/4 h-96 bg-foreground/10 rounded-xl"></div>
       </Flex>
-      <Flex className="container mt-5" justify="center">
+
+      <Space size="sm" />
+
+      <Flex className="container" justify="center">
         <Link href={"/"}>
           <Button shape="ghost">
             <span>مشاهده همه مقالات</span>
@@ -228,7 +242,9 @@ const HomePage = () => {
         </Link>
       </Flex>
 
-      <div className="container mt-20">
+      <Space />
+
+      <div className="container">
         <Flex
           justify="between"
           className="p-6 rounded-xl ring-8 ring-transparent transition-shadow hover:ring-foreground/10"
@@ -300,7 +316,10 @@ const HomePage = () => {
           </Link>
         </Flex>
       </div>
-      <Flex className="container mt-6" justify="center">
+
+      <Space size="sm" />
+
+      <Flex className="container" justify="center">
         <Link href={"/"}>
           <Button shape="ghost">
             <span>مشاهده همه سوالات</span>
@@ -315,7 +334,9 @@ const HomePage = () => {
         </Link>
       </Flex>
 
-      <Flex className="container mt-20" wrap="wrap" justify="center" space="lg">
+      <Space />
+
+      <Flex className="container" wrap="wrap" justify="center" space="lg">
         <Flex
           justify="center"
           direction="column"

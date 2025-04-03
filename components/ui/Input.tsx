@@ -1,13 +1,8 @@
 import classMerge from "root/lib/classMerge";
-import { ColorVariants, ShapeVariants, SizeVariants, RoundedVariants } from "root/types/ui.types";
 
 /* Types */
 type InputProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, "id"> & {
   id: string;
-  shape?: ShapeVariants;
-  color?: ColorVariants;
-  size?: SizeVariants;
-  rounded?: RoundedVariants;
 };
 
 /* Constants */
