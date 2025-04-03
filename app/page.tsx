@@ -91,7 +91,7 @@ const HomePage = () => {
       <Space />
 
       <Flex className="container">
-        <Box className="w-1/4">
+        <Box className="w-1/4" size="sm">
           <Flex justify="center" direction="column">
             <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
             <h2 className="font-vazir-bold text-xl mt-3">رزومه فعالیتی</h2>
@@ -105,7 +105,7 @@ const HomePage = () => {
           </Flex>
         </Box>
 
-        <Box className="w-1/4">
+        <Box className="w-1/4" size="sm">
           <Flex justify="center" direction="column">
             <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
             <h2 className="font-vazir-bold text-xl mt-3">ابزار ها</h2>
@@ -118,7 +118,7 @@ const HomePage = () => {
             </Link>
           </Flex>
         </Box>
-        <Box className="w-1/4">
+        <Box className="w-1/4" size="sm">
           <Flex justify="center" direction="column">
             <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
             <h2 className="font-vazir-bold text-xl mt-3">خدمات</h2>
@@ -131,7 +131,7 @@ const HomePage = () => {
             </Link>
           </Flex>
         </Box>
-        <Box className="w-1/4">
+        <Box className="w-1/4" size="sm">
           <Flex justify="center" direction="column">
             <div className="w-3/4 aspect-square rounded-full bg-foreground/10"></div>
             <h2 className="font-vazir-bold text-xl mt-3">محصولات ما</h2>
@@ -210,7 +210,7 @@ const HomePage = () => {
       <Space size="sm" />
 
       <Flex className="container">
-        <Box className="w-1/4">
+        <Box className="w-1/4" size="sm">
           <Flex justify="center" direction="column">
             <div className="w-full aspect-square bg-foreground/10 rounded-xl" />
             <span className="font-vazir-bold text-center">
@@ -226,7 +226,7 @@ const HomePage = () => {
             </Link>
           </Flex>
         </Box>
-        <Box className="w-1/4">
+        <Box className="w-1/4" size="sm">
           <Flex justify="center" direction="column">
             <div className="w-full aspect-square bg-foreground/10 rounded-xl" />
             <span className="font-vazir-bold text-center">
@@ -242,7 +242,7 @@ const HomePage = () => {
             </Link>
           </Flex>
         </Box>
-        <Box className="w-1/4">
+        <Box className="w-1/4" size="sm">
           <Flex justify="center" direction="column">
             <div className="w-full aspect-square bg-foreground/10 rounded-xl" />
             <span className="font-vazir-bold text-center">
@@ -258,7 +258,7 @@ const HomePage = () => {
             </Link>
           </Flex>
         </Box>
-        <Box className="w-1/4">
+        <Box className="w-1/4" size="sm">
           <Flex justify="center" direction="column">
             <div className="w-full aspect-square bg-foreground/10 rounded-xl" />
             <span className="font-vazir-bold text-center">

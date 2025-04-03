@@ -11,7 +11,7 @@ type BoxProps = React.HTMLAttributes<HTMLDivElement> & {
 type Rounded = Exclude<RoundedVariants, "full">;
 
 /* Constants */
-const baseClasses = "ring-transparent transition-shadow";
+const baseClasses = "ring-transparent transition-shadow ring-8";
 
 const colorVariants: Record<ColorVariants, string> = {
   foreground: "hover:ring-foreground/10",
@@ -21,9 +21,9 @@ const colorVariants: Record<ColorVariants, string> = {
 };
 
 const sizeVariants: Record<SizeVariants, string> = {
-  sm: "ring-4 p-3",
-  normal: "ring-8 p-6",
-  lg: "ring-12 p-9",
+  sm: "p-3",
+  normal: "p-6",
+  lg: "p-9",
 };
 
 const roundedVariants: Record<Rounded, string> = {
