@@ -4,14 +4,15 @@ import { ColorVariants, RoundedVariants, SizeVariants } from "root/types/ui.type
 /* Types */
 type BoxProps = React.HTMLAttributes<HTMLDivElement> & {
   color?: ColorVariants;
-  size?: SizeVariants;
+  space?: SizeVariants;
+  ring?: SizeVariants;
   rounded?: Rounded;
 };
 
 type Rounded = Exclude<RoundedVariants, "full">;
 
 /* Constants */
-const baseClasses = "ring-transparent transition-shadow ring-8";
+const baseClasses = "ring-transparent transition-shadow";
 
 const colorVariants: Record<ColorVariants, string> = {
   foreground: "hover:ring-foreground/10",
@@ -20,10 +21,16 @@ const colorVariants: Record<ColorVariants, string> = {
   warning: "hover:ring-warning/10",
 };
 
-const sizeVariants: Record<SizeVariants, string> = {
+const spaceVariants: Record<SizeVariants, string> = {
   sm: "p-3",
   normal: "p-6",
   lg: "p-9",
+};
+
+const ringVariants: Record<SizeVariants, string> = {
+  sm: "ring-4",
+  normal: "ring-8",
+  lg: "ring-12",
 };
 
 const roundedVariants: Record<Rounded, string> = {
@@ -37,7 +44,8 @@ const Box: React.FC<BoxProps> = ({ className, ...props }) => {
   const currentClass = classMerge(
     baseClasses,
     colorVariants[props.color ?? "foreground"],
-    sizeVariants[props.size ?? "normal"],
+    spaceVariants[props.space ?? "normal"],
+    ringVariants[props.ring ?? "normal"],
     roundedVariants[props.rounded ?? "lg"],
     className
   );
