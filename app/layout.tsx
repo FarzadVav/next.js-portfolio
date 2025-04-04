@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PropsWithChildren } from "react";
 
 import "./globals.css";
-import Header from "root/components/templates/Header";
-import Footer from "root/components/templates/Footer";
+import Header from "root/components/templates/Header/Header";
+import Footer from "root/components/templates/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",

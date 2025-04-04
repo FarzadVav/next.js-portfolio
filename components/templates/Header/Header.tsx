@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { DynamicIcon } from "lucide-react/dynamic";
 
-import Flex from "../ui/Flex";
-import Button from "../ui/Button";
-import DropDown from "../ui/DropDown";
-import DropDownWrapper from "../ui/DropDownWrapper";
+import Flex from "../../ui/Flex/Index";
+import Button from "../../ui/Button/Index";
+import DropDown from "../../ui/DropDown/Index";
+import DropDownWrapper from "../../ui/DropDown/Wrapper";
 
 const Header = () => {
   return (

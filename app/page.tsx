@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { DynamicIcon } from "lucide-react/dynamic";
 
-import Box from "root/components/ui/Box";
-import Flex from "root/components/ui/Flex";
-import Space from "root/components/ui/Space";
-import Badge from "root/components/ui/Badge";
-import Input from "root/components/ui/Input";
-import Button from "root/components/ui/Button";
-import InputWrapper from "root/components/ui/InputWrapper";
+import Box from "root/components/ui/Box/Index";
+import Flex from "root/components/ui/Flex/Index";
+import Space from "root/components/ui/Space/Index";
+import Badge from "root/components/ui/Badge/Index";
+import Input from "root/components/ui/Input/Index";
+import Button from "root/components/ui/Button/Index";
+import InputWrapper from "root/components/ui/Input/Wrapper";
 
 const HomePage = () => {
   return (

@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import Flex from "../ui/Flex";
-import Space from "../ui/Space";
-import Button from "../ui/Button";
+import Flex from "../../ui/Flex/Index";
+import Space from "../../ui/Space/Index";
+import Button from "../../ui/Button/Index";
 
 const Footer = () => {
   return (
