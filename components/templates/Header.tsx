@@ -11,7 +11,6 @@ const Header = () => {
         <Link href={"/"}>
           <Button>
             <span>شروع کنید</span>
-            {/* <DynamicIcon name="user" className="compatible-icon-size" /> */}
           </Button>
         </Link>
 
@@ -40,7 +39,7 @@ const Header = () => {
         </Flex>
 
         <Link href={"/"}>
-          <Button shape="ghost">
+          <Button shape="outline">
             <span>شما</span>
             <DynamicIcon name="user" className="compatible-icon-size" />
           </Button>
