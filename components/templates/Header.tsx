@@ -9,28 +9,41 @@ const Header = () => {
     <header className="border-b border-foreground/10">
       <Flex className="container h-20">
         <Link href={"/"}>
-          <Button className="font-vazir-bold">شروع پروژه</Button>
-        </Link>
-        <Link href={"/"}>
-          <Button shape="ghost">
-            <DynamicIcon className="compatible-icon-size" name="user" />
+          <Button>
+            <span>شروع کنید</span>
+            {/* <DynamicIcon name="user" className="compatible-icon-size" /> */}
           </Button>
         </Link>
 
         <Flex className="mx-auto">
           <Link href={"/"}>
+            <Button shape="ghost">
+              <span>خدمات</span>
+              <DynamicIcon name="chevron-down" className="compatible-icon-size" />
+            </Button>
+          </Link>
+          <Link href={"/"}>
             <Button shape="ghost">مقالات</Button>
           </Link>
           <Link href={"/"}>
-            <Button shape="ghost">درباره من</Button>
+            <Button shape="ghost">پرسش و پاسخ</Button>
           </Link>
           <Link href={"/"}>
-            <Button shape="ghost">ارتباط با من</Button>
+            <Button shape="ghost">تیکت</Button>
+          </Link>
+          <Link href={"/"}>
+            <Button shape="ghost">
+              <span>تیم ایکس کد</span>
+              <DynamicIcon name="chevron-down" className="compatible-icon-size" />
+            </Button>
           </Link>
         </Flex>
 
         <Link href={"/"}>
-          <Button shape="outline">تیکت پشتیبانی</Button>
+          <Button shape="ghost">
+            <span>شما</span>
+            <DynamicIcon name="user" className="compatible-icon-size" />
+          </Button>
         </Link>
       </Flex>
     </header>
