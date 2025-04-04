@@ -11,6 +11,11 @@ const Header = () => {
         <Link href={"/"}>
           <Button className="font-vazir-bold">شروع پروژه</Button>
         </Link>
+        <Link href={"/"}>
+          <Button shape="ghost">
+            <DynamicIcon className="compatible-icon-size" name="user" />
+          </Button>
+        </Link>
 
         <Flex className="mx-auto">
           <Link href={"/"}>
@@ -24,11 +29,6 @@ const Header = () => {
           </Link>
         </Flex>
 
-        <Link href={"/"}>
-          <Button shape="ghost">
-            <DynamicIcon className="compatible-icon-size" name="user" />
-          </Button>
-        </Link>
         <Link href={"/"}>
           <Button shape="outline">تیکت پشتیبانی</Button>
         </Link>
