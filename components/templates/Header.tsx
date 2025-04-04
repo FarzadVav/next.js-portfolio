@@ -3,6 +3,8 @@ import { DynamicIcon } from "lucide-react/dynamic";
 
 import Flex from "../ui/Flex";
 import Button from "../ui/Button";
+import DropDown from "../ui/DropDown";
+import DropDownWrapper from "../ui/DropDownWrapper";
 
 const Header = () => {
   return (
@@ -15,12 +17,24 @@ const Header = () => {
         </Link>
 
         <Flex className="mx-auto">
-          <Link href={"/"}>
+          <DropDownWrapper>
             <Button shape="ghost">
               <span>خدمات</span>
               <DynamicIcon name="chevron-down" className="compatible-icon-size" />
             </Button>
-          </Link>
+
+            <DropDown>
+              <Link href={"/"}>
+                <Button shape="ghost">سفارش پروژه</Button>
+              </Link>
+              <Link href={"/"}>
+                <Button shape="ghost">محصلات ما</Button>
+              </Link>
+              <Link href={"/"}>
+                <Button shape="ghost">ابزار ها</Button>
+              </Link>
+            </DropDown>
+          </DropDownWrapper>
           <Link href={"/"}>
             <Button shape="ghost">مقالات</Button>
           </Link>
@@ -30,12 +44,24 @@ const Header = () => {
           <Link href={"/"}>
             <Button shape="ghost">تیکت</Button>
           </Link>
-          <Link href={"/"}>
+          <DropDownWrapper>
             <Button shape="ghost">
               <span>تیم ایکس کد</span>
               <DynamicIcon name="chevron-down" className="compatible-icon-size" />
             </Button>
-          </Link>
+
+            <DropDown>
+              <Link href={"/"}>
+                <Button shape="ghost">رزومه / درباره ما</Button>
+              </Link>
+              <Link href={"/"}>
+                <Button shape="ghost">ارتباط با ما</Button>
+              </Link>
+              <Link href={"/"}>
+                <Button shape="ghost">جامعه</Button>
+              </Link>
+            </DropDown>
+          </DropDownWrapper>
         </Flex>
 
         <Link href={"/"}>
