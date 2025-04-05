@@ -10,7 +10,7 @@ type SpaceProps = React.HTMLAttributes<HTMLDivElement> & {
 type Direction = "top" | "bottom" | "vertical";
 
 /* Constants */
-const baseClasses = "bg-transparent w-full h-full peer";
+const baseClasses = "";
 
 const sizeVariants: Record<Direction, Record<SizeVariants, string>> = {
   top: {
