@@ -2,7 +2,7 @@ import classMerge from "root/lib/classMerge";
 import { SizeVariants } from "root/types/ui.types";
 
 /* Types */
-type Direction = "row" | "column";
+type Direction = "row" | "column" | "rowReverse" | "columnReverse";
 
 type Align = "start" | "center" | "end";
 
@@ -29,7 +29,9 @@ const spacingVariants: Record<SizeVariants, string> = {
 
 const directionVariants: Record<Direction, string> = {
   row: "flex-row",
+  rowReverse: "flex-row-reverse",
   column: "flex-col",
+  columnReverse: "flex-col-reverse",
 };
 
 const alignVariants: Record<Align, string> = {
