@@ -78,7 +78,7 @@ const ProjectPage = () => {
                 <span>ثبت سفارش</span>
                 <DynamicIcon name="check-circle" className="compatible-icon-size" />
               </Button>
-              <Link className="w-1/2" href={`/project/${1}`}>
+              <Link className="w-1/2" href={`/services/${1}`}>
                 <Button className="w-full" shape="ghost">
                   بیشتر بخوانید
                 </Button>
