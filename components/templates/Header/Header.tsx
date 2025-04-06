@@ -8,7 +8,7 @@ import DropDownWrapper from "../../ui/DropDown/Wrapper";
 
 const Header = () => {
   return (
-    <header className="border-b border-foreground/10">
+    <header className="bg-background border-b border-foreground/10 sticky top-0 z-20">
       <Flex className="container h-20">
         <Link href={"/"}>
           <Button>

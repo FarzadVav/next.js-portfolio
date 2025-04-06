@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { DynamicIcon } from "lucide-react/dynamic";
 
 import Box from "root/components/ui/Box/Index";
@@ -6,8 +9,13 @@ import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
+import PageModal from "root/components/ui/PageModal/Index";
+import PageModalHeader from "root/components/ui/PageModal/Header";
+import PageModalContent from "root/components/ui/PageModal/Content";
 
 const ProjectPage = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <>
       <Space />
@@ -66,7 +74,7 @@ const ProjectPage = () => {
             </ul>
             <Space size="sm" />
             <Flex>
-              <Button className="w-1/2">
+              <Button className="w-1/2" onClick={() => setOpen(true)}>
                 <span>ثبت سفارش</span>
                 <DynamicIcon name="check-circle" className="compatible-icon-size" />
               </Button>
@@ -133,6 +141,25 @@ const ProjectPage = () => {
           </div>
         </Flex>
       </div>
+
+      <PageModal isOpen={isOpen} closeHandler={() => setOpen(false)}>
+        <PageModalHeader title="ثبت پروژه ربات تلگرام" />
+
+        <PageModalContent>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laudantium non
+            veritatis facilis perferendis ipsam fuga fugit perspiciatis ea, dolores nostrum
+            quibusdam, dolorum dolore soluta, aliquid deleniti repudiandae officia. Impedit iste,
+            laboriosam delectus doloribus assumenda esse quo soluta sunt vero in placeat dolorem.
+            Enim repellat nihil, harum saepe ullam iusto corporis ea! Voluptate cum a porro
+            dignissimos officiis? Totam delectus aperiam blanditiis dolores. Inventore obcaecati
+            tempore a maxime, nesciunt consequuntur repudiandae cumque, delectus temporibus
+            repellendus ipsa dolorum veritatis animi! Nemo aliquam ipsam hic repudiandae ab velit
+            nam voluptate esse accusantium, omnis doloribus accusamus cumque reprehenderit, quasi
+            consequatur vero impedit corporis.
+          </p>
+        </PageModalContent>
+      </PageModal>
     </>
   );
 };

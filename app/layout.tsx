@@ -14,9 +14,11 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="fa" dir="rtl">
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <div className="transition-transform duration-500" id="root">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
