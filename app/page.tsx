@@ -8,6 +8,7 @@ import Badge from "root/components/ui/Badge/Index";
 import Input from "root/components/ui/Input/Index";
 import Button from "root/components/ui/Button/Index";
 import InputWrapper from "root/components/ui/Input/Wrapper";
+import HeroSection from "root/components/templates/HeroSection/Index";
 
 const HomePage = () => {
   return (
@@ -15,15 +16,7 @@ const HomePage = () => {
       <Space />
 
       <div className="container relative">
-        <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-0 right-0"></div>
-        <div className="size-16 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-18 -right-18"></div>
-        <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-36 right-6"></div>
-        <div className="size-12 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-54 -right-16"></div>
-
-        <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-0 left-0"></div>
-        <div className="size-16 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-18 -left-18"></div>
-        <div className="size-9 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-36 left-6"></div>
-        <div className="size-12 rounded-lg bg-foreground ring-8 ring-foreground/10 absolute top-54 -left-16"></div>
+        <HeroSection />
 
         <h1 className="text-4xl font-kalameh-black text-center leading-relaxed">
           مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
@@ -38,50 +31,49 @@ const HomePage = () => {
           <Input placeholder="جستجوی هرچی میخوای..." id="global-search" />
           <DynamicIcon className="compatible-icon-size" name="search" />
         </InputWrapper>
-
         <Flex className="mt-6 w-3/4 mx-auto" justify="center" wrap="wrap">
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>بررسی آپدیت های جدید</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>یادگیری موارد جدید</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>ارائه خدمات وب</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>مشاوره خدمات</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>تیکت پشتیبانی</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>چیت شیت های فارسی</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>محصولات استارتاپی</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>مشاوره مسیر برنامه نویسی</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>پروژه های اوپن سورس</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>ایونت های جامعه</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="hash" />
+            <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>رزومه قابل اطمینان</span>
           </Badge>
         </Flex>
