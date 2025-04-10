@@ -12,22 +12,16 @@ type BoxProps = React.HTMLAttributes<HTMLDivElement> & {
 const baseClasses = "border-2 border-transparent transition-colors";
 
 const colorVariants: Record<ColorVariantsT, string> = {
-  foreground: "hover:ring-border/10",
-  danger: "hover:ring-border/10",
-  success: "hover:ring-border/10",
-  warning: "hover:ring-border/10",
+  foreground: "hover:border-foreground/10",
+  danger: "hover:border-danger/10",
+  success: "hover:border-success/10",
+  warning: "hover:border-warning/10",
 };
 
 const spaceVariants: Record<SizeVariantsT, string> = {
   sm: "p-3",
   normal: "p-6",
   lg: "p-9",
-};
-
-const ringVariants: Record<SizeVariantsT, string> = {
-  sm: "ring-4",
-  normal: "ring-8",
-  lg: "ring-12",
 };
 
 const roundedVariants: Record<SizeVariantsT, string> = {

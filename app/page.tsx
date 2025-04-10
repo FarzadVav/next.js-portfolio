@@ -40,47 +40,47 @@ const HomePage = () => {
         </InputWrapper>
 
         <Flex className="mt-6 w-3/4 mx-auto" justify="center" wrap="wrap">
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>بررسی آپدیت های جدید</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>یادگیری موارد جدید</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>ارائه خدمات وب</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>مشاوره خدمات</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>تیکت پشتیبانی</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>چیت شیت های فارسی</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>محصولات استارتاپی</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>مشاوره مسیر برنامه نویسی</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>پروژه های اوپن سورس</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>ایونت های جامعه</span>
           </Badge>
-          <Badge rounded="full">
+          <Badge>
             <DynamicIcon className="compatible-icon-size" name="hash" />
             <span>رزومه قابل اطمینان</span>
           </Badge>
@@ -147,7 +147,7 @@ const HomePage = () => {
 
       <Space />
 
-      <Box className="container" space="lg" ring="lg">
+      <Box className="container" space="lg">
         <h3 className="text-xl font-vazir-black">راهنمایی میخواهید؟ تیکت بزنید</h3>
         <p className="mt-3">
           معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا
