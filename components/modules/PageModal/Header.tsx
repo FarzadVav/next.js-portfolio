@@ -1,7 +1,7 @@
 import { HTMLAttributes, use } from "react";
 import { DynamicIcon } from "lucide-react/dynamic";
 
-import Button from "../Button/Index";
+import Button from "../../ui/Button/Index";
 import classMerge from "root/lib/classMerge";
 import { PageModalContext } from "./Context";
 

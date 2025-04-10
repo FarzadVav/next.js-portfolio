@@ -9,9 +9,9 @@ import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
-import PageModal from "root/components/ui/PageModal/Index";
-import PageModalHeader from "root/components/ui/PageModal/Header";
-import PageModalContent from "root/components/ui/PageModal/Content";
+import PageModal from "root/components/modules/PageModal/Index";
+import PageModalHeader from "root/components/modules/PageModal/Header";
+import PageModalContent from "root/components/modules/PageModal/Content";
 
 const ProjectPage = () => {
   const [isOpen, setOpen] = useState(false);
