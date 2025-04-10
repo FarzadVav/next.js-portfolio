@@ -1,13 +1,13 @@
 // Base variants type that are shared across components
 
-export type ShapeVariants = "fill" | "soft" | "outline" | "ghost";
+export type ShapeVariantsT = "fill" | "soft" | "outline" | "ghost";
 
-export type ColorVariants =
+export type ColorVariantsT =
   | "foreground"
   | "danger"
   | "success"
   | "warning";
 
-export type SizeVariants = "sm" | "normal" | "lg";
+export type AllSizeVariantsT = "xs" | "sm" | "normal" | "lg" | "xl";
 
-export type RoundedVariants = "sm" | "normal" | "lg" | "full";
+export type SizeVariantsT = Extract<AllSizeVariantsT, "sm" | "normal" | "lg">;

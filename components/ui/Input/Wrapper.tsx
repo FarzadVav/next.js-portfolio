@@ -1,20 +1,20 @@
 import classMerge from "root/lib/classMerge";
-import { ColorVariants, ShapeVariants, SizeVariants, RoundedVariants } from "root/types/ui.types";
+import { ColorVariantsT, ShapeVariantsT, SizeVariantsT } from "root/types/ui.types";
 
 /* Types */
 type InputWrapperProps = Omit<React.LabelHTMLAttributes<HTMLLabelElement>, "htmlFor"> & {
   htmlFor: string;
-  shape?: ShapeVariants;
-  color?: ColorVariants;
-  size?: SizeVariants;
-  rounded?: RoundedVariants;
+  shape?: ShapeVariantsT;
+  color?: ColorVariantsT;
+  size?: SizeVariantsT;
+  rounded?: SizeVariantsT;
 };
 
 /* Constants */
 const baseClasses =
   "ring-4 ring-transparent w-full row-items cursor-pointer transition-all relative disabled:opacity-50 disabled:cursor-not-allowed";
 
-const styleVariants: Record<ColorVariants, Record<ShapeVariants, string>> = {
+const styleVariants: Record<ColorVariantsT, Record<ShapeVariantsT, string>> = {
   foreground: {
     fill: "bg-foreground text-background focus-within:ring-foreground/10",
     soft: "bg-foreground/10 text-foreground focus-within:bg-transparent focus-within:ring-foreground/10",
@@ -41,17 +41,16 @@ const styleVariants: Record<ColorVariants, Record<ShapeVariants, string>> = {
   },
 };
 
-const sizeVariants: Record<SizeVariants, string> = {
+const sizeVariants: Record<SizeVariantsT, string> = {
   sm: "px-3 h-8 text-sm gap-2",
   normal: "px-5 h-10 text-base gap-3",
   lg: "px-6 h-12 text-lg gap-4",
 };
 
-const roundedVariants: Record<RoundedVariants, string> = {
+const roundedVariants: Record<SizeVariantsT, string> = {
   sm: "rounded",
   normal: "rounded-lg",
   lg: "rounded-xl",
-  full: "rounded-full",
 };
 
 /* Component */

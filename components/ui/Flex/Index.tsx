@@ -1,5 +1,5 @@
 import classMerge from "root/lib/classMerge";
-import { SizeVariants } from "root/types/ui.types";
+import { AllSizeVariantsT } from "root/types/ui.types";
 
 /* Types */
 type Direction = "row" | "column" | "rowReverse" | "columnReverse";
@@ -11,9 +11,10 @@ type Justify = "start" | "center" | "end" | "around" | "evenly" | "between";
 type Wrap = "wrap" | "reverse" | "nowrap";
 
 type FlexProps = React.ButtonHTMLAttributes<HTMLDivElement> & {
-  space?: SizeVariants;
+  space?: AllSizeVariantsT;
   direction?: Direction;
   align?: Align;
+
   justify?: Justify;
   wrap?: Wrap;
 };
@@ -21,10 +22,12 @@ type FlexProps = React.ButtonHTMLAttributes<HTMLDivElement> & {
 /* Constants */
 const baseClasses = "flex";
 
-const spacingVariants: Record<SizeVariants, string> = {
+const spacingVariants: Record<AllSizeVariantsT, string> = {
+  xs: "gap-0.5",
   sm: "gap-1.5",
   normal: "gap-3",
   lg: "gap-6",
+  xl: "gap-12",
 };
 
 const directionVariants: Record<Direction, string> = {
