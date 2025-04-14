@@ -41,9 +41,6 @@ const Header = () => {
           <Link href={"/"}>
             <Button shape="ghost">پرسش و پاسخ</Button>
           </Link>
-          <Link href={"/"}>
-            <Button shape="ghost">تیکت</Button>
-          </Link>
           <DropDownWrapper>
             <Button shape="ghost">
               <span>تیم ایکس کد</span>
@@ -58,7 +55,7 @@ const Header = () => {
                 <Button shape="ghost">ارتباط با ما</Button>
               </Link>
               <Link href={"/"}>
-                <Button shape="ghost">جامعه</Button>
+                <Button shape="ghost">تیکت و پشتیبانی</Button>
               </Link>
             </DropDown>
           </DropDownWrapper>
