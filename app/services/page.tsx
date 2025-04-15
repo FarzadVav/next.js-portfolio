@@ -11,6 +11,7 @@ import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
 import Paragraph from "root/components/ui/Paragraph";
 import Heading from "root/components/ui/Heading/Index";
+import PageHero from "root/components/modules/PageHero/Index";
 import PageModal from "root/components/modules/PageModal/Index";
 import PageModalHeader from "root/components/modules/PageModal/Header";
 import PageModalContent from "root/components/modules/PageModal/Content";
@@ -22,22 +23,11 @@ const ProjectPage = () => {
     <>
       <Space />
 
-      <Flex className="container" space="lg">
-        <div className="size-44 min-w-44 rounded-full bg-foreground/10"></div>
-
-        <div>
-          <Heading>
-            <h1>بیاید باهم پروژه های خفن رو پیاده کنیم</h1>
-          </Heading>
-          <Space size="sm" />
-          <Paragraph>
-            لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و
-            کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥
-            شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای
-            طراحان رایانه ای...
-          </Paragraph>
-        </div>
-      </Flex>
+      <PageHero
+        src=""
+        title="بیاید باهم پروژه های خفن رو پیاده کنیم"
+        description="لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥 شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان رایانه ای..."
+      />
 
       <Space />
 
