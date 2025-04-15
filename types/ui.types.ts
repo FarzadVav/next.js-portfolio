@@ -8,6 +8,8 @@ export type ColorVariantsT =
   | "success"
   | "warning";
 
+export type FontVariantsT = "kalameh" | "vazir"
+
 export type AllSizeVariantsT = "xs" | "sm" | "normal" | "lg" | "xl";
 
 export type SizeVariantsT = Extract<AllSizeVariantsT, "sm" | "normal" | "lg">;

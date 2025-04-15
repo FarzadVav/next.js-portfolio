@@ -7,6 +7,8 @@ import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Input from "root/components/ui/Input/Index";
 import Button from "root/components/ui/Button/Index";
+import Paragraph from "root/components/ui/Paragraph";
+import Heading from "root/components/ui/Heading/Index";
 import InputWrapper from "root/components/ui/Input/Wrapper";
 import HeroSection from "root/components/templates/landing/HeroSection/Index";
 import Consultation from "root/components/templates/landing/Consultation/Index";
@@ -19,20 +21,25 @@ const HomePage = () => {
       <div className="container relative">
         <HeroSection />
 
-        <h1 className="text-4xl font-kalameh-black text-center leading-relaxed">
-          مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
-        </h1>
-        <p className="mt-6 w-3/4 text-center mx-auto">
+        <Heading size="xl">
+          <h1 className="text-center">
+            مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
+          </h1>
+        </Heading>
+        <Space size="normal" />
+        <Paragraph className="w-3/4 text-center mx-auto">
           لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و
           کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥
           شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای
           طراحان رایانه ای...
-        </p>
-        <InputWrapper className="w-1/2 mx-auto mt-6" htmlFor="global-search">
+        </Paragraph>
+        <Space size="normal" />
+        <InputWrapper className="w-1/2 mx-auto" htmlFor="global-search">
           <Input placeholder="جستجوی هرچی میخوای..." id="global-search" />
           <DynamicIcon className="compatible-icon-size" name="search" />
         </InputWrapper>
-        <Flex className="mt-6 w-3/4 mx-auto" justify="center" wrap="wrap">
+        <Space size="normal" />
+        <Flex className="w-3/4 mx-auto" justify="center" wrap="wrap">
           <Badge>
             <DynamicIcon className="compatible-icon-size" name="sparkles" />
             <span>بررسی آپدیت های جدید</span>

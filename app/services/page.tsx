@@ -9,6 +9,8 @@ import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
+import Paragraph from "root/components/ui/Paragraph";
+import Heading from "root/components/ui/Heading/Index";
 import PageModal from "root/components/modules/PageModal/Index";
 import PageModalHeader from "root/components/modules/PageModal/Header";
 import PageModalContent from "root/components/modules/PageModal/Content";
@@ -24,16 +26,16 @@ const ProjectPage = () => {
         <div className="size-44 min-w-44 rounded-full bg-foreground/10"></div>
 
         <div>
-          <h1 className="text-xl font-kalameh-black leading-relaxed">
-            بیاید باهم پروژه های خفن رو پیاده کنیم
-          </h1>
+          <Heading>
+            <h1>بیاید باهم پروژه های خفن رو پیاده کنیم</h1>
+          </Heading>
           <Space size="sm" />
-          <p>
+          <Paragraph>
             لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و
             کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥
             شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای
             طراحان رایانه ای...
-          </p>
+          </Paragraph>
         </div>
       </Flex>
 
@@ -44,7 +46,9 @@ const ProjectPage = () => {
           <Box key={Math.random()}>
             <Flex>
               <div className="size-7 rounded-full bg-foreground/10"></div>
-              <h2 className="text-xl font-vazir-black">اپلیکیشن فرانت اند</h2>
+              <Heading font="vazir">
+                <h2>اپلیکیشن فرانت اند</h2>
+              </Heading>
             </Flex>
             <Space size="sm" />
             <Flex className="overflow-x-auto pb-1">
@@ -61,11 +65,11 @@ const ProjectPage = () => {
               <Badge>PWA</Badge>
             </Flex>
             <Space size="sm" />
-            <p className="leading-relaxed">
+            <Paragraph>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
               شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
-            </p>
+            </Paragraph>
             <Space size="sm" />
             <ul className="space-y-1 list-disc pr-3">
               <li>داشبورد ادمین</li>
@@ -94,11 +98,14 @@ const ProjectPage = () => {
         <Flex>
           <div className="size-16 min-w-16 rounded-full bg-foreground/10"></div>
           <div>
-            <h3 className="text-xl font-vazir-black">ثبت درخواست پروژه</h3>
-            <p className="mt-2">
+            <Heading>
+              <h3>ثبت درخواست پروژه</h3>
+            </Heading>
+            <Space size="xs" />
+            <Paragraph>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است...
-            </p>
+            </Paragraph>
           </div>
         </Flex>
 
@@ -107,11 +114,14 @@ const ProjectPage = () => {
         <Flex justify="end" dir="ltr">
           <div className="size-16 min-w-16 rounded-full bg-foreground/10"></div>
           <div>
-            <h3 className="text-xl font-vazir-black">ثبت درخواست پروژه</h3>
-            <p className="mt-2">
+            <Heading>
+              <h3>ثبت درخواست پروژه</h3>
+            </Heading>
+            <Space size="xs" />
+            <Paragraph>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است...
-            </p>
+            </Paragraph>
           </div>
         </Flex>
 
@@ -120,11 +130,14 @@ const ProjectPage = () => {
         <Flex>
           <div className="size-16 min-w-16 rounded-full bg-foreground/10"></div>
           <div>
-            <h3 className="text-xl font-vazir-black">ثبت درخواست پروژه</h3>
-            <p className="mt-2">
+            <Heading>
+              <h3>ثبت درخواست پروژه</h3>
+            </Heading>
+            <Space size="xs" />
+            <Paragraph>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است...
-            </p>
+            </Paragraph>
           </div>
         </Flex>
 
@@ -133,11 +146,14 @@ const ProjectPage = () => {
         <Flex justify="end" dir="ltr">
           <div className="size-16 min-w-16 rounded-full bg-foreground/10"></div>
           <div>
-            <h3 className="text-xl font-vazir-black">ثبت درخواست پروژه</h3>
-            <p className="mt-2">
+            <Heading>
+              <h3>ثبت درخواست پروژه</h3>
+            </Heading>
+            <Space size="xs" />
+            <Paragraph>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است...
-            </p>
+            </Paragraph>
           </div>
         </Flex>
       </div>
