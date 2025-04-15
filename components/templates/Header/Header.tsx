@@ -5,6 +5,7 @@ import Flex from "../../ui/Flex/Index";
 import Button from "../../ui/Button/Index";
 import DropDown from "../../ui/DropDown/Index";
 import DropDownWrapper from "../../ui/DropDown/Wrapper";
+import { ROUTES } from "root/constants/routes.constants";
 
 const Header = () => {
   return (
@@ -24,10 +25,10 @@ const Header = () => {
             </Button>
 
             <DropDown>
-              <Link href={"/services"}>
+              <Link href={ROUTES.services}>
                 <Button shape="ghost">سفارش پروژه</Button>
               </Link>
-              <Link href={"/"}>
+              <Link href={ROUTES.products}>
                 <Button shape="ghost">محصلات ما</Button>
               </Link>
               <Link href={"/"}>
