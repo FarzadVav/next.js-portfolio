@@ -86,7 +86,7 @@ const ServicesDetailPage = () => {
 
       <Flex className="container" wrap="wrap" justify="center">
         {Array.from(new Array(12)).map(() => (
-          <Link href={"https://melktoday.ir"}>
+          <Link key={Math.random()} href={"https://melktoday.ir"}>
             <Button shape="outline">
               <span>پروژه مدیریت املاک</span>
               <DynamicIcon name="arrow-left" className="compatible-icon-size" />
