@@ -9,7 +9,7 @@ import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
-import Paragraph from "root/components/ui/Paragraph";
+import Paragraph from "root/components/ui/Paragraph/Index";
 import Heading from "root/components/ui/Heading/Index";
 import PageHero from "root/components/modules/PageHero/Index";
 import PageModal from "root/components/modules/PageModal/Index";

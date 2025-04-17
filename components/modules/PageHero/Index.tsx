@@ -1,6 +1,6 @@
 import Flex from "root/components/ui/Flex/Index";
 import Heading from "root/components/ui/Heading/Index";
-import Paragraph from "root/components/ui/Paragraph";
+import Paragraph from "root/components/ui/Paragraph/Index";
 import Space from "root/components/ui/Space/Index";
 
 type PageHeroProps = Omit<React.HTMLAttributes<HTMLDivElement>, "children" | "title"> & {
