@@ -1,21 +1,49 @@
+"use client";
+
 import Link from "next/link";
 import { DynamicIcon } from "lucide-react/dynamic";
 
-import Flex from "root/components/ui/Flex/Index";
-import Button from "root/components/ui/Button/Index";
+import Flex from "../../ui/Flex/Index";
+import Button from "../../ui/Button/Index";
+import DropDown from "../../ui/DropDown/Index";
+import DropDownWrapper from "../../ui/DropDown/Wrapper";
 import { ROUTES } from "root/constants/routes.constants";
-import DropDown from "root/components/ui/DropDown/Index";
-import DropDownWrapper from "root/components/ui/DropDown/Wrapper";
+import { useState } from "react";
+import MobileSheet from "root/components/ui/MobileSheet/Index";
+import MobileSheetDrawer from "root/components/ui/MobileSheet/Drawer";
+import MobileSheetHeader from "root/components/ui/MobileSheet/Header";
+import MobileSheetContent from "root/components/ui/MobileSheet/Content";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="bg-background border-b border-foreground/10 sticky top-0 z-20">
       <Flex className="container h-20">
-        <Link href={"/"}>
-          <Button>
-            <span>شروع کنید</span>
-          </Button>
-        </Link>
+        {/* <Link href={"/"}> */}
+        <Button onClick={() => setOpen(true)}>
+          <span>شروع کنید</span>
+        </Button>
+        {/* </Link> */}
+
+        <MobileSheet isOpen={open} closeHandler={() => setOpen(false)}>
+          <MobileSheetDrawer>
+            <MobileSheetHeader />
+            <MobileSheetContent>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique culpa facere
+              doloribus sapiente obcaecati iste, enim minima vitae exercitationem atque, cupiditate
+              eligendi. Quae iusto quibusdam esse nulla modi distinctio amet. Nesciunt distinctio
+              ratione tempora! Magnam quas laboriosam quidem, hic sit inventore animi fugiat nam
+              excepturi eligendi perspiciatis reprehenderit explicabo temporibus doloribus eos,
+              voluptatem dolor necessitatibus tempora aperiam ipsa exercitationem. Neque nemo saepe
+              porro dolore in quisquam! Commodi dolore, vero neque, dolor, expedita magnam nemo
+              explicabo ipsum accusamus dolorem perferendis exercitationem. Laborum molestias modi
+              fuga debitis. Hic ullam cumque magni. Veritatis quibusdam amet expedita, ratione
+              minima incidunt enim nesciunt temporibus sed!
+            </MobileSheetContent>
+          </MobileSheetDrawer>
+        </MobileSheet>
+
         <Flex className="mx-auto">
           <DropDownWrapper>
             <Button shape="ghost">

@@ -18,7 +18,7 @@ const MobileSheetHeader: FC<MobileSheetHeaderProps> = ({ className, children, ..
       {...props}
     >
       {children || (
-        <span className="h-2 w-1/5 rounded-full bg-foreground transition-transform group-active:scale-x-110" />
+        <span className="h-2 w-1/5 rounded-full bg-foreground/10 transition-all group-active:scale-x-110 group-active:bg-foreground" />
       )}
     </div>
   );
