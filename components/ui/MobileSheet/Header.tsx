@@ -1,0 +1,27 @@
+import { FC, HTMLAttributes, use } from "react";
+
+import classMerge from "root/lib/classMerge";
+import { MobileSheetContext } from "./Context";
+
+type MobileSheetHeaderProps = HTMLAttributes<HTMLDivElement>;
+
+const MobileSheetHeader: FC<MobileSheetHeaderProps> = ({ className, children, ...props }) => {
+  const { controls } = use(MobileSheetContext);
+
+  return (
+    <div
+      className={classMerge(
+        "py-3 cursor-grab touch-none group active:cursor-grabbing center-items",
+        className
+      )}
+      onPointerDown={(ev) => controls?.start(ev)}
+      {...props}
+    >
+      {children || (
+        <span className="h-2 w-1/5 rounded-full bg-foreground transition-transform group-active:scale-x-110" />
+      )}
+    </div>
+  );
+};
+
+export default MobileSheetHeader;
