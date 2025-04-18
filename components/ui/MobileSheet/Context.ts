@@ -4,7 +4,7 @@ import { createContext, RefObject } from "react";
 type MobileSheetContextT = {
   isOpen: boolean
   handleClose: () => void
-  drawerRef?: RefObject<any>
+  drawerRef?: RefObject<HTMLDivElement>
   controls?: DragControls
   y?: MotionValue<number>
 }
