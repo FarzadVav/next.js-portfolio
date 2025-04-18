@@ -1,3 +1,5 @@
+"use client";
+
 import { createPortal } from "react-dom";
 import { useMounted, useElementSize } from "@mantine/hooks";
 import {
@@ -10,6 +12,7 @@ import {
 
 import classMerge from "root/lib/classMerge";
 import { MobileSheetContext } from "./Context";
+import { useEffect } from "react";
 
 type MobileSheetProps = HTMLMotionProps<"div"> & {
   isOpen: boolean;
@@ -23,6 +26,20 @@ const MobileSheet: React.FC<MobileSheetProps> = ({ isOpen, closeHandler, classNa
   const [scope, animate] = useAnimate();
   const controls = useDragControls();
   const y = useMotionValue(0);
+
+  useEffect(() => {
+    const removeOverflow = () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      removeOverflow();
+    }
+
+    return () => removeOverflow();
+  }, [isOpen]);
 
   if (!mounted) {
     return null;
