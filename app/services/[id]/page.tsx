@@ -4,7 +4,11 @@ import { DynamicIcon } from "lucide-react/dynamic";
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
+import Input from "root/components/ui/Input/Index";
 import Button from "root/components/ui/Button/Index";
+import TextArea from "root/components/ui/Input/Textarea";
+import Paragraph from "root/components/ui/Paragraph/Index";
+import InputWrapper from "root/components/ui/Input/Wrapper";
 import PageHero from "root/components/modules/PageHero/Index";
 
 const ServicesDetailPage = () => {
@@ -84,21 +88,90 @@ const ServicesDetailPage = () => {
 
       <Space />
 
-      <Flex className="container" wrap="wrap" justify="center">
-        {Array.from(new Array(12)).map(() => (
-          <Link key={Math.random()} href={"https://melktoday.ir"}>
-            <Button shape="outline">
-              <span>پروژه مدیریت املاک</span>
-              <DynamicIcon name="arrow-left" className="compatible-icon-size" />
-            </Button>
-          </Link>
-        ))}
+      <Flex
+        className="container py-20 bg-gradient-to-b from-foreground/10 to-transparent rounded-2xl"
+        wrap="wrap"
+        justify="center"
+      >
+        <Link href={"https://melktoday.ir"}>
+          <Button shape="outline">
+            <span className="font-vazir-black">1.</span>
+            <span>مدیریت املاک</span>
+            <DynamicIcon name="arrow-up-left" className="compatible-icon-size" />
+          </Button>
+        </Link>
+        <Link href={"https://melktoday.ir"}>
+          <Button shape="outline">
+            <span className="font-vazir-black">2.</span>
+            <span>دستیار هوشمند قرارداد</span>
+            <DynamicIcon name="arrow-up-left" className="compatible-icon-size" />
+          </Button>
+        </Link>{" "}
+        <Link href={"https://melktoday.ir"}>
+          <Button shape="outline">
+            <span className="font-vazir-black">3.</span>
+            <span>نئو بانک اینترنتی</span>
+            <DynamicIcon name="arrow-up-left" className="compatible-icon-size" />
+          </Button>
+        </Link>{" "}
+        <Link href={"https://melktoday.ir"}>
+          <Button shape="outline">
+            <span className="font-vazir-black">4.</span>
+            <span>سیستم ساخت میومیو</span>
+            <DynamicIcon name="arrow-up-left" className="compatible-icon-size" />
+          </Button>
+        </Link>{" "}
+        <Link href={"https://melktoday.ir"}>
+          <Button shape="outline">
+            <span className="font-vazir-black">5.</span>
+            <span>آکادمی آموزش زبان تایلندی</span>
+            <DynamicIcon name="arrow-up-left" className="compatible-icon-size" />
+          </Button>
+        </Link>{" "}
+        <Link href={"https://melktoday.ir"}>
+          <Button shape="outline">
+            <span className="font-vazir-black">6.</span>
+            <span>پلتفرم پزشکی سروستان</span>
+            <DynamicIcon name="arrow-up-left" className="compatible-icon-size" />
+          </Button>
+        </Link>{" "}
+        <Link href={"https://melktoday.ir"}>
+          <Button shape="outline">
+            <span className="font-vazir-black">7.</span>
+            <span>آنلاین شاپ ریحون</span>
+            <DynamicIcon name="arrow-up-left" className="compatible-icon-size" />
+          </Button>
+        </Link>
       </Flex>
+      <Paragraph className="text-center" size="sm">
+        طرح سفارش گرفته شده استفاده می نماید، تا از چگونگی نوع و اندازه فونت و
+        ظاهر متن باشد. معمولا برای صفحه‌آرایی...
+      </Paragraph>
 
       <Space />
 
       <Box className="container">
         <h4 className="text-2xl font-kalameh-black text-center">ثبت پروژه حرفه ای شما</h4>
+        <Space />
+        <Flex>
+          <InputWrapper htmlFor="fullname">
+            <Input placeholder="نام و نام خانوادگی" id="fullname" />
+            <DynamicIcon className="compatible-icon-size" name="user" />
+          </InputWrapper>
+          <InputWrapper htmlFor="phone" dir="ltr">
+            <Input placeholder="09*********" id="phone" />
+            <DynamicIcon className="compatible-icon-size" name="phone" />
+          </InputWrapper>
+        </Flex>
+        <Space size="sm" />
+        <InputWrapper htmlFor="description" textarea-size="normal">
+          <TextArea placeholder="شرح درخواست شما..." id="description" />
+        </InputWrapper>
+        <Space size="sm" />
+        <Button>
+          <span>ثبت درخواست</span>
+          <DynamicIcon className="compatible-icon-size -scale-x-100" name="send-horizonal" />
+        </Button>
       </Box>
     </>
   );

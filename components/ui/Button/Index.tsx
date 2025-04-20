@@ -22,6 +22,14 @@ const styleVariants: Record<ColorVariantsT, Record<ShapeVariantsT, string>> = {
     ghost:
       "text-foreground hover:bg-foreground/10 focus:hover:bg-transparent focus:ring-foreground/10",
   },
+  background: {
+    fill: "bg-background text-foreground hover:bg-background/90 focus:ring-background/10",
+    soft: "bg-background/10 text-background hover:bg-background/5 focus:bg-transparent focus:ring-background/10",
+    outline:
+      "border border-background text-background hover:bg-background hover:text-foreground focus:ring-background/10",
+    ghost:
+      "text-background hover:bg-background/10 focus:hover:bg-transparent focus:ring-background/10",
+  },
   danger: {
     fill: "bg-danger text-background hover:bg-danger/90 focus:ring-danger/10",
     soft: "bg-danger/10 text-danger hover:bg-danger/5 focus:bg-transparent focus:ring-danger/10",

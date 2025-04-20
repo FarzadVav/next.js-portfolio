@@ -3,6 +3,7 @@
 export type ShapeVariantsT = "fill" | "soft" | "outline" | "ghost";
 
 export type ColorVariantsT =
+  "background"
   | "foreground"
   | "danger"
   | "success"
