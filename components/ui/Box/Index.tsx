@@ -12,6 +12,7 @@ type BoxProps = React.HTMLAttributes<HTMLDivElement> & {
 const baseClasses = "border-2 border-transparent transition-colors";
 
 const colorVariants: Record<ColorVariantsT, string> = {
+  background: "hover:border-background/10",
   foreground: "hover:border-foreground/10",
   danger: "hover:border-danger/10",
   success: "hover:border-success/10",

@@ -12,6 +12,7 @@ type BadgeProps = React.HTMLAttributes<HTMLDivElement> & {
 const baseClasses = "center-items";
 
 const colorVariants: Record<ColorVariantsT, string> = {
+  background: "bg-background/10 text-background",
   foreground: "bg-foreground/10 text-foreground",
   danger: "bg-danger/10 text-danger",
   success: "bg-success/10 text-success",
