@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { useMounted, useElementSize } from "@mantine/hooks";
 import {
@@ -12,7 +13,6 @@ import {
 
 import classMerge from "root/lib/classMerge";
 import { MobileSheetContext } from "./Context";
-import { useEffect } from "react";
 
 type MobileSheetProps = HTMLMotionProps<"div"> & {
   isOpen: boolean;
