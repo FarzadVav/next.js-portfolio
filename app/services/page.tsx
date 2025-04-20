@@ -31,6 +31,16 @@ const ProjectPage = () => {
 
       <Space />
 
+      <Flex className="p-1 w-fit mx-auto rounded-lg bg-foreground/5">
+        <Button>فرانت اند</Button>
+        <Button shape="ghost">بک اند</Button>
+        <Button shape="ghost">موبایل</Button>
+        <Button shape="ghost">دسکتاپ</Button>
+        <Button shape="ghost">کلاود</Button>
+      </Flex>
+
+      <Space size="normal" />
+
       <div className="container grid grid-cols-2 gap-3">
         {Array.from(new Array(7)).map(() => (
           <Box key={Math.random()}>
