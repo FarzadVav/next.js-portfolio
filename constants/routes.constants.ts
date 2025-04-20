@@ -1,5 +1,6 @@
 export const ROUTES = {
   home: "/",
   services: "/services",
-  products: "/products"
+  products: "/products",
+  openSources: "/open-sources"
 }
