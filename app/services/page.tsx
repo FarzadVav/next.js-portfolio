@@ -16,7 +16,7 @@ import PageModal from "root/components/modules/PageModal/Index";
 import PageModalHeader from "root/components/modules/PageModal/Header";
 import PageModalContent from "root/components/modules/PageModal/Content";
 
-const ProjectPage = () => {
+const ServicesPage = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -180,4 +180,4 @@ const ProjectPage = () => {
   );
 };
 
-export default ProjectPage;
+export default ServicesPage;
