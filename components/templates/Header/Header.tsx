@@ -63,7 +63,7 @@ const Header = () => {
               </Link>
             </DropDown>
           </DropDownWrapper>
-          <Link href={"/"}>
+          <Link href={"/articles"}>
             <Button shape="ghost">مقالات</Button>
           </Link>
           <Link href={"/"}>
