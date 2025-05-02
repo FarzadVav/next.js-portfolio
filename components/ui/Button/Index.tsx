@@ -2,7 +2,7 @@ import classMerge from "root/lib/classMerge";
 import { ColorVariantsT, ShapeVariantsT, SizeVariantsT } from "root/types/ui.types";
 
 /* Types */
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   shape?: ShapeVariantsT;
   color?: ColorVariantsT;
   size?: SizeVariantsT;

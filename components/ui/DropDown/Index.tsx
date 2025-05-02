@@ -1,39 +1,50 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 import classMerge from "root/lib/classMerge";
-import { ColorVariantsT, SizeVariantsT } from "root/types/ui.types";
+import { DropDownContext } from "./Context";
 
 /* Types */
-type DropDownProps = React.HTMLAttributes<HTMLDivElement> & {
-  color?: ColorVariantsT;
-  size?: SizeVariantsT;
-  rounded?: SizeVariantsT;
-};
+type DropDownProps = React.HTMLAttributes<HTMLDivElement>;
 
 /* Constants */
-const baseClasses =
-  "bg-background w-max flex flex-col ring-4 ring-foreground/10 absolute right-0 top-full transition-all opacity-0 invisible -translate-y-1/12 group-hover/dropdown:opacity-100 group-hover/dropdown:visible group-hover/dropdown:translate-y-0 z-20";
-
-const sizeVariants: Record<SizeVariantsT, string> = {
-  sm: "p-1.5 space-y-1.5",
-  normal: "p-3 space-y-3",
-  lg: "p-6 space-y-6",
-};
-
-const roundedVariants: Record<SizeVariantsT, string> = {
-  sm: "rounded",
-  normal: "rounded-lg",
-  lg: "rounded-xl",
-};
+const baseClasses = "relative";
 
 /* Component */
-const DropDown: React.FC<DropDownProps> = ({ className, ...props }) => {
-  const currentClass = classMerge(
-    baseClasses,
-    sizeVariants[props.size ?? "normal"],
-    roundedVariants[props.rounded ?? "normal"],
-    className
-  );
+const DropDown: React.FC<DropDownProps> = ({ className, onClick, ...props }) => {
+  const [isOpen, setOpen] = useState(false);
 
-  return <div className={currentClass} {...props} />;
+  useEffect(() => {
+    const windowClickHandler = () => {
+      setOpen(false);
+    };
+
+    window.addEventListener("click", windowClickHandler);
+
+    return () => {
+      window.removeEventListener("click", windowClickHandler);
+    };
+  }, []);
+
+  const currentClass = classMerge(baseClasses, className);
+
+  const toggleHandler = () => {
+    setOpen(!isOpen);
+  };
+
+  return (
+    <DropDownContext value={{ isOpen, toggleHandler }}>
+      <div
+        className={currentClass}
+        onClick={(ev) => {
+          onClick?.(ev);
+          ev.stopPropagation();
+        }}
+        {...props}
+      />
+    </DropDownContext>
+  );
 };
 
 export default DropDown;

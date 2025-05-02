@@ -5,9 +5,10 @@ import { ChevronDown } from "lucide-react";
 
 import Flex from "root/components/ui/Flex/Index";
 import Button from "root/components/ui/Button/Index";
-import DropDown from "root/components/ui/DropDown/Index";
 import { ROUTES } from "root/constants/routes.constants";
-import DropDownWrapper from "root/components/ui/DropDown/Wrapper";
+import DropDown from "root/components/ui/DropDown/Index";
+import DropDownTrigger from "root/components/ui/DropDown/Trigger";
+import DropDownContent from "root/components/ui/DropDown/Content";
 
 const Header = () => {
   return (
@@ -35,13 +36,12 @@ const Header = () => {
           <Button shape="ghost">جامعه</Button>
         </Link>
 
-        <DropDownWrapper className="mr-auto">
-          <Button className="font-kalameh-black" shape="ghost">
-            <ChevronDown className="compatible-icon-size" />
+        <DropDown className="mr-auto">
+          <DropDownTrigger className="font-kalameh-black" shape="ghost" dir="ltr">
             <span>WEB TUNERS</span>
-          </Button>
+          </DropDownTrigger>
 
-          <DropDown>
+          <DropDownContent>
             <Link href={ROUTES.home}>
               <Button shape="ghost">صفحه اصلی</Button>
             </Link>
@@ -54,8 +54,8 @@ const Header = () => {
             <Link href={ROUTES.home} target="_blank">
               <Button shape="ghost">حمایت</Button>
             </Link>
-          </DropDown>
-        </DropDownWrapper>
+          </DropDownContent>
+        </DropDown>
       </Flex>
     </header>
   );
