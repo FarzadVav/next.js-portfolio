@@ -9,6 +9,7 @@ import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
+import { $mergeKeys } from "root/utils/general.utils";
 import Heading from "root/components/ui/Heading/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import Paragraph from "root/components/ui/Paragraph/Index";
@@ -83,7 +84,7 @@ const ServicesPage = () => {
                 <span>ثبت سفارش</span>
                 <CheckCircleIcon className="compatible-icon-size" />
               </Button>
-              <Link className="w-1/2" href={ROUTES.services + 1}>
+              <Link className="w-1/2" href={$mergeKeys("/", [ROUTES.services, 1])}>
                 <Button className="w-full" shape="ghost">
                   بیشتر بخوانید
                 </Button>

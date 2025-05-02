@@ -6,10 +6,11 @@ import Flex from "root/components/ui/Flex/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Space from "root/components/ui/Space/Index";
 import Button from "root/components/ui/Button/Index";
+import { $mergeKeys } from "root/utils/general.utils";
 import Heading from "root/components/ui/Heading/Index";
+import { ROUTES } from "root/constants/routes.constants";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import PageHero from "root/components/modules/PageHero/Index";
-import { ROUTES } from "root/constants/routes.constants";
 
 const ArticlesPage = () => {
   return (
@@ -54,7 +55,7 @@ const ArticlesPage = () => {
             </Paragraph>
 
             <Space size="sm" />
-            <Link className="w-full" href={ROUTES.articles + 1}>
+            <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
               <Button className="w-full" shape="outline">
                 <span>بیشتر بخوانید</span>
                 <ArrowUpLeft className="compatible-icon-size" />

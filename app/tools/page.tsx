@@ -8,10 +8,11 @@ import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
+import { $mergeKeys } from "root/utils/general.utils";
 import Heading from "root/components/ui/Heading/Index";
+import { ROUTES } from "root/constants/routes.constants";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import PageHero from "root/components/modules/PageHero/Index";
-import { ROUTES } from "root/constants/routes.constants";
 
 const OpenSourcesPage = () => {
   return (
@@ -67,7 +68,7 @@ const OpenSourcesPage = () => {
                 <span>ثبت سفارش</span>
                 <CheckCircle className="compatible-icon-size" />
               </Button>
-              <Link className="w-1/2" href={ROUTES.tools + 1}>
+              <Link className="w-1/2" href={$mergeKeys("/", [ROUTES.tools, 1])}>
                 <Button className="w-full" shape="ghost">
                   بیشتر بخوانید
                 </Button>
