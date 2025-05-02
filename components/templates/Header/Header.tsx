@@ -38,7 +38,7 @@ const Header = () => {
         <DropDownWrapper className="mr-auto">
           <Button className="font-kalameh-black" shape="ghost">
             <ChevronDown className="compatible-icon-size" />
-            <span>LOGO</span>
+            <span>WEB TUNERS</span>
           </Button>
 
           <DropDown>
