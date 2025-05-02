@@ -2,20 +2,20 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { CheckCircleIcon } from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
-import Paragraph from "root/components/ui/Paragraph/Index";
 import Heading from "root/components/ui/Heading/Index";
+import { ROUTES } from "root/constants/routes.constants";
+import Paragraph from "root/components/ui/Paragraph/Index";
 import PageHero from "root/components/modules/PageHero/Index";
 import PageModal from "root/components/modules/PageModal/Index";
 import PageModalHeader from "root/components/modules/PageModal/Header";
 import PageModalContent from "root/components/modules/PageModal/Content";
-import { CheckCircleIcon } from "lucide-react";
 
 const ProductsPage = () => {
   const [isOpen, setOpen] = useState(false);
@@ -73,7 +73,7 @@ const ProductsPage = () => {
                 <span>ثبت سفارش</span>
                 <CheckCircleIcon className="compatible-icon-size" />
               </Button>
-              <Link className="w-1/2" href={`/services/${1}`}>
+              <Link className="w-1/2" href={ROUTES.products + 1}>
                 <Button className="w-full" shape="ghost">
                   بیشتر بخوانید
                 </Button>

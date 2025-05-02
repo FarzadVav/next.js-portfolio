@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { CheckCircle } from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
@@ -11,7 +11,7 @@ import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import PageHero from "root/components/modules/PageHero/Index";
-import { CheckCircle } from "lucide-react";
+import { ROUTES } from "root/constants/routes.constants";
 
 const OpenSourcesPage = () => {
   return (
@@ -67,7 +67,7 @@ const OpenSourcesPage = () => {
                 <span>ثبت سفارش</span>
                 <CheckCircle className="compatible-icon-size" />
               </Button>
-              <Link className="w-1/2" href={`/services/${1}`}>
+              <Link className="w-1/2" href={ROUTES.tools + 1}>
                 <Button className="w-full" shape="ghost">
                   بیشتر بخوانید
                 </Button>

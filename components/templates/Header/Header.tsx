@@ -19,10 +19,10 @@ const Header = () => {
         <Link href={ROUTES.products}>
           <Button shape="ghost">محصولات</Button>
         </Link>
-        <Link href={ROUTES.openSources}>
+        <Link href={ROUTES.tools}>
           <Button shape="ghost">ابزار ها</Button>
         </Link>
-        <Link href={"/"}>
+        <Link href={ROUTES.articles}>
           <Button shape="ghost">مقالات</Button>
         </Link>
         <Link href={"/"}>

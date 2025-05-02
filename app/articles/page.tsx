@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { ArrowUpLeft } from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
@@ -9,7 +9,7 @@ import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import PageHero from "root/components/modules/PageHero/Index";
-import { ArrowUpLeft } from "lucide-react";
+import { ROUTES } from "root/constants/routes.constants";
 
 const ArticlesPage = () => {
   return (
@@ -54,7 +54,7 @@ const ArticlesPage = () => {
             </Paragraph>
 
             <Space size="sm" />
-            <Link className="w-full" href={`/services/${1}`}>
+            <Link className="w-full" href={ROUTES.articles + 1}>
               <Button className="w-full" shape="outline">
                 <span>بیشتر بخوانید</span>
                 <ArrowUpLeft className="compatible-icon-size" />

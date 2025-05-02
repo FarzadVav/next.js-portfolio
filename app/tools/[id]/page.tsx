@@ -1,16 +1,10 @@
 import Link from "next/link";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { ArrowUpLeftIcon, Sparkles } from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
-import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
-import Input from "root/components/ui/Input/Index";
 import Button from "root/components/ui/Button/Index";
-import TextArea from "root/components/ui/Input/Textarea";
-import Paragraph from "root/components/ui/Paragraph/Index";
-import InputWrapper from "root/components/ui/Input/Wrapper";
 import PageHero from "root/components/modules/PageHero/Index";
-import { ArrowUpLeft, PhoneIcon, SendHorizonalIcon, Sparkles, UserIcon } from "lucide-react";
 
 const ServicesDetailPage = () => {
   return (
@@ -89,91 +83,12 @@ const ServicesDetailPage = () => {
 
       <Space />
 
-      <Flex
-        className="container py-20 bg-gradient-to-b from-foreground/10 to-transparent rounded-2xl"
-        wrap="wrap"
-        justify="center"
-      >
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">1.</span>
-            <span>مدیریت املاک</span>
-            <ArrowUpLeft className="compatible-icon-size" />
-          </Button>
-        </Link>
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">2.</span>
-            <span>دستیار هوشمند قرارداد</span>
-            <ArrowUpLeft className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">3.</span>
-            <span>نئو بانک اینترنتی</span>
-            <ArrowUpLeft className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">4.</span>
-            <span>سیستم ساخت میومیو</span>
-            <ArrowUpLeft className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">5.</span>
-            <span>آکادمی آموزش زبان تایلندی</span>
-            <ArrowUpLeft className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">6.</span>
-            <span>پلتفرم پزشکی سروستان</span>
-            <ArrowUpLeft className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">7.</span>
-            <span>آنلاین شاپ ریحون</span>
-            <ArrowUpLeft className="compatible-icon-size" />
-          </Button>
-        </Link>
-      </Flex>
-      <Paragraph className="text-center" size="sm">
-        طرح سفارش گرفته شده استفاده می نماید، تا از چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا
-        برای صفحه‌آرایی...
-      </Paragraph>
-
-      <Space />
-
-      <Box className="container">
-        <h4 className="text-2xl font-kalameh-black text-center">ثبت پروژه حرفه ای شما</h4>
-        <Space />
-        <Flex>
-          <InputWrapper htmlFor="fullname">
-            <Input placeholder="نام و نام خانوادگی" id="fullname" />
-            <UserIcon className="compatible-icon-size" />
-          </InputWrapper>
-          <InputWrapper htmlFor="phone" dir="ltr">
-            <Input placeholder="09*********" id="phone" />
-            <PhoneIcon className="compatible-icon-size" />
-          </InputWrapper>
-        </Flex>
-        <Space size="sm" />
-        <InputWrapper htmlFor="description" textarea-size="normal">
-          <TextArea placeholder="شرح درخواست شما..." id="description" />
-        </InputWrapper>
-        <Space size="sm" />
+      <Link className="mx-auto" href={"https://github.com/FarzadVav"} target="_blank">
         <Button>
-          <span>ثبت درخواست</span>
-          <SendHorizonalIcon className="compatible-icon-size -scale-x-100" />
+          <span>مشاهده مخزن</span>
+          <ArrowUpLeftIcon className="compatible-icon-size" />
         </Button>
-      </Box>
+      </Link>
     </>
   );
 };

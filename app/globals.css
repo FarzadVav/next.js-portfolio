@@ -67,7 +67,7 @@
   a,
   span,
   label {
-    @apply inline-block;
+    @apply block w-fit max-w-full;
   }
 
   button {
