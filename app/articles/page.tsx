@@ -9,6 +9,7 @@ import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import PageHero from "root/components/modules/PageHero/Index";
+import { ArrowUpLeft } from "lucide-react";
 
 const ArticlesPage = () => {
   return (
@@ -56,7 +57,7 @@ const ArticlesPage = () => {
             <Link className="w-full" href={`/services/${1}`}>
               <Button className="w-full" shape="outline">
                 <span>بیشتر بخوانید</span>
-                <DynamicIcon name="arrow-up-left" />
+                <ArrowUpLeft className="compatible-icon-size" />
               </Button>
             </Link>
           </Box>

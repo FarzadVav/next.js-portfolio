@@ -4,6 +4,7 @@ import { DynamicIcon } from "lucide-react/dynamic";
 import Button from "../../ui/Button/Index";
 import classMerge from "root/lib/classMerge";
 import { PageModalContext } from "./Context";
+import { ArrowRightIcon } from "lucide-react";
 
 type PageModalHeaderProps = Omit<HTMLAttributes<HTMLHeadingElement>, "children"> & {
   title: string;
@@ -16,7 +17,7 @@ const PageModalHeader: React.FC<PageModalHeaderProps> = ({ className, title, ...
     <header className={classMerge("border-b border-foreground/10", className)} {...props}>
       <nav className="h-20 container row-items">
         <Button shape="ghost" onClick={pageModalContext.closeHandler}>
-          <DynamicIcon name="arrow-right" className="compatible-icon-size" />
+          <ArrowRightIcon className="compatible-icon-size" />
           <span>بازگشت</span>
         </Button>
 

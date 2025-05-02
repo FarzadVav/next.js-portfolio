@@ -11,6 +11,7 @@ import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import PageHero from "root/components/modules/PageHero/Index";
+import { CheckCircle } from "lucide-react";
 
 const OpenSourcesPage = () => {
   return (
@@ -64,7 +65,7 @@ const OpenSourcesPage = () => {
             <Flex>
               <Button className="w-1/2">
                 <span>ثبت سفارش</span>
-                <DynamicIcon name="check-circle" className="compatible-icon-size" />
+                <CheckCircle className="compatible-icon-size" />
               </Button>
               <Link className="w-1/2" href={`/services/${1}`}>
                 <Button className="w-full" shape="ghost">

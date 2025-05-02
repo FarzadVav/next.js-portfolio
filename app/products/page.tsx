@@ -15,6 +15,7 @@ import PageHero from "root/components/modules/PageHero/Index";
 import PageModal from "root/components/modules/PageModal/Index";
 import PageModalHeader from "root/components/modules/PageModal/Header";
 import PageModalContent from "root/components/modules/PageModal/Content";
+import { CheckCircleIcon } from "lucide-react";
 
 const ProductsPage = () => {
   const [isOpen, setOpen] = useState(false);
@@ -70,7 +71,7 @@ const ProductsPage = () => {
             <Flex>
               <Button className="w-1/2" onClick={() => setOpen(true)}>
                 <span>ثبت سفارش</span>
-                <DynamicIcon name="check-circle" className="compatible-icon-size" />
+                <CheckCircleIcon className="compatible-icon-size" />
               </Button>
               <Link className="w-1/2" href={`/services/${1}`}>
                 <Button className="w-full" shape="ghost">

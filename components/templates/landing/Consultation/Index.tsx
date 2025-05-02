@@ -8,6 +8,7 @@ import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
+import { ArrowLeftIcon, CheckIcon, SendHorizonalIcon } from "lucide-react";
 
 const Consultation = () => {
   return (
@@ -27,22 +28,22 @@ const Consultation = () => {
         </p>
         <Flex className="mt-3">
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="check" />
+            <CheckIcon className="compatible-icon-size" />
             <span>مشاوره</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="check" />
+            <CheckIcon className="compatible-icon-size" />
             <span>مسیر یادگیری</span>
           </Badge>
           <Badge>
-            <DynamicIcon className="compatible-icon-size" name="check" />
+            <CheckIcon className="compatible-icon-size" />
             <span>همکاری</span>
           </Badge>
         </Flex>
         <Link href={"/"} className="mt-3">
           <Button>
             <span>تیکت بزنید</span>
-            <DynamicIcon className="compatible-icon-size -scale-x-100" name="send-horizonal" />
+            <SendHorizonalIcon className="compatible-icon-size -scale-x-100" />
           </Button>
         </Link>
 
@@ -50,7 +51,7 @@ const Consultation = () => {
           <Link href={"/"}>
             <Button shape="ghost">
               <span>متنی برای راه های ارتباط با ما</span>
-              <DynamicIcon className="compatible-icon-size" name="arrow-left" />
+              <ArrowLeftIcon className="compatible-icon-size" />
             </Button>
           </Link>
         </Flex>
