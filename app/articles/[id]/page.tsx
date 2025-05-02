@@ -14,9 +14,9 @@ import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
-import PageHero from "root/components/modules/PageHero/Index";
-import Paragraph from "root/components/ui/Paragraph/Index";
 import { ROUTES } from "root/constants/routes.constants";
+import Paragraph from "root/components/ui/Paragraph/Index";
+import PageHero from "root/components/modules/PageHero/Index";
 
 const ArticlesDetailPage = () => {
   return (
