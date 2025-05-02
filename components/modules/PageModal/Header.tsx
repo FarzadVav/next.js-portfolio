@@ -1,10 +1,9 @@
 import { HTMLAttributes, use } from "react";
-import { DynamicIcon } from "lucide-react/dynamic";
-
-import Button from "../../ui/Button/Index";
-import classMerge from "root/lib/classMerge";
-import { PageModalContext } from "./Context";
 import { ArrowRightIcon } from "lucide-react";
+
+import { PageModalContext } from "./Context";
+import classMerge from "root/lib/classMerge";
+import Button from "root/components/ui/Button/Index";
 
 type PageModalHeaderProps = Omit<HTMLAttributes<HTMLHeadingElement>, "children"> & {
   title: string;

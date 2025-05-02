@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { ArrowUpLeft, PhoneIcon, SendHorizonalIcon, SparklesIcon, UserIcon } from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
@@ -10,7 +10,6 @@ import TextArea from "root/components/ui/Input/Textarea";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import InputWrapper from "root/components/ui/Input/Wrapper";
 import PageHero from "root/components/modules/PageHero/Index";
-import { ArrowUpLeft, PhoneIcon, SendHorizonalIcon, SparklesIcon, UserIcon } from "lucide-react";
 
 const ServicesDetailPage = () => {
   return (

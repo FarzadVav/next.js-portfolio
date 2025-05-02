@@ -2,13 +2,12 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { ArrowLeftIcon, CheckIcon, SendHorizonalIcon } from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
-import { ArrowLeftIcon, CheckIcon, SendHorizonalIcon } from "lucide-react";
 
 const Consultation = () => {
   return (
