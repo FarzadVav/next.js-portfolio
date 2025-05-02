@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
 
 import Flex from "root/components/ui/Flex/Index";
 import Button from "root/components/ui/Button/Index";
