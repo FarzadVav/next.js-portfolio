@@ -25,13 +25,13 @@ const Header = () => {
         <Link href={ROUTES.articles}>
           <Button shape="ghost">مقالات</Button>
         </Link>
-        <Link href={"/"}>
+        <Link href={ROUTES.about}>
           <Button shape="ghost">درباره ما</Button>
         </Link>
-        <Link href={"/"}>
+        <Link href={ROUTES.connect}>
           <Button shape="ghost">ارتباط با ما</Button>
         </Link>
-        <Link href={"/"}>
+        <Link href={ROUTES.community}>
           <Button shape="ghost">جامعه</Button>
         </Link>
 

@@ -3,5 +3,8 @@ export const ROUTES = {
   services: "/services",
   products: "/products",
   tools: "/tools",
-  articles: "/articles"
+  articles: "/articles",
+  about: "/about",
+  connect: "/connect",
+  community: "/community"
 }
