@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {
   ArrowDownIcon,
+  ArrowUpLeft,
   Calendar,
   DownloadIcon,
   ExpandIcon,
@@ -12,7 +13,9 @@ import {
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
+import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
+import { $mergeKeys } from "root/utils/general.utils";
 import Heading from "root/components/ui/Heading/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import Paragraph from "root/components/ui/Paragraph/Index";
@@ -323,6 +326,38 @@ const ArticlesDetailPage = () => {
           </Link>
         </Flex>
       </Box>
+
+      <Space />
+
+      <Flex className="container overflow-x-auto">
+        {Array.from(new Array(7)).map(() => (
+          <Box className="w-5/12 min-w-5/12" key={Math.random()}>
+            <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
+
+            <Space size="sm" />
+            <Heading font="vazir">
+              <h2>استفاده از تکنیک توسعه بر پایه دامنه</h2>
+            </Heading>
+            <Space size="xs" />
+            <Badge className="w-fit">مهندسی نرم افزار</Badge>
+
+            <Space size="sm" />
+            <Paragraph>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
+            </Paragraph>
+
+            <Space size="sm" />
+            <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
+              <Button className="w-full" shape="outline">
+                <span>بیشتر بخوانید</span>
+                <ArrowUpLeft className="compatible-icon-size" />
+              </Button>
+            </Link>
+          </Box>
+        ))}
+      </Flex>
     </>
   );
 };
