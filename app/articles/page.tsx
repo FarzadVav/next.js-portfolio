@@ -34,7 +34,6 @@ const ArticlesPage = () => {
       </Flex>
 
       <Space size="normal" />
-
       <div className="container grid grid-cols-2 gap-3">
         {Array.from(new Array(7)).map(() => (
           <Box key={Math.random()}>
