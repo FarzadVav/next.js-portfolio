@@ -24,7 +24,6 @@ const ArticlesPage = () => {
       />
 
       <Space />
-
       <Flex className="p-1 w-fit mx-auto rounded-lg bg-foreground/5">
         <Button>فرانت اند</Button>
         <Button shape="ghost">بک اند</Button>

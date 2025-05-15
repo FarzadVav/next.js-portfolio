@@ -5,6 +5,5 @@ export const ROUTES = {
   tools: "/tools",
   articles: "/articles",
   about: "/about",
-  connect: "/connect",
-  community: "/community"
+  connect: "/connect"
 }

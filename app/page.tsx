@@ -1,4 +1,14 @@
 import Link from "next/link";
+import {
+  ArrowLeft,
+  ArrowLeftIcon,
+  ArrowUpLeftIcon,
+  CheckIcon,
+  ChevronDownIcon,
+  Search,
+  SendHorizonalIcon,
+  Sparkles,
+} from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
@@ -6,18 +16,17 @@ import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Input from "root/components/ui/Input/Index";
 import Button from "root/components/ui/Button/Index";
-import Paragraph from "root/components/ui/Paragraph/Index";
 import Heading from "root/components/ui/Heading/Index";
+import { ROUTES } from "root/constants/routes.constants";
+import Paragraph from "root/components/ui/Paragraph/Index";
 import InputWrapper from "root/components/ui/Input/Wrapper";
+import CtaAnimation from "root/components/modules/CtaAnimation/Index";
 import HeroSection from "root/components/templates/landing/HeroSection/Index";
-import Consultation from "root/components/templates/landing/Consultation/Index";
-import { ArrowLeft, ChevronLeft, Pencil, Plus, Search, Sparkles, Users } from "lucide-react";
 
 const HomePage = () => {
   return (
     <>
       <Space />
-
       <div className="container relative">
         <HeroSection />
 
@@ -88,7 +97,6 @@ const HomePage = () => {
       </div>
 
       <Space />
-
       <Flex className="container">
         <Box className="w-1/4" space="sm">
           <Flex justify="center" direction="column">
@@ -146,11 +154,48 @@ const HomePage = () => {
       </Flex>
 
       <Space />
+      <CtaAnimation>
+        <Box space="lg">
+          <h3 className="text-xl font-vazir-black">راهنمایی میخواهید؟ تیکت بزنید</h3>
+          <p className="mt-3">
+            معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند
+            تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه
+            متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته
+            شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند
+          </p>
+          <Flex className="mt-3">
+            <Badge>
+              <CheckIcon className="compatible-icon-size" />
+              <span>مشاوره</span>
+            </Badge>
+            <Badge>
+              <CheckIcon className="compatible-icon-size" />
+              <span>مسیر یادگیری</span>
+            </Badge>
+            <Badge>
+              <CheckIcon className="compatible-icon-size" />
+              <span>همکاری</span>
+            </Badge>
+          </Flex>
+          <Link href={"/"} className="mt-3">
+            <Button>
+              <span>تیکت بزنید</span>
+              <SendHorizonalIcon className="compatible-icon-size -scale-x-100" />
+            </Button>
+          </Link>
 
-      <Consultation />
+          <Flex className="mt-3" justify="end">
+            <Link href={"/"}>
+              <Button shape="ghost">
+                <span>متنی برای راه های ارتباط با ما</span>
+                <ArrowLeftIcon className="compatible-icon-size" />
+              </Button>
+            </Link>
+          </Flex>
+        </Box>
+      </CtaAnimation>
 
       <Space />
-
       <Flex className="container" justify="center">
         <Link href={"/"}>
           <Button>اخبار</Button>
@@ -170,7 +215,6 @@ const HomePage = () => {
       </Flex>
 
       <Space size="sm" />
-
       <Flex className="container">
         <Box className="w-1/4" space="sm">
           <Flex justify="center" direction="column">
@@ -239,7 +283,6 @@ const HomePage = () => {
       </Flex>
 
       <Space size="sm" />
-
       <Flex className="container" justify="center">
         <Link href={"/"}>
           <Button shape="ghost">
@@ -250,198 +293,54 @@ const HomePage = () => {
       </Flex>
 
       <Space />
-
       <div className="container">
         <Box>
-          <Flex justify="between">
+          <Flex className="cursor-pointer" justify="between">
             <h4 className="font-vazir-bold">
               چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
             </h4>
-            <Link href={"/"}>
-              <Button shape="outline">
-                <span>بررسی</span>
-                <ChevronLeft className="compatible-icon-size" />
-              </Button>
-            </Link>
+            <Button shape="ghost">
+              <ChevronDownIcon className="compatible-icon-size -scale-y-100" />
+            </Button>
           </Flex>
+          <Space size="normal" />
+          <Paragraph>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+            فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+            کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+            طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+            موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+            دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+            گیرد.
+          </Paragraph>
         </Box>
 
-        <Space size="sm" />
+        {Array.from(new Array(3)).map(() => (
+          <div key={Math.random()}>
+            <Space size="normal" />
+            <Box>
+              <Flex className="cursor-pointer" justify="between">
+                <h4 className="font-vazir-bold">
+                  چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+                </h4>
+                <Button shape="ghost">
+                  <ChevronDownIcon className="compatible-icon-size" />
+                </Button>
+              </Flex>
+            </Box>
+          </div>
+        ))}
 
-        <Box>
-          <Flex justify="between">
-            <h4 className="font-vazir-bold">
-              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-            </h4>
-            <Link href={"/"}>
-              <Button shape="outline">
-                <span>بررسی</span>
-                <ChevronLeft className="compatible-icon-size" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-
-        <Space size="sm" />
-
-        <Box>
-          <Flex justify="between">
-            <h4 className="font-vazir-bold">
-              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-            </h4>
-            <Link href={"/"}>
-              <Button shape="outline">
-                <span>بررسی</span>
-                <ChevronLeft className="compatible-icon-size" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-
-        <Space size="sm" />
-
-        <Box>
-          <Flex justify="between">
-            <h4 className="font-vazir-bold">
-              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-            </h4>
-            <Link href={"/"}>
-              <Button shape="outline">
-                <span>بررسی</span>
-                <ChevronLeft className="compatible-icon-size" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-
-        <Space size="sm" />
-
-        <Box>
-          <Flex justify="between">
-            <h4 className="font-vazir-bold">
-              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-            </h4>
-            <Link href={"/"}>
-              <Button shape="outline">
-                <span>بررسی</span>
-                <ChevronLeft className="compatible-icon-size" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-      </div>
-
-      <Space size="sm" />
-
-      <Flex className="container" justify="center">
-        <Link href={"/"}>
-          <Button shape="ghost">
+        <Space size="normal" />
+        <Link className="mx-auto" href={ROUTES.about + "#FAQs"}>
+          <Button>
             <span>مشاهده همه سوالات</span>
-            <ArrowLeft className="compatible-icon-size" />
+            <ArrowUpLeftIcon className="compatible-icon-size" />
           </Button>
         </Link>
-        <Link href={"/"}>
-          <Button shape="ghost">
-            <span>سوال خودتان را بپرسید</span>
-            <Pencil className="compatible-icon-size" />
-          </Button>
-        </Link>
-      </Flex>
-
-      <Space />
-
-      <Flex className="container" wrap="wrap" justify="center" space="lg">
-        <Box className="w-[calc(33%-1rem)]">
-          <Flex justify="center" direction="column">
-            <Flex>
-              <Users className="compatible-icon-size" />
-              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
-            </Flex>
-            <p className="text-center">
-              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
-              برای بهبود ظاهری.
-            </p>
-            <Link className="mt-3" href={"/"}>
-              <Button shape="outline">
-                <span>شرکت کنید</span>
-                <Plus className="compatible-icon-size" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-        <Box className="w-[calc(33%-1rem)]">
-          <Flex justify="center" direction="column">
-            <Flex>
-              <Users className="compatible-icon-size" />
-              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
-            </Flex>
-            <p className="text-center">
-              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
-              برای بهبود ظاهری.
-            </p>
-            <Link className="mt-3" href={"/"}>
-              <Button shape="outline">
-                <span>شرکت کنید</span>
-                <Plus className="compatible-icon-size" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-        <Box className="w-[calc(33%-1rem)]">
-          <Flex justify="center" direction="column">
-            <Flex>
-              <Users className="compatible-icon-size" />
-              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
-            </Flex>
-            <p className="text-center">
-              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
-              برای بهبود ظاهری.
-            </p>
-            <Link className="mt-3" href={"/"}>
-              <Button shape="outline">
-                <span>شرکت کنید</span>
-                <Plus className="compatible-icon-size" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-        <Box className="w-[calc(33%-1rem)]">
-          <Flex justify="center" direction="column">
-            <Flex>
-              <Users className="compatible-icon-size" />
-              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
-            </Flex>
-            <p className="text-center">
-              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
-              برای بهبود ظاهری.
-            </p>
-            <Link className="mt-3" href={"/"}>
-              <Button shape="outline">
-                <span>شرکت کنید</span>
-                <Plus className="compatible-icon-size" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-        <Box className="w-[calc(33%-1rem)]">
-          <Flex justify="center" direction="column">
-            <Flex>
-              <Users className="compatible-icon-size" />
-              <h5 className="text-xl font-vazir-bold">بررسی پروژه های شما</h5>
-            </Flex>
-            <p className="text-center">
-              طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن و ارایه اولیه شکل
-              برای بهبود ظاهری.
-            </p>
-            <Link className="mt-3" href={"/"}>
-              <Button shape="outline">
-                <span>شرکت کنید</span>
-                <Plus className="compatible-icon-size" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-      </Flex>
+      </div>
     </>
   );
 };

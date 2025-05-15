@@ -1,5 +1,14 @@
 import Link from "next/link";
-import { AppleIcon, ArrowUpLeft, BiohazardIcon } from "lucide-react";
+import {
+  AppleIcon,
+  ArrowUpLeft,
+  ArrowUpLeftIcon,
+  BiohazardIcon,
+  CheckIcon,
+  ChevronDownIcon,
+  PlusIcon,
+  SparklesIcon,
+} from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
@@ -9,6 +18,7 @@ import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import PageHero from "root/components/modules/PageHero/Index";
+import CtaAnimation from "root/components/modules/CtaAnimation/Index";
 
 const AboutPage = () => {
   return (
@@ -86,8 +96,94 @@ const AboutPage = () => {
       </Flex>
 
       <Space />
+      <div className="container">
+        <Box>
+          <video className="bg-foreground/10 rounded-lg w-full aspect-video" />
+        </Box>
+      </div>
+
+      <Space />
+      <div className="container">
+        <Flex justify="center">
+          <SparklesIcon className="compatible-icon-size" />
+          <Heading className="text-center" size="lg">
+            <h2>افتاخارت تنظیم کننده های وب</h2>
+          </Heading>
+          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+        </Flex>
+        <Space size="normal" />
+        <Flex className="overflow-x-auto pb-3">
+          {Array.from(new Array(7)).map(() => (
+            <Box className="w-1/3 min-w-1/3" key={Math.random()}>
+              <div className="w-2/3 mx-auto aspect-square rounded-lg bg-foreground/10" />
+              <Space size="normal" />
+              <Heading className="text-center">
+                <p>جذب {(3_637_000).toLocaleString("fa")} کاربر</p>
+              </Heading>
+              <Space size="sm" />
+              <Paragraph className="text-center">
+                ما در پیشرفته ترین سازمان های ایران با افراد زیبا کار کرده ایم...
+              </Paragraph>
+            </Box>
+          ))}
+        </Flex>
+      </div>
+
+      <Space />
+      <CtaAnimation>
+        <Box space="lg">
+          <h3 className="text-xl font-vazir-black">محصولات ما راه موفقیت کسب و کار شماست!</h3>
+          <p className="mt-3">
+            معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند
+            تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه
+            متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته
+            شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند
+          </p>
+          <Flex className="mt-3">
+            <Badge>
+              <CheckIcon className="compatible-icon-size" />
+              <span>حسابداری</span>
+            </Badge>
+            <Badge>
+              <CheckIcon className="compatible-icon-size" />
+              <span>فروشگاهی</span>
+            </Badge>
+            <Badge>
+              <CheckIcon className="compatible-icon-size" />
+              <span>اتوماسیون</span>
+            </Badge>
+            <Badge>
+              <CheckIcon className="compatible-icon-size" />
+              <span>آموزشگاهی</span>
+            </Badge>
+            <Badge>
+              <CheckIcon className="compatible-icon-size" />
+              <span>مدیریت مشتری</span>
+            </Badge>
+          </Flex>
+          <Link href={"/"} className="mt-3">
+            <Button>
+              <span>مشاهده محصولات</span>
+              <ArrowUpLeftIcon className="compatible-icon-size" />
+            </Button>
+          </Link>
+        </Box>
+      </CtaAnimation>
+
+      <Space />
+      <div className="container">
+        <Flex justify="center">
+          <SparklesIcon className="compatible-icon-size" />
+          <Heading className="text-center" size="lg">
+            <h2>نمونه پروژه های ما</h2>
+          </Heading>
+          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+        </Flex>
+      </div>
+
+      <Space />
       <div className="container grid grid-cols-2 gap-3">
-        {Array.from(new Array(16)).map(() => (
+        {Array.from(new Array(7)).map(() => (
           <Box key={Math.random()}>
             <div className="w-1/3 mx-auto center-items p-3 aspect-square border border-foreground rounded-full">
               <BiohazardIcon className="size-full" />
@@ -116,6 +212,77 @@ const AboutPage = () => {
             </Link>
           </Box>
         ))}
+      </div>
+
+      <Space />
+      <div className="container">
+        <Flex justify="center">
+          <SparklesIcon className="compatible-icon-size" />
+          <Heading className="text-center" size="lg">
+            <h2>ویژگی های تیم ما</h2>
+          </Heading>
+          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+        </Flex>
+        <Space size="normal" />
+        <Flex className="overflow-x-auto pb-3">
+          {Array.from(new Array(7)).map(() => (
+            <Box className="w-1/3 min-w-1/3" key={Math.random()}>
+              <div className="w-2/3 mx-auto aspect-square rounded-lg bg-foreground/10" />
+              <Space size="normal" />
+              <Heading className="text-center">
+                <p>پیشروی با متد اسکرام</p>
+              </Heading>
+            </Box>
+          ))}
+        </Flex>
+      </div>
+
+      <Space />
+      <div className="container" id="FAQs">
+        <Box>
+          <Flex className="cursor-pointer" justify="between">
+            <h4 className="font-vazir-bold">
+              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+            </h4>
+            <Button shape="ghost">
+              <ChevronDownIcon className="compatible-icon-size -scale-y-100" />
+            </Button>
+          </Flex>
+          <Space size="normal" />
+          <Paragraph>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+            فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+            کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+            طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+            موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+            دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+            گیرد.
+          </Paragraph>
+        </Box>
+
+        {Array.from(new Array(10)).map(() => (
+          <div key={Math.random()}>
+            <Space size="normal" />
+            <Box>
+              <Flex className="cursor-pointer" justify="between">
+                <h4 className="font-vazir-bold">
+                  چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+                </h4>
+                <Button shape="ghost">
+                  <ChevronDownIcon className="compatible-icon-size" />
+                </Button>
+              </Flex>
+            </Box>
+          </div>
+        ))}
+
+        <Space size="normal" />
+        <Button className="mx-auto" shape="soft">
+          <span>بیشتر</span>
+          <PlusIcon className="compatible-icon-size" />
+        </Button>
       </div>
     </>
   );

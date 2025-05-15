@@ -1,6 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpLeftIcon, CheckIcon, ChevronDownIcon, FileIcon } from "lucide-react";
+import {
+  ArrowUpLeftIcon,
+  CheckIcon,
+  ChevronDownIcon,
+  FileIcon,
+  SparklesIcon,
+  UserPenIcon,
+} from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
@@ -8,9 +15,11 @@ import Input from "root/components/ui/Input/Index";
 import Space from "root/components/ui/Space/Index";
 import githubImg from "root/public/logos/github.svg";
 import Button from "root/components/ui/Button/Index";
+import { $mergeKeys } from "root/utils/general.utils";
 import youtubeImg from "root/public/logos/youtube.svg";
 import Heading from "root/components/ui/Heading/Index";
 import discordImg from "root/public/logos/discord.svg";
+import { ROUTES } from "root/constants/routes.constants";
 import TextArea from "root/components/ui/Input/Textarea";
 import telegramImg from "root/public/logos/telegram.svg";
 import linkedinImg from "root/public/logos/linkedin.svg";
@@ -158,6 +167,57 @@ const ConnectPage = () => {
             </div>
           </Flex>
         </Box>
+      </div>
+
+      <Space />
+      <div className="container">
+        <Flex justify="center">
+          <SparklesIcon className="compatible-icon-size" />
+          <Heading className="text-center" size="lg">
+            <h2>ایونت های جامعه</h2>
+          </Heading>
+          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+        </Flex>
+      </div>
+
+      <Space size="normal" />
+      <div className="container grid grid-cols-2 gap-3">
+        {Array.from(new Array(4)).map(() => (
+          <Box key={Math.random()}>
+            <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
+
+            <Space size="normal" />
+            <Heading font="vazir">
+              <h2>استفاده از تکنیک توسعه بر پایه دامنه</h2>
+            </Heading>
+
+            <Space size="sm" />
+            <Paragraph>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
+            </Paragraph>
+
+            <Space size="sm" />
+            <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
+              <Button className="w-full" shape="outline">
+                <span>ثبت نام</span>
+                <UserPenIcon className="compatible-icon-size" />
+              </Button>
+            </Link>
+          </Box>
+        ))}
+      </div>
+
+      <Space />
+      <div className="container">
+        <Flex justify="center">
+          <SparklesIcon className="compatible-icon-size" />
+          <Heading className="text-center" size="lg">
+            <h2>هر درخواستی از ما دارید بنویسید!</h2>
+          </Heading>
+          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+        </Flex>
       </div>
 
       <Space />

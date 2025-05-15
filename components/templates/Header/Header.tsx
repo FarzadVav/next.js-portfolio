@@ -31,9 +31,6 @@ const Header = () => {
         <Link href={ROUTES.connect}>
           <Button shape="ghost">ارتباط با ما</Button>
         </Link>
-        <Link href={ROUTES.community}>
-          <Button shape="ghost">جامعه</Button>
-        </Link>
 
         <DropDown className="mr-auto">
           <DropDownTrigger className="font-kalameh-black" shape="ghost" dir="ltr">
@@ -49,6 +46,9 @@ const Header = () => {
             </Link>
             <Link href={ROUTES.home} target="_blank">
               <Button shape="ghost">نظرسنجی</Button>
+            </Link>
+            <Link href={ROUTES.home} target="_blank">
+              <Button shape="ghost">استخدام (بزودی)</Button>
             </Link>
             <Link href={ROUTES.home} target="_blank">
               <Button shape="ghost">حمایت</Button>

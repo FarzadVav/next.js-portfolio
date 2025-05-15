@@ -15,7 +15,7 @@ const PageHero: React.FC<PageHeroProps> = ({ src, title, description, ...props }
       <div className="size-44 min-w-44 rounded-full bg-foreground/10" title={src} />
 
       <div>
-        <Heading>
+        <Heading size="lg">
           <h1>{title}</h1>
         </Heading>
         <Space size="sm" />
