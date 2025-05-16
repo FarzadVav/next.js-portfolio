@@ -2,7 +2,7 @@ import classMerge from "root/lib/classMerge";
 import { ColorVariantsT, SizeVariantsT } from "root/types/ui.types";
 
 /* Types */
-type BoxProps = React.HTMLAttributes<HTMLDivElement> & {
+export type BoxProps = React.HTMLAttributes<HTMLDivElement> & {
   color?: ColorVariantsT;
   space?: SizeVariantsT;
   rounded?: SizeVariantsT;

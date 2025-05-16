@@ -2,7 +2,7 @@ import classMerge from "root/lib/classMerge";
 import { AllSizeVariantsT, FontVariantsT } from "root/types/ui.types";
 
 /* Types */
-type ParagraphProps = React.HTMLAttributes<HTMLParagraphElement> & {
+export type ParagraphProps = React.HTMLAttributes<HTMLParagraphElement> & {
   size?: AllSizeVariantsT;
   font?: FontVariantsT;
 };

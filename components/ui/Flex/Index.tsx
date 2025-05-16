@@ -10,7 +10,7 @@ type Justify = "start" | "center" | "end" | "around" | "evenly" | "between";
 
 type Wrap = "wrap" | "reverse" | "nowrap";
 
-type FlexProps = React.ButtonHTMLAttributes<HTMLDivElement> & {
+export type FlexProps = React.ButtonHTMLAttributes<HTMLDivElement> & {
   space?: AllSizeVariantsT;
   direction?: Direction;
   align?: Align;
