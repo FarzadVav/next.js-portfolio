@@ -1,19 +1,12 @@
-import Link from "next/link";
-import {
-  ArrowUpLeftIcon,
-  PhoneIcon,
-  SendHorizonalIcon,
-  SparklesIcon,
-  UserIcon,
-} from "lucide-react";
+import { PhoneIcon, SendHorizonalIcon, SparklesIcon, UserIcon } from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Input from "root/components/ui/Input/Index";
 import Button from "root/components/ui/Button/Index";
+import Heading from "root/components/ui/Heading/Index";
 import TextArea from "root/components/ui/Input/Textarea";
-import Paragraph from "root/components/ui/Paragraph/Index";
 import InputWrapper from "root/components/ui/Input/Wrapper";
 import PageHero from "root/components/modules/PageHero/Index";
 
@@ -93,71 +86,10 @@ const ServicesDetailPage = () => {
       </div>
 
       <Space />
-
-      <Flex
-        className="container py-20 bg-gradient-to-b from-foreground/10 to-transparent rounded-2xl"
-        wrap="wrap"
-        justify="center"
-      >
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">1.</span>
-            <span>مدیریت املاک</span>
-            <ArrowUpLeftIcon className="compatible-icon-size" />
-          </Button>
-        </Link>
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">2.</span>
-            <span>دستیار هوشمند قرارداد</span>
-            <ArrowUpLeftIcon className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">3.</span>
-            <span>نئو بانک اینترنتی</span>
-            <ArrowUpLeftIcon className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">4.</span>
-            <span>سیستم ساخت میومیو</span>
-            <ArrowUpLeftIcon className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">5.</span>
-            <span>آکادمی آموزش زبان تایلندی</span>
-            <ArrowUpLeftIcon className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">6.</span>
-            <span>پلتفرم پزشکی سروستان</span>
-            <ArrowUpLeftIcon className="compatible-icon-size" />
-          </Button>
-        </Link>{" "}
-        <Link href={"https://melktoday.ir"}>
-          <Button shape="outline">
-            <span className="font-vazir-black">7.</span>
-            <span>آنلاین شاپ ریحون</span>
-            <ArrowUpLeftIcon className="compatible-icon-size" />
-          </Button>
-        </Link>
-      </Flex>
-      <Paragraph className="text-center" size="sm">
-        طرح سفارش گرفته شده استفاده می نماید، تا از چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا
-        برای صفحه‌آرایی...
-      </Paragraph>
-
-      <Space />
-
       <Box className="container">
-        <h4 className="text-2xl font-kalameh-black text-center">ثبت پروژه حرفه ای شما</h4>
+        <Heading className="text-center" size="lg">
+          <h4>ثبت پروژه حرفه ای شما</h4>
+        </Heading>
         <Space />
         <Flex>
           <InputWrapper htmlFor="fullname">

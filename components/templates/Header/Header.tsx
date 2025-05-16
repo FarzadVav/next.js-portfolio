@@ -16,12 +16,12 @@ const Header = () => {
         <Link href={ROUTES.services}>
           <Button shape="ghost">خدمات</Button>
         </Link>
-        <Link href={ROUTES.products}>
-          <Button shape="ghost">محصولات</Button>
-        </Link>
-        <Link href={ROUTES.tools}>
-          <Button shape="ghost">ابزار ها</Button>
-        </Link>
+        <Button shape="ghost" disabled>
+          محصولات
+        </Button>
+        <Button shape="ghost" disabled>
+          ابزار ها
+        </Button>
         <Link href={ROUTES.articles}>
           <Button shape="ghost">مقالات</Button>
         </Link>
@@ -37,7 +37,7 @@ const Header = () => {
             <span>WEB TUNERS</span>
           </DropDownTrigger>
 
-          <DropDownContent>
+          <DropDownContent className="**:w-full **:justify-start">
             <Link href={ROUTES.home}>
               <Button shape="ghost">صفحه اصلی</Button>
             </Link>
@@ -48,11 +48,11 @@ const Header = () => {
               <Button shape="ghost">نظرسنجی</Button>
             </Link>
             <Link href={ROUTES.home} target="_blank">
-              <Button shape="ghost">استخدام (بزودی)</Button>
-            </Link>
-            <Link href={ROUTES.home} target="_blank">
               <Button shape="ghost">حمایت</Button>
             </Link>
+            <Button shape="ghost" disabled>
+              استخدام
+            </Button>
           </DropDownContent>
         </DropDown>
       </Flex>
