@@ -141,6 +141,32 @@ const HomePage = () => {
       </div>
 
       <Space />
+      <div className="grid grid-cols-2 container gap-3">
+        <Box>
+          <Flex justify="end">
+            <Paragraph>بهترین روش های برنامه ریزی!</Paragraph>
+            <div className="size-16 bg-foreground/10 rounded-lg" />
+          </Flex>
+        </Box>
+        <Box>
+          <Flex>
+            <div className="size-16 bg-foreground/10 rounded-lg" />
+            <Paragraph>بهترین روش های برنامه ریزی!</Paragraph>
+          </Flex>
+        </Box>
+        <Box>
+          <Flex justify="end">
+            <Paragraph>بهترین روش های برنامه ریزی!</Paragraph>
+            <div className="size-16 bg-foreground/10 rounded-lg" />
+          </Flex>
+        </Box>
+        <Box>
+          <Flex>
+            <div className="size-16 bg-foreground/10 rounded-lg" />
+            <Paragraph>بهترین روش های برنامه ریزی!</Paragraph>
+          </Flex>
+        </Box>
+      </div>
       <div className="container">
         {Array.from(new Array(3)).map(() => (
           <Accordion key={Math.random()}>
@@ -167,12 +193,20 @@ const HomePage = () => {
         ))}
 
         <Space size="normal" />
-        <Link className="mx-auto" href={ROUTES.about + "#FAQs"}>
-          <Button>
-            <span>مشاهده همه سوالات</span>
-            <ArrowUpLeftIcon className="compatible-icon-size" />
-          </Button>
-        </Link>
+        <Flex className="container" justify="center">
+          <Link href={ROUTES.about + "#FAQs"}>
+            <Button>
+              <span>درباره ما</span>
+              <ArrowUpLeftIcon className="compatible-icon-size" />
+            </Button>
+          </Link>
+          <Link href={ROUTES.about + "#FAQs"}>
+            <Button shape="ghost">
+              <span>همه سوالات</span>
+              <ArrowUpLeftIcon className="compatible-icon-size" />
+            </Button>
+          </Link>
+        </Flex>
       </div>
     </>
   );
