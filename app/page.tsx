@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { ArrowUpLeftIcon, Search, Sparkles } from "lucide-react";
+import { ArrowUpLeftIcon, Search, Sparkles, SparklesIcon } from "lucide-react";
 
+import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
@@ -85,6 +86,57 @@ const HomePage = () => {
             <Sparkles className="compatible-icon-size" />
             <span>رزومه قابل اطمینان</span>
           </Badge>
+        </Flex>
+      </div>
+
+      <Space />
+      <div className="bg-foreground/10 rounded-4xl py-6">
+        <Flex justify="center">
+          <SparklesIcon className="compatible-icon-size" />
+          <Heading className="text-center" size="lg">
+            <h2>خدمات تیم ما به شما</h2>
+          </Heading>
+          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+        </Flex>
+
+        <Space size="normal" />
+        <Flex className="container">
+          <Box className="w-1/3">
+            <Heading>فرانت اند</Heading>
+            <Space size="normal" />
+            <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
+            <Space size="normal" />
+            <Link href={ROUTES.services}>
+              <Button shape="outline">
+                <span>مشاهده</span>
+                <ArrowUpLeftIcon className="compatible-icon-size" />
+              </Button>
+            </Link>
+          </Box>
+          <Box className="w-1/3">
+            <Heading>بک اند</Heading>
+            <Space size="normal" />
+            <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
+            <Space size="normal" />
+            <Link href={ROUTES.services}>
+              <Button shape="outline">
+                <span>مشاهده</span>
+                <ArrowUpLeftIcon className="compatible-icon-size" />
+              </Button>
+            </Link>
+          </Box>
+          <Box className="w-1/3">
+            <Heading>ربات تلگرام</Heading>
+            <Space size="normal" />
+            <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
+            <Space size="normal" />
+            <Link href={ROUTES.services}>
+              <Button shape="outline">
+                <span>مشاهده</span>
+                <ArrowUpLeftIcon className="compatible-icon-size" />
+              </Button>
+            </Link>
+          </Box>
         </Flex>
       </div>
 
