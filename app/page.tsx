@@ -98,7 +98,7 @@ const HomePage = () => {
       </div>
 
       <Space />
-      <div className="bg-foreground/10 rounded-4xl py-6">
+      <div className="bg-gradient-to-b from-foreground/10 to-transparent rounded-4xl pt-6">
         <Flex justify="center">
           <SparklesIcon className="compatible-icon-size" />
           <Heading className="text-center" size="lg">
@@ -149,32 +149,69 @@ const HomePage = () => {
       </div>
 
       <Space />
+      <Flex justify="center">
+        <SparklesIcon className="compatible-icon-size" />
+        <Heading className="text-center" size="lg">
+          <h2>نگاهتان از ما</h2>
+        </Heading>
+        <SparklesIcon className="compatible-icon-size -scale-x-100" />
+      </Flex>
+      <Space size="normal" />
       <div className="grid grid-cols-2 container gap-3">
         <Box>
-          <Flex justify="end">
-            <Paragraph>بهترین روش های برنامه ریزی!</Paragraph>
-            <div className="size-16 bg-foreground/10 rounded-lg" />
+          <Flex>
+            <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+            <div>
+              <Heading size="sm">بهترین روش های برنامه ریزی!</Heading>
+              <Space size="xs" />
+              <Paragraph size="sm">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است...
+              </Paragraph>
+            </div>
           </Flex>
         </Box>
         <Box>
           <Flex>
-            <div className="size-16 bg-foreground/10 rounded-lg" />
-            <Paragraph>بهترین روش های برنامه ریزی!</Paragraph>
-          </Flex>
-        </Box>
-        <Box>
-          <Flex justify="end">
-            <Paragraph>بهترین روش های برنامه ریزی!</Paragraph>
-            <div className="size-16 bg-foreground/10 rounded-lg" />
+            <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+            <div>
+              <Heading size="sm">بهترین روش های برنامه ریزی!</Heading>
+              <Space size="xs" />
+              <Paragraph size="sm">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است...
+              </Paragraph>
+            </div>
           </Flex>
         </Box>
         <Box>
           <Flex>
-            <div className="size-16 bg-foreground/10 rounded-lg" />
-            <Paragraph>بهترین روش های برنامه ریزی!</Paragraph>
+            <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+            <div>
+              <Heading size="sm">بهترین روش های برنامه ریزی!</Heading>
+              <Space size="xs" />
+              <Paragraph size="sm">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است...
+              </Paragraph>
+            </div>
+          </Flex>
+        </Box>
+        <Box>
+          <Flex>
+            <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+            <div>
+              <Heading size="sm">بهترین روش های برنامه ریزی!</Heading>
+              <Space size="xs" />
+              <Paragraph size="sm">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است...
+              </Paragraph>
+            </div>
           </Flex>
         </Box>
       </div>
+      <Space />
       <div className="container">
         {Array.from(new Array(3)).map(() => (
           <Accordion key={Math.random()}>
