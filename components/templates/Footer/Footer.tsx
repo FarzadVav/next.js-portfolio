@@ -46,12 +46,10 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href={""}>
-                <Button shape="ghost" disabled>
-                  <span>استخدام (بزودی)</span>
-                  <ArrowUpLeft className="compatible-icon-size" />
-                </Button>
-              </Link>
+              <Button shape="ghost" disabled>
+                <span>استخدام</span>
+                <ArrowUpLeft className="compatible-icon-size" />
+              </Button>
             </li>
           </ul>
           <ul className="space-y-3" dir="ltr">
