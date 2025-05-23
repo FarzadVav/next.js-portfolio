@@ -1,5 +1,13 @@
 import Link from "next/link";
-import { ArrowUpLeftIcon, Search, Sparkles, SparklesIcon } from "lucide-react";
+import {
+  ArrowUpLeft,
+  ArrowUpLeftIcon,
+  CheckIcon,
+  Search,
+  SendHorizonalIcon,
+  Sparkles,
+  SparklesIcon,
+} from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
@@ -193,7 +201,7 @@ const HomePage = () => {
         ))}
 
         <Space size="normal" />
-        <Flex className="container" justify="center">
+        <Flex>
           <Link href={ROUTES.about + "#FAQs"}>
             <Button>
               <span>درباره ما</span>
@@ -208,6 +216,113 @@ const HomePage = () => {
           </Link>
         </Flex>
       </div>
+
+      <Space />
+      <Flex justify="center">
+        <SparklesIcon className="compatible-icon-size" />
+        <Heading className="text-center" size="lg">
+          <h2>نظرات مشتریان/همکاران</h2>
+        </Heading>
+        <SparklesIcon className="compatible-icon-size -scale-x-100" />
+      </Flex>
+      <Space size="normal" />
+      <Flex className="container overflow-x-auto" align="start">
+        {Array.from(new Array(12)).map(() => (
+          <div className="w-2/5 min-w-2/5" key={Math.random()}>
+            <Heading className="bg-foreground/10 p-3 text-center rounded-lg" size="sm">
+              اردلان یزدان دوست
+            </Heading>
+            <Space size="sm" />
+            <Paragraph className="bg-foreground/5 p-6 rounded-lg">
+              {Array.from(new Array(Math.ceil(Math.random() * 10))).map(
+                () => "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ بود."
+              )}
+              {".."}
+            </Paragraph>
+          </div>
+        ))}
+      </Flex>
+
+      <Space />
+      <Box className="container">
+        <Heading>مشاوه میخواهید؟ با ما در ارتباط باشید!</Heading>
+        <Space size="normal" />
+        <Paragraph>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+          است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+          تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+          در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+          افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
+          زبان فارسی ایجاد کرد، در این صورت می توان که تمام و دشواری موجود در ارائه راهکارها، و
+          شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+          سوالات پیوسته اهل دنیای مورد استفاده قرار گیرد.
+        </Paragraph>
+        <Space size="normal" />
+        <Flex>
+          <Badge>
+            <span>مشکل یابی</span>
+            <CheckIcon className="compatible-icon-size" />
+          </Badge>
+          <Badge>
+            <span>حل مسئله</span>
+            <CheckIcon className="compatible-icon-size" />
+          </Badge>
+          <Badge>
+            <span>مسیر انجام پروژه</span>
+            <CheckIcon className="compatible-icon-size" />
+          </Badge>
+          <Badge>
+            <span>مهندسی نیازمندی ها</span>
+            <CheckIcon className="compatible-icon-size" />
+          </Badge>
+        </Flex>
+        <Space size="normal" />
+        <Link href={ROUTES.connect}>
+          <Button>
+            <span>درخواست دهید</span>
+            <SendHorizonalIcon className="compatible-icon-size -scale-x-100" />
+          </Button>
+        </Link>
+      </Box>
+
+      <Space />
+      <Flex justify="center">
+        <SparklesIcon className="compatible-icon-size" />
+        <Heading className="text-center" size="lg">
+          <h2>آخرین مقالات سایت</h2>
+        </Heading>
+        <SparklesIcon className="compatible-icon-size -scale-x-100" />
+      </Flex>
+      <Space size="normal" />
+      <Flex className="container overflow-x-auto">
+        {Array.from(new Array(7)).map(() => (
+          <Box className="w-2/5 min-w-2/5" key={Math.random()}>
+            <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
+
+            <Space size="sm" />
+            <Heading font="vazir">
+              <h2>استفاده از تکنیک توسعه بر پایه دامنه</h2>
+            </Heading>
+            <Space size="xs" />
+            <Badge className="w-fit">مهندسی نرم افزار</Badge>
+
+            <Space size="sm" />
+            <Paragraph>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
+            </Paragraph>
+
+            <Space size="sm" />
+            <Link className="w-full" href={ROUTES.articles + "/1"}>
+              <Button className="w-full" shape="outline">
+                <span>بیشتر بخوانید</span>
+                <ArrowUpLeft className="compatible-icon-size" />
+              </Button>
+            </Link>
+          </Box>
+        ))}
+      </Flex>
     </>
   );
 };
