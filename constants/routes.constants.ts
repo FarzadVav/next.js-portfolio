@@ -5,5 +5,9 @@ export const ROUTES = {
   tools: "/tools",
   articles: "/articles",
   about: "/about",
-  connect: "/connect"
+  connect: "/connect",
+  landing: "/landing",
+  survey: "/survey",
+  donate: "/donate",
+  hiring: "/hiring",
 }
