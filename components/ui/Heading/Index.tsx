@@ -2,13 +2,13 @@ import classMerge from "root/lib/classMerge";
 import { AllSizeVariantsT, FontVariantsT } from "root/types/ui.types";
 
 /* Types */
-type HeadingProps = React.HTMLAttributes<HTMLHeadingElement> & {
+type HeadingProps = React.HTMLAttributes<HTMLButtonElement> & {
   size?: AllSizeVariantsT;
   font?: FontVariantsT;
 };
 
 /* Constants */
-const baseClasses = "font-kalameh-bold !leading-relaxed";
+const baseClasses = "block font-kalameh-bold !leading-relaxed";
 
 const fontVariants: Record<FontVariantsT, string> = {
   kalameh: "font-kalameh-bold",
@@ -32,7 +32,7 @@ const Heading: React.FC<HeadingProps> = ({ className, ...props }) => {
     className
   );
 
-  return <div className={currentClass} {...props} />;
+  return <button className={currentClass} {...props} />;
 };
 
 export default Heading;

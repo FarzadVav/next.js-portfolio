@@ -5,7 +5,6 @@ import {
   ArrowUpLeftIcon,
   BiohazardIcon,
   CheckIcon,
-  ChevronDownIcon,
   PlusIcon,
   SparklesIcon,
 } from "lucide-react";
@@ -17,7 +16,10 @@ import Badge from "root/components/ui/Badge/Index";
 import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
 import Paragraph from "root/components/ui/Paragraph/Index";
+import Accordion from "root/components/ui/Accordion/Index";
 import PageHero from "root/components/modules/PageHero/Index";
+import AccordionHeader from "root/components/ui/Accordion/Header";
+import AccordionContent from "root/components/ui/Accordion/Content";
 import CtaAnimation from "root/components/modules/CtaAnimation/Index";
 
 const AboutPage = () => {
@@ -107,7 +109,7 @@ const AboutPage = () => {
         <Flex justify="center">
           <SparklesIcon className="compatible-icon-size" />
           <Heading className="text-center" size="lg">
-            <h2>افتاخارت تنظیم کننده های وب</h2>
+            <h2>ما چه کارهایی می‌توانیم انجام دهیم؟</h2>
           </Heading>
           <SparklesIcon className="compatible-icon-size -scale-x-100" />
         </Flex>
@@ -132,7 +134,7 @@ const AboutPage = () => {
       <Space />
       <CtaAnimation>
         <Box space="lg">
-          <h3 className="text-xl font-vazir-black">محصولات ما راه موفقیت کسب و کار شماست!</h3>
+          <h3 className="text-xl font-vazir-black">خدمات ما راه موفقیت کسب و کار شماست!</h3>
           <p className="mt-3">
             معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند
             تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه
@@ -163,7 +165,7 @@ const AboutPage = () => {
           </Flex>
           <Link href={"/"} className="mt-3">
             <Button>
-              <span>مشاهده محصولات</span>
+              <span>مشاهده خدمات</span>
               <ArrowUpLeftIcon className="compatible-icon-size" />
             </Button>
           </Link>
@@ -180,7 +182,6 @@ const AboutPage = () => {
           <SparklesIcon className="compatible-icon-size -scale-x-100" />
         </Flex>
       </div>
-
       <Space />
       <div className="container grid grid-cols-2 gap-3">
         {Array.from(new Array(7)).map(() => (
@@ -219,63 +220,35 @@ const AboutPage = () => {
         <Flex justify="center">
           <SparklesIcon className="compatible-icon-size" />
           <Heading className="text-center" size="lg">
-            <h2>ویژگی های تیم ما</h2>
+            <h2>پاسخ های سوال هایتان</h2>
           </Heading>
           <SparklesIcon className="compatible-icon-size -scale-x-100" />
         </Flex>
-        <Space size="normal" />
-        <Flex className="overflow-x-auto pb-3">
-          {Array.from(new Array(7)).map(() => (
-            <Box className="w-1/3 min-w-1/3" key={Math.random()}>
-              <div className="w-2/3 mx-auto aspect-square rounded-lg bg-foreground/10" />
-              <Space size="normal" />
-              <Heading className="text-center">
-                <p>پیشروی با متد اسکرام</p>
-              </Heading>
-            </Box>
-          ))}
-        </Flex>
       </div>
-
       <Space />
       <div className="container" id="FAQs">
-        <Box>
-          <Flex className="cursor-pointer" justify="between">
-            <h4 className="font-vazir-bold">
-              چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-            </h4>
-            <Button shape="ghost">
-              <ChevronDownIcon className="compatible-icon-size -scale-y-100" />
-            </Button>
-          </Flex>
-          <Space size="normal" />
-          <Paragraph>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-            فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-            کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
-            طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
-            فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
-            موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
-            دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
-            گیرد.
-          </Paragraph>
-        </Box>
-
-        {Array.from(new Array(10)).map(() => (
-          <div key={Math.random()}>
-            <Space size="normal" />
-            <Box>
-              <Flex className="cursor-pointer" justify="between">
-                <h4 className="font-vazir-bold">
-                  چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-                </h4>
-                <Button shape="ghost">
-                  <ChevronDownIcon className="compatible-icon-size" />
-                </Button>
-              </Flex>
-            </Box>
-          </div>
+        {Array.from(new Array(6)).map(() => (
+          <Accordion key={Math.random()}>
+            <AccordionHeader>
+              <Heading font="vazir" size="sm">
+                <h4>چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟</h4>
+              </Heading>
+            </AccordionHeader>
+            <AccordionContent>
+              <Space size="normal" />
+              <Paragraph>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
+                مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
+                طراحی اساسا مورد استفاده قرار گیرد.
+              </Paragraph>
+            </AccordionContent>
+          </Accordion>
         ))}
 
         <Space size="normal" />
