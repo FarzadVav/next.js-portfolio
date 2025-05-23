@@ -19,115 +19,107 @@ const Footer = () => {
     <>
       <Space />
       <footer className="container py-10 border-t border-foreground/10">
-        <Flex justify="between">
-          <ul className="space-y-3">
-            <li>
-              <Link href={ROUTES.landing}>
-                <Button shape="ghost">
-                  <span>لندینگ تبلیغاتی</span>
-                  <ArrowUpLeft className="compatible-icon-size" />
-                </Button>
-              </Link>
-            </li>
-            <li>
-              <Link href={ROUTES.survey}>
-                <Button shape="ghost">
-                  <span>نظرسنجی</span>
-                  <ArrowUpLeft className="compatible-icon-size" />
-                </Button>
-              </Link>
-            </li>
-            <li>
-              <Link href={ROUTES.donate}>
-                <Button shape="ghost">
-                  <span>حمایت از ما</span>
-                  <ArrowUpLeft className="compatible-icon-size" />
-                </Button>
-              </Link>
-            </li>
-            <li>
-              <Button shape="ghost" disabled>
-                <span>استخدام</span>
-                <ArrowUpLeft className="compatible-icon-size" />
-              </Button>
-            </li>
-          </ul>
-          <ul className="space-y-3" dir="ltr">
-            <li>
-              <Link href={"mailto:farzad.vav.work@gmail"}>
-                <Button shape="ghost">
-                  <MailIcon className="compatible-icon-size" />
-                  <span>farzad.vav.work@gmail.com</span>
-                </Button>
-              </Link>
-            </li>
-            <li>
-              <Link href={"tel:09389461065"}>
-                <Button shape="ghost">
-                  <PhoneIcon className="compatible-icon-size" />
-                  <span dir="ltr">0938 0946 1065</span>
-                </Button>
-              </Link>
-            </li>
-            <li>
-              <Flex>
-                <Link className="size-9" href={"https://instagram.com"}>
-                  <Image
-                    className="size-full rounded-full"
-                    src={instagramImg}
-                    alt="instagram"
-                    width={64}
-                    height={64}
-                  />
-                </Link>
-                <Link className="size-9" href={"https://instagram.com"}>
-                  <Image
-                    className="size-full rounded-full"
-                    src={githubImg}
-                    alt="instagram"
-                    width={64}
-                    height={64}
-                  />
-                </Link>
-                <Link className="size-9" href={"https://instagram.com"}>
-                  <Image
-                    className="size-full rounded-full"
-                    src={youtubeImg}
-                    alt="instagram"
-                    width={64}
-                    height={64}
-                  />
-                </Link>
-                <Link className="size-9" href={"https://instagram.com"}>
-                  <Image
-                    className="size-full rounded-full"
-                    src={discordImg}
-                    alt="instagram"
-                    width={64}
-                    height={64}
-                  />
-                </Link>
-                <Link className="size-9" href={"https://instagram.com"}>
-                  <Image
-                    className="size-full rounded-full"
-                    src={telegramImg}
-                    alt="instagram"
-                    width={64}
-                    height={64}
-                  />
-                </Link>
-                <Link className="size-9" href={"https://instagram.com"}>
-                  <Image
-                    className="size-full rounded-full"
-                    src={linkedinImg}
-                    alt="instagram"
-                    width={64}
-                    height={64}
-                  />
-                </Link>
-              </Flex>
-            </li>
-          </ul>
+        <Flex justify="center">
+          <Link href={"tel:09389461065"}>
+            <Button shape="ghost">
+              <span dir="ltr">0938 0946 1065</span>
+              <PhoneIcon className="compatible-icon-size" />
+            </Button>
+          </Link>
+
+          <Link href={"mailto:farzad.vav.work@gmail"}>
+            <Button shape="ghost">
+              <span>farzad.vav.work@gmail.com</span>
+              <MailIcon className="compatible-icon-size" />
+            </Button>
+          </Link>
+        </Flex>
+
+        <Space size="normal" />
+        <Flex justify="center">
+          <Link href={ROUTES.landing}>
+            <Button shape="ghost">
+              <span>لندینگ تبلیغاتی</span>
+              <ArrowUpLeft className="compatible-icon-size" />
+            </Button>
+          </Link>
+
+          <Link href={ROUTES.survey}>
+            <Button shape="ghost">
+              <span>نظرسنجی</span>
+              <ArrowUpLeft className="compatible-icon-size" />
+            </Button>
+          </Link>
+
+          <Link href={ROUTES.donate}>
+            <Button shape="ghost">
+              <span>حمایت از ما</span>
+              <ArrowUpLeft className="compatible-icon-size" />
+            </Button>
+          </Link>
+
+          <Button shape="ghost" disabled>
+            <span>استخدام</span>
+            <ArrowUpLeft className="compatible-icon-size" />
+          </Button>
+        </Flex>
+
+        <Space size="normal" />
+        <Flex justify="center">
+          <Link className="size-9" href={"https://instagram.com"}>
+            <Image
+              className="size-full rounded-full"
+              src={instagramImg}
+              alt="instagram"
+              width={64}
+              height={64}
+            />
+          </Link>
+          <Link className="size-9" href={"https://instagram.com"}>
+            <Image
+              className="size-full rounded-full"
+              src={githubImg}
+              alt="instagram"
+              width={64}
+              height={64}
+            />
+          </Link>
+          <Link className="size-9" href={"https://instagram.com"}>
+            <Image
+              className="size-full rounded-full"
+              src={youtubeImg}
+              alt="instagram"
+              width={64}
+              height={64}
+            />
+          </Link>
+          <Link className="size-9" href={"https://instagram.com"}>
+            <Image
+              className="size-full rounded-full"
+              src={discordImg}
+              alt="instagram"
+              width={64}
+              height={64}
+            />
+          </Link>
+          <Link className="size-9" href={"https://instagram.com"}>
+            <Image
+              className="size-full rounded-full"
+              src={telegramImg}
+              alt="instagram"
+              width={64}
+              height={64}
+            />
+          </Link>
+          <Link className="size-9" href={"https://instagram.com"}>
+            <Image
+              className="size-full rounded-full"
+              src={linkedinImg}
+              alt="instagram"
+              width={64}
+              height={64}
+            />
+          </Link>
         </Flex>
 
         <Space />
