@@ -5,7 +5,6 @@ import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Space from "root/components/ui/Space/Index";
-import Button from "root/components/ui/Button/Index";
 import { $mergeKeys } from "root/utils/general.utils";
 import Heading from "root/components/ui/Heading/Index";
 import { ROUTES } from "root/constants/routes.constants";
@@ -25,11 +24,11 @@ const ArticlesPage = () => {
 
       <Space />
       <Flex className="p-1 w-fit mx-auto rounded-lg bg-foreground/5">
-        <Button>فرانت اند</Button>
-        <Button shape="ghost">بک اند</Button>
-        <Button shape="ghost">موبایل</Button>
-        <Button shape="ghost">دسکتاپ</Button>
-        <Button shape="ghost">کلاود</Button>
+        <button className="btn btn-fill">فرانت اند</button>
+        <button className="btn btn-ghost">بک اند</button>
+        <button className="btn btn-ghost">موبایل</button>
+        <button className="btn btn-ghost">دسکتاپ</button>
+        <button className="btn btn-ghost">کلاود</button>
       </Flex>
 
       <Space size="normal" />
@@ -54,10 +53,10 @@ const ArticlesPage = () => {
 
             <Space size="sm" />
             <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
-              <Button className="w-full" shape="outline">
+              <button className="w-full btn btn-outline">
                 <span>بیشتر بخوانید</span>
                 <ArrowUpLeft className="compatible-icon" />
-              </Button>
+              </button>
             </Link>
           </Box>
         ))}

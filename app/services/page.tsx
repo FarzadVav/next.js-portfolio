@@ -8,7 +8,6 @@ import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
-import Button from "root/components/ui/Button/Index";
 import { $mergeKeys } from "root/utils/general.utils";
 import Heading from "root/components/ui/Heading/Index";
 import { ROUTES } from "root/constants/routes.constants";
@@ -34,11 +33,11 @@ const ServicesPage = () => {
       <Space />
 
       <Flex className="p-1 w-fit mx-auto rounded-lg bg-foreground/5">
-        <Button>فرانت اند</Button>
-        <Button shape="ghost">بک اند</Button>
-        <Button shape="ghost">موبایل</Button>
-        <Button shape="ghost">دسکتاپ</Button>
-        <Button shape="ghost">کلاود</Button>
+        <button className="btn btn-fill">فرانت اند</button>
+        <button className="btn btn-ghost">بک اند</button>
+        <button className="btn btn-ghost">موبایل</button>
+        <button className="btn btn-ghost">دسکتاپ</button>
+        <button className="btn btn-ghost">کلاود</button>
       </Flex>
 
       <Space size="normal" />
@@ -80,14 +79,12 @@ const ServicesPage = () => {
             </ul>
             <Space size="sm" />
             <Flex>
-              <Button className="w-1/2" onClick={() => setOpen(true)}>
+              <button className="btn btn-fill w-1/2" onClick={() => setOpen(true)}>
                 <span>ثبت سفارش</span>
                 <CheckCircleIcon className="compatible-icon" />
-              </Button>
-              <Link className="w-1/2" href={$mergeKeys("/", [ROUTES.services, 1])}>
-                <Button className="w-full" shape="ghost">
-                  بیشتر بخوانید
-                </Button>
+              </button>
+              <Link className="btn btn-ghost w-1/2" href={$mergeKeys("/", [ROUTES.services, 1])}>
+                بیشتر بخوانید
               </Link>
             </Flex>
           </Box>

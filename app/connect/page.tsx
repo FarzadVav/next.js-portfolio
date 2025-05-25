@@ -14,7 +14,6 @@ import Flex from "root/components/ui/Flex/Index";
 import Input from "root/components/ui/Input/Index";
 import Space from "root/components/ui/Space/Index";
 import githubImg from "root/public/logos/github.svg";
-import Button from "root/components/ui/Button/Index";
 import { $mergeKeys } from "root/utils/general.utils";
 import youtubeImg from "root/public/logos/youtube.svg";
 import Heading from "root/components/ui/Heading/Index";
@@ -53,11 +52,9 @@ const ConnectPage = () => {
               </Paragraph>
 
               <Space size="sm" />
-              <Link href={"https://telegram.org"} target="_blank">
-                <Button shape="outline">
-                  <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon" />
-                </Button>
+              <Link className="btn btn-outline" href={"https://telegram.org"} target="_blank">
+                <span>مشاهده</span>
+                <ArrowUpLeftIcon className="compatible-icon" />
               </Link>
             </div>
           </Flex>
@@ -74,11 +71,9 @@ const ConnectPage = () => {
               </Paragraph>
 
               <Space size="sm" />
-              <Link href={"https://telegram.org"} target="_blank">
-                <Button shape="outline">
-                  <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon" />
-                </Button>
+              <Link className="btn btn-outline" href={"https://telegram.org"} target="_blank">
+                <span>مشاهده</span>
+                <ArrowUpLeftIcon className="compatible-icon" />
               </Link>
             </div>
           </Flex>
@@ -95,11 +90,9 @@ const ConnectPage = () => {
               </Paragraph>
 
               <Space size="sm" />
-              <Link href={"https://telegram.org"} target="_blank">
-                <Button shape="outline">
-                  <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon" />
-                </Button>
+              <Link className="btn btn-outline" href={"https://telegram.org"} target="_blank">
+                <span>مشاهده</span>
+                <ArrowUpLeftIcon className="compatible-icon" />
               </Link>
             </div>
           </Flex>
@@ -116,11 +109,9 @@ const ConnectPage = () => {
               </Paragraph>
 
               <Space size="sm" />
-              <Link href={"https://telegram.org"} target="_blank">
-                <Button shape="outline">
-                  <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon" />
-                </Button>
+              <Link className="btn btn-outline" href={"https://telegram.org"} target="_blank">
+                <span>مشاهده</span>
+                <ArrowUpLeftIcon className="compatible-icon" />
               </Link>
             </div>
           </Flex>
@@ -137,11 +128,9 @@ const ConnectPage = () => {
               </Paragraph>
 
               <Space size="sm" />
-              <Link href={"https://telegram.org"} target="_blank">
-                <Button shape="outline">
-                  <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon" />
-                </Button>
+              <Link className="btn btn-outline" href={"https://telegram.org"} target="_blank">
+                <span>مشاهده</span>
+                <ArrowUpLeftIcon className="compatible-icon" />
               </Link>
             </div>
           </Flex>
@@ -158,11 +147,9 @@ const ConnectPage = () => {
               </Paragraph>
 
               <Space size="sm" />
-              <Link href={"https://telegram.org"} target="_blank">
-                <Button shape="outline">
-                  <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon" />
-                </Button>
+              <Link className="btn btn-outline" href={"https://telegram.org"} target="_blank">
+                <span>مشاهده</span>
+                <ArrowUpLeftIcon className="compatible-icon" />
               </Link>
             </div>
           </Flex>
@@ -199,11 +186,9 @@ const ConnectPage = () => {
             </Paragraph>
 
             <Space size="sm" />
-            <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
-              <Button className="w-full" shape="outline">
-                <span>ثبت نام</span>
-                <UserPenIcon className="compatible-icon" />
-              </Button>
+            <Link className="btn btn-outline w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
+              <span>ثبت نام</span>
+              <UserPenIcon className="compatible-icon" />
             </Link>
           </Box>
         ))}
@@ -248,15 +233,15 @@ const ConnectPage = () => {
           <TextArea placeholder="متن تان را شرح دهید..." id="connect_text" name="connect_text" />
         </InputWrapper>
         <Space size="sm" />
-        <Button shape="outline">
+        <button className="btn btn-outline">
           <span>فایل ضمیمه (اختیاری)</span>
           <FileIcon className="compatible-icon" />
-        </Button>
+        </button>
         <Space size="sm" />
-        <Button className="mx-auto">
+        <button className="btn btn-fill mx-auto">
           <span>ثبت تیکت</span>
           <CheckIcon className="compatible-icon" />
-        </Button>
+        </button>
       </div>
     </>
   );

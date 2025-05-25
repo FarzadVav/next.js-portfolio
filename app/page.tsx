@@ -14,7 +14,6 @@ import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
 import Input from "root/components/ui/Input/Index";
-import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import Paragraph from "root/components/ui/Paragraph/Index";
@@ -114,11 +113,9 @@ const HomePage = () => {
             <Space size="normal" />
             <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
             <Space size="normal" />
-            <Link href={ROUTES.services}>
-              <Button shape="outline">
-                <span>مشاهده</span>
-                <ArrowUpLeftIcon className="compatible-icon" />
-              </Button>
+            <Link className="btn btn-outline" href={ROUTES.services}>
+              <span>مشاهده</span>
+              <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </Box>
           <Box className="w-1/3">
@@ -126,11 +123,9 @@ const HomePage = () => {
             <Space size="normal" />
             <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
             <Space size="normal" />
-            <Link href={ROUTES.services}>
-              <Button shape="outline">
-                <span>مشاهده</span>
-                <ArrowUpLeftIcon className="compatible-icon" />
-              </Button>
+            <Link className="btn btn-outline" href={ROUTES.services}>
+              <span>مشاهده</span>
+              <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </Box>
           <Box className="w-1/3">
@@ -138,11 +133,9 @@ const HomePage = () => {
             <Space size="normal" />
             <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
             <Space size="normal" />
-            <Link href={ROUTES.services}>
-              <Button shape="outline">
-                <span>مشاهده</span>
-                <ArrowUpLeftIcon className="compatible-icon" />
-              </Button>
+            <Link className="btn btn-outline" href={ROUTES.services}>
+              <span>مشاهده</span>
+              <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </Box>
         </Flex>
@@ -239,17 +232,13 @@ const HomePage = () => {
 
         <Space size="normal" />
         <Flex>
-          <Link href={ROUTES.about + "#FAQs"}>
-            <Button>
-              <span>درباره ما</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
-            </Button>
+          <Link className="btn btn-fill" href={ROUTES.about + "#FAQs"}>
+            <span>درباره ما</span>
+            <ArrowUpLeftIcon className="compatible-icon" />
           </Link>
-          <Link href={ROUTES.about + "#FAQs"}>
-            <Button shape="ghost">
-              <span>همه سوالات</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
-            </Button>
+          <Link className="btn btn-ghost" href={ROUTES.about + "#FAQs"}>
+            <span>همه سوالات</span>
+            <ArrowUpLeftIcon className="compatible-icon" />
           </Link>
         </Flex>
       </div>
@@ -312,11 +301,9 @@ const HomePage = () => {
           </Badge>
         </Flex>
         <Space size="normal" />
-        <Link href={ROUTES.connect}>
-          <Button>
-            <span>درخواست دهید</span>
-            <SendHorizonalIcon className="compatible-icon -scale-x-100" />
-          </Button>
+        <Link className="btn btn-fill" href={ROUTES.connect}>
+          <span>درخواست دهید</span>
+          <SendHorizonalIcon className="compatible-icon -scale-x-100" />
         </Link>
       </Box>
 
@@ -349,11 +336,9 @@ const HomePage = () => {
             </Paragraph>
 
             <Space size="sm" />
-            <Link className="w-full" href={ROUTES.articles + "/1"}>
-              <Button className="w-full" shape="outline">
-                <span>بیشتر بخوانید</span>
-                <ArrowUpLeft className="compatible-icon" />
-              </Button>
+            <Link className="btn btn-outline w-full" href={ROUTES.articles + "/1"}>
+              <span>بیشتر بخوانید</span>
+              <ArrowUpLeft className="compatible-icon" />
             </Link>
           </Box>
         ))}

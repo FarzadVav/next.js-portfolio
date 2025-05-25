@@ -3,7 +3,6 @@
 import Link from "next/link";
 
 import Flex from "root/components/ui/Flex/Index";
-import Button from "root/components/ui/Button/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import DropDown from "root/components/ui/DropDown/Index";
 import DropDownTrigger from "root/components/ui/DropDown/Trigger";
@@ -13,46 +12,46 @@ const Header = () => {
   return (
     <header className="bg-background border-b border-foreground/10 sticky top-0 z-20">
       <Flex className="container font-vazir-bold h-20">
-        <Link href={ROUTES.services}>
-          <Button shape="ghost">خدمات</Button>
+        <Link className="btn btn-ghost" href={ROUTES.services}>
+          خدمات
         </Link>
-        <Button shape="ghost" disabled>
+        <button className="btn btn-ghost" disabled>
           محصولات
-        </Button>
-        <Button shape="ghost" disabled>
+        </button>
+        <button className="btn btn-ghost" disabled>
           ابزار ها
-        </Button>
-        <Link href={ROUTES.articles}>
-          <Button shape="ghost">مقالات</Button>
+        </button>
+        <Link className="btn btn-ghost" href={ROUTES.articles}>
+          مقالات
         </Link>
-        <Link href={ROUTES.about}>
-          <Button shape="ghost">درباره ما</Button>
+        <Link className="btn btn-ghost" href={ROUTES.about}>
+          درباره ما
         </Link>
-        <Link href={ROUTES.connect}>
-          <Button shape="ghost">ارتباط با ما</Button>
+        <Link className="btn btn-ghost" href={ROUTES.connect}>
+          ارتباط با ما
         </Link>
 
         <DropDown className="mr-auto">
-          <DropDownTrigger className="font-kalameh-black" shape="ghost" dir="ltr">
+          <DropDownTrigger className="btn-ghost font-kalameh-black" dir="ltr">
             <span>WEB TUNERS</span>
           </DropDownTrigger>
 
           <DropDownContent className="**:w-full **:justify-start">
-            <Link href={ROUTES.home}>
-              <Button shape="ghost">صفحه اصلی</Button>
+            <Link className="btn btn-ghost" href={ROUTES.home}>
+              صفحه اصلی
             </Link>
-            <Link href={ROUTES.home} target="_blank">
-              <Button shape="ghost">لندینگ</Button>
+            <Link className="btn btn-ghost" href={ROUTES.home} target="_blank">
+              لندینگ
             </Link>
-            <Link href={ROUTES.home} target="_blank">
-              <Button shape="ghost">نظرسنجی</Button>
+            <Link className="btn btn-ghost" href={ROUTES.home} target="_blank">
+              نظرسنجی
             </Link>
-            <Link href={ROUTES.home} target="_blank">
-              <Button shape="ghost">حمایت</Button>
+            <Link className="btn btn-ghost" href={ROUTES.home} target="_blank">
+              حمایت
             </Link>
-            <Button shape="ghost" disabled>
+            <button className="btn btn-ghost" disabled>
               استخدام
-            </Button>
+            </button>
           </DropDownContent>
         </DropDown>
       </Flex>

@@ -1,18 +1,25 @@
-import { ReactNode, use } from "react";
+import { HTMLAttributes, ReactNode, use } from "react";
 import { ChevronDown } from "lucide-react";
 
 import { DropDownContext } from "./Context";
-import Button, { ButtonProps } from "../Button/Index";
+import classMerge from "root/lib/classMerge";
 
-export type DropDownTriggerProps = ButtonProps & {
+export type DropDownTriggerProps = HTMLAttributes<HTMLButtonElement> & {
   icon?: ReactNode;
 };
 
-const DropDownTrigger: React.FC<DropDownTriggerProps> = ({ children, onClick, icon, ...props }) => {
+const DropDownTrigger: React.FC<DropDownTriggerProps> = ({
+  className,
+  children,
+  onClick,
+  icon,
+  ...props
+}) => {
   const context = use(DropDownContext);
 
   return (
-    <Button
+    <button
+      className={classMerge("btn", className)}
       onClick={(ev) => {
         onClick?.(ev);
         context.toggleHandler();
@@ -23,7 +30,7 @@ const DropDownTrigger: React.FC<DropDownTriggerProps> = ({ children, onClick, ic
       <span className={`transition-transform ${context.isOpen ? "-scale-y-100" : ""}`}>
         {icon || <ChevronDown className="compatible-icon" />}
       </span>
-    </Button>
+    </button>
   );
 };
 

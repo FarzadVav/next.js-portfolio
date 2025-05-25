@@ -4,7 +4,6 @@ import { ArrowUpLeft, MailIcon, PhoneIcon } from "lucide-react";
 
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
-import Button from "root/components/ui/Button/Index";
 import githubImg from "root/public/logos/github.svg";
 import youtubeImg from "root/public/logos/youtube.svg";
 import discordImg from "root/public/logos/discord.svg";
@@ -48,10 +47,10 @@ const Footer = () => {
             <ArrowUpLeft className="compatible-icon" />
           </Link>
 
-          <Button shape="ghost" disabled>
+          <button className="btn btn-ghost" disabled>
             <span>استخدام</span>
             <ArrowUpLeft className="compatible-icon" />
-          </Button>
+          </button>
         </Flex>
 
         <Space size="normal" />

@@ -5,7 +5,6 @@ import { ChevronDownIcon } from "lucide-react";
 
 import { AccordionContext } from "./Context";
 import classMerge from "root/lib/classMerge";
-import Button from "root/components/ui/Button/Index";
 import Flex, { FlexProps } from "root/components/ui/Flex/Index";
 
 type AccordionHeaderProps = FlexProps;
@@ -30,11 +29,11 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({
       }}
     >
       {children}
-      <Button shape="ghost">
+      <button className="btn btn-ghost">
         <ChevronDownIcon
           className={`compatible-icon transition-transform ${isOpen ? "-scale-y-100" : ""}`}
         />
-      </Button>
+      </button>
     </Flex>
   );
 };

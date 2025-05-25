@@ -3,7 +3,6 @@ import { ArrowRightIcon } from "lucide-react";
 
 import { PageModalContext } from "./Context";
 import classMerge from "root/lib/classMerge";
-import Button from "root/components/ui/Button/Index";
 
 type PageModalHeaderProps = Omit<HTMLAttributes<HTMLHeadingElement>, "children"> & {
   title: string;
@@ -15,10 +14,10 @@ const PageModalHeader: React.FC<PageModalHeaderProps> = ({ className, title, ...
   return (
     <header className={classMerge("border-b border-foreground/10", className)} {...props}>
       <nav className="h-20 container row-items">
-        <Button shape="ghost" onClick={pageModalContext.closeHandler}>
+        <button className="btn btn-ghost" onClick={pageModalContext.closeHandler}>
           <ArrowRightIcon className="compatible-icon" />
           <span>بازگشت</span>
-        </Button>
+        </button>
 
         <span className="text-xl mx-auto font-kalameh-bold">{title}</span>
       </nav>

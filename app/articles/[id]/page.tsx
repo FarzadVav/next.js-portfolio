@@ -14,7 +14,6 @@ import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
-import Button from "root/components/ui/Button/Index";
 import { $mergeKeys } from "root/utils/general.utils";
 import Heading from "root/components/ui/Heading/Index";
 import { ROUTES } from "root/constants/routes.constants";
@@ -88,10 +87,10 @@ const ArticlesDetailPage = () => {
           </Heading>
 
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <Button>
+            <button className="btn btn-fill">
               <span>مطالعه</span>
               <ArrowDownIcon className="compatible-icon" />
-            </Button>
+            </button>
           </Link>
         </Flex>
 
@@ -101,10 +100,10 @@ const ArticlesDetailPage = () => {
             <h2>مکانزیم عملکرد موتور ویویو</h2>
           </Heading>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <Button>
+            <button className="btn btn-fill">
               <span>مطالعه</span>
               <ArrowDownIcon className="compatible-icon" />
-            </Button>
+            </button>
           </Link>
         </Flex>
 
@@ -114,10 +113,10 @@ const ArticlesDetailPage = () => {
             <h2>الگروتیم BIG O</h2>
           </Heading>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <Button>
+            <button className="btn btn-fill">
               <span>مطالعه</span>
               <ArrowDownIcon className="compatible-icon" />
-            </Button>
+            </button>
           </Link>
         </Flex>
 
@@ -127,10 +126,10 @@ const ArticlesDetailPage = () => {
             <h2>الگوریتم جسجتجوی خودکار</h2>
           </Heading>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <Button>
+            <button className="btn btn-fill">
               <span>مطالعه</span>
               <ArrowDownIcon className="compatible-icon" />
-            </Button>
+            </button>
           </Link>
         </Flex>
 
@@ -140,10 +139,10 @@ const ArticlesDetailPage = () => {
             <h2>یکپارچه سازی با ساختار DDD + جمع بندی</h2>
           </Heading>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <Button>
+            <button className="btn btn-fill">
               <span>مطالعه</span>
               <ArrowDownIcon className="compatible-icon" />
-            </Button>
+            </button>
           </Link>
         </Flex>
       </Box>
@@ -151,18 +150,18 @@ const ArticlesDetailPage = () => {
       <Space />
       <Box className="container bg-foreground/5">
         <Flex>
-          <Button shape="outline">
+          <button className="btn btn-outline">
             <span>حالت خواندن</span>
             <ExpandIcon className="compatible-icon" />
-          </Button>
-          <Button shape="outline">
+          </button>
+          <button className="btn btn-outline">
             <span>دانلود</span>
             <DownloadIcon className="compatible-icon" />
-          </Button>
-          <Button shape="outline">
+          </button>
+          <button className="btn btn-outline">
             <span>اشتراک گذاری</span>
             <Share2Icon className="compatible-icon" />
-          </Button>
+          </button>
         </Flex>
 
         <Space size="normal" />
@@ -253,76 +252,76 @@ const ArticlesDetailPage = () => {
 
         <Flex wrap="wrap" dir="ltr">
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Algorithms</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Design patterns</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Golang</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Web assembly</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Algorithms</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Design patterns</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Golang</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Web assembly</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Algorithms</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Design patterns</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Golang</span>
-            </Button>
+            </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <Button shape="ghost">
+            <button className="btn btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Web assembly</span>
-            </Button>
+            </button>
           </Link>
         </Flex>
       </Box>
@@ -349,11 +348,9 @@ const ArticlesDetailPage = () => {
             </Paragraph>
 
             <Space size="sm" />
-            <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
-              <Button className="w-full" shape="outline">
-                <span>بیشتر بخوانید</span>
-                <ArrowUpLeft className="compatible-icon" />
-              </Button>
+            <Link className="btn btn-outline w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
+              <span>بیشتر بخوانید</span>
+              <ArrowUpLeft className="compatible-icon" />
             </Link>
           </Box>
         ))}

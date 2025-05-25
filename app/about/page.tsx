@@ -13,7 +13,6 @@ import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
-import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import Accordion from "root/components/ui/Accordion/Index";
@@ -163,11 +162,9 @@ const AboutPage = () => {
               <span>مدیریت مشتری</span>
             </Badge>
           </Flex>
-          <Link href={"/"} className="mt-3">
-            <Button>
-              <span>مشاهده خدمات</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
-            </Button>
+          <Link href={"/"} className="btn btn-fill mt-3">
+            <span>مشاهده خدمات</span>
+            <ArrowUpLeftIcon className="compatible-icon" />
           </Link>
         </Box>
       </CtaAnimation>
@@ -206,10 +203,10 @@ const AboutPage = () => {
 
             <Space size="sm" />
             <Link className="w-full" href={"https://melktoday.ir/ads"}>
-              <Button className="w-full" shape="outline">
+              <button className="w-full btn btn-outline">
                 <span>مشاهده</span>
                 <ArrowUpLeft className="compatible-icon" />
-              </Button>
+              </button>
             </Link>
           </Box>
         ))}
@@ -252,10 +249,10 @@ const AboutPage = () => {
         ))}
 
         <Space size="normal" />
-        <Button className="mx-auto" shape="soft">
+        <button className="mx-auto btn btn-soft">
           <span>بیشتر</span>
           <PlusIcon className="compatible-icon" />
-        </Button>
+        </button>
       </div>
     </>
   );

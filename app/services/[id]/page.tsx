@@ -4,7 +4,6 @@ import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Input from "root/components/ui/Input/Index";
-import Button from "root/components/ui/Button/Index";
 import Heading from "root/components/ui/Heading/Index";
 import TextArea from "root/components/ui/Input/Textarea";
 import InputWrapper from "root/components/ui/Input/Wrapper";
@@ -106,10 +105,10 @@ const ServicesDetailPage = () => {
           <TextArea placeholder="شرح درخواست شما..." id="description" />
         </InputWrapper>
         <Space size="sm" />
-        <Button>
+        <button className="btn btn-fill">
           <span>ثبت درخواست</span>
           <SendHorizonalIcon className="compatible-icon -scale-x-100" />
-        </Button>
+        </button>
       </Box>
     </>
   );
