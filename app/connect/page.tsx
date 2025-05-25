@@ -56,7 +56,7 @@ const ConnectPage = () => {
               <Link href={"https://telegram.org"} target="_blank">
                 <Button shape="outline">
                   <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon-size" />
+                  <ArrowUpLeftIcon className="compatible-icon" />
                 </Button>
               </Link>
             </div>
@@ -77,7 +77,7 @@ const ConnectPage = () => {
               <Link href={"https://telegram.org"} target="_blank">
                 <Button shape="outline">
                   <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon-size" />
+                  <ArrowUpLeftIcon className="compatible-icon" />
                 </Button>
               </Link>
             </div>
@@ -98,7 +98,7 @@ const ConnectPage = () => {
               <Link href={"https://telegram.org"} target="_blank">
                 <Button shape="outline">
                   <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon-size" />
+                  <ArrowUpLeftIcon className="compatible-icon" />
                 </Button>
               </Link>
             </div>
@@ -119,7 +119,7 @@ const ConnectPage = () => {
               <Link href={"https://telegram.org"} target="_blank">
                 <Button shape="outline">
                   <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon-size" />
+                  <ArrowUpLeftIcon className="compatible-icon" />
                 </Button>
               </Link>
             </div>
@@ -140,7 +140,7 @@ const ConnectPage = () => {
               <Link href={"https://telegram.org"} target="_blank">
                 <Button shape="outline">
                   <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon-size" />
+                  <ArrowUpLeftIcon className="compatible-icon" />
                 </Button>
               </Link>
             </div>
@@ -161,7 +161,7 @@ const ConnectPage = () => {
               <Link href={"https://telegram.org"} target="_blank">
                 <Button shape="outline">
                   <span>مشاهده</span>
-                  <ArrowUpLeftIcon className="compatible-icon-size" />
+                  <ArrowUpLeftIcon className="compatible-icon" />
                 </Button>
               </Link>
             </div>
@@ -172,11 +172,11 @@ const ConnectPage = () => {
       <Space />
       <div className="container">
         <Flex justify="center">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading className="text-center" size="lg">
             <h2>ایونت های جامعه</h2>
           </Heading>
-          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+          <SparklesIcon className="compatible-icon -scale-x-100" />
         </Flex>
       </div>
 
@@ -202,7 +202,7 @@ const ConnectPage = () => {
             <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
               <Button className="w-full" shape="outline">
                 <span>ثبت نام</span>
-                <UserPenIcon className="compatible-icon-size" />
+                <UserPenIcon className="compatible-icon" />
               </Button>
             </Link>
           </Box>
@@ -212,11 +212,11 @@ const ConnectPage = () => {
       <Space />
       <div className="container">
         <Flex justify="center">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading className="text-center" size="lg">
             <h2>هر درخواستی از ما دارید بنویسید!</h2>
           </Heading>
-          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+          <SparklesIcon className="compatible-icon -scale-x-100" />
         </Flex>
       </div>
 
@@ -236,7 +236,7 @@ const ConnectPage = () => {
       <Flex className="container">
         <InputWrapper className="w-1/2" htmlFor="connect_topic">
           <Input placeholder="موضوع تیکت" id="connect_topic" name="connect_topic" />
-          <ChevronDownIcon className="compatible-icon-size" />
+          <ChevronDownIcon className="compatible-icon" />
         </InputWrapper>
         <InputWrapper className="w-1/2" htmlFor="connect_phone" dir="ltr">
           <Input placeholder="09** *** ****" id="connect_phone" name="connect_phone" />
@@ -250,12 +250,12 @@ const ConnectPage = () => {
         <Space size="sm" />
         <Button shape="outline">
           <span>فایل ضمیمه (اختیاری)</span>
-          <FileIcon className="compatible-icon-size" />
+          <FileIcon className="compatible-icon" />
         </Button>
         <Space size="sm" />
         <Button className="mx-auto">
           <span>ثبت تیکت</span>
-          <CheckIcon className="compatible-icon-size" />
+          <CheckIcon className="compatible-icon" />
         </Button>
       </div>
     </>

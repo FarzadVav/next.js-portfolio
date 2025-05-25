@@ -94,11 +94,11 @@ const ServicesDetailPage = () => {
         <Flex>
           <InputWrapper htmlFor="fullname">
             <Input placeholder="نام و نام خانوادگی" id="fullname" />
-            <UserIcon className="compatible-icon-size" />
+            <UserIcon className="compatible-icon" />
           </InputWrapper>
           <InputWrapper htmlFor="phone" dir="ltr">
             <Input placeholder="09*********" id="phone" />
-            <PhoneIcon className="compatible-icon-size" />
+            <PhoneIcon className="compatible-icon" />
           </InputWrapper>
         </Flex>
         <Space size="sm" />
@@ -108,7 +108,7 @@ const ServicesDetailPage = () => {
         <Space size="sm" />
         <Button>
           <span>ثبت درخواست</span>
-          <SendHorizonalIcon className="compatible-icon-size -scale-x-100" />
+          <SendHorizonalIcon className="compatible-icon -scale-x-100" />
         </Button>
       </Box>
     </>

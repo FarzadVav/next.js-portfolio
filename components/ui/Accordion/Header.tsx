@@ -32,7 +32,7 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({
       {children}
       <Button shape="ghost">
         <ChevronDownIcon
-          className={`compatible-icon-size transition-transform ${isOpen ? "-scale-y-100" : ""}`}
+          className={`compatible-icon transition-transform ${isOpen ? "-scale-y-100" : ""}`}
         />
       </Button>
     </Flex>

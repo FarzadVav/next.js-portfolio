@@ -32,36 +32,36 @@ const ArticlesPage = () => {
         <Button shape="ghost">کلاود</Button>
       </Flex>
 
-        <Space size="normal" />
-        <div className="container grid grid-cols-2 gap-3">
-          {Array.from(new Array(7)).map(() => (
-            <Box key={Math.random()}>
-              <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
+      <Space size="normal" />
+      <div className="container grid grid-cols-2 gap-3">
+        {Array.from(new Array(7)).map(() => (
+          <Box key={Math.random()}>
+            <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
 
-              <Space size="sm" />
-              <Heading font="vazir">
-                <h2>استفاده از تکنیک توسعه بر پایه دامنه</h2>
-              </Heading>
-              <Space size="xs" />
-              <Badge className="w-fit">مهندسی نرم افزار</Badge>
+            <Space size="sm" />
+            <Heading font="vazir">
+              <h2>استفاده از تکنیک توسعه بر پایه دامنه</h2>
+            </Heading>
+            <Space size="xs" />
+            <Badge className="w-fit">مهندسی نرم افزار</Badge>
 
-              <Space size="sm" />
-              <Paragraph>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-                شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
-              </Paragraph>
+            <Space size="sm" />
+            <Paragraph>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
+            </Paragraph>
 
-              <Space size="sm" />
-              <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
-                <Button className="w-full" shape="outline">
-                  <span>بیشتر بخوانید</span>
-                  <ArrowUpLeft className="compatible-icon-size" />
-                </Button>
-              </Link>
-            </Box>
-          ))}
-        </div>
+            <Space size="sm" />
+            <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
+              <Button className="w-full" shape="outline">
+                <span>بیشتر بخوانید</span>
+                <ArrowUpLeft className="compatible-icon" />
+              </Button>
+            </Link>
+          </Box>
+        ))}
+      </div>
     </>
   );
 };

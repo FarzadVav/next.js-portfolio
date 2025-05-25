@@ -46,52 +46,52 @@ const HomePage = () => {
         <Space size="normal" />
         <InputWrapper className="w-1/2 mx-auto" htmlFor="global-search">
           <Input placeholder="جستجوی هرچی میخوای..." id="global-search" />
-          <Search className="compatible-icon-size" />
+          <Search className="compatible-icon" />
         </InputWrapper>
         <Space size="normal" />
         <Flex className="w-3/4 mx-auto" justify="center" wrap="wrap">
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>بررسی آپدیت های جدید</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>یادگیری موارد جدید</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>ارائه خدمات وب</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>مشاوره خدمات</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>تیکت پشتیبانی</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>چیت شیت های فارسی</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>محصولات استارتاپی</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>مشاوره مسیر برنامه نویسی</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>پروژه های اوپن سورس</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>ایونت های جامعه</span>
           </Badge>
           <Badge>
-            <Sparkles className="compatible-icon-size" />
+            <Sparkles className="compatible-icon" />
             <span>رزومه قابل اطمینان</span>
           </Badge>
         </Flex>
@@ -100,11 +100,11 @@ const HomePage = () => {
       <Space />
       <div className="bg-gradient-to-b from-foreground/10 to-transparent rounded-4xl pt-6">
         <Flex justify="center">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading className="text-center" size="lg">
             <h2>خدمات تیم ما به شما</h2>
           </Heading>
-          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+          <SparklesIcon className="compatible-icon -scale-x-100" />
         </Flex>
 
         <Space size="normal" />
@@ -117,7 +117,7 @@ const HomePage = () => {
             <Link href={ROUTES.services}>
               <Button shape="outline">
                 <span>مشاهده</span>
-                <ArrowUpLeftIcon className="compatible-icon-size" />
+                <ArrowUpLeftIcon className="compatible-icon" />
               </Button>
             </Link>
           </Box>
@@ -129,7 +129,7 @@ const HomePage = () => {
             <Link href={ROUTES.services}>
               <Button shape="outline">
                 <span>مشاهده</span>
-                <ArrowUpLeftIcon className="compatible-icon-size" />
+                <ArrowUpLeftIcon className="compatible-icon" />
               </Button>
             </Link>
           </Box>
@@ -141,7 +141,7 @@ const HomePage = () => {
             <Link href={ROUTES.services}>
               <Button shape="outline">
                 <span>مشاهده</span>
-                <ArrowUpLeftIcon className="compatible-icon-size" />
+                <ArrowUpLeftIcon className="compatible-icon" />
               </Button>
             </Link>
           </Box>
@@ -150,11 +150,11 @@ const HomePage = () => {
 
       <Space />
       <Flex justify="center">
-        <SparklesIcon className="compatible-icon-size" />
+        <SparklesIcon className="compatible-icon" />
         <Heading className="text-center" size="lg">
           <h2>نگاهتان از ما</h2>
         </Heading>
-        <SparklesIcon className="compatible-icon-size -scale-x-100" />
+        <SparklesIcon className="compatible-icon -scale-x-100" />
       </Flex>
       <Space size="normal" />
       <div className="grid grid-cols-2 container gap-3">
@@ -242,13 +242,13 @@ const HomePage = () => {
           <Link href={ROUTES.about + "#FAQs"}>
             <Button>
               <span>درباره ما</span>
-              <ArrowUpLeftIcon className="compatible-icon-size" />
+              <ArrowUpLeftIcon className="compatible-icon" />
             </Button>
           </Link>
           <Link href={ROUTES.about + "#FAQs"}>
             <Button shape="ghost">
               <span>همه سوالات</span>
-              <ArrowUpLeftIcon className="compatible-icon-size" />
+              <ArrowUpLeftIcon className="compatible-icon" />
             </Button>
           </Link>
         </Flex>
@@ -256,19 +256,17 @@ const HomePage = () => {
 
       <Space />
       <Flex justify="center">
-        <SparklesIcon className="compatible-icon-size" />
+        <SparklesIcon className="compatible-icon" />
         <Heading className="text-center" size="lg">
           <h2>نظرات مشتریان/همکاران</h2>
         </Heading>
-        <SparklesIcon className="compatible-icon-size -scale-x-100" />
+        <SparklesIcon className="compatible-icon -scale-x-100" />
       </Flex>
       <Space size="normal" />
       <Flex className="container overflow-x-auto" align="start">
         {Array.from(new Array(12)).map(() => (
           <div className="w-2/5 min-w-2/5" key={Math.random()}>
-            <Heading className="bg-foreground/10 p-3 text-center rounded-lg" size="sm">
-              اردلان یزدان دوست
-            </Heading>
+            <Heading size="sm">اردلان یزدان دوست</Heading>
             <Space size="sm" />
             <Paragraph className="bg-foreground/5 p-6 rounded-lg">
               {Array.from(new Array(Math.ceil(Math.random() * 10))).map(
@@ -298,37 +296,37 @@ const HomePage = () => {
         <Flex>
           <Badge>
             <span>مشکل یابی</span>
-            <CheckIcon className="compatible-icon-size" />
+            <CheckIcon className="compatible-icon" />
           </Badge>
           <Badge>
             <span>حل مسئله</span>
-            <CheckIcon className="compatible-icon-size" />
+            <CheckIcon className="compatible-icon" />
           </Badge>
           <Badge>
             <span>مسیر انجام پروژه</span>
-            <CheckIcon className="compatible-icon-size" />
+            <CheckIcon className="compatible-icon" />
           </Badge>
           <Badge>
             <span>مهندسی نیازمندی ها</span>
-            <CheckIcon className="compatible-icon-size" />
+            <CheckIcon className="compatible-icon" />
           </Badge>
         </Flex>
         <Space size="normal" />
         <Link href={ROUTES.connect}>
           <Button>
             <span>درخواست دهید</span>
-            <SendHorizonalIcon className="compatible-icon-size -scale-x-100" />
+            <SendHorizonalIcon className="compatible-icon -scale-x-100" />
           </Button>
         </Link>
       </Box>
 
       <Space />
       <Flex justify="center">
-        <SparklesIcon className="compatible-icon-size" />
+        <SparklesIcon className="compatible-icon" />
         <Heading className="text-center" size="lg">
           <h2>آخرین مقالات سایت</h2>
         </Heading>
-        <SparklesIcon className="compatible-icon-size -scale-x-100" />
+        <SparklesIcon className="compatible-icon -scale-x-100" />
       </Flex>
       <Space size="normal" />
       <Flex className="container overflow-x-auto">
@@ -354,7 +352,7 @@ const HomePage = () => {
             <Link className="w-full" href={ROUTES.articles + "/1"}>
               <Button className="w-full" shape="outline">
                 <span>بیشتر بخوانید</span>
-                <ArrowUpLeft className="compatible-icon-size" />
+                <ArrowUpLeft className="compatible-icon" />
               </Button>
             </Link>
           </Box>

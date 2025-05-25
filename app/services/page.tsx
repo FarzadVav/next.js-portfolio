@@ -82,7 +82,7 @@ const ServicesPage = () => {
             <Flex>
               <Button className="w-1/2" onClick={() => setOpen(true)}>
                 <span>ثبت سفارش</span>
-                <CheckCircleIcon className="compatible-icon-size" />
+                <CheckCircleIcon className="compatible-icon" />
               </Button>
               <Link className="w-1/2" href={$mergeKeys("/", [ROUTES.services, 1])}>
                 <Button className="w-full" shape="ghost">

@@ -39,59 +39,59 @@ const AboutPage = () => {
 
         <Flex className="overflow-x-auto *:min-w-fit" style={{ scrollbarWidth: "none" }}>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
           <Badge>
-            <AppleIcon className="compatible-icon-size" />
+            <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </Badge>
         </Flex>
@@ -107,11 +107,11 @@ const AboutPage = () => {
       <Space />
       <div className="container">
         <Flex justify="center">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading className="text-center" size="lg">
             <h2>ما چه کارهایی می‌توانیم انجام دهیم؟</h2>
           </Heading>
-          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+          <SparklesIcon className="compatible-icon -scale-x-100" />
         </Flex>
         <Space size="normal" />
         <Flex className="overflow-x-auto pb-3">
@@ -143,30 +143,30 @@ const AboutPage = () => {
           </p>
           <Flex className="mt-3">
             <Badge>
-              <CheckIcon className="compatible-icon-size" />
+              <CheckIcon className="compatible-icon" />
               <span>حسابداری</span>
             </Badge>
             <Badge>
-              <CheckIcon className="compatible-icon-size" />
+              <CheckIcon className="compatible-icon" />
               <span>فروشگاهی</span>
             </Badge>
             <Badge>
-              <CheckIcon className="compatible-icon-size" />
+              <CheckIcon className="compatible-icon" />
               <span>اتوماسیون</span>
             </Badge>
             <Badge>
-              <CheckIcon className="compatible-icon-size" />
+              <CheckIcon className="compatible-icon" />
               <span>آموزشگاهی</span>
             </Badge>
             <Badge>
-              <CheckIcon className="compatible-icon-size" />
+              <CheckIcon className="compatible-icon" />
               <span>مدیریت مشتری</span>
             </Badge>
           </Flex>
           <Link href={"/"} className="mt-3">
             <Button>
               <span>مشاهده خدمات</span>
-              <ArrowUpLeftIcon className="compatible-icon-size" />
+              <ArrowUpLeftIcon className="compatible-icon" />
             </Button>
           </Link>
         </Box>
@@ -175,11 +175,11 @@ const AboutPage = () => {
       <Space />
       <div className="container">
         <Flex justify="center">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading className="text-center" size="lg">
             <h2>نمونه پروژه های ما</h2>
           </Heading>
-          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+          <SparklesIcon className="compatible-icon -scale-x-100" />
         </Flex>
       </div>
       <Space />
@@ -208,7 +208,7 @@ const AboutPage = () => {
             <Link className="w-full" href={"https://melktoday.ir/ads"}>
               <Button className="w-full" shape="outline">
                 <span>مشاهده</span>
-                <ArrowUpLeft className="compatible-icon-size" />
+                <ArrowUpLeft className="compatible-icon" />
               </Button>
             </Link>
           </Box>
@@ -218,11 +218,11 @@ const AboutPage = () => {
       <Space />
       <div className="container">
         <Flex justify="center">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading className="text-center" size="lg">
             <h2>پاسخ های سوال هایتان</h2>
           </Heading>
-          <SparklesIcon className="compatible-icon-size -scale-x-100" />
+          <SparklesIcon className="compatible-icon -scale-x-100" />
         </Flex>
       </div>
       <Space />
@@ -254,7 +254,7 @@ const AboutPage = () => {
         <Space size="normal" />
         <Button className="mx-auto" shape="soft">
           <span>بیشتر</span>
-          <PlusIcon className="compatible-icon-size" />
+          <PlusIcon className="compatible-icon" />
         </Button>
       </div>
     </>

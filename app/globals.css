@@ -1,4 +1,15 @@
 @import "tailwindcss";
+@import "../styles/utilities.css";
+@import "../styles/components.css";
+
+/* 
+  UI system spacing:
+    xs: 0.5
+    sm: 1.5
+    md: 3
+    lg: 6
+    xl: 9
+*/
 
 @font-face {
   font-family: "vazir";
@@ -37,7 +48,7 @@
   --color-background: hsl(223, 78%, 98%);
   --color-foreground: hsl(0, 0%, 15%);
   --color-success: hsl(113, 100%, 27%);
-  --color-warning: hsl(45, 100%, 53%);
+  --color-warning: hsl(45, 90%, 53%);
   --color-danger: hsl(0, 100%, 42%);
 
   --font-*: initial;
@@ -57,7 +68,7 @@
   * {
     @apply select-none;
     scrollbar-width: thin;
-    scrollbar-color: hsl(var(--foreground)) transparent;
+    scrollbar-color: hsl(var(--color-foreground)) transparent;
 
     &:focus {
       @apply outline-none;
@@ -73,20 +84,4 @@
   button {
     @apply cursor-pointer;
   }
-}
-
-@utility container {
-  @apply max-w-5xl px-3 mx-auto;
-}
-
-@utility row-items {
-  @apply flex items-center;
-}
-
-@utility center-items {
-  @apply flex items-center justify-center;
-}
-
-@utility compatible-icon-size {
-  @apply h-1/2 aspect-square;
 }

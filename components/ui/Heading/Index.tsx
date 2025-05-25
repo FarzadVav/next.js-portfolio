@@ -2,7 +2,7 @@ import classMerge from "root/lib/classMerge";
 import { AllSizeVariantsT, FontVariantsT } from "root/types/ui.types";
 
 /* Types */
-type HeadingProps = React.HTMLAttributes<HTMLButtonElement> & {
+type HeadingProps = React.HTMLAttributes<HTMLDivElement> & {
   size?: AllSizeVariantsT;
   font?: FontVariantsT;
 };
@@ -32,7 +32,7 @@ const Heading: React.FC<HeadingProps> = ({ className, ...props }) => {
     className
   );
 
-  return <button className={currentClass} {...props} />;
+  return <div className={currentClass} {...props} />;
 };
 
 export default Heading;

@@ -82,7 +82,7 @@ const ArticlesDetailPage = () => {
       <Space />
       <Box className="container">
         <Flex className="group transition-colors hover:bg-foreground/10 p-3 rounded-lg">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading size="xs">
             <h2>چگونه ای را به بی وصل کنیم؟</h2>
           </Heading>
@@ -90,59 +90,59 @@ const ArticlesDetailPage = () => {
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
             <Button>
               <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon-size" />
+              <ArrowDownIcon className="compatible-icon" />
             </Button>
           </Link>
         </Flex>
 
         <Flex className="group transition-colors hover:bg-foreground/10 p-3 rounded-lg">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading size="xs">
             <h2>مکانزیم عملکرد موتور ویویو</h2>
           </Heading>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
             <Button>
               <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon-size" />
+              <ArrowDownIcon className="compatible-icon" />
             </Button>
           </Link>
         </Flex>
 
         <Flex className="group transition-colors hover:bg-foreground/10 p-3 rounded-lg">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading size="xs">
             <h2>الگروتیم BIG O</h2>
           </Heading>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
             <Button>
               <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon-size" />
+              <ArrowDownIcon className="compatible-icon" />
             </Button>
           </Link>
         </Flex>
 
         <Flex className="group transition-colors hover:bg-foreground/10 p-3 rounded-lg">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading size="xs">
             <h2>الگوریتم جسجتجوی خودکار</h2>
           </Heading>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
             <Button>
               <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon-size" />
+              <ArrowDownIcon className="compatible-icon" />
             </Button>
           </Link>
         </Flex>
 
         <Flex className="group transition-colors hover:bg-foreground/10 p-3 rounded-lg">
-          <SparklesIcon className="compatible-icon-size" />
+          <SparklesIcon className="compatible-icon" />
           <Heading size="xs">
             <h2>یکپارچه سازی با ساختار DDD + جمع بندی</h2>
           </Heading>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
             <Button>
               <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon-size" />
+              <ArrowDownIcon className="compatible-icon" />
             </Button>
           </Link>
         </Flex>
@@ -153,15 +153,15 @@ const ArticlesDetailPage = () => {
         <Flex>
           <Button shape="outline">
             <span>حالت خواندن</span>
-            <ExpandIcon className="compatible-icon-size" />
+            <ExpandIcon className="compatible-icon" />
           </Button>
           <Button shape="outline">
             <span>دانلود</span>
-            <DownloadIcon className="compatible-icon-size" />
+            <DownloadIcon className="compatible-icon" />
           </Button>
           <Button shape="outline">
             <span>اشتراک گذاری</span>
-            <Share2Icon className="compatible-icon-size" />
+            <Share2Icon className="compatible-icon" />
           </Button>
         </Flex>
 
@@ -254,73 +254,73 @@ const ArticlesDetailPage = () => {
         <Flex wrap="wrap" dir="ltr">
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Algorithms</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Design patterns</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Golang</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Web assembly</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Algorithms</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Design patterns</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Golang</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Web assembly</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Algorithms</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Design patterns</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Golang</span>
             </Button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <Button shape="ghost">
-              <HashIcon className="compatible-icon-size" />
+              <HashIcon className="compatible-icon" />
               <span>Web assembly</span>
             </Button>
           </Link>
@@ -352,7 +352,7 @@ const ArticlesDetailPage = () => {
             <Link className="w-full" href={$mergeKeys("/", [ROUTES.articles, 1])}>
               <Button className="w-full" shape="outline">
                 <span>بیشتر بخوانید</span>
-                <ArrowUpLeft className="compatible-icon-size" />
+                <ArrowUpLeft className="compatible-icon" />
               </Button>
             </Link>
           </Box>

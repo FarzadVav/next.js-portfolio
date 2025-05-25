@@ -21,7 +21,7 @@ const DropDownTrigger: React.FC<DropDownTriggerProps> = ({ children, onClick, ic
     >
       {children}
       <span className={`transition-transform ${context.isOpen ? "-scale-y-100" : ""}`}>
-        {icon || <ChevronDown className="compatible-icon-size" />}
+        {icon || <ChevronDown className="compatible-icon" />}
       </span>
     </Button>
   );

@@ -1,0 +1,15 @@
+@utility container {
+  @apply max-w-5xl px-3 mx-auto;
+}
+
+@utility row-items {
+  @apply flex items-center;
+}
+
+@utility center-items {
+  @apply flex items-center justify-center;
+}
+
+@utility compatible-icon {
+  @apply h-1/2 aspect-square;
+}
