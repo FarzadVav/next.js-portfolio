@@ -32,7 +32,7 @@ const Header = () => {
         </Link>
 
         <DropDown className="mr-auto">
-          <DropDownTrigger className="btn-ghost font-kalameh-black" dir="ltr">
+          <DropDownTrigger className="btn btn-ghost font-kalameh-black" dir="ltr">
             <span>WEB TUNERS</span>
           </DropDownTrigger>
 

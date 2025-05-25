@@ -1,25 +1,17 @@
-import { HTMLAttributes, ReactNode, use } from "react";
 import { ChevronDown } from "lucide-react";
+import { HTMLAttributes, ReactNode, use } from "react";
 
 import { DropDownContext } from "./Context";
-import classMerge from "root/lib/classMerge";
 
 export type DropDownTriggerProps = HTMLAttributes<HTMLButtonElement> & {
   icon?: ReactNode;
 };
 
-const DropDownTrigger: React.FC<DropDownTriggerProps> = ({
-  className,
-  children,
-  onClick,
-  icon,
-  ...props
-}) => {
+const DropDownTrigger: React.FC<DropDownTriggerProps> = ({ children, onClick, icon, ...props }) => {
   const context = use(DropDownContext);
 
   return (
     <button
-      className={classMerge("btn", className)}
       onClick={(ev) => {
         onClick?.(ev);
         context.toggleHandler();
