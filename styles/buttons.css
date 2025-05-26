@@ -1,3 +1,4 @@
+/* Buttons */
 @utility btn {
   --bg-color: var(--color-foreground);
   --fr-color: var(--color-background);
@@ -5,6 +6,7 @@
   @apply px-5 h-10 text-base gap-3 rounded-lg center-items transition-all ring-4 ring-transparent active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed;
 }
 
+/* Colors */
 @utility btn-background {
   --bg-color: var(--color-background);
   --fr-color: var(--color-foreground);
@@ -25,6 +27,7 @@
   --fr-color: var(--color-background);
 }
 
+/* Variants */
 @utility btn-fill {
   @apply bg-[var(--bg-color)]
   text-[var(--fr-color)]
