@@ -10,7 +10,6 @@ import discordImg from "root/public/logos/discord.svg";
 import telegramImg from "root/public/logos/telegram.svg";
 import linkedinImg from "root/public/logos/linkedin.svg";
 import { ROUTES } from "root/constants/routes.constants";
-import Paragraph from "root/components/ui/Paragraph/Index";
 import instagramImg from "root/public/logos/instagram.svg";
 
 const Footer = () => {
@@ -112,9 +111,9 @@ const Footer = () => {
         </Flex>
 
         <Space />
-        <Paragraph className="text-center" size="sm">
+        <p className="text-center text-sm leading-relaxed">
           کليه حقوق و مالکیت محتوای اين سایت متعلق به وب تیونرز می باشد ©
-        </Paragraph>
+        </p>
       </footer>
     </>
   );
