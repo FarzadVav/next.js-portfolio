@@ -9,6 +9,13 @@
     md: 3
     lg: 6
     xl: 9
+
+  Radius:
+    xs: rounded
+    sm: rounded-md
+    md: rounded-lg
+    lg: rounded-xl
+    xl: rounded-2xl
 */
 
 @font-face {
