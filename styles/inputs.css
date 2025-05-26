@@ -1,0 +1,68 @@
+/* Input wrapper */
+@utility input {
+  --bg-color: var(--color-foreground);
+  --fr-color: var(--color-background);
+
+  @apply ring-4 ring-transparent w-full row-items px-5 rounded-lg h-10 text-base gap-3 cursor-pointer transition-all relative disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* For textareas */
+@utility input-textarea {
+  @apply p-5 h-[33dvh] text-base gap-3;
+}
+
+/* Colors */
+@utility input-background {
+  --bg-color: var(--color-background);
+  --fr-color: var(--color-foreground);
+}
+
+@utility input-danger {
+  --bg-color: var(--color-danger);
+  --fr-color: var(--color-background);
+}
+
+@utility input-success {
+  --bg-color: var(--color-success);
+  --fr-color: var(--color-background);
+}
+
+@utility input-warning {
+  --bg-color: var(--color-warning);
+  --fr-color: var(--color-background);
+}
+
+/* Variants */
+@utility input-fill {
+  @apply bg-[var(--bg-color)]
+  text-[var(--fr-color)]
+  focus-within:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+}
+
+@utility input-outline {
+  @apply border
+  text-[var(--bg-color)]
+  border-[var(--bg-color)]
+  focus-within:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+}
+
+@utility input-soft {
+  @apply bg-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
+  text-[var(--bg-color)]
+  focus-within:bg-transparent
+  focus-within:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+}
+
+@utility input-ghost {
+  @apply text-[var(--bg-color)]
+  focus-within:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+}
+
+/* Main field */
+@utility input-field {
+  @apply bg-transparent w-full h-full;
+}
+
+@utility textarea-field {
+  @apply bg-transparent w-full h-full resize-none;
+}

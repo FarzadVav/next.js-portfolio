@@ -3,10 +3,7 @@ import { PhoneIcon, SendHorizonalIcon, SparklesIcon, UserIcon } from "lucide-rea
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
-import Input from "root/components/ui/Input/Index";
 import Heading from "root/components/ui/Heading/Index";
-import TextArea from "root/components/ui/Input/Textarea";
-import InputWrapper from "root/components/ui/Input/Wrapper";
 import PageHero from "root/components/modules/PageHero/Index";
 
 const ServicesDetailPage = () => {
@@ -91,19 +88,19 @@ const ServicesDetailPage = () => {
         </Heading>
         <Space />
         <Flex>
-          <InputWrapper htmlFor="fullname">
-            <Input placeholder="نام و نام خانوادگی" id="fullname" />
+          <label className="input input-outline">
+            <input className="input-field" placeholder="نام و نام خانوادگی" />
             <UserIcon className="compatible-icon" />
-          </InputWrapper>
-          <InputWrapper htmlFor="phone" dir="ltr">
-            <Input placeholder="09*********" id="phone" />
+          </label>
+          <label className="input input-outline" dir="ltr">
+            <input className="input-field" placeholder="09*********" />
             <PhoneIcon className="compatible-icon" />
-          </InputWrapper>
+          </label>
         </Flex>
         <Space size="sm" />
-        <InputWrapper htmlFor="description" textarea-size="normal">
-          <TextArea placeholder="شرح درخواست شما..." id="description" />
-        </InputWrapper>
+        <label className="input input-outline input-textarea">
+          <textarea className="textarea-field" placeholder="شرح درخواست شما..." />
+        </label>
         <Space size="sm" />
         <button className="btn btn-fill">
           <span>ثبت درخواست</span>

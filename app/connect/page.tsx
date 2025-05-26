@@ -11,7 +11,6 @@ import {
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
-import Input from "root/components/ui/Input/Index";
 import Space from "root/components/ui/Space/Index";
 import githubImg from "root/public/logos/github.svg";
 import { $mergeKeys } from "root/utils/general.utils";
@@ -19,12 +18,10 @@ import youtubeImg from "root/public/logos/youtube.svg";
 import Heading from "root/components/ui/Heading/Index";
 import discordImg from "root/public/logos/discord.svg";
 import { ROUTES } from "root/constants/routes.constants";
-import TextArea from "root/components/ui/Input/Textarea";
 import telegramImg from "root/public/logos/telegram.svg";
 import linkedinImg from "root/public/logos/linkedin.svg";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import instagramImg from "root/public/logos/instagram.svg";
-import InputWrapper from "root/components/ui/Input/Wrapper";
 import PageHero from "root/components/modules/PageHero/Index";
 
 const ConnectPage = () => {
@@ -219,19 +216,23 @@ const ConnectPage = () => {
 
       <Space />
       <Flex className="container">
-        <InputWrapper className="w-1/2" htmlFor="connect_topic">
-          <Input placeholder="موضوع تیکت" id="connect_topic" name="connect_topic" />
+        <label className="input input-outline w-1/2">
+          <input className="input-field" placeholder="موضوع تیکت" name="connect_topic" />
           <ChevronDownIcon className="compatible-icon" />
-        </InputWrapper>
-        <InputWrapper className="w-1/2" htmlFor="connect_phone" dir="ltr">
-          <Input placeholder="09** *** ****" id="connect_phone" name="connect_phone" />
-        </InputWrapper>
+        </label>
+        <label className="input input-outline w-1/2" dir="ltr">
+          <input className="input-field" placeholder="09** *** ****" name="connect_phone" />
+        </label>
       </Flex>
       <Space size="sm" />
       <div className="container">
-        <InputWrapper htmlFor="connect_text" textarea-size="normal">
-          <TextArea placeholder="متن تان را شرح دهید..." id="connect_text" name="connect_text" />
-        </InputWrapper>
+        <label className="input input-outline input-textarea">
+          <textarea
+            name="connect_text"
+            className="textarea-field"
+            placeholder="متن تان را شرح دهید..."
+          />
+        </label>
         <Space size="sm" />
         <button className="btn btn-outline">
           <span>فایل ضمیمه (اختیاری)</span>

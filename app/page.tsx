@@ -13,12 +13,10 @@ import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import Badge from "root/components/ui/Badge/Index";
-import Input from "root/components/ui/Input/Index";
 import Heading from "root/components/ui/Heading/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import Accordion from "root/components/ui/Accordion/Index";
-import InputWrapper from "root/components/ui/Input/Wrapper";
 import AccordionHeader from "root/components/ui/Accordion/Header";
 import AccordionContent from "root/components/ui/Accordion/Content";
 import HeroSection from "root/components/templates/landing/HeroSection/Index";
@@ -43,10 +41,10 @@ const HomePage = () => {
           طراحان رایانه ای...
         </Paragraph>
         <Space size="normal" />
-        <InputWrapper className="w-1/2 mx-auto" htmlFor="global-search">
-          <Input placeholder="جستجوی هرچی میخوای..." id="global-search" />
+        <label className="input input-outline w-1/2 mx-auto">
+          <input className="input-field" type="text" placeholder="جستجوی هرچی میخوای..." />
           <Search className="compatible-icon" />
-        </InputWrapper>
+        </label>
         <Space size="normal" />
         <Flex className="w-3/4 mx-auto" justify="center" wrap="wrap">
           <Badge>
