@@ -12,7 +12,6 @@ import {
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
-import Badge from "root/components/ui/Badge/Index";
 import Heading from "root/components/ui/Heading/Index";
 import Paragraph from "root/components/ui/Paragraph/Index";
 import Accordion from "root/components/ui/Accordion/Index";
@@ -37,62 +36,62 @@ const AboutPage = () => {
         <div className="absolute pointer-events-none top-0 bottom-0 left-0 w-1/3 bg-gradient-to-r from-background to-transparent" />
 
         <Flex className="overflow-x-auto *:min-w-fit" style={{ scrollbarWidth: "none" }}>
-          <Badge>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
-          </Badge>
+          </div>
         </Flex>
       </Flex>
 
@@ -141,26 +140,26 @@ const AboutPage = () => {
             شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند
           </p>
           <Flex className="mt-3">
-            <Badge>
+            <div className="badge">
               <CheckIcon className="compatible-icon" />
               <span>حسابداری</span>
-            </Badge>
-            <Badge>
+            </div>
+            <div className="badge">
               <CheckIcon className="compatible-icon" />
               <span>فروشگاهی</span>
-            </Badge>
-            <Badge>
+            </div>
+            <div className="badge">
               <CheckIcon className="compatible-icon" />
               <span>اتوماسیون</span>
-            </Badge>
-            <Badge>
+            </div>
+            <div className="badge">
               <CheckIcon className="compatible-icon" />
               <span>آموزشگاهی</span>
-            </Badge>
-            <Badge>
+            </div>
+            <div className="badge">
               <CheckIcon className="compatible-icon" />
               <span>مدیریت مشتری</span>
-            </Badge>
+            </div>
           </Flex>
           <Link href={"/"} className="btn btn-fill mt-3">
             <span>مشاهده خدمات</span>
@@ -192,7 +191,7 @@ const AboutPage = () => {
               <h2>استفاده از تکنیک توسعه بر پایه دامنه</h2>
             </Heading>
             <Space size="xs" />
-            <Badge className="w-fit mx-auto">مهندسی نرم افزار</Badge>
+            <div className="badge mx-auto">مهندسی نرم افزار</div>
 
             <Space size="sm" />
             <Paragraph className="text-center">

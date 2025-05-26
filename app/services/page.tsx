@@ -7,7 +7,6 @@ import { CheckCircleIcon } from "lucide-react";
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
-import Badge from "root/components/ui/Badge/Index";
 import { $mergeKeys } from "root/utils/general.utils";
 import Heading from "root/components/ui/Heading/Index";
 import { ROUTES } from "root/constants/routes.constants";
@@ -53,17 +52,17 @@ const ServicesPage = () => {
             </Flex>
             <Space size="sm" />
             <Flex className="overflow-x-auto pb-1">
-              <Badge>Javascript</Badge>
-              <Badge>React</Badge>
-              <Badge>Next</Badge>
-              <Badge>Tailwind</Badge>
-              <Badge>Chart</Badge>
-              <Badge>Astro</Badge>
-              <Badge>Vitest</Badge>
-              <Badge>Remix</Badge>
-              <Badge>Sass</Badge>
-              <Badge>Framer</Badge>
-              <Badge>PWA</Badge>
+              <div className="badge">Javascript</div>
+              <div className="badge">React</div>
+              <div className="badge">Next</div>
+              <div className="badge">Tailwind</div>
+              <div className="badge">Chart</div>
+              <div className="badge">Astro</div>
+              <div className="badge">Vitest</div>
+              <div className="badge">Remix</div>
+              <div className="badge">Sass</div>
+              <div className="badge">Framer</div>
+              <div className="badge">PWA</div>
             </Flex>
             <Space size="sm" />
             <Paragraph>

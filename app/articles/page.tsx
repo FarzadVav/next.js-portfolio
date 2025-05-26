@@ -3,7 +3,6 @@ import { ArrowUpLeft } from "lucide-react";
 
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
-import Badge from "root/components/ui/Badge/Index";
 import Space from "root/components/ui/Space/Index";
 import { $mergeKeys } from "root/utils/general.utils";
 import Heading from "root/components/ui/Heading/Index";
@@ -42,7 +41,7 @@ const ArticlesPage = () => {
               <h2>استفاده از تکنیک توسعه بر پایه دامنه</h2>
             </Heading>
             <Space size="xs" />
-            <Badge className="w-fit">مهندسی نرم افزار</Badge>
+            <div className="badge">مهندسی نرم افزار</div>
 
             <Space size="sm" />
             <Paragraph>

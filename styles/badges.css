@@ -1,0 +1,25 @@
+/* Badges */
+@utility badge {
+  --1st-color: var(--color-foreground);
+
+  @apply center-items px-3 h-6 text-sm gap-1.5 rounded-lg w-fit max-w-full
+  bg-[color-mix(in_oklab,var(--1st-color)10%,transparent)]
+  text-[var(--1st-color)];
+}
+
+/* Colors */
+@utility badge-background {
+  --1st-color: var(--color-background);
+}
+
+@utility badge-danger {
+  --1st-color: var(--color-danger);
+}
+
+@utility badge-success {
+  --1st-color: var(--color-success);
+}
+
+@utility badge-warning {
+  --1st-color: var(--color-warning);
+}

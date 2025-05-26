@@ -12,7 +12,6 @@ import {
 import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
-import Badge from "root/components/ui/Badge/Index";
 import Heading from "root/components/ui/Heading/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import Paragraph from "root/components/ui/Paragraph/Index";
@@ -47,50 +46,50 @@ const HomePage = () => {
         </label>
         <Space size="normal" />
         <Flex className="w-3/4 mx-auto" justify="center" wrap="wrap">
-          <Badge>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>بررسی آپدیت های جدید</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>یادگیری موارد جدید</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>ارائه خدمات وب</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>مشاوره خدمات</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>تیکت پشتیبانی</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>چیت شیت های فارسی</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>محصولات استارتاپی</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>مشاوره مسیر برنامه نویسی</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>پروژه های اوپن سورس</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>ایونت های جامعه</span>
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>رزومه قابل اطمینان</span>
-          </Badge>
+          </div>
         </Flex>
       </div>
 
@@ -281,22 +280,22 @@ const HomePage = () => {
         </Paragraph>
         <Space size="normal" />
         <Flex>
-          <Badge>
+          <div className="badge">
             <span>مشکل یابی</span>
             <CheckIcon className="compatible-icon" />
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <span>حل مسئله</span>
             <CheckIcon className="compatible-icon" />
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <span>مسیر انجام پروژه</span>
             <CheckIcon className="compatible-icon" />
-          </Badge>
-          <Badge>
+          </div>
+          <div className="badge">
             <span>مهندسی نیازمندی ها</span>
             <CheckIcon className="compatible-icon" />
-          </Badge>
+          </div>
         </Flex>
         <Space size="normal" />
         <Link className="btn btn-fill" href={ROUTES.connect}>
@@ -324,7 +323,7 @@ const HomePage = () => {
               <h2>استفاده از تکنیک توسعه بر پایه دامنه</h2>
             </Heading>
             <Space size="xs" />
-            <Badge className="w-fit">مهندسی نرم افزار</Badge>
+            <div className="badge">مهندسی نرم افزار</div>
 
             <Space size="sm" />
             <Paragraph>
