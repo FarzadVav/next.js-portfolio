@@ -41,7 +41,7 @@ const HomePage = () => {
           <Search className="compatible-icon" />
         </label>
         <Space size="normal" />
-        <div className="f-center flex-wrap w-3/4 mx-auto">
+        <div className="f-center flex-wrap w-3/4 gap-3 mx-auto">
           <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>بررسی آپدیت های جدید</span>
@@ -139,8 +139,8 @@ const HomePage = () => {
         <SparklesIcon className="compatible-icon -scale-x-100" />
       </div>
       <Space size="normal" />
-      <div className="grid grid-cols-2 container gap-3">
-        <div className="f-align card card-effect">
+      <div className="grid grid-cols-2 container">
+        <div className="f-align card card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -152,7 +152,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="f-align card card-effect">
+        <div className="f-align card card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -164,7 +164,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="f-align card card-effect">
+        <div className="f-align card card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -176,7 +176,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="f-align card card-effect">
+        <div className="f-align card card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -235,7 +235,7 @@ const HomePage = () => {
       </div>
       <Space size="normal" />
       <ScrollX className="container">
-        <ScrollXContainer className="items-start">
+        <ScrollXContainer className="items-start gap-3">
           {Array.from(new Array(12)).map(() => (
             <div className="w-2/5 min-w-2/5" key={Math.random()}>
               <span className="font-vazir-bold text-lg">اردلان یزدان دوست</span>
