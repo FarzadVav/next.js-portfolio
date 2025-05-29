@@ -3,7 +3,7 @@
   --bg-color: var(--color-foreground);
   --fr-color: var(--color-background);
 
-  @apply ring-4 ring-transparent w-full row-items px-5 rounded-lg h-10 text-base gap-3 cursor-pointer transition-all relative disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply ring-4 ring-transparent w-full f-row px-5 rounded-lg h-10 text-base gap-3 cursor-pointer transition-all relative disabled:opacity-50 disabled:cursor-not-allowed;
 }
 
 /* For textareas */

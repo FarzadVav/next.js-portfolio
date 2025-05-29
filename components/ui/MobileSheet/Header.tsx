@@ -11,7 +11,7 @@ const MobileSheetHeader: FC<MobileSheetHeaderProps> = ({ className, children, ..
   return (
     <div
       className={classMerge(
-        "pt-3 pb-6 cursor-grab touch-none group active:cursor-grabbing center-items",
+        "pt-3 pb-6 cursor-grab touch-none group active:cursor-grabbing f-center",
         className
       )}
       onPointerDown={(ev) => controls?.start(ev)}

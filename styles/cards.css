@@ -1,0 +1,29 @@
+@utility card {
+  --1st-color: var(--color-foreground);
+
+  @apply p-6 rounded-lg;
+}
+
+@utility card-effect {
+  @apply border-4
+  border-transparent
+  transition-colors
+  hover:border-[color-mix(in_oklab,var(--1st-color)10%,transparent)];
+}
+
+/* Colors */
+@utility card-background {
+  --1st-color: var(--color-background);
+}
+
+@utility card-danger {
+  --1st-color: var(--color-danger);
+}
+
+@utility card-success {
+  --1st-color: var(--color-success);
+}
+
+@utility card-warning {
+  --1st-color: var(--color-warning);
+}

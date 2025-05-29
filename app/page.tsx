@@ -9,13 +9,14 @@ import {
   SparklesIcon,
 } from "lucide-react";
 
-import Box from "root/components/ui/Box/Index";
 import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
+import ScrollX from "root/components/ui/ScrollX/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import Accordion from "root/components/ui/Accordion/Index";
 import AccordionHeader from "root/components/ui/Accordion/Header";
 import AccordionContent from "root/components/ui/Accordion/Content";
+import ScrollXContainer from "root/components/ui/ScrollX/Container";
 import HeroSection from "root/components/templates/landing/HeroSection/Index";
 
 const HomePage = () => {
@@ -99,7 +100,7 @@ const HomePage = () => {
 
         <Space size="normal" />
         <Flex className="container">
-          <Box className="w-1/3">
+          <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">فرانت اند</span>
             <Space size="normal" />
             <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
@@ -108,8 +109,8 @@ const HomePage = () => {
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
-          </Box>
-          <Box className="w-1/3">
+          </div>
+          <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">بک اند</span>
             <Space size="normal" />
             <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
@@ -118,8 +119,8 @@ const HomePage = () => {
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
-          </Box>
-          <Box className="w-1/3">
+          </div>
+          <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">ربات تلگرام</span>
             <Space size="normal" />
             <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
@@ -128,7 +129,7 @@ const HomePage = () => {
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
-          </Box>
+          </div>
         </Flex>
       </div>
 
@@ -140,58 +141,53 @@ const HomePage = () => {
       </Flex>
       <Space size="normal" />
       <div className="grid grid-cols-2 container gap-3">
-        <Box>
-          <Flex>
-            <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
-            <div>
-              <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-              <Space size="xs" />
-              <p className="text-sm">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                گرافیک است...
-              </p>
-            </div>
-          </Flex>
-        </Box>
-        <Box>
-          <Flex>
-            <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
-            <div>
-              <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-              <Space size="xs" />
-              <p className="text-sm">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                گرافیک است...
-              </p>
-            </div>
-          </Flex>
-        </Box>
-        <Box>
-          <Flex>
-            <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
-            <div>
-              <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-              <Space size="xs" />
-              <p className="text-sm">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                گرافیک است...
-              </p>
-            </div>
-          </Flex>
-        </Box>
-        <Box>
-          <Flex>
-            <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
-            <div>
-              <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-              <Space size="xs" />
-              <p className="text-sm">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                گرافیک است...
-              </p>
-            </div>
-          </Flex>
-        </Box>
+        <Flex className="card card-effect">
+          <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+          <div>
+            <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
+            <Space size="xs" />
+            <p className="text-sm">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است...
+            </p>
+          </div>
+        </Flex>
+
+        <Flex className="card card-effect">
+          <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+          <div>
+            <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
+            <Space size="xs" />
+            <p className="text-sm">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است...
+            </p>
+          </div>
+        </Flex>
+
+        <Flex className="card card-effect">
+          <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+          <div>
+            <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
+            <Space size="xs" />
+            <p className="text-sm">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است...
+            </p>
+          </div>
+        </Flex>
+
+        <Flex className="card card-effect">
+          <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+          <div>
+            <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
+            <Space size="xs" />
+            <p className="text-sm">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است...
+            </p>
+          </div>
+        </Flex>
       </div>
       <Space />
       <div className="container">
@@ -239,23 +235,25 @@ const HomePage = () => {
         <SparklesIcon className="compatible-icon -scale-x-100" />
       </Flex>
       <Space size="normal" />
-      <Flex className="container overflow-x-auto" align="start">
-        {Array.from(new Array(12)).map(() => (
-          <div className="w-2/5 min-w-2/5" key={Math.random()}>
-            <span className="font-vazir-bold text-lg">اردلان یزدان دوست</span>
-            <Space size="sm" />
-            <p className="bg-foreground/5 p-6 rounded-lg ">
-              {Array.from(new Array(Math.ceil(Math.random() * 10))).map(
-                () => "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ بود."
-              )}
-              {".."}
-            </p>
-          </div>
-        ))}
-      </Flex>
+      <ScrollX className="container">
+        <ScrollXContainer className="items-start">
+          {Array.from(new Array(12)).map(() => (
+            <div className="w-2/5 min-w-2/5" key={Math.random()}>
+              <span className="font-vazir-bold text-lg">اردلان یزدان دوست</span>
+              <Space size="sm" />
+              <p className="bg-foreground/5 card">
+                {Array.from(new Array(Math.ceil(Math.random() * 10))).map(
+                  () => "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ بود."
+                )}
+                {".."}
+              </p>
+            </div>
+          ))}
+        </ScrollXContainer>
+      </ScrollX>
 
       <Space />
-      <Box className="container">
+      <div className="container card card-effect">
         <h5 className="text-xl font-kalameh-bold">مشاوه میخواهید؟ با ما در ارتباط باشید!</h5>
         <Space size="normal" />
         <p>
@@ -292,7 +290,7 @@ const HomePage = () => {
           <span>درخواست دهید</span>
           <SendHorizonalIcon className="compatible-icon -scale-x-100" />
         </Link>
-      </Box>
+      </div>
 
       <Space />
       <Flex justify="center">
@@ -301,31 +299,36 @@ const HomePage = () => {
         <SparklesIcon className="compatible-icon -scale-x-100" />
       </Flex>
       <Space size="normal" />
-      <Flex className="container overflow-x-auto">
-        {Array.from(new Array(7)).map(() => (
-          <Box className="w-2/5 min-w-2/5" key={Math.random()}>
-            <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
+      {/* <div className="container f-row-scroll"> */}
+      <ScrollX className="container">
+        <ScrollXContainer>
+          {Array.from(new Array(7)).map(() => (
+            <div className="w-2/5 card card-effect min-w-2/5" key={Math.random()}>
+              <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
 
-            <Space size="sm" />
-            <h6 className="text-xl font-vazir-bold">استفاده از تکنیک توسعه بر پایه دامنه</h6>
-            <Space size="xs" />
-            <div className="badge">مهندسی نرم افزار</div>
+              <Space size="sm" />
+              <h6 className="text-xl font-vazir-bold">استفاده از تکنیک توسعه بر پایه دامنه</h6>
+              <Space size="xs" />
+              <div className="badge">مهندسی نرم افزار</div>
 
-            <Space size="sm" />
-            <p>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-              شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
-            </p>
+              <Space size="sm" />
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                باشد{" "}
+              </p>
 
-            <Space size="sm" />
-            <Link className="btn btn-outline w-full" href={ROUTES.articles + "/1"}>
-              <span>بیشتر بخوانید</span>
-              <ArrowUpLeft className="compatible-icon" />
-            </Link>
-          </Box>
-        ))}
-      </Flex>
+              <Space size="sm" />
+              <Link className="btn btn-outline w-full" href={ROUTES.articles + "/1"}>
+                <span>بیشتر بخوانید</span>
+                <ArrowUpLeft className="compatible-icon" />
+              </Link>
+            </div>
+          ))}
+        </ScrollXContainer>
+      </ScrollX>
+      {/* </div> */}
     </>
   );
 };

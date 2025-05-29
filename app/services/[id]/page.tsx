@@ -22,7 +22,7 @@ const ServicesDetailPage = () => {
       <div className="container grid grid-cols-3 gap-3">
         {Array.from(new Array(6)).map(() => (
           <Box key={Math.random()}>
-            <div className="size-12 bg-success/10 p-3 rounded-full center-items">
+            <div className="size-12 bg-success/10 p-3 rounded-full f-center">
               <SparklesIcon className="size-full text-success" />
             </div>
             <Space size="sm" />

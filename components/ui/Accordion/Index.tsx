@@ -1,18 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { HTMLAttributes, useState } from "react";
 
-import Box, { BoxProps } from "../Box/Index";
 import { AccordionContext } from "./Context";
+import classMerge from "root/lib/classMerge";
 
-type AccordionProps = BoxProps;
+type AccordionProps = HTMLAttributes<HTMLDivElement>;
 
-const Accordion: React.FC<AccordionProps> = (props) => {
+const Accordion: React.FC<AccordionProps> = ({ className, ...props }) => {
   const [isOpen, setOpen] = useState(false);
 
   return (
     <AccordionContext value={{ isOpen, setOpen: (newState: boolean) => setOpen(newState) }}>
-      <Box {...props} />
+      <div className={classMerge("card card-effect", className)} {...props} />
     </AccordionContext>
   );
 };

@@ -2,7 +2,7 @@
 @utility badge {
   --1st-color: var(--color-foreground);
 
-  @apply center-items px-3 h-6 text-sm gap-1.5 rounded-lg w-fit max-w-full
+  @apply f-center px-3 h-6 text-sm gap-1.5 rounded-lg w-fit max-w-full
   bg-[color-mix(in_oklab,var(--1st-color)10%,transparent)]
   text-[var(--1st-color)];
 }

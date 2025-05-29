@@ -2,12 +2,16 @@
   @apply max-w-5xl px-3 mx-auto;
 }
 
-@utility row-items {
+@utility f-row {
   @apply flex items-center;
 }
 
-@utility center-items {
-  @apply flex items-center justify-center;
+@utility f-row-scroll {
+  @apply f-row overflow-x-auto pb-3;
+}
+
+@utility f-center {
+  @apply f-row justify-center;
 }
 
 @utility compatible-icon {

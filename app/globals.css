@@ -3,6 +3,7 @@
 @import "../styles/buttons.css";
 @import "../styles/inputs.css";
 @import "../styles/badges.css";
+@import "../styles/cards.css";
 
 /* 
   UI system spacing:
@@ -32,6 +33,13 @@
     md: text-base
     lg: text-lg
     xl: text-xl
+
+  Color levels:
+    xs: color/5
+    sm: color/10
+    md: color/15
+    lg: color/50
+    xl: color/100
 */
 
 @font-face {

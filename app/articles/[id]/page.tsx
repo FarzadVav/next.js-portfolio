@@ -32,7 +32,7 @@ const ArticlesDetailPage = () => {
       <Space />
       <div className="container grid grid-cols-4">
         <Flex>
-          <div className="size-20 center-items">
+          <div className="size-20 f-center">
             <Calendar className="w-2/3" />
           </div>
           <div className="h-20">
@@ -43,7 +43,7 @@ const ArticlesDetailPage = () => {
           </div>
         </Flex>
         <Flex>
-          <div className="size-20 center-items">
+          <div className="size-20 f-center">
             <Calendar className="w-2/3" />
           </div>
           <div className="h-20">
@@ -54,7 +54,7 @@ const ArticlesDetailPage = () => {
           </div>
         </Flex>
         <Flex>
-          <div className="size-20 center-items">
+          <div className="size-20 f-center">
             <Calendar className="w-2/3" />
           </div>
           <div className="h-20">
@@ -65,7 +65,7 @@ const ArticlesDetailPage = () => {
           </div>
         </Flex>
         <Flex>
-          <div className="size-20 center-items">
+          <div className="size-20 f-center">
             <Calendar className="w-2/3" />
           </div>
           <div className="h-20">

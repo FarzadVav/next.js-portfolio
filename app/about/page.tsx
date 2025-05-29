@@ -182,7 +182,7 @@ const AboutPage = () => {
       <div className="container grid grid-cols-2 gap-3">
         {Array.from(new Array(7)).map(() => (
           <Box key={Math.random()}>
-            <div className="w-1/3 mx-auto center-items p-3 aspect-square border border-foreground rounded-full">
+            <div className="w-1/3 mx-auto f-center p-3 aspect-square border border-foreground rounded-full">
               <BiohazardIcon className="size-full" />
             </div>
 
