@@ -7,7 +7,7 @@
 }
 
 @utility f-align-scroll {
-  @apply f-align overflow-x-auto pb-3;
+  @apply f-align overflow-x-auto pb-1.5;
 }
 
 @utility f-center {

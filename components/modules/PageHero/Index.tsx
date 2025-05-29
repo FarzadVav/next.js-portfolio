@@ -1,8 +1,3 @@
-import Flex from "root/components/ui/Flex/Index";
-import Heading from "root/components/ui/Heading/Index";
-import Paragraph from "root/components/ui/Paragraph/Index";
-import Space from "root/components/ui/Space/Index";
-
 type PageHeroProps = Omit<React.HTMLAttributes<HTMLDivElement>, "children" | "title"> & {
   src: string;
   title: string;
@@ -11,17 +6,14 @@ type PageHeroProps = Omit<React.HTMLAttributes<HTMLDivElement>, "children" | "ti
 
 const PageHero: React.FC<PageHeroProps> = ({ src, title, description, ...props }) => {
   return (
-    <Flex className="container" space="lg" {...props}>
+    <div className="container f-align gap-6" {...props}>
       <div className="size-44 min-w-44 rounded-full bg-foreground/10" title={src} />
 
       <div>
-        <Heading size="lg">
-          <h1>{title}</h1>
-        </Heading>
-        <Space size="sm" />
-        <Paragraph>{description}</Paragraph>
+        <h1 className="text-2xl font-kalameh-bold">{title}</h1>
+        <p className="mt-3">{description}</p>
       </div>
-    </Flex>
+    </div>
   );
 };
 
