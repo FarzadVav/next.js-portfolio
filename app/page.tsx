@@ -9,7 +9,6 @@ import {
   SparklesIcon,
 } from "lucide-react";
 
-import Space from "root/components/ui/Space/Index";
 import ScrollX from "root/components/ui/ScrollX/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import Accordion from "root/components/ui/Accordion/Index";
@@ -21,27 +20,26 @@ import HeroSection from "root/components/templates/landing/HeroSection/Index";
 const HomePage = () => {
   return (
     <>
-      <Space />
-      <div className="container relative">
+      <div className="container mt-9 relative">
         <HeroSection />
 
         <h1 className="text-3xl text-center font-kalameh-bold">
           مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
         </h1>
-        <Space size="normal" />
-        <p className="w-3/4 text-center mx-auto">
+
+        <p className="w-3/4 text-center mx-auto mt-6">
           لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و
           کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥
           شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای
           طراحان رایانه ای...
         </p>
-        <Space size="normal" />
-        <label className="input input-outline w-1/2 mx-auto">
+
+        <label className="input input-outline w-1/2 mx-auto mt-6">
           <input className="input-field" type="text" placeholder="جستجوی هرچی میخوای..." />
           <Search className="compatible-icon" />
         </label>
-        <Space size="normal" />
-        <div className="f-center flex-wrap w-3/4 gap-3 mx-auto">
+
+        <div className="f-center flex-wrap w-3/4 gap-3 mx-auto mt-6">
           <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>بررسی آپدیت های جدید</span>
@@ -89,42 +87,34 @@ const HomePage = () => {
         </div>
       </div>
 
-      <Space />
-      <div className="bg-gradient-to-b from-foreground/10 to-transparent rounded-4xl pt-6">
+      <div className="bg-gradient-to-b from-foreground/10 to-transparent rounded-4xl pt-6 mt-9">
         <div className="f-center">
           <SparklesIcon className="compatible-icon" />
           <h2 className="font-kalameh-bold text-center text-2xl">خدمات تیم ما به شما</h2>
           <SparklesIcon className="compatible-icon -scale-x-100" />
         </div>
 
-        <Space size="normal" />
-        <div className="container f-align">
+        <div className="container mt-6 f-align">
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">فرانت اند</span>
-            <Space size="normal" />
-            <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
-            <Space size="normal" />
-            <Link className="btn btn-outline" href={ROUTES.services}>
+            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground/10"></div>
+            <Link className="btn btn-outline mt-6" href={ROUTES.services}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </div>
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">بک اند</span>
-            <Space size="normal" />
-            <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
-            <Space size="normal" />
-            <Link className="btn btn-outline" href={ROUTES.services}>
+            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground/10"></div>
+            <Link className="btn mt-6 btn-outline" href={ROUTES.services}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </div>
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">ربات تلگرام</span>
-            <Space size="normal" />
-            <div className="w-full aspect-square rounded-xl bg-foreground/10"></div>
-            <Space size="normal" />
-            <Link className="btn btn-outline" href={ROUTES.services}>
+            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground/10"></div>
+            <Link className="btn mt-6 btn-outline" href={ROUTES.services}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -132,20 +122,17 @@ const HomePage = () => {
         </div>
       </div>
 
-      <Space />
-      <div className="f-center">
+      <div className="f-center mt-9">
         <SparklesIcon className="compatible-icon" />
         <h3 className="text-center text-2xl font-kalameh-bold">نگاهتان از ما</h3>
         <SparklesIcon className="compatible-icon -scale-x-100" />
       </div>
-      <Space size="normal" />
-      <div className="grid grid-cols-2 container">
+      <div className="grid mt-6 grid-cols-2 container">
         <div className="f-align card card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-            <Space size="xs" />
-            <p className="text-sm">
+            <p className="text-sm mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است...
             </p>
@@ -156,8 +143,7 @@ const HomePage = () => {
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-            <Space size="xs" />
-            <p className="text-sm">
+            <p className="text-sm mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است...
             </p>
@@ -168,8 +154,7 @@ const HomePage = () => {
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-            <Space size="xs" />
-            <p className="text-sm">
+            <p className="text-sm mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است...
             </p>
@@ -180,16 +165,14 @@ const HomePage = () => {
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-            <Space size="xs" />
-            <p className="text-sm">
+            <p className="text-sm mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است...
             </p>
           </div>
         </div>
       </div>
-      <Space />
-      <div className="container">
+      <div className="container mt-9">
         {Array.from(new Array(3)).map(() => (
           <Accordion key={Math.random()}>
             <AccordionHeader>
@@ -198,8 +181,7 @@ const HomePage = () => {
               </h6>
             </AccordionHeader>
             <AccordionContent>
-              <Space size="normal" />
-              <p className="">
+              <p className="mt-6">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
                 گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
                 برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
@@ -214,8 +196,7 @@ const HomePage = () => {
           </Accordion>
         ))}
 
-        <Space size="normal" />
-        <div className="f-align">
+        <div className="f-align mt-6">
           <Link className="btn btn-fill" href={ROUTES.about + "#FAQs"}>
             <span>درباره ما</span>
             <ArrowUpLeftIcon className="compatible-icon" />
@@ -227,20 +208,17 @@ const HomePage = () => {
         </div>
       </div>
 
-      <Space />
-      <div className="f-center">
+      <div className="f-center mt-9">
         <SparklesIcon className="compatible-icon" />
         <h4 className="font-kalameh-bold text-center text-2xl">نظرات مشتریان/همکاران</h4>
         <SparklesIcon className="compatible-icon -scale-x-100" />
       </div>
-      <Space size="normal" />
-      <ScrollX className="container">
+      <ScrollX className="container mt-6">
         <ScrollXContainer className="items-start gap-3">
           {Array.from(new Array(12)).map(() => (
             <div className="w-2/5 min-w-2/5" key={Math.random()}>
               <span className="font-vazir-bold text-lg">اردلان یزدان دوست</span>
-              <Space size="sm" />
-              <p className="bg-foreground/5 card">
+              <p className="bg-foreground/5 mt-3 card">
                 {Array.from(new Array(Math.ceil(Math.random() * 10))).map(
                   () => "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ بود."
                 )}
@@ -251,11 +229,9 @@ const HomePage = () => {
         </ScrollXContainer>
       </ScrollX>
 
-      <Space />
-      <div className="container card card-effect">
+      <div className="container card card-effect mt-9">
         <h5 className="text-xl font-kalameh-bold">مشاوه میخواهید؟ با ما در ارتباط باشید!</h5>
-        <Space size="normal" />
-        <p>
+        <p className="mt-6">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
           است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
           تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
@@ -265,8 +241,7 @@ const HomePage = () => {
           شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
           سوالات پیوسته اهل دنیای مورد استفاده قرار گیرد.
         </p>
-        <Space size="normal" />
-        <div className="f-align">
+        <div className="mt-6 f-align">
           <div className="badge">
             <span>مشکل یابی</span>
             <CheckIcon className="compatible-icon" />
@@ -284,42 +259,34 @@ const HomePage = () => {
             <CheckIcon className="compatible-icon" />
           </div>
         </div>
-        <Space size="normal" />
-        <Link className="btn btn-fill" href={ROUTES.connect}>
+        <Link className="mt-6 btn btn-fill" href={ROUTES.connect}>
           <span>درخواست دهید</span>
           <SendHorizonalIcon className="compatible-icon -scale-x-100" />
         </Link>
       </div>
 
-      <Space />
-      <div className="f-center">
+      <div className="f-center mt-9">
         <SparklesIcon className="compatible-icon" />
         <h6 className="font-kalameh-bold text-2xl text-center">آخرین مقالات سایت</h6>
         <SparklesIcon className="compatible-icon -scale-x-100" />
       </div>
-      <Space size="normal" />
-      {/* <div className="container f-align-scroll"> */}
-      <ScrollX className="container">
+      <ScrollX className="container mt-6">
         <ScrollXContainer>
           {Array.from(new Array(7)).map(() => (
             <div className="w-2/5 card card-effect min-w-2/5" key={Math.random()}>
               <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
 
-              <Space size="sm" />
-              <h6 className="text-xl font-vazir-bold">استفاده از تکنیک توسعه بر پایه دامنه</h6>
-              <Space size="xs" />
-              <div className="badge">مهندسی نرم افزار</div>
+              <h6 className="text-xl mt-3 font-vazir-bold">استفاده از تکنیک توسعه بر پایه دامنه</h6>
+              <div className="badge mt-1.5">مهندسی نرم افزار</div>
 
-              <Space size="sm" />
-              <p>
+              <p className="mt-3">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                 گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
                 شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                باشد{" "}
+                باشد
               </p>
 
-              <Space size="sm" />
-              <Link className="btn btn-outline w-full" href={ROUTES.articles + "/1"}>
+              <Link className="btn mt-3 btn-outline w-full" href={ROUTES.articles + "/1"}>
                 <span>بیشتر بخوانید</span>
                 <ArrowUpLeft className="compatible-icon" />
               </Link>
@@ -327,7 +294,6 @@ const HomePage = () => {
           ))}
         </ScrollXContainer>
       </ScrollX>
-      {/* </div> */}
     </>
   );
 };
