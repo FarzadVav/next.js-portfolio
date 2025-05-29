@@ -19,8 +19,6 @@ const ServicesPage = () => {
 
   return (
     <>
-      <Space />
-
       <PageHero
         src=""
         title="بیاید باهم پروژه های خفن رو پیاده کنیم"
