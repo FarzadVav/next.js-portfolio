@@ -9,7 +9,6 @@ import {
   SparklesIcon,
 } from "lucide-react";
 
-import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import ScrollX from "root/components/ui/ScrollX/Index";
 import { ROUTES } from "root/constants/routes.constants";
@@ -42,7 +41,7 @@ const HomePage = () => {
           <Search className="compatible-icon" />
         </label>
         <Space size="normal" />
-        <Flex className="w-3/4 mx-auto" justify="center" wrap="wrap">
+        <div className="f-center flex-wrap w-3/4 mx-auto">
           <div className="badge">
             <Sparkles className="compatible-icon" />
             <span>بررسی آپدیت های جدید</span>
@@ -87,19 +86,19 @@ const HomePage = () => {
             <Sparkles className="compatible-icon" />
             <span>رزومه قابل اطمینان</span>
           </div>
-        </Flex>
+        </div>
       </div>
 
       <Space />
       <div className="bg-gradient-to-b from-foreground/10 to-transparent rounded-4xl pt-6">
-        <Flex justify="center">
+        <div className="f-center">
           <SparklesIcon className="compatible-icon" />
           <h2 className="font-kalameh-bold text-center text-2xl">خدمات تیم ما به شما</h2>
           <SparklesIcon className="compatible-icon -scale-x-100" />
-        </Flex>
+        </div>
 
         <Space size="normal" />
-        <Flex className="container">
+        <div className="container f-align">
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">فرانت اند</span>
             <Space size="normal" />
@@ -130,18 +129,18 @@ const HomePage = () => {
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </div>
-        </Flex>
+        </div>
       </div>
 
       <Space />
-      <Flex justify="center">
+      <div className="f-center">
         <SparklesIcon className="compatible-icon" />
         <h3 className="text-center text-2xl font-kalameh-bold">نگاهتان از ما</h3>
         <SparklesIcon className="compatible-icon -scale-x-100" />
-      </Flex>
+      </div>
       <Space size="normal" />
       <div className="grid grid-cols-2 container gap-3">
-        <Flex className="card card-effect">
+        <div className="f-align card card-effect">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -151,9 +150,9 @@ const HomePage = () => {
               گرافیک است...
             </p>
           </div>
-        </Flex>
+        </div>
 
-        <Flex className="card card-effect">
+        <div className="f-align card card-effect">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -163,9 +162,9 @@ const HomePage = () => {
               گرافیک است...
             </p>
           </div>
-        </Flex>
+        </div>
 
-        <Flex className="card card-effect">
+        <div className="f-align card card-effect">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -175,9 +174,9 @@ const HomePage = () => {
               گرافیک است...
             </p>
           </div>
-        </Flex>
+        </div>
 
-        <Flex className="card card-effect">
+        <div className="f-align card card-effect">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -187,7 +186,7 @@ const HomePage = () => {
               گرافیک است...
             </p>
           </div>
-        </Flex>
+        </div>
       </div>
       <Space />
       <div className="container">
@@ -216,7 +215,7 @@ const HomePage = () => {
         ))}
 
         <Space size="normal" />
-        <Flex>
+        <div className="f-align">
           <Link className="btn btn-fill" href={ROUTES.about + "#FAQs"}>
             <span>درباره ما</span>
             <ArrowUpLeftIcon className="compatible-icon" />
@@ -225,15 +224,15 @@ const HomePage = () => {
             <span>همه سوالات</span>
             <ArrowUpLeftIcon className="compatible-icon" />
           </Link>
-        </Flex>
+        </div>
       </div>
 
       <Space />
-      <Flex justify="center">
+      <div className="f-center">
         <SparklesIcon className="compatible-icon" />
         <h4 className="font-kalameh-bold text-center text-2xl">نظرات مشتریان/همکاران</h4>
         <SparklesIcon className="compatible-icon -scale-x-100" />
-      </Flex>
+      </div>
       <Space size="normal" />
       <ScrollX className="container">
         <ScrollXContainer className="items-start">
@@ -267,7 +266,7 @@ const HomePage = () => {
           سوالات پیوسته اهل دنیای مورد استفاده قرار گیرد.
         </p>
         <Space size="normal" />
-        <Flex>
+        <div className="f-align">
           <div className="badge">
             <span>مشکل یابی</span>
             <CheckIcon className="compatible-icon" />
@@ -284,7 +283,7 @@ const HomePage = () => {
             <span>مهندسی نیازمندی ها</span>
             <CheckIcon className="compatible-icon" />
           </div>
-        </Flex>
+        </div>
         <Space size="normal" />
         <Link className="btn btn-fill" href={ROUTES.connect}>
           <span>درخواست دهید</span>
@@ -293,13 +292,13 @@ const HomePage = () => {
       </div>
 
       <Space />
-      <Flex justify="center">
+      <div className="f-center">
         <SparklesIcon className="compatible-icon" />
         <h6 className="font-kalameh-bold text-2xl text-center">آخرین مقالات سایت</h6>
         <SparklesIcon className="compatible-icon -scale-x-100" />
-      </Flex>
+      </div>
       <Space size="normal" />
-      {/* <div className="container f-row-scroll"> */}
+      {/* <div className="container f-align-scroll"> */}
       <ScrollX className="container">
         <ScrollXContainer>
           {Array.from(new Array(7)).map(() => (

@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpLeft, MailIcon, PhoneIcon } from "lucide-react";
 
-import Flex from "root/components/ui/Flex/Index";
 import Space from "root/components/ui/Space/Index";
 import githubImg from "root/public/logos/github.svg";
 import youtubeImg from "root/public/logos/youtube.svg";
@@ -17,7 +16,7 @@ const Footer = () => {
     <>
       <Space />
       <footer className="container py-10 border-t border-foreground/10">
-        <Flex justify="center">
+        <div className="f-center">
           <Link className="btn btn-ghost" href={"tel:09389461065"}>
             <span dir="ltr">0938 0946 1065</span>
             <PhoneIcon className="compatible-icon" />
@@ -27,10 +26,10 @@ const Footer = () => {
             <span>farzad.vav.work@gmail.com</span>
             <MailIcon className="compatible-icon" />
           </Link>
-        </Flex>
+        </div>
 
         <Space size="normal" />
-        <Flex justify="center">
+        <div className="f-center">
           <Link className="btn btn-ghost" href={ROUTES.landing}>
             <span>لندینگ تبلیغاتی</span>
             <ArrowUpLeft className="compatible-icon" />
@@ -50,10 +49,10 @@ const Footer = () => {
             <span>استخدام</span>
             <ArrowUpLeft className="compatible-icon" />
           </button>
-        </Flex>
+        </div>
 
         <Space size="normal" />
-        <Flex justify="center">
+        <div className="f-center">
           <Link className="size-9" href={"https://instagram.com"}>
             <Image
               className="size-full rounded-full"
@@ -108,7 +107,7 @@ const Footer = () => {
               height={64}
             />
           </Link>
-        </Flex>
+        </div>
 
         <Space />
         <p className="text-center text-sm leading-relaxed">

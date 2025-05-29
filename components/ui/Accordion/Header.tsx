@@ -1,17 +1,15 @@
 "use client";
 
-import { use } from "react";
+import { HTMLAttributes, use } from "react";
 import { ChevronDownIcon } from "lucide-react";
 
 import { AccordionContext } from "./Context";
 import classMerge from "root/lib/classMerge";
-import Flex, { FlexProps } from "root/components/ui/Flex/Index";
 
-type AccordionHeaderProps = FlexProps;
+type AccordionHeaderProps = HTMLAttributes<HTMLDivElement>;
 
 const AccordionHeader: React.FC<AccordionHeaderProps> = ({
   className,
-  justify,
   onClick,
   children,
   ...props
@@ -19,10 +17,9 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({
   const { isOpen, setOpen } = use(AccordionContext);
 
   return (
-    <Flex
+    <div
       {...props}
-      justify={justify || "between"}
-      className={classMerge("cursor-pointer", className)}
+      className={classMerge("f-align justify-between cursor-pointer", className)}
       onClick={(ev) => {
         onClick?.(ev);
         setOpen(!isOpen);
@@ -34,7 +31,7 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({
           className={`compatible-icon transition-transform ${isOpen ? "-scale-y-100" : ""}`}
         />
       </button>
-    </Flex>
+    </div>
   );
 };
 

@@ -9,7 +9,7 @@ function ScrollXContainer({ children, className, ...props }: HTMLAttributes<HTML
   const { scrollRef } = use(ScrollXContext);
 
   return (
-    <div ref={scrollRef} className={classMerge("f-row-scroll gap-3", className)} {...props}>
+    <div ref={scrollRef} className={classMerge("f-align-scroll gap-3", className)} {...props}>
       {children}
     </div>
   );

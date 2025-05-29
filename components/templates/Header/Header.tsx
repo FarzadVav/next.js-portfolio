@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 
-import Flex from "root/components/ui/Flex/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import DropDown from "root/components/ui/DropDown/Index";
 import DropDownTrigger from "root/components/ui/DropDown/Trigger";
@@ -11,7 +10,7 @@ import DropDownContent from "root/components/ui/DropDown/Content";
 const Header = () => {
   return (
     <header className="bg-background border-b border-foreground/10 sticky top-0 z-20">
-      <Flex className="container font-vazir-bold h-20">
+      <div className="container f-align font-vazir-bold h-20">
         <Link className="btn btn-ghost" href={ROUTES.services}>
           خدمات
         </Link>
@@ -54,7 +53,7 @@ const Header = () => {
             </button>
           </DropDownContent>
         </DropDown>
-      </Flex>
+      </div>
     </header>
   );
 };
