@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowUpLeft } from "lucide-react";
 
-import Space from "root/components/ui/Space/Index";
 import { $mergeKeys } from "root/utils/general.utils";
 import { ROUTES } from "root/constants/routes.constants";
 import PageHero from "root/components/modules/PageHero/Index";
@@ -29,8 +28,7 @@ const ArticlesPage = () => {
             <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
 
             <h2 className="text-xl font-vazir-bold mt-3">استفاده از تکنیک توسعه بر پایه دامنه</h2>
-            <Space size="xs" />
-            <div className="badge">مهندسی نرم افزار</div>
+            <div className="badge mt-1.5">مهندسی نرم افزار</div>
 
             <p className="mt-3">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
