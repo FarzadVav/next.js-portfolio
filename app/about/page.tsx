@@ -9,33 +9,28 @@ import {
   SparklesIcon,
 } from "lucide-react";
 
-import Box from "root/components/ui/Box/Index";
-import Flex from "root/components/ui/Flex/Index";
-import Space from "root/components/ui/Space/Index";
-import Heading from "root/components/ui/Heading/Index";
-import Paragraph from "root/components/ui/Paragraph/Index";
+import ScrollX from "root/components/ui/ScrollX/Index";
 import Accordion from "root/components/ui/Accordion/Index";
 import PageHero from "root/components/modules/PageHero/Index";
 import AccordionHeader from "root/components/ui/Accordion/Header";
+import ScrollXContainer from "root/components/ui/ScrollX/Container";
 import AccordionContent from "root/components/ui/Accordion/Content";
 import CtaAnimation from "root/components/modules/CtaAnimation/Index";
 
 const AboutPage = () => {
   return (
     <>
-      <Space />
       <PageHero
         src=""
         title="بیاید باهم پروژه های خفن رو پیاده کنیم"
         description="لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥 شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان رایانه ای..."
       />
 
-      <Space />
-      <Flex className="container relative" dir="ltr">
+      <div className="f-align mt-9 container relative" dir="ltr">
         <div className="absolute pointer-events-none top-0 bottom-0 right-0 w-1/3 bg-gradient-to-l from-background to-transparent" />
         <div className="absolute pointer-events-none top-0 bottom-0 left-0 w-1/3 bg-gradient-to-r from-background to-transparent" />
 
-        <Flex className="overflow-x-auto *:min-w-fit" style={{ scrollbarWidth: "none" }}>
+        <div className="f-align overflow-x-auto *:min-w-fit" style={{ scrollbarWidth: "none" }}>
           <div className="badge">
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
@@ -92,147 +87,128 @@ const AboutPage = () => {
             <AppleIcon className="compatible-icon" />
             <span>Apple</span>
           </div>
-        </Flex>
-      </Flex>
-
-      <Space />
-      <div className="container">
-        <Box>
-          <video className="bg-foreground/10 rounded-lg w-full aspect-video" />
-        </Box>
+        </div>
       </div>
 
-      <Space />
-      <div className="container">
-        <Flex justify="center">
+      <div className="container mt-9">
+        <video className="bg-foreground/10 card w-full aspect-video" />
+      </div>
+
+      <div className="container mt-9">
+        <div className="f-center">
           <SparklesIcon className="compatible-icon" />
-          <Heading className="text-center" size="lg">
-            <h2>ما چه کارهایی می‌توانیم انجام دهیم؟</h2>
-          </Heading>
+          <h2 className="text-2xl text-center font-kalameh-bold">
+            ما چه کارهایی می‌توانیم انجام دهیم؟
+          </h2>
           <SparklesIcon className="compatible-icon -scale-x-100" />
-        </Flex>
-        <Space size="normal" />
-        <Flex className="overflow-x-auto pb-3">
-          {Array.from(new Array(7)).map(() => (
-            <Box className="w-1/3 min-w-1/3" key={Math.random()}>
-              <div className="w-2/3 mx-auto aspect-square rounded-lg bg-foreground/10" />
-              <Space size="normal" />
-              <Heading className="text-center">
-                <p>جذب {(3_637_000).toLocaleString("fa")} کاربر</p>
-              </Heading>
-              <Space size="sm" />
-              <Paragraph className="text-center">
-                ما در پیشرفته ترین سازمان های ایران با افراد زیبا کار کرده ایم...
-              </Paragraph>
-            </Box>
-          ))}
-        </Flex>
+        </div>
+        <ScrollX className="mt-3">
+          <ScrollXContainer>
+            {Array.from(new Array(7)).map(() => (
+              <div className="card card-effect w-1/3 min-w-1/3" key={Math.random()}>
+                <div className="w-2/3 mx-auto aspect-square rounded-lg bg-foreground/10" />
+                <p className="text-xl mt-6 text-center font-kalameh-bold">
+                  جذب {(3_637_000).toLocaleString("fa")} کاربر
+                </p>
+                <p className="text-center mt-3">
+                  ما در پیشرفته ترین سازمان های ایران با افراد زیبا کار کرده ایم...
+                </p>
+              </div>
+            ))}
+          </ScrollXContainer>
+        </ScrollX>
       </div>
 
-      <Space />
-      <CtaAnimation>
-        <Box space="lg">
-          <h3 className="text-xl font-vazir-black">خدمات ما راه موفقیت کسب و کار شماست!</h3>
-          <p className="mt-3">
-            معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند
-            تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه
-            متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته
-            شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند
-          </p>
-          <Flex className="mt-3">
-            <div className="badge">
-              <CheckIcon className="compatible-icon" />
-              <span>حسابداری</span>
+      <div className="mt-9">
+        <CtaAnimation>
+          <div className="card card-effect">
+            <h3 className="text-xl font-vazir-black">خدمات ما راه موفقیت کسب و کار شماست!</h3>
+            <p className="mt-3">
+              معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده
+              می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد
+              از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در
+              نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند
+            </p>
+            <div className="f-align mt-3">
+              <div className="badge">
+                <CheckIcon className="compatible-icon" />
+                <span>حسابداری</span>
+              </div>
+              <div className="badge">
+                <CheckIcon className="compatible-icon" />
+                <span>فروشگاهی</span>
+              </div>
+              <div className="badge">
+                <CheckIcon className="compatible-icon" />
+                <span>اتوماسیون</span>
+              </div>
+              <div className="badge">
+                <CheckIcon className="compatible-icon" />
+                <span>آموزشگاهی</span>
+              </div>
+              <div className="badge">
+                <CheckIcon className="compatible-icon" />
+                <span>مدیریت مشتری</span>
+              </div>
             </div>
-            <div className="badge">
-              <CheckIcon className="compatible-icon" />
-              <span>فروشگاهی</span>
-            </div>
-            <div className="badge">
-              <CheckIcon className="compatible-icon" />
-              <span>اتوماسیون</span>
-            </div>
-            <div className="badge">
-              <CheckIcon className="compatible-icon" />
-              <span>آموزشگاهی</span>
-            </div>
-            <div className="badge">
-              <CheckIcon className="compatible-icon" />
-              <span>مدیریت مشتری</span>
-            </div>
-          </Flex>
-          <Link href={"/"} className="btn btn-fill mt-3">
-            <span>مشاهده خدمات</span>
-            <ArrowUpLeftIcon className="compatible-icon" />
-          </Link>
-        </Box>
-      </CtaAnimation>
+            <Link href={"/"} className="btn btn-fill mt-3">
+              <span>مشاهده خدمات</span>
+              <ArrowUpLeftIcon className="compatible-icon" />
+            </Link>
+          </div>
+        </CtaAnimation>
+      </div>
 
-      <Space />
-      <div className="container">
-        <Flex justify="center">
+      <div className="container mt-9">
+        <div className="f-center">
           <SparklesIcon className="compatible-icon" />
-          <Heading className="text-center" size="lg">
-            <h2>نمونه پروژه های ما</h2>
-          </Heading>
+          <h2 className="text-2xl font-vazir-bold">نمونه پروژه های ما</h2>
           <SparklesIcon className="compatible-icon -scale-x-100" />
-        </Flex>
+        </div>
       </div>
-      <Space />
-      <div className="container grid grid-cols-2 gap-3">
+      <div className="container mt-9 grid grid-cols-2">
         {Array.from(new Array(7)).map(() => (
-          <Box key={Math.random()}>
+          <div className="card card-effect" key={Math.random()}>
             <div className="w-1/3 mx-auto f-center p-3 aspect-square border border-foreground rounded-full">
               <BiohazardIcon className="size-full" />
             </div>
 
-            <Space size="sm" />
-            <Heading className="text-center" font="vazir">
-              <h2>استفاده از تکنیک توسعه بر پایه دامنه</h2>
-            </Heading>
-            <Space size="xs" />
-            <div className="badge mx-auto">مهندسی نرم افزار</div>
+            <h2 className="text-xl font-vazir-bold mt-3">استفاده از تکنیک توسعه بر پایه دامنه</h2>
+            <div className="badge mx-auto mt-1.5">مهندسی نرم افزار</div>
 
-            <Space size="sm" />
-            <Paragraph className="text-center">
+            <p className="text-center mt-3">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از طراحان گرافیک است چاپگرها و متون بلکه
               روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
               کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-            </Paragraph>
+            </p>
 
-            <Space size="sm" />
-            <Link className="w-full" href={"https://melktoday.ir/ads"}>
+            <Link className="w-full mt-3" href={"https://melktoday.ir/ads"}>
               <button className="w-full btn btn-outline">
                 <span>مشاهده</span>
                 <ArrowUpLeft className="compatible-icon" />
               </button>
             </Link>
-          </Box>
+          </div>
         ))}
       </div>
 
-      <Space />
-      <div className="container">
-        <Flex justify="center">
+      <div className="container mt-6">
+        <div className="f-center">
           <SparklesIcon className="compatible-icon" />
-          <Heading className="text-center" size="lg">
-            <h2>پاسخ های سوال هایتان</h2>
-          </Heading>
+          <h2 className="text-2xl font-vazir-bold">پاسخ های سوال هایتان</h2>
           <SparklesIcon className="compatible-icon -scale-x-100" />
-        </Flex>
+        </div>
       </div>
-      <Space />
-      <div className="container" id="FAQs">
+      <div className="container mt-6" id="FAQs">
         {Array.from(new Array(6)).map(() => (
           <Accordion key={Math.random()}>
             <AccordionHeader>
-              <Heading font="vazir" size="sm">
-                <h4>چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟</h4>
-              </Heading>
+              <h4 className="text-lg font-vazir-bold">
+                چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
+              </h4>
             </AccordionHeader>
             <AccordionContent>
-              <Space size="normal" />
-              <Paragraph>
+              <p className="pt-3">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
                 گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
                 برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
@@ -242,13 +218,12 @@ const AboutPage = () => {
                 داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
                 مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
                 طراحی اساسا مورد استفاده قرار گیرد.
-              </Paragraph>
+              </p>
             </AccordionContent>
           </Accordion>
         ))}
 
-        <Space size="normal" />
-        <button className="mx-auto btn btn-soft">
+        <button className="mx-auto mt-6 btn btn-soft">
           <span>بیشتر</span>
           <PlusIcon className="compatible-icon" />
         </button>
