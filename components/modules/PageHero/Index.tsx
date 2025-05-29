@@ -6,7 +6,7 @@ type PageHeroProps = Omit<React.HTMLAttributes<HTMLDivElement>, "children" | "ti
 
 const PageHero: React.FC<PageHeroProps> = ({ src, title, description, ...props }) => {
   return (
-    <div className="container f-align mt-6 gap-6" {...props}>
+    <div className="container f-align mt-9 gap-6" {...props}>
       <div className="size-44 min-w-44 rounded-full bg-foreground/10" title={src} />
 
       <div>

@@ -27,7 +27,7 @@ const ServicesPage = () => {
 
       <Space />
 
-      <div className="p-1 f-align w-fit mx-auto rounded-lg bg-foreground/5">
+      <div className="p-1 f-align w-fit mx-auto gap-3 rounded-lg bg-foreground/5">
         <button className="btn btn-fill">فرانت اند</button>
         <button className="btn btn-ghost">بک اند</button>
         <button className="btn btn-ghost">موبایل</button>
