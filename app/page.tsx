@@ -93,7 +93,7 @@ const HomePage = () => {
         </PageTitle>
 
         <div className="container mt-6 f-align">
-          <div className="card card-effect w-1/3">
+          <div className="card-effect w-1/3">
             <span className="text-xl font-vazir-bold">فرانت اند</span>
             <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-5"></div>
             <Link className="btn-outline mt-6" href={ROUTES.services}>
@@ -101,7 +101,7 @@ const HomePage = () => {
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </div>
-          <div className="card card-effect w-1/3">
+          <div className="card-effect w-1/3">
             <span className="text-xl font-vazir-bold">بک اند</span>
             <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-5"></div>
             <Link className="mt-6 btn-outline" href={ROUTES.services}>
@@ -109,7 +109,7 @@ const HomePage = () => {
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </div>
-          <div className="card card-effect w-1/3">
+          <div className="card-effect w-1/3">
             <span className="text-xl font-vazir-bold">ربات تلگرام</span>
             <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-5"></div>
             <Link className="mt-6 btn-outline" href={ROUTES.services}>
@@ -124,7 +124,7 @@ const HomePage = () => {
         <h3>نگاهتان از ما</h3>
       </PageTitle>
       <div className="grid mt-6 grid-cols-2 container">
-        <div className="f-align card card-effect gap-3">
+        <div className="f-align card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground-5 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -135,7 +135,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="f-align card card-effect gap-3">
+        <div className="f-align card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground-5 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -146,7 +146,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="f-align card card-effect gap-3">
+        <div className="f-align card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground-5 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -157,7 +157,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="f-align card card-effect gap-3">
+        <div className="f-align card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground-5 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
@@ -222,7 +222,7 @@ const HomePage = () => {
         </ScrollXContainer>
       </ScrollX>
 
-      <div className="container card card-effect mt-9">
+      <div className="container card-effect mt-9">
         <h5 className="text-xl font-kalameh-bold">مشاوه میخواهید؟ با ما در ارتباط باشید!</h5>
         <p className="mt-3">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
@@ -264,7 +264,7 @@ const HomePage = () => {
       <ScrollX className="container mt-6">
         <ScrollXContainer>
           {Array.from(new Array(7)).map(() => (
-            <div className="w-2/5 card card-effect min-w-2/5" key={Math.random()}>
+            <div className="w-2/5 card-effect min-w-2/5" key={Math.random()}>
               <div className="w-full aspect-video bg-foreground-5 rounded-lg" />
 
               <h6 className="text-xl mt-3 font-vazir-bold">استفاده از توسعه بر پایه دامنه</h6>
