@@ -77,6 +77,12 @@
 @theme {
   --color-*: initial;
   --color-background: hsl(223, 78%, 98%);
+  /* --color-background-1: hsl(223, 78%, 98%);
+  --color-background-2: hsl(223, 78%, 98%, 0.5);
+  --color-background-3: hsl(223, 78%, 98%, 0.15);
+  --color-background-4: hsl(223, 78%, 98%, 0.1);
+  --color-background-5: hsl(223, 78%, 98%, 0.05); */
+
   --color-foreground: hsl(0, 0%, 15%);
   --color-success: hsl(113, 100%, 27%);
   --color-warning: hsl(45, 90%, 53%);

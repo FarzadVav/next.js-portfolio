@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const HeroSection = () => {
+const HeroSectionLogos = () => {
   return (
     <>
       <motion.div
@@ -73,4 +73,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroSectionLogos;

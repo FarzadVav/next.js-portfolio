@@ -1,9 +1,9 @@
 import Link from "next/link";
 import {
+  Search,
   ArrowUpLeft,
   ArrowUpLeftIcon,
   CheckIcon,
-  Search,
   SendHorizonalIcon,
   Sparkles,
   SparklesIcon,
@@ -15,13 +15,13 @@ import Accordion from "root/components/ui/Accordion/Index";
 import AccordionHeader from "root/components/ui/Accordion/Header";
 import AccordionContent from "root/components/ui/Accordion/Content";
 import ScrollXContainer from "root/components/ui/ScrollX/Container";
-import HeroSection from "root/components/templates/landing/HeroSection/Index";
+import HeroSectionLogos from "root/components/templates/Home/HeroSectionLogos/Index";
 
 const HomePage = () => {
   return (
     <>
       <div className="container mt-9 relative">
-        <HeroSection />
+        <HeroSectionLogos />
 
         <h1 className="text-3xl text-center font-kalameh-bold">
           مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
