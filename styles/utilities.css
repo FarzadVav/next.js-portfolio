@@ -2,12 +2,20 @@
   @apply max-w-5xl px-3 mx-auto;
 }
 
+@utility no-scrollbar {
+  scrollbar-width: none;
+}
+
 @utility f-align {
   @apply flex items-center;
 }
 
 @utility f-align-scroll {
   @apply f-align overflow-x-auto pb-1.5;
+
+  &.no-scrollbar {
+    @apply pb-0;
+  }
 }
 
 @utility f-center {

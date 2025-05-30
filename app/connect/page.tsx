@@ -137,7 +137,7 @@ const ConnectPage = () => {
       <div className="container mt-6 grid grid-cols-2 gap-3">
         {Array.from(new Array(4)).map(() => (
           <div className="card card-effect" key={Math.random()}>
-            <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
+            <div className="w-full aspect-video bg-foreground-5 rounded-lg" />
 
             <h2 className="mt-6 text-xl font-vazir-bold">استفاده از تکنیک توسعه بر پایه دامنه</h2>
 

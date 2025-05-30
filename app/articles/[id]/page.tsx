@@ -38,7 +38,7 @@ const ArticlesDetailPage = () => {
       </div>
 
       <div className="card card-effect container">
-        <div className="f-align group transition-colors hover:bg-foreground/10 card">
+        <div className="f-align group transition-colors hover:bg-foreground-5 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">چگونه ای را به بی وصل کنیم؟</h2>
 
@@ -50,7 +50,7 @@ const ArticlesDetailPage = () => {
           </Link>
         </div>
 
-        <div className="f-align group transition-colors hover:bg-foreground/10 card">
+        <div className="f-align group transition-colors hover:bg-foreground-5 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">مکانزیم عملکرد موتور ویویو</h2>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
@@ -61,7 +61,7 @@ const ArticlesDetailPage = () => {
           </Link>
         </div>
 
-        <div className="f-align group transition-colors hover:bg-foreground/10 card">
+        <div className="f-align group transition-colors hover:bg-foreground-5 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">الگروتیم BIG O</h2>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
@@ -72,7 +72,7 @@ const ArticlesDetailPage = () => {
           </Link>
         </div>
 
-        <div className="f-align group transition-colors hover:bg-foreground/10 card">
+        <div className="f-align group transition-colors hover:bg-foreground-5 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">الگوریتم جسجتجوی خودکار</h2>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
@@ -83,7 +83,7 @@ const ArticlesDetailPage = () => {
           </Link>
         </div>
 
-        <div className="f-align group transition-colors hover:bg-foreground/10 card">
+        <div className="f-align group transition-colors hover:bg-foreground-5 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">یکپارچه سازی با ساختار DDD + جمع بندی</h2>
           <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
@@ -95,7 +95,7 @@ const ArticlesDetailPage = () => {
         </div>
       </div>
 
-      <div className="container card bg-foreground/5 mt-9">
+      <div className="container card bg-foreground-6 mt-9">
         <div className="f-align">
           <button className="btn btn-outline">
             <span>حالت خواندن</span>
@@ -273,7 +273,7 @@ const ArticlesDetailPage = () => {
         <ScrollXContainer>
           {Array.from(new Array(7)).map(() => (
             <div className="card card-effect" key={Math.random()}>
-              <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
+              <div className="w-full aspect-video bg-foreground-5 rounded-lg" />
 
               <h2 className="text-xl font-vazir-bold mt-3">استفاده از تکنیک توسعه بر پایه دامنه</h2>
               <div className="badge mt-1.5">مهندسی نرم افزار</div>

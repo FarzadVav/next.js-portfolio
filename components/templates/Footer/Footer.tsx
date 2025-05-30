@@ -12,7 +12,7 @@ import instagramImg from "root/public/logos/instagram.svg";
 
 const Footer = () => {
   return (
-    <footer className="container mt-9 py-10 border-t border-foreground/10">
+    <footer className="container mt-9 py-10 border-t border-foreground-5">
       <div className="f-center gap-3">
         <Link className="btn btn-ghost" href={"tel:09389461065"}>
           <span dir="ltr">0938 0946 1065</span>

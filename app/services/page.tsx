@@ -24,7 +24,7 @@ const ServicesPage = () => {
         description="لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥 شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان رایانه ای..."
       />
 
-      <div className="p-1 mt-9 f-align w-fit mx-auto gap-3 rounded-lg bg-foreground/5">
+      <div className="p-1.5 mt-9 f-align w-fit mx-auto rounded-lg gap-1.5 bg-foreground-6">
         <button className="btn btn-fill">فرانت اند</button>
         <button className="btn btn-ghost">بک اند</button>
         <button className="btn btn-ghost">موبایل</button>
@@ -35,12 +35,13 @@ const ServicesPage = () => {
       <div className="container mt-6 grid grid-cols-2">
         {Array.from(new Array(7)).map(() => (
           <div className="card card-effect" key={Math.random()}>
-            <div className="f-align">
-              <div className="size-7 rounded-full bg-foreground/10"></div>
+            <div className="f-align gap-3">
+              <div className="size-9 rounded-full bg-foreground-5"></div>
               <h2 className="text-xl font-vazir-bold">اپلیکیشن فرانت اند</h2>
             </div>
-            <ScrollX className="mt-6">
-              <ScrollXContainer className="gap-1.5">
+
+            <ScrollX className="mt-3">
+              <ScrollXContainer className="gap-1.5 no-scrollbar">
                 <div className="badge">Javascript</div>
                 <div className="badge">React</div>
                 <div className="badge">Next</div>
@@ -54,17 +55,20 @@ const ServicesPage = () => {
                 <div className="badge">PWA</div>
               </ScrollXContainer>
             </ScrollX>
-            <p className="mt-3">
+
+            <p className="mt-3 line-clamp-3">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
               شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
             </p>
-            <ul className="mt-3 space-y-1 list-disc pr-3">
+
+            <ul className="mt-3 space-y-1.5 list-disc pr-3">
               <li>داشبورد ادمین</li>
               <li>پنل مدیریت مشتری</li>
               <li>شاپینگ حرفه ای</li>
             </ul>
-            <div className="mt-3 f-align">
+
+            <div className="mt-6 f-align gap-3">
               <button className="btn btn-fill w-1/2" onClick={() => setOpen(true)}>
                 <span>ثبت سفارش</span>
                 <CheckCircleIcon className="compatible-icon" />
@@ -78,8 +82,8 @@ const ServicesPage = () => {
       </div>
 
       <div className="container mt-9">
-        <div className="f-align">
-          <div className="size-16 min-w-16 rounded-full bg-foreground/10"></div>
+        <div className="f-align gap-6">
+          <div className="size-16 min-w-16 rounded-full bg-foreground-5"></div>
           <div>
             <h3 className="text-xl font-kalameh-bold">ثبت درخواست پروژه</h3>
             <p className="mt-1.5">
@@ -89,8 +93,8 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        <div className="f-align mt-9 justify-end" dir="ltr">
-          <div className="size-16 min-w-16 rounded-full bg-foreground/10"></div>
+        <div className="f-align gap-6 mt-9 justify-end" dir="ltr">
+          <div className="size-16 min-w-16 rounded-full bg-foreground-5"></div>
           <div>
             <h3 className="text-xl font-kalameh-bold">ثبت درخواست پروژه</h3>
             <p className="mt-1.5">
@@ -100,8 +104,8 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        <div className="f-align mt-9">
-          <div className="size-16 min-w-16 rounded-full bg-foreground/10"></div>
+        <div className="f-align gap-6 mt-9">
+          <div className="size-16 min-w-16 rounded-full bg-foreground-5"></div>
           <div>
             <h3 className="text-xl font-kalameh-bold">ثبت درخواست پروژه</h3>
             <p className="mt-1.5">
@@ -111,8 +115,8 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        <div className="f-align mt-9 justify-end" dir="ltr">
-          <div className="size-16 min-w-16 rounded-full bg-foreground/10"></div>
+        <div className="f-align gap-6 mt-9 justify-end" dir="ltr">
+          <div className="size-16 min-w-16 rounded-full bg-foreground-5"></div>
           <div>
             <h3 className="text-xl font-kalameh-bold">ثبت درخواست پروژه</h3>
             <p className="mt-1.5">

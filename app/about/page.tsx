@@ -91,7 +91,7 @@ const AboutPage = () => {
       </div>
 
       <div className="container mt-9">
-        <video className="bg-foreground/10 card w-full aspect-video" />
+        <video className="bg-foreground-5 card w-full aspect-video" />
       </div>
 
       <div className="container mt-9">
@@ -106,7 +106,7 @@ const AboutPage = () => {
           <ScrollXContainer>
             {Array.from(new Array(7)).map(() => (
               <div className="card card-effect w-1/3 min-w-1/3" key={Math.random()}>
-                <div className="w-2/3 mx-auto aspect-square rounded-lg bg-foreground/10" />
+                <div className="w-2/3 mx-auto aspect-square rounded-lg bg-foreground-5" />
                 <p className="text-xl mt-6 text-center font-kalameh-bold">
                   جذب {(3_637_000).toLocaleString("fa")} کاربر
                 </p>
