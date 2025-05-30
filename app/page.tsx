@@ -6,17 +6,16 @@ import {
   CheckIcon,
   SendHorizonalIcon,
   Sparkles,
-  SparklesIcon,
 } from "lucide-react";
 
 import ScrollX from "root/components/ui/ScrollX/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import Accordion from "root/components/ui/Accordion/Index";
+import PageTitle from "root/components/modules/PageTitle/Index";
 import AccordionHeader from "root/components/ui/Accordion/Header";
 import AccordionContent from "root/components/ui/Accordion/Content";
 import ScrollXContainer from "root/components/ui/ScrollX/Container";
 import HeroSectionLogos from "root/components/templates/Home/HeroSectionLogos/Index";
-import PageTitle from "root/components/modules/PageTitle/Index";
 
 const HomePage = () => {
   return (
@@ -97,7 +96,7 @@ const HomePage = () => {
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">فرانت اند</span>
             <div className="w-full mt-6 aspect-square rounded-xl bg-foreground/10"></div>
-            <Link className="btn btn-outline mt-6" href={ROUTES.services}>
+            <Link className="btn-outline mt-6" href={ROUTES.services}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -105,7 +104,7 @@ const HomePage = () => {
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">بک اند</span>
             <div className="w-full mt-6 aspect-square rounded-xl bg-foreground/10"></div>
-            <Link className="btn mt-6 btn-outline" href={ROUTES.services}>
+            <Link className="mt-6 btn-outline" href={ROUTES.services}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -113,7 +112,7 @@ const HomePage = () => {
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">ربات تلگرام</span>
             <div className="w-full mt-6 aspect-square rounded-xl bg-foreground/10"></div>
-            <Link className="btn mt-6 btn-outline" href={ROUTES.services}>
+            <Link className="mt-6 btn-outline" href={ROUTES.services}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -192,23 +191,21 @@ const HomePage = () => {
           </Accordion>
         ))}
 
-        <div className="f-align mt-6">
-          <Link className="btn btn-fill" href={ROUTES.about + "#FAQs"}>
+        <div className="f-align gap-3 mt-6">
+          <Link className="btn-fill" href={ROUTES.about + "#FAQs"}>
             <span>درباره ما</span>
             <ArrowUpLeftIcon className="compatible-icon" />
           </Link>
-          <Link className="btn btn-ghost" href={ROUTES.about + "#FAQs"}>
+          <Link className="btn-ghost" href={ROUTES.about + "#FAQs"}>
             <span>همه سوالات</span>
             <ArrowUpLeftIcon className="compatible-icon" />
           </Link>
         </div>
       </div>
 
-      <div className="f-center mt-9">
-        <SparklesIcon className="compatible-icon" />
-        <h4 className="font-kalameh-bold text-center text-2xl">نظرات مشتریان/همکاران</h4>
-        <SparklesIcon className="compatible-icon -scale-x-100" />
-      </div>
+      <PageTitle className="mt-9">
+        <h4>نظرات مشتریان/همکاران</h4>
+      </PageTitle>
       <ScrollX className="container mt-6">
         <ScrollXContainer className="items-start gap-3">
           {Array.from(new Array(12)).map(() => (
@@ -227,7 +224,7 @@ const HomePage = () => {
 
       <div className="container card card-effect mt-9">
         <h5 className="text-xl font-kalameh-bold">مشاوه میخواهید؟ با ما در ارتباط باشید!</h5>
-        <p className="mt-6">
+        <p className="mt-3">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
           است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
           تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
@@ -237,7 +234,7 @@ const HomePage = () => {
           شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
           سوالات پیوسته اهل دنیای مورد استفاده قرار گیرد.
         </p>
-        <div className="mt-6 f-align">
+        <div className="mt-6 f-align gap-3">
           <div className="badge">
             <span>مشکل یابی</span>
             <CheckIcon className="compatible-icon" />
@@ -255,34 +252,33 @@ const HomePage = () => {
             <CheckIcon className="compatible-icon" />
           </div>
         </div>
-        <Link className="mt-6 btn btn-fill" href={ROUTES.connect}>
+        <Link className="mt-6 btn-fill" href={ROUTES.connect}>
           <span>درخواست دهید</span>
           <SendHorizonalIcon className="compatible-icon -scale-x-100" />
         </Link>
       </div>
 
-      <div className="f-center mt-9">
-        <SparklesIcon className="compatible-icon" />
-        <h6 className="font-kalameh-bold text-2xl text-center">آخرین مقالات سایت</h6>
-        <SparklesIcon className="compatible-icon -scale-x-100" />
-      </div>
+      <PageTitle className="mt-9">
+        <h6>آخرین مقالات سایت</h6>
+      </PageTitle>
       <ScrollX className="container mt-6">
         <ScrollXContainer>
           {Array.from(new Array(7)).map(() => (
             <div className="w-2/5 card card-effect min-w-2/5" key={Math.random()}>
               <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
 
-              <h6 className="text-xl mt-3 font-vazir-bold">استفاده از تکنیک توسعه بر پایه دامنه</h6>
-              <div className="badge mt-1.5">مهندسی نرم افزار</div>
+              <h6 className="text-xl mt-3 font-vazir-bold">استفاده از توسعه بر پایه دامنه</h6>
 
-              <p className="mt-3">
+              <div className="badge mt-3">مهندسی نرم افزار</div>
+
+              <p className="mt-3 line-clamp-3">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                 گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
                 شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
                 باشد
               </p>
 
-              <Link className="btn mt-3 btn-outline w-full" href={ROUTES.articles + "/1"}>
+              <Link className="mt-6 btn-outline" href={ROUTES.articles + "/1"}>
                 <span>بیشتر بخوانید</span>
                 <ArrowUpLeft className="compatible-icon" />
               </Link>

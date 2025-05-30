@@ -51,12 +51,12 @@ function ScrollX({ children, className, ...props }: HTMLAttributes<HTMLDivElemen
     <div className={classMerge("relative", className)} {...props}>
       {/* Left Fade */}
       <div
-        className="pointer-events-none absolute right-0 top-0 h-full w-1/6 bg-gradient-to-l from-background to-transparent z-10 transition-opacity"
+        className="pointer-events-none absolute right-0 top-0 h-full w-1/6 bg-gradient-to-l from-background from-[16.6667%] to-transparent z-10 transition-opacity"
         style={{ opacity: leftOpacity }}
       />
       {/* Right Fade */}
       <div
-        className="pointer-events-none absolute left-0 top-0 h-full w-1/6 bg-gradient-to-r from-background to-transparent z-10 transition-opacity"
+        className="pointer-events-none absolute left-0 top-0 h-full w-1/6 bg-gradient-to-r from-background from-[16.6667%] to-transparent z-10 transition-opacity"
         style={{ opacity: rightOpacity }}
       />
 
