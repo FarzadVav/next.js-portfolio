@@ -34,7 +34,7 @@ const HomePage = () => {
           طراحان رایانه ای...
         </p>
 
-        <label className="input input-outline w-1/2 mx-auto mt-6">
+        <label className="input-outline w-1/2 mx-auto mt-6">
           <input className="input-field" type="text" placeholder="جستجوی هرچی میخوای..." />
           <Search className="compatible-icon" />
         </label>
