@@ -1,32 +1,33 @@
 "use client";
 
-import { HTMLAttributes, use } from "react";
 import { ChevronDownIcon } from "lucide-react";
+import { HTMLAttributes, use, useRef } from "react";
 
 import { AccordionContext } from "./Context";
 import classMerge from "root/lib/classMerge";
 
 type AccordionHeaderProps = HTMLAttributes<HTMLDivElement>;
 
-const AccordionHeader: React.FC<AccordionHeaderProps> = ({
-  className,
-  onClick,
-  children,
-  ...props
-}) => {
+const AccordionHeader: React.FC<AccordionHeaderProps> = ({ className, children, ...props }) => {
   const { isOpen, setOpen } = use(AccordionContext);
+
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   return (
     <div
       {...props}
       className={classMerge("f-align justify-between cursor-pointer", className)}
       onClick={(ev) => {
-        onClick?.(ev);
-        setOpen(!isOpen);
+        ev.preventDefault();
+        ev.stopPropagation();
+
+        buttonRef.current?.focus();
+        buttonRef.current?.click();
       }}
     >
-      {children}
-      <button className="btn btn-ghost">
+      <div className="font-vazir-bold text-xl">{children}</div>
+
+      <button className="btn btn-ghost" ref={buttonRef} onClick={() => setOpen(!isOpen)}>
         <ChevronDownIcon
           className={`compatible-icon transition-transform ${isOpen ? "-scale-y-100" : ""}`}
         />

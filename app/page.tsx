@@ -16,6 +16,7 @@ import AccordionHeader from "root/components/ui/Accordion/Header";
 import AccordionContent from "root/components/ui/Accordion/Content";
 import ScrollXContainer from "root/components/ui/ScrollX/Container";
 import HeroSectionLogos from "root/components/templates/Home/HeroSectionLogos/Index";
+import PageTitle from "root/components/modules/PageTitle/Index";
 
 const HomePage = () => {
   return (
@@ -87,12 +88,10 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-foreground/10 to-transparent rounded-4xl pt-6 mt-9">
-        <div className="f-center">
-          <SparklesIcon className="compatible-icon" />
-          <h2 className="font-kalameh-bold text-center text-2xl">خدمات تیم ما به شما</h2>
-          <SparklesIcon className="compatible-icon -scale-x-100" />
-        </div>
+      <div className="bg-gradient-to-b from-foreground/10 to-transparent rounded-t-[5%] pt-9 mt-9">
+        <PageTitle>
+          <h2>خدمات تیم ما به شما</h2>
+        </PageTitle>
 
         <div className="container mt-6 f-align">
           <div className="card card-effect w-1/3">
@@ -122,11 +121,9 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="f-center mt-9">
-        <SparklesIcon className="compatible-icon" />
-        <h3 className="text-center text-2xl font-kalameh-bold">نگاهتان از ما</h3>
-        <SparklesIcon className="compatible-icon -scale-x-100" />
-      </div>
+      <PageTitle className="mt-9">
+        <h3>نگاهتان از ما</h3>
+      </PageTitle>
       <div className="grid mt-6 grid-cols-2 container">
         <div className="f-align card card-effect gap-3">
           <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
@@ -172,13 +169,12 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       <div className="container mt-9">
         {Array.from(new Array(3)).map(() => (
           <Accordion key={Math.random()}>
             <AccordionHeader>
-              <h6 className="font-vazir-bold text-xl">
-                چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟
-              </h6>
+              <h6>چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟</h6>
             </AccordionHeader>
             <AccordionContent>
               <p className="mt-6">
