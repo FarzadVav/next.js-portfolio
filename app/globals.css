@@ -78,34 +78,39 @@
   --color-*: initial;
   /* Background color */
   --color-background-1: hsl(223, 78%, 98%);
-  --color-background-2: hsl(223, 78%, 98%, 0.5);
-  --color-background-3: hsl(223, 78%, 98%, 0.15);
-  --color-background-4: hsl(223, 78%, 98%, 0.1);
-  --color-background-5: hsl(223, 78%, 98%, 0.05);
+  --color-background-2: hsl(223, 78%, 98%, 0.9);
+  --color-background-3: hsl(223, 78%, 98%, 0.5);
+  --color-background-4: hsl(223, 78%, 98%, 0.15);
+  --color-background-5: hsl(223, 78%, 98%, 0.1);
+  --color-background-6: hsl(223, 78%, 98%, 0.05);
   /* Foreground color */
   --color-foreground-1: hsl(0, 0%, 15%);
-  --color-foreground-2: hsl(0, 0%, 15%, 0.5);
-  --color-foreground-3: hsl(0, 0%, 15%, 0.15);
-  --color-foreground-4: hsl(0, 0%, 15%, 0.1);
-  --color-foreground-5: hsl(0, 0%, 15%, 0.05);
+  --color-foreground-2: hsl(0, 0%, 15%, 0.9);
+  --color-foreground-3: hsl(0, 0%, 15%, 0.5);
+  --color-foreground-4: hsl(0, 0%, 15%, 0.15);
+  --color-foreground-5: hsl(0, 0%, 15%, 0.1);
+  --color-foreground-6: hsl(0, 0%, 15%, 0.05);
   /* Success color */
   --color-success-1: hsl(113, 100%, 27%);
-  --color-success-2: hsl(113, 100%, 27%, 0.5);
-  --color-success-3: hsl(113, 100%, 27%, 0.15);
-  --color-success-4: hsl(113, 100%, 27%, 0.1);
-  --color-success-5: hsl(113, 100%, 27%, 0.05);
+  --color-success-2: hsl(113, 100%, 27%, 0.9);
+  --color-success-3: hsl(113, 100%, 27%, 0.5);
+  --color-success-4: hsl(113, 100%, 27%, 0.15);
+  --color-success-5: hsl(113, 100%, 27%, 0.1);
+  --color-success-6: hsl(113, 100%, 27%, 0.05);
   /* Warning color */
   --color-warning-1: hsl(45, 90%, 53%);
-  --color-warning-2: hsl(45, 90%, 53%, 0.5);
-  --color-warning-3: hsl(45, 90%, 53%, 0.15);
-  --color-warning-4: hsl(45, 90%, 53%, 0.1);
-  --color-warning-5: hsl(45, 90%, 53%, 0.05);
+  --color-warning-2: hsl(45, 90%, 53%, 0.9);
+  --color-warning-3: hsl(45, 90%, 53%, 0.5);
+  --color-warning-4: hsl(45, 90%, 53%, 0.15);
+  --color-warning-5: hsl(45, 90%, 53%, 0.1);
+  --color-warning-6: hsl(45, 90%, 53%, 0.05);
   /* Danger color */
   --color-danger-1: hsl(0, 100%, 42%);
-  --color-danger-2: hsl(0, 100%, 42%, 0.5);
-  --color-danger-3: hsl(0, 100%, 42%, 0.15);
-  --color-danger-4: hsl(0, 100%, 42%, 0.1);
-  --color-danger-5: hsl(0, 100%, 42%, 0.05);
+  --color-danger-2: hsl(0, 100%, 42%, 0.9);
+  --color-danger-3: hsl(0, 100%, 42%, 0.5);
+  --color-danger-4: hsl(0, 100%, 42%, 0.15);
+  --color-danger-5: hsl(0, 100%, 42%, 0.1);
+  --color-danger-6: hsl(0, 100%, 42%, 0.05);
 
   --font-*: initial;
   /* Vazir font */
@@ -120,6 +125,20 @@
 
 @layer base {
   html {
+    --1st-color-1: var(--color-foreground-1);
+    --1st-color-2: var(--color-foreground-2);
+    --1st-color-3: var(--color-foreground-3);
+    --1st-color-4: var(--color-foreground-4);
+    --1st-color-5: var(--color-foreground-5);
+    --1st-color-6: var(--color-foreground-6);
+
+    --2nd-color-1: var(--color-background-1);
+    --2nd-color-2: var(--color-background-2);
+    --2nd-color-3: var(--color-background-3);
+    --2nd-color-4: var(--color-background-4);
+    --2nd-color-5: var(--color-background-5);
+    --2nd-color-6: var(--color-background-6);
+
     @apply font-vazir scroll-smooth bg-background-1 text-foreground-1;
   }
 
@@ -152,4 +171,69 @@
   p {
     @apply !leading-relaxed;
   }
+}
+
+/* Colors */
+@utility color-background {
+  --1st-color-1: var(--color-background-1);
+  --1st-color-2: var(--color-background-2);
+  --1st-color-3: var(--color-background-3);
+  --1st-color-4: var(--color-background-4);
+  --1st-color-5: var(--color-background-5);
+  --1st-color-6: var(--color-background-6);
+
+  --2nd-color-1: var(--color-foreground-1);
+  --2nd-color-2: var(--color-foreground-2);
+  --2nd-color-3: var(--color-foreground-3);
+  --2nd-color-4: var(--color-foreground-4);
+  --2nd-color-5: var(--color-foreground-5);
+  --2nd-color-6: var(--color-foreground-6);
+}
+
+@utility color-success {
+  --1st-color-1: var(--color-success-1);
+  --1st-color-2: var(--color-success-2);
+  --1st-color-3: var(--color-success-3);
+  --1st-color-4: var(--color-success-4);
+  --1st-color-5: var(--color-success-5);
+  --1st-color-6: var(--color-success-6);
+
+  --2nd-color-1: var(--color-background-1);
+  --2nd-color-2: var(--color-background-2);
+  --2nd-color-3: var(--color-background-3);
+  --2nd-color-4: var(--color-background-4);
+  --2nd-color-5: var(--color-background-5);
+  --2nd-color-6: var(--color-background-6);
+}
+
+@utility color-warning {
+  --1st-color-1: var(--color-warning-1);
+  --1st-color-2: var(--color-warning-2);
+  --1st-color-3: var(--color-warning-3);
+  --1st-color-4: var(--color-warning-4);
+  --1st-color-5: var(--color-warning-5);
+  --1st-color-6: var(--color-warning-6);
+
+  --2nd-color-1: var(--color-background-1);
+  --2nd-color-2: var(--color-background-2);
+  --2nd-color-3: var(--color-background-3);
+  --2nd-color-4: var(--color-background-4);
+  --2nd-color-5: var(--color-background-5);
+  --2nd-color-6: var(--color-background-6);
+}
+
+@utility color-danger {
+  --1st-color-1: var(--color-danger-1);
+  --1st-color-2: var(--color-danger-2);
+  --1st-color-3: var(--color-danger-3);
+  --1st-color-4: var(--color-danger-4);
+  --1st-color-5: var(--color-danger-5);
+  --1st-color-6: var(--color-danger-6);
+
+  --2nd-color-1: var(--color-background-1);
+  --2nd-color-2: var(--color-background-2);
+  --2nd-color-3: var(--color-background-3);
+  --2nd-color-4: var(--color-background-4);
+  --2nd-color-5: var(--color-background-5);
+  --2nd-color-6: var(--color-background-6);
 }

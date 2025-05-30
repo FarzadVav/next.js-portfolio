@@ -1,64 +1,44 @@
 /* Buttons */
 @utility btn {
-  --bg-color: var(--color-foreground);
-  --fr-color: var(--color-background);
-
   @apply px-5 h-10 text-base gap-3 rounded-lg f-center transition-all ring-4 ring-transparent active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed;
-}
-
-/* Colors */
-@utility btn-background {
-  --bg-color: var(--color-background);
-  --fr-color: var(--color-foreground);
-}
-
-@utility btn-danger {
-  --bg-color: var(--color-danger);
-  --fr-color: var(--color-background);
-}
-
-@utility btn-success {
-  --bg-color: var(--color-success);
-  --fr-color: var(--color-background);
-}
-
-@utility btn-warning {
-  --bg-color: var(--color-warning);
-  --fr-color: var(--color-background);
 }
 
 /* Variants */
 @utility btn-fill {
-  @apply btn
-  bg-[var(--bg-color)]
-  text-[var(--fr-color)]
-  hover:bg-[color-mix(in_oklab,var(--bg-color)90%,transparent)]
-  focus:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+  @apply btn; /* Extend */
+
+  @apply bg-[var(--1st-color-1)]
+  text-[var(--2nd-color-1)]
+  hover:bg-[var(--1st-color-2)]
+  focus:ring-[var(--1st-color-5)];
 }
 
 @utility btn-outline {
-  @apply btn
-  border
-  border-[var(--bg-color)]
-  text-[var(--bg-color)]
-  hover:bg-[var(--bg-color)]
-  hover:text-[var(--fr-color)]
-  focus:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+  @apply btn; /* Extend */
+
+  @apply border
+  border-[var(--1st-color-1)]
+  text-[var(--1st-color-1)]
+  hover:bg-[var(--1st-color-1)]
+  hover:text-[var(--2nd-color-1)]
+  focus:ring-[var(--1st-color-5)];
 }
 
 @utility btn-soft {
-  @apply btn
-  text-[var(--bg-color)]
-  bg-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
-  hover:bg-[color-mix(in_oklab,var(--bg-color)20%,transparent)]
-  focus:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
+  @apply btn; /* Extend */
+
+  @apply text-[var(--1st-color-1)]
+  bg-[var(--1st-color-5)]
+  hover:bg-[var(--1st-color-3)]
+  focus:ring-[var(--1st-color-5)]
   focus:bg-transparent;
 }
 
 @utility btn-ghost {
-  @apply btn
-  hover:bg-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
-  text-[var(--bg-color)]
-  focus:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
+  @apply btn; /* Extend */
+
+  @apply text-[var(--1st-color-1)]
+  hover:bg-[var(--1st-color-5)]
+  focus:ring-[var(--1st-color-5)]
   focus:hover:bg-transparent;
 }
