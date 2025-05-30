@@ -10,10 +10,10 @@ import {
   SparklesIcon,
 } from "lucide-react";
 
-import { $mergeKeys } from "root/utils/general.utils";
 import ScrollX from "root/components/ui/ScrollX/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import PageHero from "root/components/modules/PageHero/Index";
+import PageTitle from "root/components/modules/PageTitle/Index";
 import ScrollXContainer from "root/components/ui/ScrollX/Container";
 
 const ArticlesDetailPage = () => {
@@ -21,91 +21,121 @@ const ArticlesDetailPage = () => {
     <>
       <PageHero
         src=""
-        title="بیاید باهم پروژه های خفن رو پیاده کنیم"
+        title="استراتژی های استفاده از GPT"
         description="لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥 شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان رایانه ای..."
       />
 
       <div className="container grid mt-9 grid-cols-4">
-        <div className="f-align">
-          <div className="size-20 f-center">
+        <div className="f-align gap-3">
+          <div className="size-16 f-center bg-foreground-5 rounded-full">
             <Calendar className="w-2/3" />
           </div>
-          <div className="f-align h-10">
-            <span className="text-xl font-vazir-bold">زمان انتشار مقاله</span>
-            <span>۱۴۰۴/۰۱/۲۵</span>
+          <div className="flex gap-1.5 flex-col h-10">
+            <span className="text-lg font-vazir-bold">زمان انتشار مقاله</span>
+            <span className="text-sm">۱۴۰۴/۰۱/۲۵</span>
+          </div>
+        </div>
+
+        <div className="f-align gap-3">
+          <div className="size-16 f-center bg-foreground-5 rounded-full">
+            <Calendar className="w-2/3" />
+          </div>
+          <div className="flex gap-1.5 flex-col h-10">
+            <span className="text-lg font-vazir-bold">زمان انتشار مقاله</span>
+            <span className="text-sm">۱۴۰۴/۰۱/۲۵</span>
+          </div>
+        </div>
+
+        <div className="f-align gap-3">
+          <div className="size-16 f-center bg-foreground-5 rounded-full">
+            <Calendar className="w-2/3" />
+          </div>
+          <div className="flex gap-1.5 flex-col h-10">
+            <span className="text-lg font-vazir-bold">زمان انتشار مقاله</span>
+            <span className="text-sm">۱۴۰۴/۰۱/۲۵</span>
+          </div>
+        </div>
+
+        <div className="f-align gap-3">
+          <div className="size-16 f-center bg-foreground-5 rounded-full">
+            <Calendar className="w-2/3" />
+          </div>
+          <div className="flex gap-1.5 flex-col h-10">
+            <span className="text-lg font-vazir-bold">زمان انتشار مقاله</span>
+            <span className="text-sm">۱۴۰۴/۰۱/۲۵</span>
           </div>
         </div>
       </div>
 
-      <div className="card card-effect container">
-        <div className="f-align group transition-colors hover:bg-foreground-5 card">
+      <div className="card-effect container mt-9">
+        <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">چگونه ای را به بی وصل کنیم؟</h2>
 
-          <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <button className="btn btn-fill">
-              <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon" />
-            </button>
+          <Link href={"#"} className="btn-ghost mr-auto group/btn">
+            <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
+              مطالعه
+            </span>
+            <ArrowDownIcon className="compatible-icon" />
           </Link>
         </div>
 
-        <div className="f-align group transition-colors hover:bg-foreground-5 card">
+        <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">مکانزیم عملکرد موتور ویویو</h2>
-          <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <button className="btn btn-fill">
-              <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon" />
-            </button>
+          <Link href={"#"} className="btn-ghost mr-auto group/btn">
+            <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
+              مطالعه
+            </span>
+            <ArrowDownIcon className="compatible-icon" />
           </Link>
         </div>
 
-        <div className="f-align group transition-colors hover:bg-foreground-5 card">
+        <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">الگروتیم BIG O</h2>
-          <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <button className="btn btn-fill">
-              <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon" />
-            </button>
+          <Link href={"#"} className="btn-ghost mr-auto group/btn">
+            <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
+              مطالعه
+            </span>
+            <ArrowDownIcon className="compatible-icon" />
           </Link>
         </div>
 
-        <div className="f-align group transition-colors hover:bg-foreground-5 card">
+        <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">الگوریتم جسجتجوی خودکار</h2>
-          <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <button className="btn btn-fill">
-              <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon" />
-            </button>
+          <Link href={"#"} className="btn-ghost mr-auto group/btn">
+            <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
+              مطالعه
+            </span>
+            <ArrowDownIcon className="compatible-icon" />
           </Link>
         </div>
 
-        <div className="f-align group transition-colors hover:bg-foreground-5 card">
+        <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
           <SparklesIcon className="compatible-icon" />
           <h2 className="text-lg font-vazir-bold">یکپارچه سازی با ساختار DDD + جمع بندی</h2>
-          <Link className="mr-auto opacity-0 transition-opacity group-hover:opacity-100" href={"#"}>
-            <button className="btn btn-fill">
-              <span>مطالعه</span>
-              <ArrowDownIcon className="compatible-icon" />
-            </button>
+          <Link href={"#"} className="btn-ghost mr-auto group/btn">
+            <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
+              مطالعه
+            </span>
+            <ArrowDownIcon className="compatible-icon" />
           </Link>
         </div>
       </div>
 
-      <div className="container card bg-foreground-6 mt-9">
-        <div className="f-align">
-          <button className="btn btn-outline">
+      <div className="container bg-foreground-6 card mt-9">
+        <div className="f-align gap-3">
+          <button className="btn-outline">
             <span>حالت خواندن</span>
             <ExpandIcon className="compatible-icon" />
           </button>
-          <button className="btn btn-outline">
+          <button className="btn-outline">
             <span>دانلود</span>
             <DownloadIcon className="compatible-icon" />
           </button>
-          <button className="btn btn-outline">
+          <button className="btn-outline">
             <span>اشتراک گذاری</span>
             <Share2Icon className="compatible-icon" />
           </button>
@@ -193,75 +223,75 @@ const ArticlesDetailPage = () => {
           مورد استفاده قرار گیرد.
         </p>
 
-        <div className="f-align flex-wrap" dir="ltr">
+        <div className="f-align flex-wrap mt-6 gap-1.5" dir="ltr">
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Algorithms</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Design patterns</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Golang</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Web assembly</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Algorithms</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Design patterns</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Golang</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Web assembly</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Algorithms</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Design patterns</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Golang</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
-            <button className="btn btn-ghost">
+            <button className="btn-ghost">
               <HashIcon className="compatible-icon" />
               <span>Web assembly</span>
             </button>
@@ -269,27 +299,29 @@ const ArticlesDetailPage = () => {
         </div>
       </div>
 
-      <ScrollX className="container mt-9">
+      <PageTitle className="mt-9">
+        <h3>مقالات مرتبط با - استراتژی های استفاده از GPT</h3>
+      </PageTitle>
+      <ScrollX className="container mt-6">
         <ScrollXContainer>
           {Array.from(new Array(7)).map(() => (
-            <div className="card card-effect" key={Math.random()}>
+            <div className="w-2/5 card-effect min-w-2/5" key={Math.random()}>
               <div className="w-full aspect-video bg-foreground-5 rounded-lg" />
 
-              <h2 className="text-xl font-vazir-bold mt-3">استفاده از تکنیک توسعه بر پایه دامنه</h2>
-              <div className="badge mt-1.5">مهندسی نرم افزار</div>
+              <h4 className="text-xl mt-3 font-vazir-bold">استفاده از توسعه بر پایه دامنه</h4>
 
-              <p className="mt-3">
+              <div className="badge mt-3">مهندسی نرم افزار</div>
+
+              <p className="mt-3 line-clamp-3">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                 گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
                 شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                باشد{" "}
+                باشد
               </p>
 
-              <Link className="w-full mt-3" href={$mergeKeys("/", [ROUTES.articles, 1])}>
-                <button className="w-full btn btn-outline">
-                  <span>بیشتر بخوانید</span>
-                  <ArrowUpLeft className="compatible-icon" />
-                </button>
+              <Link className="mt-6 btn-outline" href={ROUTES.articles + "/1"}>
+                <span>بیشتر بخوانید</span>
+                <ArrowUpLeft className="compatible-icon" />
               </Link>
             </div>
           ))}
