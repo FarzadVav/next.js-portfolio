@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { CheckCircleIcon } from "lucide-react";
 
-import { $mergeKeys } from "root/utils/general.utils";
 import ScrollX from "root/components/ui/ScrollX/Index";
 import { ROUTES } from "root/constants/routes.constants";
 import PageHero from "root/components/modules/PageHero/Index";
@@ -73,7 +72,7 @@ const ServicesPage = () => {
                 <span>ثبت سفارش</span>
                 <CheckCircleIcon className="compatible-icon" />
               </button>
-              <Link className="btn-ghost w-1/2" href={$mergeKeys("/", [ROUTES.services, 1])}>
+              <Link className="btn-ghost w-1/2" href={ROUTES.services + "/1"}>
                 بیشتر بخوانید
               </Link>
             </div>
