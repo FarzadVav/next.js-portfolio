@@ -1,16 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  ArrowUpLeftIcon,
-  CheckIcon,
-  ChevronDownIcon,
-  FileIcon,
-  SparklesIcon,
-  UserPenIcon,
-} from "lucide-react";
+import { ArrowUpLeftIcon, CheckIcon, ChevronDownIcon, FileIcon, UserPenIcon } from "lucide-react";
 
 import githubImg from "root/public/logos/github.svg";
-import { $mergeKeys } from "root/utils/general.utils";
 import youtubeImg from "root/public/logos/youtube.svg";
 import discordImg from "root/public/logos/discord.svg";
 import { ROUTES } from "root/constants/routes.constants";
@@ -18,6 +10,7 @@ import telegramImg from "root/public/logos/telegram.svg";
 import linkedinImg from "root/public/logos/linkedin.svg";
 import instagramImg from "root/public/logos/instagram.svg";
 import PageHero from "root/components/modules/PageHero/Index";
+import PageTitle from "root/components/modules/PageTitle/Index";
 
 const ConnectPage = () => {
   return (
@@ -28,17 +21,17 @@ const ConnectPage = () => {
         description="لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥 شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان رایانه ای..."
       />
 
-      <div className="container grid grid-cols-3 mt-9">
+      <div className="container grid grid-cols-3 gap-9 mt-9">
         <div className="f-align gap-6">
           <Image src={telegramImg} alt="Web tunners telegram channel" width={64} height={64} />
           <div>
-            <span className="text-xl font-vazir-bold">کانال تلگرام ما</span>
+            <span className="font-vazir-bold">کانال تلگرام ما</span>
 
-            <p className="text-sm mt-3">
+            <p className="text-xs mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده...
             </p>
 
-            <Link className="btn btn-outline mt-3" href={"https://telegram.org"} target="_blank">
+            <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -48,13 +41,13 @@ const ConnectPage = () => {
         <div className="f-align gap-6">
           <Image src={instagramImg} alt="Web tunners telegram channel" width={64} height={64} />
           <div>
-            <span className="text-xl font-vazir-bold">کانال تلگرام ما</span>
+            <span className="font-vazir-bold">کانال تلگرام ما</span>
 
-            <p className="text-sm mt-3">
+            <p className="text-xs mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده...
             </p>
 
-            <Link className="btn btn-outline mt-3" href={"https://telegram.org"} target="_blank">
+            <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -64,13 +57,13 @@ const ConnectPage = () => {
         <div className="f-align gap-6">
           <Image src={linkedinImg} alt="Web tunners telegram channel" width={64} height={64} />
           <div>
-            <span className="text-xl font-vazir-bold">کانال تلگرام ما</span>
+            <span className="font-vazir-bold">کانال تلگرام ما</span>
 
-            <p className="text-sm mt-3">
+            <p className="text-xs mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده...
             </p>
 
-            <Link className="btn btn-outline mt-3" href={"https://telegram.org"} target="_blank">
+            <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -80,13 +73,13 @@ const ConnectPage = () => {
         <div className="f-align gap-6">
           <Image src={discordImg} alt="Web tunners telegram channel" width={64} height={64} />
           <div>
-            <span className="text-xl font-vazir-bold">کانال تلگرام ما</span>
+            <span className="font-vazir-bold">کانال تلگرام ما</span>
 
-            <p className="text-sm mt-3">
+            <p className="text-xs mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده...
             </p>
 
-            <Link className="btn btn-outline mt-3" href={"https://telegram.org"} target="_blank">
+            <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -96,13 +89,13 @@ const ConnectPage = () => {
         <div className="f-align gap-6">
           <Image src={youtubeImg} alt="Web tunners telegram channel" width={64} height={64} />
           <div>
-            <span className="text-xl font-vazir-bold">کانال تلگرام ما</span>
+            <span className="font-vazir-bold">کانال تلگرام ما</span>
 
-            <p className="text-sm mt-3">
+            <p className="text-xs mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده...
             </p>
 
-            <Link className="btn btn-outline mt-3" href={"https://telegram.org"} target="_blank">
+            <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -112,13 +105,13 @@ const ConnectPage = () => {
         <div className="f-align gap-6">
           <Image src={githubImg} alt="Web tunners telegram channel" width={64} height={64} />
           <div>
-            <span className="text-xl font-vazir-bold">کانال تلگرام ما</span>
+            <span className="font-vazir-bold">کانال تلگرام ما</span>
 
-            <p className="text-sm mt-3">
+            <p className="text-xs mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده...
             </p>
 
-            <Link className="btn btn-outline mt-3" href={"https://telegram.org"} target="_blank">
+            <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -126,20 +119,15 @@ const ConnectPage = () => {
         </div>
       </div>
 
-      <div className="container mt-9">
-        <div className="f-center">
-          <SparklesIcon className="compatible-icon" />
-          <h2 className="text-2xl font-kalameh-bold">ایونت های جامعه</h2>
-          <SparklesIcon className="compatible-icon -scale-x-100" />
-        </div>
-      </div>
-
-      <div className="container mt-6 grid grid-cols-2 gap-3">
+      <PageTitle className="mt-9">
+        <h2>ایونت های جامعه</h2>
+      </PageTitle>
+      <div className="container mt-6 grid grid-cols-2">
         {Array.from(new Array(4)).map(() => (
-          <div className="card card-effect" key={Math.random()}>
+          <div className="card-effect" key={Math.random()}>
             <div className="w-full aspect-video bg-foreground-5 rounded-lg" />
 
-            <h2 className="mt-6 text-xl font-vazir-bold">استفاده از تکنیک توسعه بر پایه دامنه</h2>
+            <h2 className="mt-3 text-xl font-vazir-bold">استفاده از تکنیک توسعه بر پایه دامنه</h2>
 
             <p className="mt-3">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -147,10 +135,7 @@ const ConnectPage = () => {
               شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
             </p>
 
-            <Link
-              className="btn mt-3 btn-outline w-full"
-              href={$mergeKeys("/", [ROUTES.articles, 1])}
-            >
+            <Link className="mt-6 btn-outline" href={ROUTES.home}>
               <span>ثبت نام</span>
               <UserPenIcon className="compatible-icon" />
             </Link>
@@ -158,15 +143,10 @@ const ConnectPage = () => {
         ))}
       </div>
 
-      <div className="container mt-9">
-        <div className="f-center">
-          <SparklesIcon className="compatible-icon" />
-          <h2 className="text-2xl font-vazir-bold">هر درخواستی از ما دارید بنویسید!</h2>
-          <SparklesIcon className="compatible-icon -scale-x-100" />
-        </div>
-      </div>
-
-      <p className="container mt-9 text-justify">
+      <PageTitle className="mt-9">
+        <h2>هر درخواستی از ما دارید بنویسید!</h2>
+      </PageTitle>
+      <p className="container mt-6 text-justify">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
         است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
         تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
@@ -177,31 +157,33 @@ const ConnectPage = () => {
         پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
       </p>
 
-      <div className="f-align gap-3 container">
-        <label className="input input-outline w-1/2">
-          <input className="input-field" placeholder="موضوع تیکت" name="connect_topic" />
-          <ChevronDownIcon className="compatible-icon" />
-        </label>
-        <label className="input input-outline w-1/2" dir="ltr">
-          <input className="input-field" placeholder="09** *** ****" name="connect_phone" />
-        </label>
-      </div>
-      <div className="container mt-3">
-        <label className="input input-outline input-textarea">
-          <textarea
-            name="connect_text"
-            className="textarea-field"
-            placeholder="متن تان را شرح دهید..."
-          />
-        </label>
-        <button className="btn btn-outline mt-3">
-          <span>فایل ضمیمه (اختیاری)</span>
-          <FileIcon className="compatible-icon" />
-        </button>
-        <button className="btn btn-fill mx-auto mt-3">
-          <span>ثبت تیکت</span>
-          <CheckIcon className="compatible-icon" />
-        </button>
+      <div className="container mt-6">
+        <div className="f-align gap-3">
+          <label className="input-outline w-1/2">
+            <input className="input-field" placeholder="موضوع تیکت" name="connect_topic" />
+            <ChevronDownIcon className="compatible-icon" />
+          </label>
+          <label className="input-outline w-1/2" dir="ltr">
+            <input className="input-field" placeholder="09** *** ****" name="connect_phone" />
+          </label>
+        </div>
+        <div className="mt-3">
+          <label className="input-outline input-textarea">
+            <textarea
+              name="connect_text"
+              className="input-field"
+              placeholder="متن تان را شرح دهید..."
+            />
+          </label>
+          <button className="btn-outline mt-3">
+            <span>فایل ضمیمه (اختیاری)</span>
+            <FileIcon className="compatible-icon" />
+          </button>
+          <button className="btn-fill mt-6">
+            <span>ثبت تیکت</span>
+            <CheckIcon className="compatible-icon" />
+          </button>
+        </div>
       </div>
     </>
   );
