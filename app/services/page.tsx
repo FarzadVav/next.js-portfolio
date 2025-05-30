@@ -33,7 +33,7 @@ const ServicesPage = () => {
 
       <div className="container mt-6 grid grid-cols-2">
         {Array.from(new Array(7)).map(() => (
-          <div className="card card-effect" key={Math.random()}>
+          <div className="card-effect" key={Math.random()}>
             <div className="f-align gap-3">
               <div className="size-9 rounded-full bg-foreground-5"></div>
               <h2 className="text-xl font-vazir-bold">اپلیکیشن فرانت اند</h2>

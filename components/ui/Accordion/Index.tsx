@@ -12,7 +12,7 @@ const Accordion: React.FC<AccordionProps> = ({ className, ...props }) => {
 
   return (
     <AccordionContext value={{ isOpen, setOpen: (newState: boolean) => setOpen(newState) }}>
-      <div className={classMerge("card card-effect", className)} {...props} />
+      <div className={classMerge("card-effect", className)} {...props} />
     </AccordionContext>
   );
 };
