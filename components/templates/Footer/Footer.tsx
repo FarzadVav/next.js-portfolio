@@ -13,7 +13,7 @@ import instagramImg from "root/public/logos/instagram.svg";
 const Footer = () => {
   return (
     <footer className="container mt-9 py-10 border-t border-foreground/10">
-      <div className="f-center">
+      <div className="f-center gap-3">
         <Link className="btn btn-ghost" href={"tel:09389461065"}>
           <span dir="ltr">0938 0946 1065</span>
           <PhoneIcon className="compatible-icon" />
@@ -25,7 +25,7 @@ const Footer = () => {
         </Link>
       </div>
 
-      <div className="f-center mt-6">
+      <div className="f-center gap-3 mt-6">
         <Link className="btn btn-ghost" href={ROUTES.landing}>
           <span>لندینگ تبلیغاتی</span>
           <ArrowUpLeft className="compatible-icon" />
@@ -47,7 +47,7 @@ const Footer = () => {
         </button>
       </div>
 
-      <div className="f-center mt-6">
+      <div className="f-center gap-3 mt-6">
         <Link className="size-9" href={"https://instagram.com"}>
           <Image
             className="size-full rounded-full"
