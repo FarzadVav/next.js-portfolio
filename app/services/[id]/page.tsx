@@ -1,6 +1,7 @@
 import { PhoneIcon, SendHorizonalIcon, SparklesIcon, UserIcon } from "lucide-react";
 
 import PageHero from "root/components/modules/PageHero/Index";
+import PageTitle from "root/components/modules/PageTitle/Index";
 
 const ServicesDetailPage = () => {
   return (
@@ -11,13 +12,13 @@ const ServicesDetailPage = () => {
         description="لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥 شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان رایانه ای..."
       />
 
-      <div className="container grid grid-cols-3 gap-3 mt-6">
+      <div className="container grid grid-cols-3 gap-3 mt-9">
         {Array.from(new Array(6)).map(() => (
-          <div className="card card-effect" key={Math.random()}>
-            <div className="size-12 bg-success/10 p-3 rounded-full f-center">
+          <div className="card-effect" key={Math.random()}>
+            <div className="size-12 bg-success-5 text-success-1 p-3 rounded-full f-center">
               <SparklesIcon className="size-full text-success" />
             </div>
-            <h2 className="text-lg mt-3 font-vazir-black">پشتیانی ۶ ماهه</h2>
+            <h2 className="text-lg mt-3 font-vazir-bold">پشتیانی ۶ ماهه</h2>
             <p className="mt-1.5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
               گرافیک است...
@@ -27,8 +28,8 @@ const ServicesDetailPage = () => {
       </div>
 
       <div className="container mt-6">
-        <h3 className="text-xl font-kalameh-bold">برای کارهای بزرگ تر باید چه کرد؟</h3>
-        <p>
+        <h3 className="text-lg font-kalameh-bold">برای کارهای بزرگ تر باید چه کرد؟</h3>
+        <p className="mt-3">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
           است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
           تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
@@ -39,8 +40,8 @@ const ServicesDetailPage = () => {
           جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
         </p>
 
-        <h3 className="text-xl mt-6 font-kalameh-bold">برای کارهای بزرگ تر باید چه کرد؟</h3>
-        <p className="mt-1.5">
+        <h3 className="text-lg mt-6 font-kalameh-bold">برای کارهای بزرگ تر باید چه کرد؟</h3>
+        <p className="mt-3">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
           است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
           تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
@@ -51,8 +52,8 @@ const ServicesDetailPage = () => {
           جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
         </p>
 
-        <h3 className="text-xl mt-6 font-kalameh-bold">برای کارهای بزرگ تر باید چه کرد؟</h3>
-        <p className="mt-1.5">
+        <h3 className="text-lg mt-6 font-kalameh-bold">برای کارهای بزرگ تر باید چه کرد؟</h3>
+        <p className="mt-3">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
           است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
           تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
@@ -64,22 +65,24 @@ const ServicesDetailPage = () => {
         </p>
       </div>
 
-      <div className="card card-effect container mt-9">
-        <h4 className="text-2xl font-kalameh-bold">ثبت پروژه حرفه ای شما</h4>
-        <div className="f-align mt-6">
-          <label className="input input-outline">
+      <PageTitle className="mt-9">
+        <h4>ثبت پروژه حرفه ای شما</h4>
+      </PageTitle>
+      <div className="card-effect container mt-6">
+        <div className="f-align gap-3">
+          <label className="input-outline">
             <input className="input-field" placeholder="نام و نام خانوادگی" />
             <UserIcon className="compatible-icon" />
           </label>
-          <label className="input input-outline" dir="ltr">
+          <label className="input-outline" dir="ltr">
             <input className="input-field" placeholder="09*********" />
             <PhoneIcon className="compatible-icon" />
           </label>
         </div>
-        <label className="input mt-3 input-outline input-textarea">
-          <textarea className="textarea-field" placeholder="شرح درخواست شما..." />
+        <label className="input-outline mt-3">
+          <textarea className="input-field" placeholder="شرح درخواست شما..." />
         </label>
-        <button className="btn mt-3 btn-fill">
+        <button className="mt-3 btn-fill">
           <span>ثبت درخواست</span>
           <SendHorizonalIcon className="compatible-icon -scale-x-100" />
         </button>
