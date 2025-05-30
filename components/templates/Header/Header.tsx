@@ -9,7 +9,7 @@ import DropDownContent from "root/components/ui/DropDown/Content";
 
 const Header = () => {
   return (
-    <header className="bg-background border-b border-foreground/10 sticky top-0 z-20">
+    <header className="bg-background-1 border-b border-foreground-4 sticky top-0 z-20">
       <div className="container f-align gap-3 font-vazir-bold h-20">
         <Link className="btn-ghost" href={ROUTES.services}>
           خدمات

@@ -1,9 +1,9 @@
 @import "tailwindcss";
-@import "../styles/utilities.css";
-@import "../styles/buttons.css";
+@import "../styles/cards.css";
 @import "../styles/inputs.css";
 @import "../styles/badges.css";
-@import "../styles/cards.css";
+@import "../styles/buttons.css";
+@import "../styles/utilities.css";
 
 /* 
   UI system spacing:
@@ -35,11 +35,11 @@
     xl: text-xl
 
   Color levels:
-    xs: color/5
-    sm: color/10
-    md: color/15
-    lg: color/50
-    xl: color/100
+    xs: 5%
+    sm: 10%
+    md: 15%
+    lg: 50%
+    xl: 100%
 */
 
 @font-face {
@@ -76,22 +76,43 @@
 
 @theme {
   --color-*: initial;
-  --color-background: hsl(223, 78%, 98%);
-  /* --color-background-1: hsl(223, 78%, 98%);
+  /* Background color */
+  --color-background-1: hsl(223, 78%, 98%);
   --color-background-2: hsl(223, 78%, 98%, 0.5);
   --color-background-3: hsl(223, 78%, 98%, 0.15);
   --color-background-4: hsl(223, 78%, 98%, 0.1);
-  --color-background-5: hsl(223, 78%, 98%, 0.05); */
-
-  --color-foreground: hsl(0, 0%, 15%);
-  --color-success: hsl(113, 100%, 27%);
-  --color-warning: hsl(45, 90%, 53%);
-  --color-danger: hsl(0, 100%, 42%);
+  --color-background-5: hsl(223, 78%, 98%, 0.05);
+  /* Foreground color */
+  --color-foreground-1: hsl(0, 0%, 15%);
+  --color-foreground-2: hsl(0, 0%, 15%, 0.5);
+  --color-foreground-3: hsl(0, 0%, 15%, 0.15);
+  --color-foreground-4: hsl(0, 0%, 15%, 0.1);
+  --color-foreground-5: hsl(0, 0%, 15%, 0.05);
+  /* Success color */
+  --color-success-1: hsl(113, 100%, 27%);
+  --color-success-2: hsl(113, 100%, 27%, 0.5);
+  --color-success-3: hsl(113, 100%, 27%, 0.15);
+  --color-success-4: hsl(113, 100%, 27%, 0.1);
+  --color-success-5: hsl(113, 100%, 27%, 0.05);
+  /* Warning color */
+  --color-warning-1: hsl(45, 90%, 53%);
+  --color-warning-2: hsl(45, 90%, 53%, 0.5);
+  --color-warning-3: hsl(45, 90%, 53%, 0.15);
+  --color-warning-4: hsl(45, 90%, 53%, 0.1);
+  --color-warning-5: hsl(45, 90%, 53%, 0.05);
+  /* Danger color */
+  --color-danger-1: hsl(0, 100%, 42%);
+  --color-danger-2: hsl(0, 100%, 42%, 0.5);
+  --color-danger-3: hsl(0, 100%, 42%, 0.15);
+  --color-danger-4: hsl(0, 100%, 42%, 0.1);
+  --color-danger-5: hsl(0, 100%, 42%, 0.05);
 
   --font-*: initial;
+  /* Vazir font */
   --font-vazir: "vazir";
   --font-vazir-bold: "vazir-bold";
   --font-vazir-black: "vazir-black";
+  /* Kalameh font */
   --font-kalameh: "kalameh";
   --font-kalameh-bold: "kalameh-bold";
   --font-kalameh-black: "kalameh-black";
@@ -99,13 +120,13 @@
 
 @layer base {
   html {
-    @apply font-vazir scroll-smooth bg-background text-foreground;
+    @apply font-vazir scroll-smooth bg-background-1 text-foreground-1;
   }
 
   * {
     @apply select-none;
     scrollbar-width: thin;
-    scrollbar-color: hsl(var(--color-foreground)) transparent;
+    scrollbar-color: hsl(var(--color-foreground-1)) transparent;
 
     &:focus {
       @apply outline-none;

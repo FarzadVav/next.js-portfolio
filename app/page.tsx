@@ -87,7 +87,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-foreground/10 to-transparent rounded-t-[5%] pt-9 mt-9">
+      <div className="bg-gradient-to-b from-foreground-4 to-transparent rounded-t-[5%] pt-9 mt-9">
         <PageTitle>
           <h2>خدمات تیم ما به شما</h2>
         </PageTitle>
@@ -95,7 +95,7 @@ const HomePage = () => {
         <div className="container mt-6 f-align">
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">فرانت اند</span>
-            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground/10"></div>
+            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-4"></div>
             <Link className="btn-outline mt-6" href={ROUTES.services}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
@@ -103,7 +103,7 @@ const HomePage = () => {
           </div>
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">بک اند</span>
-            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground/10"></div>
+            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-4"></div>
             <Link className="mt-6 btn-outline" href={ROUTES.services}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
@@ -111,7 +111,7 @@ const HomePage = () => {
           </div>
           <div className="card card-effect w-1/3">
             <span className="text-xl font-vazir-bold">ربات تلگرام</span>
-            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground/10"></div>
+            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-4"></div>
             <Link className="mt-6 btn-outline" href={ROUTES.services}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
@@ -125,7 +125,7 @@ const HomePage = () => {
       </PageTitle>
       <div className="grid mt-6 grid-cols-2 container">
         <div className="f-align card card-effect gap-3">
-          <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+          <div className="size-16 min-w-16 bg-foreground-4 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
             <p className="text-sm mt-1.5">
@@ -136,7 +136,7 @@ const HomePage = () => {
         </div>
 
         <div className="f-align card card-effect gap-3">
-          <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+          <div className="size-16 min-w-16 bg-foreground-4 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
             <p className="text-sm mt-1.5">
@@ -147,7 +147,7 @@ const HomePage = () => {
         </div>
 
         <div className="f-align card card-effect gap-3">
-          <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+          <div className="size-16 min-w-16 bg-foreground-4 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
             <p className="text-sm mt-1.5">
@@ -158,7 +158,7 @@ const HomePage = () => {
         </div>
 
         <div className="f-align card card-effect gap-3">
-          <div className="size-16 min-w-16 bg-foreground/10 rounded-lg" />
+          <div className="size-16 min-w-16 bg-foreground-4 rounded-lg" />
           <div>
             <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
             <p className="text-sm mt-1.5">
@@ -211,7 +211,7 @@ const HomePage = () => {
           {Array.from(new Array(12)).map(() => (
             <div className="w-2/5 min-w-2/5" key={Math.random()}>
               <span className="font-vazir-bold text-lg">اردلان یزدان دوست</span>
-              <p className="bg-foreground/5 mt-3 card">
+              <p className="bg-foreground-5 mt-3 card">
                 {Array.from(new Array(Math.ceil(Math.random() * 10))).map(
                   () => "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ بود."
                 )}
@@ -265,7 +265,7 @@ const HomePage = () => {
         <ScrollXContainer>
           {Array.from(new Array(7)).map(() => (
             <div className="w-2/5 card card-effect min-w-2/5" key={Math.random()}>
-              <div className="w-full aspect-video bg-foreground/10 rounded-lg" />
+              <div className="w-full aspect-video bg-foreground-4 rounded-lg" />
 
               <h6 className="text-xl mt-3 font-vazir-bold">استفاده از توسعه بر پایه دامنه</h6>
 
