@@ -25,11 +25,11 @@ const ServicesPage = () => {
       />
 
       <div className="p-1.5 mt-9 f-align w-fit mx-auto rounded-lg gap-1.5 bg-foreground-6">
-        <button className="btn btn-fill">فرانت اند</button>
-        <button className="btn btn-ghost">بک اند</button>
-        <button className="btn btn-ghost">موبایل</button>
-        <button className="btn btn-ghost">دسکتاپ</button>
-        <button className="btn btn-ghost">کلاود</button>
+        <button className="btn-fill">فرانت اند</button>
+        <button className="btn-ghost">بک اند</button>
+        <button className="btn-ghost">موبایل</button>
+        <button className="btn-ghost">دسکتاپ</button>
+        <button className="btn-ghost">کلاود</button>
       </div>
 
       <div className="container mt-6 grid grid-cols-2">
@@ -69,11 +69,11 @@ const ServicesPage = () => {
             </ul>
 
             <div className="mt-6 f-align gap-3">
-              <button className="btn btn-fill w-1/2" onClick={() => setOpen(true)}>
+              <button className="btn-fill w-1/2" onClick={() => setOpen(true)}>
                 <span>ثبت سفارش</span>
                 <CheckCircleIcon className="compatible-icon" />
               </button>
-              <Link className="btn btn-ghost w-1/2" href={$mergeKeys("/", [ROUTES.services, 1])}>
+              <Link className="btn-ghost w-1/2" href={$mergeKeys("/", [ROUTES.services, 1])}>
                 بیشتر بخوانید
               </Link>
             </div>
