@@ -1,68 +1,44 @@
 /* Input wrapper */
 @utility input {
-  --bg-color: var(--color-foreground);
-  --fr-color: var(--color-background);
-
   @apply ring-4 ring-transparent w-full f-align px-5 rounded-lg h-10 text-base gap-3 cursor-pointer transition-all relative disabled:opacity-50 disabled:cursor-not-allowed;
 
   &:has(textarea) {
-    @apply h-[33vh];
+    @apply h-[33vh] p-5;
   }
-}
-
-/* Colors */
-@utility input-background {
-  --bg-color: var(--color-background);
-  --fr-color: var(--color-foreground);
-}
-
-@utility input-danger {
-  --bg-color: var(--color-danger);
-  --fr-color: var(--color-background);
-}
-
-@utility input-success {
-  --bg-color: var(--color-success);
-  --fr-color: var(--color-background);
-}
-
-@utility input-warning {
-  --bg-color: var(--color-warning);
-  --fr-color: var(--color-background);
 }
 
 /* Variants */
 @utility input-fill {
   @apply input; /* Extend */
 
-  @apply bg-[var(--bg-color)]
-  text-[var(--fr-color)]
-  focus-within:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+  @apply bg-[var(--1st-color-1)]
+  text-[var(--2nd-color-1)]
+  focus-within:ring-[var(--1st-color-5)];
 }
 
 @utility input-outline {
   @apply input; /* Extend */
 
   @apply border
-  text-[var(--bg-color)]
-  border-[var(--bg-color)]
-  focus-within:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+  text-[var(--1st-color-1)]
+  border-[var(--1st-color-1)]
+  focus-within:ring-[var(--1st-color-5)];
 }
 
 @utility input-soft {
   @apply input; /* Extend */
 
-  @apply bg-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
-  text-[var(--bg-color)]
+  @apply bg-[var(--1st-color-5)]
+  text-[var(--1st-color-1)]
   focus-within:bg-transparent
-  focus-within:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+  focus-within:ring-[var(--1st-color-5)];
 }
 
 @utility input-ghost {
   @apply input; /* Extend */
 
-  @apply text-[var(--bg-color)]
-  focus-within:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
+  @apply text-[var(--1st-color-1)]
+  focus-within:ring-[var(--1st-color-5)];
 }
 
 /* Main field */
