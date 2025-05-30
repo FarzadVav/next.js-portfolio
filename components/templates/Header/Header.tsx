@@ -10,45 +10,45 @@ import DropDownContent from "root/components/ui/DropDown/Content";
 const Header = () => {
   return (
     <header className="bg-background border-b border-foreground/10 sticky top-0 z-20">
-      <div className="container f-align font-vazir-bold h-20">
-        <Link className="btn btn-ghost" href={ROUTES.services}>
+      <div className="container f-align gap-3 font-vazir-bold h-20">
+        <Link className="btn-ghost" href={ROUTES.services}>
           خدمات
         </Link>
-        <button className="btn btn-ghost" disabled>
+        <button className="btn-ghost" disabled>
           محصولات
         </button>
-        <button className="btn btn-ghost" disabled>
+        <button className="btn-ghost" disabled>
           ابزار ها
         </button>
-        <Link className="btn btn-ghost" href={ROUTES.articles}>
+        <Link className="btn-ghost" href={ROUTES.articles}>
           مقالات
         </Link>
-        <Link className="btn btn-ghost" href={ROUTES.about}>
+        <Link className="btn-ghost" href={ROUTES.about}>
           درباره ما
         </Link>
-        <Link className="btn btn-ghost" href={ROUTES.connect}>
+        <Link className="btn-ghost" href={ROUTES.connect}>
           ارتباط با ما
         </Link>
 
         <DropDown className="mr-auto">
-          <DropDownTrigger className="btn btn-ghost font-kalameh-black" dir="ltr">
+          <DropDownTrigger className="btn-ghost font-kalameh-black" dir="ltr">
             <span>WEB TUNERS</span>
           </DropDownTrigger>
 
           <DropDownContent className="**:w-full **:justify-start">
-            <Link className="btn btn-ghost" href={ROUTES.home}>
+            <Link className="btn-ghost" href={ROUTES.home}>
               صفحه اصلی
             </Link>
-            <Link className="btn btn-ghost" href={ROUTES.home} target="_blank">
+            <Link className="btn-ghost" href={ROUTES.home} target="_blank">
               لندینگ
             </Link>
-            <Link className="btn btn-ghost" href={ROUTES.home} target="_blank">
+            <Link className="btn-ghost" href={ROUTES.home} target="_blank">
               نظرسنجی
             </Link>
-            <Link className="btn btn-ghost" href={ROUTES.home} target="_blank">
+            <Link className="btn-ghost" href={ROUTES.home} target="_blank">
               حمایت
             </Link>
-            <button className="btn btn-ghost" disabled>
+            <button className="btn-ghost" disabled>
               استخدام
             </button>
           </DropDownContent>

@@ -29,14 +29,16 @@
 
 /* Variants */
 @utility btn-fill {
-  @apply bg-[var(--bg-color)]
+  @apply btn
+  bg-[var(--bg-color)]
   text-[var(--fr-color)]
   hover:bg-[color-mix(in_oklab,var(--bg-color)90%,transparent)]
   focus:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)];
 }
 
 @utility btn-outline {
-  @apply border
+  @apply btn
+  border
   border-[var(--bg-color)]
   text-[var(--bg-color)]
   hover:bg-[var(--bg-color)]
@@ -45,16 +47,18 @@
 }
 
 @utility btn-soft {
-  @apply bg-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
+  @apply btn
   text-[var(--bg-color)]
+  bg-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
   hover:bg-[color-mix(in_oklab,var(--bg-color)20%,transparent)]
   focus:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
   focus:bg-transparent;
 }
 
 @utility btn-ghost {
-  @apply text-[var(--bg-color)]
+  @apply btn
   hover:bg-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
+  text-[var(--bg-color)]
   focus:ring-[color-mix(in_oklab,var(--bg-color)10%,transparent)]
   focus:hover:bg-transparent;
 }
