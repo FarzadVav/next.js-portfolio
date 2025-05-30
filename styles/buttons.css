@@ -29,7 +29,7 @@
 
   @apply text-[var(--1st-color-1)]
   bg-[var(--1st-color-5)]
-  hover:bg-[var(--1st-color-3)]
+  hover:bg-[var(--1st-color-4)]
   focus:ring-[var(--1st-color-5)]
   focus:bg-transparent;
 }
