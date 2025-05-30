@@ -25,9 +25,9 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({ className, children, 
         buttonRef.current?.click();
       }}
     >
-      <div className="font-vazir-bold text-xl">{children}</div>
+      <div className="font-vazir-bold text-lg">{children}</div>
 
-      <button className="btn btn-ghost" ref={buttonRef} onClick={() => setOpen(!isOpen)}>
+      <button className="btn-ghost" ref={buttonRef} onClick={() => setOpen(!isOpen)}>
         <ChevronDownIcon
           className={`compatible-icon transition-transform ${isOpen ? "-scale-y-100" : ""}`}
         />
