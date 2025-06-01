@@ -174,7 +174,7 @@
 }
 
 /* Color themes */
-@theme color-background {
+@utility theme-background {
   --1st-color-1: var(--color-background-1);
   --1st-color-2: var(--color-background-2);
   --1st-color-3: var(--color-background-3);
