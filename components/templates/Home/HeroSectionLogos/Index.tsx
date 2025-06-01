@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const HeroSectionLogos = () => {
   return (
-    <>
+    <div className="container relative dark:invert-100">
       <motion.div
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
@@ -69,7 +69,7 @@ const HeroSectionLogos = () => {
       >
         <Image src={"/logos/pgsql.svg"} alt="دیتابیس pgsql" fill />
       </motion.div>
-    </>
+    </div>
   );
 };
 

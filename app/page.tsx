@@ -20,69 +20,71 @@ import HeroSectionLogos from "root/components/templates/Home/HeroSectionLogos/In
 const HomePage = () => {
   return (
     <>
-      <div className="container mt-9 relative">
+      <div className="mt-9 overflow-hidden">
         <HeroSectionLogos />
 
-        <h1 className="text-3xl text-center font-kalameh-bold">
-          مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
-        </h1>
+        <div className="container">
+          <h1 className="text-3xl text-center font-kalameh-bold">
+            مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
+          </h1>
 
-        <p className="w-3/4 text-center mx-auto mt-6">
-          لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و
-          کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥
-          شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای
-          طراحان رایانه ای...
-        </p>
+          <p className="w-3/4 text-center mx-auto mt-6">
+            لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و
+            کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥
+            شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای
+            طراحان رایانه ای...
+          </p>
 
-        <label className="input-outline w-1/2 mx-auto mt-6">
-          <input className="input-field" type="text" placeholder="جستجوی هرچی میخوای..." />
-          <Search className="compatible-icon" />
-        </label>
+          <label className="input-outline w-1/2 mx-auto mt-6">
+            <input className="input-field" type="text" placeholder="جستجوی هرچی میخوای..." />
+            <Search className="compatible-icon" />
+          </label>
 
-        <div className="f-center flex-wrap w-3/4 gap-3 mx-auto mt-6">
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>بررسی آپدیت های جدید</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>یادگیری موارد جدید</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>ارائه خدمات وب</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>مشاوره خدمات</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>تیکت پشتیبانی</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>چیت شیت های فارسی</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>محصولات استارتاپی</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>مشاوره مسیر برنامه نویسی</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>پروژه های اوپن سورس</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>ایونت های جامعه</span>
-          </div>
-          <div className="badge">
-            <Sparkles className="compatible-icon" />
-            <span>رزومه قابل اطمینان</span>
+          <div className="f-center flex-wrap w-3/4 gap-3 mx-auto mt-6">
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>بررسی آپدیت های جدید</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>یادگیری موارد جدید</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>ارائه خدمات وب</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>مشاوره خدمات</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>تیکت پشتیبانی</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>چیت شیت های فارسی</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>محصولات استارتاپی</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>مشاوره مسیر برنامه نویسی</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>پروژه های اوپن سورس</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>ایونت های جامعه</span>
+            </div>
+            <div className="badge">
+              <Sparkles className="compatible-icon" />
+              <span>رزومه قابل اطمینان</span>
+            </div>
           </div>
         </div>
       </div>
