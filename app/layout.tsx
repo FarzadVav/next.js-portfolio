@@ -5,13 +5,19 @@ import "./globals.css";
 import Header from "root/components/templates/Header/Header";
 import Footer from "root/components/templates/Footer/Footer";
 
-const setInitialTheme = `
+const themeScript = `
   (function() {
     try {
-      const theme = localStorage.getItem("theme");
-      if (theme) {
+      const themeHandler = (ev) => {
+        const theme = ev.matches ? "dark" : "light";
         document.querySelector("html").setAttribute("data-theme", theme);
-      }
+      };
+
+      const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+      darkModeQuery.addEventListener("change", themeHandler)
+
+      themeHandler(darkModeQuery)
     } catch (err) {
       console.log(err) 
     }
@@ -27,7 +33,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="fa" dir="rtl" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body>
         <div className="transition-transform duration-500" id="root">
