@@ -10,9 +10,9 @@ const Header = () => {
       <div className="container f-align justify-between h-20">
         <AccessNavigation>
           <Popover className="popover">
-            <Popover.Toggle className="btn-ghost" dir="ltr">
+            <Popover.Toggle className="btn-ghost group" dir="ltr">
               <span>ArrowUp</span>
-              <ChevronDownIcon className="compatible-icon" />
+              <ChevronDownIcon className="compatible-icon transition-transform group-data-[state=active]:-scale-y-100" />
             </Popover.Toggle>
 
             <Popover.Body className="popover-body-b">
