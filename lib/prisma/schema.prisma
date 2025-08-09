@@ -1,0 +1,212 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ------------ Authentication
+model Users {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+
+  productsRequests ProductsRequests[]
+  servicesRequests ServicesRequests[]
+  articlesComments ArticlesComments[]
+  questions        Questions[]
+  usersEvents      UsersEvents[]
+  tickets          Tickets[]
+  ticketsMessages  TicketsMessages[]
+}
+
+// ---------- Tools
+model Tools {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String  @db.Text
+  repository  String
+  link        String?
+  published   Boolean @default(false)
+}
+
+// ------------- Products
+model Products {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String   @db.Text
+  logo        String
+  features    String[]
+  price       Int
+  demo        String
+  published   Boolean  @default(false)
+
+  productsRequests ProductsRequests[]
+}
+
+model ProductsRequests {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String   @db.Text
+  phone       String
+  email       String?
+  files       String[] @default([])
+
+  productId Int
+  product   Products @relation(fields: [productId], references: [id])
+  userId    String
+  user      Users    @relation(fields: [userId], references: [id])
+}
+
+// ---------------- Specialties
+model Specialties {
+  id   Int    @id @default(autoincrement())
+  name String
+
+  parentId Int?
+  parent   Specialties?  @relation("SpecialtiesChildren", fields: [parentId], references: [id])
+  children Specialties[] @relation("SpecialtiesChildren")
+}
+
+// ------------- Services
+model Services {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String   @db.Text
+  benefits    String[]
+
+  servicesRequests ServicesRequests[]
+}
+
+model ServicesRequests {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String   @db.Text
+  phone       String
+  email       String?
+  files       String[] @default([])
+
+  serviceId Int
+  service   Services @relation(fields: [serviceId], references: [id])
+  userId    String
+  user      Users    @relation(fields: [userId], references: [id])
+}
+
+// ------------- Articles
+model Articles {
+  id          Int      @id @default(autoincrement())
+  title       String
+  url         String
+  thumbnail   String
+  description String   @db.Text
+  content     String   @db.Text
+  quickLinks  String[] @default([])
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  categoryId       Int
+  category         ArticlesCategories @relation(fields: [categoryId], references: [id])
+  tags             ArticlesTags[]
+  articlesComments ArticlesComments[]
+
+  @@index([title])
+}
+
+model ArticlesCategories {
+  id   Int    @id @default(autoincrement())
+  name String
+
+  articles Articles[]
+  tags     ArticlesTags[]
+}
+
+model ArticlesTags {
+  id   Int    @id @default(autoincrement())
+  name String
+
+  categoryId Int
+  category   ArticlesCategories @relation(fields: [categoryId], references: [id])
+  articles   Articles[]
+}
+
+model ArticlesComments {
+  id        Int      @id @default(autoincrement())
+  content   String   @db.Text
+  createdAt DateTime @default(now())
+
+  articleId Int
+  article   Articles           @relation(fields: [articleId], references: [id])
+  userId    String
+  user      Users              @relation(fields: [userId], references: [id])
+  parentId  Int?
+  parent    ArticlesComments?  @relation("ArticlesCommentsChildren", fields: [parentId], references: [id])
+  children  ArticlesComments[] @relation("ArticlesCommentsChildren")
+}
+
+// -------------- Questions
+model Questions {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String   @db.Text
+  files       String[] @default([])
+  createdAt   DateTime @default(now())
+
+  userId   String
+  user     Users       @relation(fields: [userId], references: [id])
+  parentId Int?
+  parent   Questions?  @relation("QuestionsChildren", fields: [parentId], references: [id])
+  children Questions[] @relation("QuestionsChildren")
+
+  @@index([title])
+}
+
+// ----------- Events
+model Events {
+  id          Int      @id @default(autoincrement())
+  title       String
+  subject     String
+  description String   @db.Text
+  createdAt   DateTime @default(now())
+
+  usersEvents UsersEvents[]
+
+  @@index([title])
+}
+
+model UsersEvents {
+  userId  String
+  user    Users  @relation(fields: [userId], references: [id])
+  eventId Int
+  event   Events @relation(fields: [eventId], references: [id])
+
+  @@id([userId, eventId])
+}
+
+// ------------ Tickets
+model Tickets {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String   @db.Text
+  files       String[] @default([])
+  createdAt   DateTime @default(now())
+
+  userId   String
+  user     Users             @relation(fields: [userId], references: [id])
+  messages TicketsMessages[]
+}
+
+model TicketsMessages {
+  id        Int      @id @default(autoincrement())
+  message   String   @db.Text
+  createdAt DateTime @default(now())
+
+  userId       String
+  user         Users             @relation(fields: [userId], references: [id])
+  ticketId     Int
+  ticket       Tickets           @relation(fields: [ticketId], references: [id])
+  replyId      Int?
+  replyMessage TicketsMessages?  @relation("TicketsMessagesReplies", fields: [replyId], references: [id])
+  replies      TicketsMessages[] @relation("TicketsMessagesReplies")
+}
