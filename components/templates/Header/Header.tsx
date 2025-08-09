@@ -1,58 +1,59 @@
 "use client";
 
 import Link from "next/link";
-
-import { ROUTES } from "root/constants/routes.constants";
-import DropDown from "root/components/ui/DropDown/Index";
-import DropDownTrigger from "root/components/ui/DropDown/Trigger";
-import DropDownContent from "root/components/ui/DropDown/Content";
+import { ChevronDownIcon } from "lucide-react";
+import { AccessNavigation, Popover } from "@kadoui/react";
 
 const Header = () => {
   return (
-    <header className="bg-background-1 border-b border-foreground-4 sticky top-0 z-20">
-      <div className="container f-align gap-3 font-vazir-bold h-20">
-        <Link className="btn-ghost" href={ROUTES.services}>
-          خدمات
-        </Link>
-        <button className="btn-ghost" disabled>
-          محصولات
-        </button>
-        <Link className="btn-ghost" href={ROUTES.tools}>
-          ابزار ها
-        </Link>
-        <Link className="btn-ghost" href={ROUTES.articles}>
-          مقالات
-        </Link>
-        <Link className="btn-ghost" href={ROUTES.about}>
-          درباره ما
-        </Link>
-        <Link className="btn-ghost" href={ROUTES.connect}>
-          ارتباط با ما
-        </Link>
+    <header className="bg-background border-b border-separator sticky top-0 z-20">
+      <div className="container f-align justify-between h-20">
+        <AccessNavigation>
+          <Popover className="popover">
+            <Popover.Toggle className="btn-ghost" dir="ltr">
+              <span>ArrowUp</span>
+              <ChevronDownIcon className="compatible-icon" />
+            </Popover.Toggle>
 
-        <DropDown className="mr-auto">
-          <DropDownTrigger className="btn-ghost font-kalameh-black" dir="ltr">
-            <span>WEB TUNERS</span>
-          </DropDownTrigger>
+            <Popover.Body className="popover-body-b">
+              <div className="menu-y">
+                <Link className="btn-ghost" href="/">
+                  Home
+                </Link>
+                <Link className="btn-ghost" href="/" target="_blank">
+                  Survey
+                </Link>
+                <Link className="btn-ghost" href="/" target="_blank">
+                  Support
+                </Link>
+                <button className="btn-ghost" disabled>
+                  Hire Us
+                </button>
+              </div>
+            </Popover.Body>
+          </Popover>
+        </AccessNavigation>
 
-          <DropDownContent className="**:w-full **:justify-start">
-            <Link className="btn-ghost" href={ROUTES.home}>
-              صفحه اصلی
-            </Link>
-            <Link className="btn-ghost" href={ROUTES.home} target="_blank">
-              لندینگ
-            </Link>
-            <Link className="btn-ghost" href={ROUTES.home} target="_blank">
-              نظرسنجی
-            </Link>
-            <Link className="btn-ghost" href={ROUTES.home} target="_blank">
-              حمایت
-            </Link>
-            <button className="btn-ghost" disabled>
-              استخدام
-            </button>
-          </DropDownContent>
-        </DropDown>
+        <AccessNavigation className="f-align gap-3" direction="x">
+          <Link className="btn-ghost" href="/connect">
+            Contact Us
+          </Link>
+          <Link className="btn-ghost" href="/about">
+            About Us
+          </Link>
+          <Link className="btn-ghost" href="/articles">
+            Articles
+          </Link>
+          <Link className="btn-ghost" href="/tools">
+            Tools
+          </Link>
+          <button className="btn-ghost" disabled>
+            Products
+          </button>
+          <Link className="btn-ghost" href="/services">
+            Services
+          </Link>
+        </AccessNavigation>
       </div>
     </header>
   );
