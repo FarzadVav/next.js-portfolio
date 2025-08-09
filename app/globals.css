@@ -2,6 +2,10 @@
 @import "@kadoui/css";
 
 @theme {
+  --font-*: initial;
+  --font-geist: var(--font-geist);
+  --font-elMessiri: var(--font-elMessiri);
+
   --color-*: initial;
   --color-background-thin: #ffffff;
   --color-background: #fafafa;
@@ -32,4 +36,10 @@
 
 @utility palette-foreground {
   --color-palette: var(--color-foreground);
+}
+
+@layer base {
+  html {
+    @apply font-geist;
+  }
 }
