@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 
 import ScrollX from "root/components/ui/ScrollX/Index";
-import { ROUTES } from "root/constants/routes.constants";
 import Accordion from "root/components/ui/Accordion/Index";
 import PageTitle from "root/components/modules/PageTitle/Index";
 import AccordionHeader from "root/components/ui/Accordion/Header";
@@ -20,101 +19,96 @@ import HeroSectionLogos from "root/components/templates/Home/HeroSectionLogos/In
 const HomePage = () => {
   return (
     <>
-      <div className="mt-9 overflow-hidden">
+      <div className="mt-12 overflow-hidden">
         <HeroSectionLogos />
 
         <div className="container">
-          <h1 className="text-3xl text-center font-kalameh-bold">
-            مکانی برای برنامه نویسی وب <br /> برای خدمات و آموزش با ما همراه باشید
+          <h1 className="text-7xl text-center font-elMessiri font-bold tracking-wider">
+            ArrowUp
           </h1>
 
-          <p className="w-3/4 text-center mx-auto mt-6">
-            لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و
-            کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥
-            شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای
-            طراحان رایانه ای...
+          <p className="w-3/4 text-center mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 🧑‍💻 atque consectetur excepturi possimus porro culpa 🔥 quam omnis iusto ✅ ipsum saepe mollitia nesciunt hic velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
           </p>
 
           <label className="input-outline w-1/2 mx-auto mt-6">
-            <input className="input-field" type="text" placeholder="جستجوی هرچی میخوای..." />
+            <input className="input-field" type="text" placeholder="Search your requests..." />
             <Search className="compatible-icon" />
           </label>
 
           <div className="f-center flex-wrap w-3/4 gap-3 mx-auto mt-6">
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>بررسی آپدیت های جدید</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>یادگیری موارد جدید</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>ارائه خدمات وب</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>مشاوره خدمات</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>تیکت پشتیبانی</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>چیت شیت های فارسی</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>محصولات استارتاپی</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>مشاوره مسیر برنامه نویسی</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>پروژه های اوپن سورس</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>ایونت های جامعه</span>
+              <span>IT solutions</span>
             </div>
             <div className="badge">
               <Sparkles className="compatible-icon" />
-              <span>رزومه قابل اطمینان</span>
+              <span>IT solutions</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-foreground-5 to-transparent rounded-t-[5%] pt-9 mt-9">
-        <PageTitle>
-          <h2>خدمات تیم ما به شما</h2>
-        </PageTitle>
+      <div className="bg-gradient-to-b from-background-thin to-transparent rounded-t-[5%] pt-12 mt-12">
+        <h2 className="font-elMessiri font-bold text-3xl text-center tracking-wide">Our services</h2>
 
         <div className="container mt-6 f-align">
           <div className="card-effect w-1/3">
-            <span className="text-xl font-vazir-bold">فرانت اند</span>
+            <p className="text-xl text-center"></p>
             <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-5"></div>
-            <Link className="btn-outline mt-6" href={ROUTES.services}>
+            <Link className="btn-outline mt-6" href={"/"}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </div>
           <div className="card-effect w-1/3">
-            <span className="text-xl font-vazir-bold">بک اند</span>
+            <p className="text-xl text-center"></p>
             <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-5"></div>
-            <Link className="mt-6 btn-outline" href={ROUTES.services}>
+            <Link className="mt-6 btn-outline" href={"/"}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
           </div>
           <div className="card-effect w-1/3">
-            <span className="text-xl font-vazir-bold">ربات تلگرام</span>
+            <p className="text-xl text-center"></p>
             <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-5"></div>
-            <Link className="mt-6 btn-outline" href={ROUTES.services}>
+            <Link className="mt-6 btn-outline" href={"/"}>
               <span>مشاهده</span>
               <ArrowUpLeftIcon className="compatible-icon" />
             </Link>
@@ -194,11 +188,11 @@ const HomePage = () => {
         ))}
 
         <div className="f-align gap-3 mt-6">
-          <Link className="btn-fill" href={ROUTES.about + "#FAQs"}>
+          <Link className="btn-fill" href={"/about#FAQs"}>
             <span>درباره ما</span>
             <ArrowUpLeftIcon className="compatible-icon" />
           </Link>
-          <Link className="btn-ghost" href={ROUTES.about + "#FAQs"}>
+          <Link className="btn-ghost" href={"/about#FAQs"}>
             <span>همه سوالات</span>
             <ArrowUpLeftIcon className="compatible-icon" />
           </Link>
@@ -254,7 +248,7 @@ const HomePage = () => {
             <CheckIcon className="compatible-icon" />
           </div>
         </div>
-        <Link className="mt-6 btn-fill" href={ROUTES.connect}>
+        <Link className="mt-6 btn-fill" href={"/connect"}>
           <span>درخواست دهید</span>
           <SendHorizonalIcon className="compatible-icon -scale-x-100" />
         </Link>
@@ -280,7 +274,7 @@ const HomePage = () => {
                 باشد
               </p>
 
-              <Link className="mt-6 btn-outline" href={ROUTES.articles + "/1"}>
+              <Link className="mt-6 btn-outline" href={"/articles/1"}>
                 <span>بیشتر بخوانید</span>
                 <ArrowUpLeft className="compatible-icon" />
               </Link>
