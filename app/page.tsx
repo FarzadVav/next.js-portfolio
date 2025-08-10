@@ -23,7 +23,7 @@ const HomePage = () => {
         <HeroSectionLogos />
 
         <div className="container">
-          <h1 className="text-7xl text-center font-elMessiri font-bold tracking-wider">
+          <h1 className="text-7xl text-center font-black">
             ArrowUp
           </h1>
 
@@ -86,7 +86,7 @@ const HomePage = () => {
       </div>
 
       <div className="bg-gradient-to-b from-background-thin to-transparent rounded-t-[5%] pt-12 mt-12">
-        <h2 className="font-elMessiri font-bold text-3xl text-center tracking-wide">Our services</h2>
+        <h2 className="font-bold text-3xl text-center">Our services</h2>
 
         <div className="container mt-6 f-align">
           <div className="card-effect w-1/3">

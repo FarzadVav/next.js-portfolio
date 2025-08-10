@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import { Geist } from "next/font/google";
 import { PropsWithChildren } from "react";
-import { Geist, El_Messiri } from "next/font/google";
 
 import "./globals.css";
 import Header from "root/components/templates/Header/Header";
@@ -9,11 +9,6 @@ import Footer from "root/components/templates/Footer/Footer";
 const geist = Geist({
   subsets: ["latin"],
   variable: "--font-geist",
-  display: "swap"
-});
-const elMessiri = El_Messiri({
-  subsets: ["latin"],
-  variable: "--font-elMessiri",
   display: "swap"
 });
 
@@ -43,7 +38,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <html lang="en" className={`${geist.variable} ${elMessiri.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${geist.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>

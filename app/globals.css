@@ -4,12 +4,11 @@
 @theme {
   --font-*: initial;
   --font-geist: var(--font-geist);
-  --font-elMessiri: var(--font-elMessiri);
 
   --color-*: initial;
   --color-background-thin: #ffffff;
-  --color-background: #fafafa;
-  --color-background-thick: #efefef;
+  --color-background: #efefef;
+  --color-background-thick: #dfdfdf;
   --color-foreground: #151515;
   /* You can add any colors */
 

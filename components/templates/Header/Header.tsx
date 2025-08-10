@@ -6,8 +6,12 @@ import { AccessNavigation, Popover } from "@kadoui/react";
 
 const Header = () => {
   return (
-    <header className="bg-background border-b border-separator sticky top-0 z-20">
-      <div className="container f-align justify-between h-20">
+    <header className="border-b-2 border-separator sticky top-0 z-20">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="h-[200%] top-0 left-0 right-0 bg-background/50 backdrop-blur-2xl" />
+      </div>
+
+      <div className="container f-align justify-between h-20 relative">
         <AccessNavigation className="f-align gap-3" direction="x">
           <Link className="btn-ghost" href="/services">
             Services

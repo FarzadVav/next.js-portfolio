@@ -8,8 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@kadoui/css": "^1.2.11",
-    "@kadoui/react": "^1.3.7",
+    "@kadoui/css": "^1.2.12",
+    "@kadoui/react": "^1.4.8",
     "@mantine/hooks": "^7.17.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
