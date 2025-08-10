@@ -1,111 +1,86 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpLeft, MailIcon, PhoneIcon } from "lucide-react";
+import { MailIcon } from "lucide-react";
 
 import githubImg from "root/public/logos/github.svg";
-import youtubeImg from "root/public/logos/youtube.svg";
-import discordImg from "root/public/logos/discord.svg";
 import telegramImg from "root/public/logos/telegram.svg";
 import linkedinImg from "root/public/logos/linkedin.svg";
-import { ROUTES } from "root/constants/routes.constants";
 import instagramImg from "root/public/logos/instagram.svg";
 
 const Footer = () => {
   return (
-    <footer className="container mt-9 py-10 border-t border-foreground-5">
+    <footer className="container mt-16 py-10 border-t border-separator">
       <div className="f-center gap-3">
-        <Link className="btn-ghost" href={"tel:09389461065"}>
-          <span dir="ltr">0938 0946 1065</span>
+        {/* <Link className="btn-ghost" href={"tel:09389461065"}>
           <PhoneIcon className="btn-icon-size" />
-        </Link>
+          <span dir="ltr">0938 0946 1065</span>
+        </Link> */}
 
         <Link className="btn-ghost" href={"mailto:farzad.vav.work@gmail"}>
-          <span>farzad.vav.work@gmail.com</span>
           <MailIcon className="btn-icon-size" />
+          <span>arrowupteam@gmail.com</span>
         </Link>
       </div>
 
       <div className="f-center gap-3 mt-6">
-        <Link className="btn-ghost" href={ROUTES.landing}>
-          <span>لندینگ تبلیغاتی</span>
-          <ArrowUpLeft className="btn-icon-size" />
+        <Link className="btn-ghost btn-link" href={"/"}>
+          <span>Home</span>
         </Link>
 
-        <Link className="btn-ghost" href={ROUTES.survey}>
-          <span>نظرسنجی</span>
-          <ArrowUpLeft className="btn-icon-size" />
+        <Link className="btn-ghost btn-link" href={"/"}>
+          <span>Survey</span>
         </Link>
 
-        <Link className="btn-ghost" href={ROUTES.donate}>
-          <span>حمایت از ما</span>
-          <ArrowUpLeft className="btn-icon-size" />
+        <Link className="btn-ghost btn-link" href={"/"}>
+          <span>Donate</span>
         </Link>
 
         <button className="btn-ghost" disabled>
-          <span>استخدام</span>
-          <ArrowUpLeft className="btn-icon-size" />
+          Hiring
         </button>
       </div>
 
       <div className="f-center gap-3 mt-6">
         <Link className="size-9" href={"https://instagram.com"}>
           <Image
-            className="size-full rounded-full"
+            width={64}
+            height={64}
+            alt="instagram"
             src={instagramImg}
-            alt="instagram"
-            width={64}
-            height={64}
+            className="size-full"
           />
         </Link>
-        <Link className="size-9" href={"https://instagram.com"}>
+        <Link className="size-9" href={"https://github.com"}>
           <Image
-            className="size-full rounded-full"
+            width={64}
+            height={64}
+            alt="github"
             src={githubImg}
-            alt="instagram"
-            width={64}
-            height={64}
+            className="size-full rounded-full dark:invert-100"
           />
         </Link>
-        <Link className="size-9" href={"https://instagram.com"}>
+        <Link className="size-9" href={"https://t.me/arrowupteam"}>
           <Image
-            className="size-full rounded-full"
-            src={youtubeImg}
-            alt="instagram"
             width={64}
             height={64}
-          />
-        </Link>
-        <Link className="size-9" href={"https://instagram.com"}>
-          <Image
-            className="size-full rounded-full"
-            src={discordImg}
-            alt="instagram"
-            width={64}
-            height={64}
-          />
-        </Link>
-        <Link className="size-9" href={"https://instagram.com"}>
-          <Image
-            className="size-full rounded-full"
+            alt="telegram"
             src={telegramImg}
-            alt="instagram"
-            width={64}
-            height={64}
+            className="size-full rounded-full"
           />
         </Link>
-        <Link className="size-9" href={"https://instagram.com"}>
+        <Link className="size-9" href={"https://www.linkedin.com/company/arrow-up-team"}>
           <Image
-            className="size-full rounded-full"
-            src={linkedinImg}
-            alt="instagram"
             width={64}
             height={64}
+            alt="linkedin"
+            src={linkedinImg}
+            className="size-full rounded-full"
           />
         </Link>
       </div>
 
-      <p className="text-center mt-9 text-sm">
-        کليه حقوق و مالکیت محتوای اين سایت متعلق به وب تیونرز می باشد ©
+      <p className="text-center mt-12">
+        All rights and ownership of this site belong to ArrowUp team ©
       </p>
     </footer>
   );

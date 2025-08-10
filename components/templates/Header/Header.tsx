@@ -45,14 +45,14 @@ const Header = () => {
                 <Link className="btn-ghost" href="/">
                   Home
                 </Link>
-                <Link className="btn-ghost" href="/" target="_blank">
+                <Link className="btn-ghost" href="/">
                   Survey
                 </Link>
-                <Link className="btn-ghost" href="/" target="_blank">
-                  Support
+                <Link className="btn-ghost" href="/">
+                  Donate
                 </Link>
                 <button className="btn-ghost" disabled>
-                  Hire Us
+                  Hiring
                 </button>
               </div>
             </Popover.Body>

@@ -28,10 +28,14 @@ const HomePage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 🧑‍💻 atque consectetur excepturi possimus porro culpa 🔥 quam omnis iusto ✅ ipsum saepe mollitia nesciunt hic velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
           </p>
 
-          <label className="input-outline w-1/2 mx-auto mt-6">
-            <input className="input-field" type="text" placeholder="Search your requests..." />
-            <Search className="input-icon-size" />
-          </label>
+          <div className="join-no-inner-border w-1/2 mx-auto mt-6">
+            <label className="input-soft flex-1">
+              <input className="input-field" type="text" placeholder="Search your requests..." />
+            </label>
+            <button className="btn-soft">
+              <Search className="btn-icon-size" />
+            </button>
+          </div>
 
           <div className="f-center gap-3 mt-6">
             <Link className="btn-outline" href={"/services"}>
@@ -171,7 +175,7 @@ const HomePage = () => {
               className="w-[90%] min-w-[90%] sm:w-2/5 sm:min-w-2/5"
             >
               <span className="text-xl font-bold">John Doe</span>
-              <p className="card card-thin mt-3">
+              <p className="card card-thick mt-3">
                 {Array.from({ length: Math.ceil(Math.random() * 10) }).map(
                   () => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore"
                 )}
@@ -243,6 +247,13 @@ const HomePage = () => {
           <Carousel.RightFade className="carousel-right-fade" />
         </Carousel.Container>
       </Carousel>
+      <Link className="btn-ghost w-fit mx-auto mt-6" href={"/articles"}>
+        <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+          <TextIcon className="btn-icon-size" />
+        </LoaderLink>
+
+        <span>All articles</span>
+      </Link>
     </>
   );
 };
