@@ -1,19 +1,16 @@
 import Link from "next/link";
+import { AccessNavigation, Accordion, Carousel, LoaderLink } from "@kadoui/react";
 import {
   Search,
-  ArrowUpLeft,
-  ArrowUpLeftIcon,
   CheckIcon,
-  SendHorizonalIcon,
-  Sparkles,
+  LoaderIcon,
+  ArrowRightIcon,
+  SparklesIcon,
+  ChevronDownIcon,
+  TextIcon,
+  SendHorizontalIcon
 } from "lucide-react";
 
-import ScrollX from "root/components/ui/ScrollX/Index";
-import Accordion from "root/components/ui/Accordion/Index";
-import PageTitle from "root/components/modules/PageTitle/Index";
-import AccordionHeader from "root/components/ui/Accordion/Header";
-import AccordionContent from "root/components/ui/Accordion/Content";
-import ScrollXContainer from "root/components/ui/ScrollX/Container";
 import HeroSectionLogos from "root/components/templates/Home/HeroSectionLogos/Index";
 
 const HomePage = () => {
@@ -27,261 +24,225 @@ const HomePage = () => {
             ArrowUp
           </h1>
 
-          <p className="w-3/4 text-center mx-auto">
+          <p className="w-3/4 text-center mx-auto mt-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 🧑‍💻 atque consectetur excepturi possimus porro culpa 🔥 quam omnis iusto ✅ ipsum saepe mollitia nesciunt hic velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
           </p>
 
           <label className="input-outline w-1/2 mx-auto mt-6">
             <input className="input-field" type="text" placeholder="Search your requests..." />
-            <Search className="compatible-icon" />
+            <Search className="input-icon-size" />
           </label>
 
-          <div className="f-center flex-wrap w-3/4 gap-3 mx-auto mt-6">
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-            <div className="badge">
-              <Sparkles className="compatible-icon" />
-              <span>IT solutions</span>
-            </div>
-          </div>
-        </div>
-      </div>
+          <div className="f-center gap-3 mt-6">
+            <Link className="btn-outline" href={"/services"}>
+              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <SparklesIcon className="btn-icon-size" />
+              </LoaderLink>
 
-      <div className="bg-gradient-to-b from-background-thin to-transparent rounded-t-[5%] pt-12 mt-12">
-        <h2 className="font-bold text-3xl text-center">Our services</h2>
+              <span>Our services</span>
+            </Link>
 
-        <div className="container mt-6 f-align">
-          <div className="card-effect w-1/3">
-            <p className="text-xl text-center"></p>
-            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-5"></div>
-            <Link className="btn-outline mt-6" href={"/"}>
-              <span>مشاهده</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
-            </Link>
-          </div>
-          <div className="card-effect w-1/3">
-            <p className="text-xl text-center"></p>
-            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-5"></div>
-            <Link className="mt-6 btn-outline" href={"/"}>
-              <span>مشاهده</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
-            </Link>
-          </div>
-          <div className="card-effect w-1/3">
-            <p className="text-xl text-center"></p>
-            <div className="w-full mt-6 aspect-square rounded-xl bg-foreground-5"></div>
-            <Link className="mt-6 btn-outline" href={"/"}>
-              <span>مشاهده</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
+            <Link className="btn-fill" href={"/connect"}>
+              <span>Get start</span>
+
+              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <ArrowRightIcon className="btn-icon-size" />
+              </LoaderLink>
             </Link>
           </div>
         </div>
       </div>
 
-      <PageTitle className="mt-9">
-        <h3>نگاهتان از ما</h3>
-      </PageTitle>
-      <div className="grid mt-6 grid-cols-2 container">
-        <div className="f-align card-effect gap-3">
-          <div className="size-16 min-w-16 bg-foreground-5 rounded-lg" />
-          <div>
-            <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-            <p className="text-sm mt-1.5">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-              گرافیک است...
-            </p>
-          </div>
-        </div>
+      <div className="bg-gradient-to-b from-background-thin bg-background to-transparent rounded-t-[5%] pt-12 mt-12">
+        <div className="container mt-6 f-align gap-3">
+          <div className="card flex-1 space-y-3">
+            <p className="text-xl font-bold text-center">Front-End</p>
+            <div className="w-full aspect-square rounded-child bg-background-thin"></div>
+            <Link className="btn-outline" href={"/services"}>
+              <span>Visit</span>
 
-        <div className="f-align card-effect gap-3">
-          <div className="size-16 min-w-16 bg-foreground-5 rounded-lg" />
-          <div>
-            <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-            <p className="text-sm mt-1.5">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-              گرافیک است...
-            </p>
+              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <ArrowRightIcon className="btn-icon-size" />
+              </LoaderLink>
+            </Link>
           </div>
-        </div>
 
-        <div className="f-align card-effect gap-3">
-          <div className="size-16 min-w-16 bg-foreground-5 rounded-lg" />
-          <div>
-            <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-            <p className="text-sm mt-1.5">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-              گرافیک است...
-            </p>
+          <div className="card flex-1 space-y-3">
+            <p className="text-xl font-bold text-center">Back-End</p>
+            <div className="w-full aspect-square rounded-child bg-background-thin"></div>
+            <Link className="btn-outline" href={"/services"}>
+              <span>Visit</span>
+
+              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <ArrowRightIcon className="btn-icon-size" />
+              </LoaderLink>
+            </Link>
           </div>
-        </div>
 
-        <div className="f-align card-effect gap-3">
-          <div className="size-16 min-w-16 bg-foreground-5 rounded-lg" />
-          <div>
-            <span className="font-vazir-bold text-lg">بهترین روش های برنامه ریزی!</span>
-            <p className="text-sm mt-1.5">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-              گرافیک است...
-            </p>
+          <div className="card flex-1 space-y-3">
+            <p className="text-xl font-bold text-center">Cloud</p>
+            <div className="w-full aspect-square rounded-child bg-background-thin"></div>
+            <Link className="btn-outline" href={"/services"}>
+              <span>Visit</span>
+
+              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <ArrowRightIcon className="btn-icon-size" />
+              </LoaderLink>
+            </Link>
           </div>
         </div>
       </div>
 
-      <div className="container mt-9">
-        {Array.from(new Array(3)).map(() => (
+      <h3 className="text-center font-black text-5xl mt-16">Your first look at us</h3>
+      <div className="grid mt-6 grid-cols-2 gap-3 container">
+        <div className="f-align card card-thick gap-3">
+          <div className="size-16 min-w-16 bg-background rounded-child" />
+          <div>
+            <span className="font-bold">We love Javascript!</span>
+            <p className="text-xs mt-0.5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus nam odio molestiae.
+            </p>
+          </div>
+        </div>
+
+        <div className="f-align card card-thick gap-3">
+          <div className="text-right">
+            <span className="font-bold">We love Javascript!</span>
+            <p className="text-xs mt-0.5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus nam odio molestiae.
+            </p>
+          </div>
+          <div className="size-16 min-w-16 bg-background rounded-child" />
+        </div>
+
+        <div className="f-align card card-thick gap-3">
+          <div className="size-16 min-w-16 bg-background rounded-child" />
+          <div>
+            <span className="font-bold">We love Javascript!</span>
+            <p className="text-xs mt-0.5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus nam odio molestiae.
+            </p>
+          </div>
+        </div>
+
+        <div className="f-align card card-thick gap-3">
+          <div className="text-right">
+            <span className="font-bold">We love Javascript!</span>
+            <p className="text-xs mt-0.5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus nam odio molestiae.
+            </p>
+          </div>
+          <div className="size-16 min-w-16 bg-background rounded-child" />
+        </div>
+      </div>
+      <AccessNavigation className="container mt-12">
+        {Array.from({ length: 3 }).map(() => (
           <Accordion key={Math.random()}>
-            <AccordionHeader>
-              <h6>چگونه میتوانم یک سیستم کشینگ با اکسپرس و ریکت پیاده کنم؟</h6>
-            </AccordionHeader>
-            <AccordionContent>
-              <p className="pt-6">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
-                گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
-                برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
-                می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
-                متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
-                الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
-                داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
-                مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
-                طراحی اساسا مورد استفاده قرار گیرد.
+            <Accordion.Toggle className="btn-ghost w-full justify-between group not-first:mt-3">
+              <h6 className="font-bold">How can we work with you?</h6>
+              <ChevronDownIcon className="btn-icon-size transition-transform group-[.accordion-active]:-scale-y-100" />
+            </Accordion.Toggle>
+            <Accordion.Body>
+              <p className="card">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore? Corrupti quasi nam, iste sint quibusdam ipsa numquam est minima libero repudiandae harum nisi nihil doloremque voluptas sed optio eum!
               </p>
-            </AccordionContent>
+            </Accordion.Body>
           </Accordion>
         ))}
 
-        <div className="f-align gap-3 mt-6">
-          <Link className="btn-fill" href={"/about#FAQs"}>
-            <span>درباره ما</span>
-            <ArrowUpLeftIcon className="compatible-icon" />
-          </Link>
-          <Link className="btn-ghost" href={"/about#FAQs"}>
-            <span>همه سوالات</span>
-            <ArrowUpLeftIcon className="compatible-icon" />
-          </Link>
-        </div>
-      </div>
+        <Link className="btn-ghost w-fit mx-auto mt-6" href={"/about"}>
+          <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+            <TextIcon className="btn-icon-size" />
+          </LoaderLink>
 
-      <PageTitle className="mt-9">
-        <h4>نظرات مشتریان/همکاران</h4>
-      </PageTitle>
-      <ScrollX className="container mt-6">
-        <ScrollXContainer className="items-start gap-3">
-          {Array.from(new Array(12)).map(() => (
-            <div className="w-2/5 min-w-2/5" key={Math.random()}>
-              <span className="font-vazir-bold text-lg">اردلان یزدان دوست</span>
-              <p className="bg-foreground-6 mt-3 card">
-                {Array.from(new Array(Math.ceil(Math.random() * 10))).map(
-                  () => "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ بود."
+          <span>All questions</span>
+        </Link>
+      </AccessNavigation>
+
+      <h4 className="text-center font-black text-5xl mt-16">Customer comments</h4>
+      <Carousel className="carousel container mt-6">
+        <Carousel.Container className="carousel-container gap-3">
+          <Carousel.LeftFade className="carousel-left-fade" />
+          <Carousel.RightFade className="carousel-right-fade" />
+
+          {Array.from({ length: 12 }).map(() => (
+            <div
+              key={Math.random()}
+              className="w-[90%] min-w-[90%] sm:w-2/5 sm:min-w-2/5"
+            >
+              <span className="text-xl font-bold">John Doe</span>
+              <p className="card card-thin mt-3">
+                {Array.from({ length: Math.ceil(Math.random() * 10) }).map(
+                  () => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore"
                 )}
-                {".."}
+
+                {"..."}
               </p>
             </div>
           ))}
-        </ScrollXContainer>
-      </ScrollX>
+        </Carousel.Container>
+      </Carousel>
 
-      <div className="container card-effect mt-9">
-        <h5 className="text-2xl font-kalameh-bold">مشاوه میخواهید؟ با ما در ارتباط باشید!</h5>
-        <p className="mt-3">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-          است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
-          تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
-          در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
-          افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
-          زبان فارسی ایجاد کرد، در این صورت می توان که تمام و دشواری موجود در ارائه راهکارها، و
-          شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی
-          سوالات پیوسته اهل دنیای مورد استفاده قرار گیرد.
+      <div className="container card card-lg card-thick space-y-3 mt-16">
+        <h5 className="text-3xl font-black">Do you want consultation?</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum nostrum voluptates eveniet id libero incidunt enim vitae nam corporis voluptate neque sit sed maiores, saepe cumque quo.
         </p>
-        <div className="mt-6 f-align gap-3">
-          <div className="badge">
-            <span>مشکل یابی</span>
-            <CheckIcon className="compatible-icon" />
+        <div className="f-align gap-3">
+          <div className="badge-soft">
+            <CheckIcon className="badge-icon-size" />
+            <span>Problem solving</span>
           </div>
-          <div className="badge">
-            <span>حل مسئله</span>
-            <CheckIcon className="compatible-icon" />
+          <div className="badge-soft">
+            <CheckIcon className="badge-icon-size" />
+            <span>Problem solving</span>
           </div>
-          <div className="badge">
-            <span>مسیر انجام پروژه</span>
-            <CheckIcon className="compatible-icon" />
+          <div className="badge-soft">
+            <CheckIcon className="badge-icon-size" />
+            <span>Problem solving</span>
           </div>
-          <div className="badge">
-            <span>مهندسی نیازمندی ها</span>
-            <CheckIcon className="compatible-icon" />
+          <div className="badge-soft">
+            <CheckIcon className="badge-icon-size" />
+            <span>Problem solving</span>
           </div>
         </div>
-        <Link className="mt-6 btn-fill" href={"/connect"}>
-          <span>درخواست دهید</span>
-          <SendHorizonalIcon className="compatible-icon -scale-x-100" />
+
+        <Link className="btn-fill w-fit" href={"/connect"}>
+          <span>Send a request</span>
+
+          <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+            <SendHorizontalIcon className="btn-icon-size" />
+          </LoaderLink>
         </Link>
       </div>
 
-      <PageTitle className="mt-9">
-        <h6>آخرین مقالات سایت</h6>
-      </PageTitle>
-      <ScrollX className="container mt-6">
-        <ScrollXContainer>
-          {Array.from(new Array(7)).map(() => (
-            <div className="w-2/5 card-effect min-w-2/5" key={Math.random()}>
-              <div className="w-full aspect-video bg-foreground-5 rounded-lg" />
+      <h6 className="text-center font-black text-5xl mt-16">Latest articles</h6>
+      <Carousel className="carousel container mt-6">
+        <Carousel.Container className="carousel-container gap-3">
+          <Carousel.LeftFade className="carousel-left-fade" />
 
-              <h6 className="text-xl mt-3 font-vazir-bold">استفاده از توسعه بر پایه دامنه</h6>
-
-              <div className="badge mt-3">مهندسی نرم افزار</div>
-
+          {Array.from({ length: 7 }).map(() => (
+            <div className="w-2/5 card card-thick min-w-2/5 space-y-3" key={Math.random()}>
+              <div className="w-full aspect-video bg-background rounded-child" />
+              <h6 className="text-xl font-bold">Our IT solutions</h6>
+              <div className="badge-soft mt-3">Business</div>
               <p className="mt-3 line-clamp-3">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-                شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                باشد
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit odio nisi ad magni numquam eum animi repudiandae.
               </p>
 
-              <Link className="mt-6 btn-outline" href={"/articles/1"}>
-                <span>بیشتر بخوانید</span>
-                <ArrowUpLeft className="compatible-icon" />
+              <Link className="btn-outline w-fit" href={"/connect"}>
+                <span>Read more</span>
+
+                <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                  <ArrowRightIcon className="btn-icon-size" />
+                </LoaderLink>
               </Link>
             </div>
           ))}
-        </ScrollXContainer>
-      </ScrollX>
+
+          <Carousel.RightFade className="carousel-right-fade" />
+        </Carousel.Container>
+      </Carousel>
     </>
   );
 };

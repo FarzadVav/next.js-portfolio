@@ -16,34 +16,34 @@ const Footer = () => {
       <div className="f-center gap-3">
         <Link className="btn-ghost" href={"tel:09389461065"}>
           <span dir="ltr">0938 0946 1065</span>
-          <PhoneIcon className="compatible-icon" />
+          <PhoneIcon className="btn-icon-size" />
         </Link>
 
         <Link className="btn-ghost" href={"mailto:farzad.vav.work@gmail"}>
           <span>farzad.vav.work@gmail.com</span>
-          <MailIcon className="compatible-icon" />
+          <MailIcon className="btn-icon-size" />
         </Link>
       </div>
 
       <div className="f-center gap-3 mt-6">
         <Link className="btn-ghost" href={ROUTES.landing}>
           <span>لندینگ تبلیغاتی</span>
-          <ArrowUpLeft className="compatible-icon" />
+          <ArrowUpLeft className="btn-icon-size" />
         </Link>
 
         <Link className="btn-ghost" href={ROUTES.survey}>
           <span>نظرسنجی</span>
-          <ArrowUpLeft className="compatible-icon" />
+          <ArrowUpLeft className="btn-icon-size" />
         </Link>
 
         <Link className="btn-ghost" href={ROUTES.donate}>
           <span>حمایت از ما</span>
-          <ArrowUpLeft className="compatible-icon" />
+          <ArrowUpLeft className="btn-icon-size" />
         </Link>
 
         <button className="btn-ghost" disabled>
           <span>استخدام</span>
-          <ArrowUpLeft className="compatible-icon" />
+          <ArrowUpLeft className="btn-icon-size" />
         </button>
       </div>
 

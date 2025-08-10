@@ -15,7 +15,8 @@
   --color-palette: var(--color-foreground);
   --color-brush: var(--color-background);
 
-  --radius-kado: 0.375rem;
+  --radius-child: 0.5rem; /* lg in tailwind */
+  --radius-parent: 0.75rem; /* xl in tailwind */
 }
 
 [data-theme="dark"] {

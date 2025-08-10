@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const HeroSectionLogos = () => {
   return (
-    <div className="container relative dark:invert-100">
+    <div className="container relative pb-9 dark:invert-100">
       <motion.div
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}

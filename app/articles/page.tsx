@@ -38,7 +38,7 @@ const ArticlesPage = () => {
 
             <Link className="mt-6 btn-outline" href={ROUTES.articles + "/1"}>
               <span>بیشتر بخوانید</span>
-              <ArrowUpLeft className="compatible-icon" />
+              <ArrowUpLeft className="btn-icon-size" />
             </Link>
           </div>
         ))}

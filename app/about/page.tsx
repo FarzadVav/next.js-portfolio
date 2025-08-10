@@ -25,59 +25,59 @@ const AboutPage = () => {
 
         <div className="f-align overflow-hidden no-scrollbar gap-3 *:min-w-fit">
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
           <div className="badge">
-            <AppleIcon className="compatible-icon" />
+            <AppleIcon className="btn-icon-size" />
             <span>Apple</span>
           </div>
         </div>
@@ -120,30 +120,30 @@ const AboutPage = () => {
 
             <div className="f-align gap-3 mt-6">
               <div className="badge">
-                <CheckIcon className="compatible-icon" />
+                <CheckIcon className="btn-icon-size" />
                 <span>حسابداری</span>
               </div>
               <div className="badge">
-                <CheckIcon className="compatible-icon" />
+                <CheckIcon className="btn-icon-size" />
                 <span>فروشگاهی</span>
               </div>
               <div className="badge">
-                <CheckIcon className="compatible-icon" />
+                <CheckIcon className="btn-icon-size" />
                 <span>اتوماسیون</span>
               </div>
               <div className="badge">
-                <CheckIcon className="compatible-icon" />
+                <CheckIcon className="btn-icon-size" />
                 <span>آموزشگاهی</span>
               </div>
               <div className="badge">
-                <CheckIcon className="compatible-icon" />
+                <CheckIcon className="btn-icon-size" />
                 <span>مدیریت مشتری</span>
               </div>
             </div>
 
             <Link href={"/"} className="btn-fill mt-6">
               <span>مشاهده خدمات</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
+              <ArrowUpLeftIcon className="btn-icon-size" />
             </Link>
           </div>
         </CtaAnimation>
@@ -169,7 +169,7 @@ const AboutPage = () => {
 
             <Link className="mt-6 btn-outline" href={"https://github.com"}>
               <span>بیشتر بخوانید</span>
-              <ArrowUpLeft className="compatible-icon" />
+              <ArrowUpLeft className="btn-icon-size" />
             </Link>
           </div>
         ))}
@@ -202,7 +202,7 @@ const AboutPage = () => {
 
         <button className="mx-auto mt-6 btn-soft">
           <span>بیشتر</span>
-          <PlusIcon className="compatible-icon" />
+          <PlusIcon className="btn-icon-size" />
         </button>
       </div>
     </>

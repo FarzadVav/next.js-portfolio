@@ -33,7 +33,7 @@ const ConnectPage = () => {
 
             <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
+              <ArrowUpLeftIcon className="btn-icon-size" />
             </Link>
           </div>
         </div>
@@ -49,7 +49,7 @@ const ConnectPage = () => {
 
             <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
+              <ArrowUpLeftIcon className="btn-icon-size" />
             </Link>
           </div>
         </div>
@@ -65,7 +65,7 @@ const ConnectPage = () => {
 
             <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
+              <ArrowUpLeftIcon className="btn-icon-size" />
             </Link>
           </div>
         </div>
@@ -81,7 +81,7 @@ const ConnectPage = () => {
 
             <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
+              <ArrowUpLeftIcon className="btn-icon-size" />
             </Link>
           </div>
         </div>
@@ -97,7 +97,7 @@ const ConnectPage = () => {
 
             <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
+              <ArrowUpLeftIcon className="btn-icon-size" />
             </Link>
           </div>
         </div>
@@ -113,7 +113,7 @@ const ConnectPage = () => {
 
             <Link className="btn-outline mt-3" href={"https://telegram.org"} target="_blank">
               <span>مشاهده</span>
-              <ArrowUpLeftIcon className="compatible-icon" />
+              <ArrowUpLeftIcon className="btn-icon-size" />
             </Link>
           </div>
         </div>
@@ -137,7 +137,7 @@ const ConnectPage = () => {
 
             <Link className="mt-6 btn-outline" href={ROUTES.home}>
               <span>ثبت نام</span>
-              <UserPenIcon className="compatible-icon" />
+              <UserPenIcon className="btn-icon-size" />
             </Link>
           </div>
         ))}
@@ -161,7 +161,7 @@ const ConnectPage = () => {
         <div className="f-align gap-3">
           <label className="input-outline w-1/2">
             <input className="input-field" placeholder="موضوع تیکت" name="connect_topic" />
-            <ChevronDownIcon className="compatible-icon" />
+            <ChevronDownIcon className="btn-icon-size" />
           </label>
           <label className="input-outline w-1/2" dir="ltr">
             <input className="input-field" placeholder="09** *** ****" name="connect_phone" />
@@ -177,11 +177,11 @@ const ConnectPage = () => {
           </label>
           <button className="btn-outline mt-3">
             <span>فایل ضمیمه (اختیاری)</span>
-            <FileIcon className="compatible-icon" />
+            <FileIcon className="btn-icon-size" />
           </button>
           <button className="btn-fill mt-6">
             <span>ثبت تیکت</span>
-            <CheckIcon className="compatible-icon" />
+            <CheckIcon className="btn-icon-size" />
           </button>
         </div>
       </div>

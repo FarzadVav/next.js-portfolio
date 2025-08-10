@@ -64,7 +64,7 @@ const ServicesPage = () => {
             <div className="mt-6 f-align gap-3">
               <button className="btn-fill w-1/2">
                 <span>ثبت سفارش</span>
-                <CheckCircleIcon className="compatible-icon" />
+                <CheckCircleIcon className="btn-icon-size" />
               </button>
               <Link className="btn-ghost w-1/2" href={ROUTES.services + "/1"}>
                 بیشتر بخوانید

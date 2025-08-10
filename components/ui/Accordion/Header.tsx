@@ -29,7 +29,7 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({ className, children, 
 
       <button className="btn-ghost" ref={buttonRef} onClick={() => setOpen(!isOpen)}>
         <ChevronDownIcon
-          className={`compatible-icon transition-transform ${isOpen ? "-scale-y-100" : ""}`}
+          className={`btn-icon-size transition-transform ${isOpen ? "-scale-y-100" : ""}`}
         />
       </button>
     </div>

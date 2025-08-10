@@ -72,11 +72,11 @@ const ServicesDetailPage = () => {
         <div className="f-align gap-3">
           <label className="input-outline">
             <input className="input-field" placeholder="نام و نام خانوادگی" />
-            <UserIcon className="compatible-icon" />
+            <UserIcon className="btn-icon-size" />
           </label>
           <label className="input-outline" dir="ltr">
             <input className="input-field" placeholder="09*********" />
-            <PhoneIcon className="compatible-icon" />
+            <PhoneIcon className="btn-icon-size" />
           </label>
         </div>
         <label className="input-outline mt-3">
@@ -84,7 +84,7 @@ const ServicesDetailPage = () => {
         </label>
         <button className="mt-3 btn-fill">
           <span>ثبت درخواست</span>
-          <SendHorizonalIcon className="compatible-icon -scale-x-100" />
+          <SendHorizonalIcon className="btn-icon-size -scale-x-100" />
         </button>
       </div>
     </>

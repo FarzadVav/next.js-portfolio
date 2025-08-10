@@ -15,7 +15,7 @@ const PageModalHeader: React.FC<PageModalHeaderProps> = ({ className, title, ...
     <header className={classMerge("border-b border-foreground-4", className)} {...props}>
       <nav className="h-20 container f-align">
         <button className="btn-ghost" onClick={pageModalContext.closeHandler}>
-          <ArrowRightIcon className="compatible-icon" />
+          <ArrowRightIcon className="btn-icon-size" />
           <span>بازگشت</span>
         </button>
 

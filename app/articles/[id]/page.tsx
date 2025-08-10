@@ -69,58 +69,58 @@ const ArticlesDetailPage = () => {
 
       <div className="card-effect container mt-9">
         <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
-          <SparklesIcon className="compatible-icon" />
+          <SparklesIcon className="btn-icon-size" />
           <h2 className="text-lg font-vazir-bold">چگونه ای را به بی وصل کنیم؟</h2>
 
           <Link href={"#"} className="btn-ghost mr-auto group/btn">
             <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
               مطالعه
             </span>
-            <ArrowDownIcon className="compatible-icon" />
+            <ArrowDownIcon className="btn-icon-size" />
           </Link>
         </div>
 
         <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
-          <SparklesIcon className="compatible-icon" />
+          <SparklesIcon className="btn-icon-size" />
           <h2 className="text-lg font-vazir-bold">مکانزیم عملکرد موتور ویویو</h2>
           <Link href={"#"} className="btn-ghost mr-auto group/btn">
             <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
               مطالعه
             </span>
-            <ArrowDownIcon className="compatible-icon" />
+            <ArrowDownIcon className="btn-icon-size" />
           </Link>
         </div>
 
         <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
-          <SparklesIcon className="compatible-icon" />
+          <SparklesIcon className="btn-icon-size" />
           <h2 className="text-lg font-vazir-bold">الگروتیم BIG O</h2>
           <Link href={"#"} className="btn-ghost mr-auto group/btn">
             <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
               مطالعه
             </span>
-            <ArrowDownIcon className="compatible-icon" />
+            <ArrowDownIcon className="btn-icon-size" />
           </Link>
         </div>
 
         <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
-          <SparklesIcon className="compatible-icon" />
+          <SparklesIcon className="btn-icon-size" />
           <h2 className="text-lg font-vazir-bold">الگوریتم جسجتجوی خودکار</h2>
           <Link href={"#"} className="btn-ghost mr-auto group/btn">
             <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
               مطالعه
             </span>
-            <ArrowDownIcon className="compatible-icon" />
+            <ArrowDownIcon className="btn-icon-size" />
           </Link>
         </div>
 
         <div className="f-align gap-3 group transition-colors hover:bg-foreground-6 card">
-          <SparklesIcon className="compatible-icon" />
+          <SparklesIcon className="btn-icon-size" />
           <h2 className="text-lg font-vazir-bold">یکپارچه سازی با ساختار DDD + جمع بندی</h2>
           <Link href={"#"} className="btn-ghost mr-auto group/btn">
             <span className="opacity-0 transition-opacity group-focus/btn:opacity-100 group-hover:opacity-100">
               مطالعه
             </span>
-            <ArrowDownIcon className="compatible-icon" />
+            <ArrowDownIcon className="btn-icon-size" />
           </Link>
         </div>
       </div>
@@ -129,15 +129,15 @@ const ArticlesDetailPage = () => {
         <div className="f-align gap-3">
           <button className="btn-outline">
             <span>حالت خواندن</span>
-            <ExpandIcon className="compatible-icon" />
+            <ExpandIcon className="btn-icon-size" />
           </button>
           <button className="btn-outline">
             <span>دانلود</span>
-            <DownloadIcon className="compatible-icon" />
+            <DownloadIcon className="btn-icon-size" />
           </button>
           <button className="btn-outline">
             <span>اشتراک گذاری</span>
-            <Share2Icon className="compatible-icon" />
+            <Share2Icon className="btn-icon-size" />
           </button>
         </div>
 
@@ -226,73 +226,73 @@ const ArticlesDetailPage = () => {
         <div className="f-align flex-wrap mt-6 gap-1.5" dir="ltr">
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Algorithms</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Design patterns</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Golang</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Web assembly</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Algorithms</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Design patterns</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Golang</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Web assembly</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Algorithms</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Design patterns</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Golang</span>
             </button>
           </Link>
           <Link href={ROUTES.articles + `?tag=${1}`}>
             <button className="btn-ghost">
-              <HashIcon className="compatible-icon" />
+              <HashIcon className="btn-icon-size" />
               <span>Web assembly</span>
             </button>
           </Link>
@@ -321,7 +321,7 @@ const ArticlesDetailPage = () => {
 
               <Link className="mt-6 btn-outline" href={ROUTES.articles + "/1"}>
                 <span>بیشتر بخوانید</span>
-                <ArrowUpLeft className="compatible-icon" />
+                <ArrowUpLeft className="btn-icon-size" />
               </Link>
             </div>
           ))}

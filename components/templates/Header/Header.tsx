@@ -37,7 +37,7 @@ const Header = () => {
           <Popover className="popover">
             <Popover.Toggle className="btn-ghost group font-bold" dir="ltr">
               <span>ArrowUp</span>
-              <ChevronDownIcon className="compatible-icon transition-transform group-data-[state=active]:-scale-y-100" />
+              <ChevronDownIcon className="btn-icon-size transition-transform group-data-[state=active]:-scale-y-100" />
             </Popover.Toggle>
 
             <Popover.Body className="popover-body-b">
