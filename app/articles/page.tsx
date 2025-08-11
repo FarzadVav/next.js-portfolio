@@ -13,7 +13,7 @@ const ArticlesPage = () => {
         description="لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥 شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان رایانه ای..."
       />
 
-      <div className="p-1.5 mt-9 f-align w-fit mx-auto rounded-lg gap-1.5 bg-foreground-6">
+      <div className="p-1.5 mt-9 f-align w-fit mx-auto rounded-child gap-1.5 bg-foreground-6">
         <button className="btn-fill">فرانت اند</button>
         <button className="btn-ghost">بک اند</button>
         <button className="btn-ghost">موبایل</button>
@@ -24,7 +24,7 @@ const ArticlesPage = () => {
       <div className="container mt-6 grid grid-cols-2">
         {Array.from(new Array(7)).map(() => (
           <div className="card-effect" key={Math.random()}>
-            <div className="w-full aspect-video bg-foreground-5 rounded-lg" />
+            <div className="w-full aspect-video bg-foreground-5 rounded-child" />
 
             <h6 className="text-xl mt-3 font-vazir-bold">استفاده از توسعه بر پایه دامنه</h6>
 

@@ -5,7 +5,6 @@ import { MailIcon } from "lucide-react";
 import githubImg from "root/public/logos/github.svg";
 import telegramImg from "root/public/logos/telegram.svg";
 import linkedinImg from "root/public/logos/linkedin.svg";
-import instagramImg from "root/public/logos/instagram.svg";
 
 const Footer = () => {
   return (
@@ -41,40 +40,19 @@ const Footer = () => {
       </div>
 
       <div className="f-center gap-3 mt-6">
-        <Link className="size-9" href={"https://instagram.com"}>
-          <Image
-            width={64}
-            height={64}
-            alt="instagram"
-            src={instagramImg}
-            className="size-full"
-          />
+        <Link className="size-12" href={"https://t.me/arrowupteam"}>
+          <Image width={64} height={64} alt="telegram" src={telegramImg} className="size-full" />
         </Link>
-        <Link className="size-9" href={"https://github.com"}>
+        <Link className="size-12" href={"https://www.linkedin.com/company/arrow-up-team"}>
+          <Image width={64} height={64} alt="linkedin" src={linkedinImg} className="size-full" />
+        </Link>
+        <Link className="size-12" href={"https://github.com"}>
           <Image
             width={64}
             height={64}
             alt="github"
             src={githubImg}
-            className="size-full rounded-full dark:invert-100"
-          />
-        </Link>
-        <Link className="size-9" href={"https://t.me/arrowupteam"}>
-          <Image
-            width={64}
-            height={64}
-            alt="telegram"
-            src={telegramImg}
-            className="size-full rounded-full"
-          />
-        </Link>
-        <Link className="size-9" href={"https://www.linkedin.com/company/arrow-up-team"}>
-          <Image
-            width={64}
-            height={64}
-            alt="linkedin"
-            src={linkedinImg}
-            className="size-full rounded-full"
+            className="size-full dark:invert-100"
           />
         </Link>
       </div>

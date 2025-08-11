@@ -43,3 +43,7 @@
     @apply font-geist;
   }
 }
+
+@utility heading {
+  @apply text-5xl font-black text-center -tracking-tight uppercase;
+}

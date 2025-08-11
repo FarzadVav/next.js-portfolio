@@ -57,11 +57,11 @@ const ServicesDetailPage = () => {
         <div className="f-align gap-3">
           <label className="input-outline flex-1">
             <input className="input-field" placeholder="Organization/Customer name" />
-            <UserIcon className="btn-icon-size" />
+            <UserIcon className="icon-icon-size" />
           </label>
-          <label className="input-outline flex-1" dir="ltr">
-            <input className="input-field" placeholder="09*********" />
-            <PhoneIcon className="btn-icon-size" />
+          <label className="input-outline flex-1">
+            <input className="input-field" placeholder="---- --- ----" />
+            <PhoneIcon className="icon-icon-size" />
           </label>
         </div>
         <label className="input-outline mt-3">

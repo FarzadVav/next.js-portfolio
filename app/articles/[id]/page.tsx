@@ -306,7 +306,7 @@ const ArticlesDetailPage = () => {
         <ScrollXContainer>
           {Array.from(new Array(7)).map(() => (
             <div className="w-2/5 card-effect min-w-2/5" key={Math.random()}>
-              <div className="w-full aspect-video bg-foreground-5 rounded-lg" />
+              <div className="w-full aspect-video bg-foreground-5 rounded-child" />
 
               <h4 className="text-xl mt-3 font-vazir-bold">استفاده از توسعه بر پایه دامنه</h4>
 

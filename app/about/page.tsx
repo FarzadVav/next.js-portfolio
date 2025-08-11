@@ -94,7 +94,7 @@ const AboutPage = () => {
         <ScrollXContainer>
           {Array.from(new Array(7)).map(() => (
             <div className="card-effect w-2/5 min-w-2/5" key={Math.random()}>
-              <div className="w-2/3 mx-auto aspect-square rounded-lg bg-foreground-5" />
+              <div className="w-2/3 mx-auto aspect-square rounded-child bg-foreground-5" />
               <p className="text-xl mt-6 text-center font-kalameh-bold">
                 جذب {(3_637_000).toLocaleString("fa")} کاربر
               </p>
@@ -155,7 +155,7 @@ const AboutPage = () => {
       <div className="container mt-6 grid grid-cols-2">
         {Array.from(new Array(7)).map(() => (
           <div className="card-effect" key={Math.random()}>
-            <div className="w-full aspect-video bg-foreground-5 rounded-lg" />
+            <div className="w-full aspect-video bg-foreground-5 rounded-child" />
 
             <h6 className="text-xl mt-3 font-vazir-bold">استفاده از توسعه بر پایه دامنه</h6>
 
