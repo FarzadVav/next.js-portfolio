@@ -242,7 +242,7 @@ const HomePage = () => {
                 odio nisi ad magni numquam eum animi repudiandae.
               </p>
 
-              <Link className="btn-outline w-fit" href={"/connect"}>
+              <Link className="btn-outline" href={"/articles/1"}>
                 <span>Read more</span>
 
                 <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
