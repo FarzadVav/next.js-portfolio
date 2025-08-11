@@ -1,75 +1,82 @@
 "use client";
 
 import Link from "next/link";
-import { CheckCircleIcon } from "lucide-react";
+import { ArrowRightIcon, CheckIcon, LoaderIcon } from "lucide-react";
+import { AccessNavigation, Carousel, LoaderLink } from "@kadoui/react";
 
-import ScrollX from "root/components/ui/ScrollX/Index";
-import { ROUTES } from "root/constants/routes.constants";
 import PageHero from "root/components/PageHero/Index";
-import ScrollXContainer from "root/components/ui/ScrollX/Container";
 
 const ServicesPage = () => {
   return (
     <>
       <PageHero
         src=""
-        title="بیاید باهم پروژه های خفن رو پیاده کنیم"
-        description="لورم از صنعت چاپ 🧑‍💻 و با استفاده لازم است و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده 🔥 شناخت فراوان جامعه و متخصصان ✌️ را می طلبد، تا با نرم افزارها ✅ شناخت بیشتری را برای طراحان رایانه ای..."
+        title="Let's do some perfect projects"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <div className="p-1.5 mt-9 f-align w-fit mx-auto rounded-lg gap-1.5 bg-foreground-6">
-        <button className="btn-fill">فرانت اند</button>
-        <button className="btn-ghost">بک اند</button>
-        <button className="btn-ghost">موبایل</button>
-        <button className="btn-ghost">دسکتاپ</button>
-        <button className="btn-ghost">کلاود</button>
-      </div>
+      <AccessNavigation direction="x" className="join-border mt-16 w-fit mx-auto">
+        <button className="btn-fill font-bold">Front-End</button>
+        <button className="btn-soft">Back-End</button>
+        <button className="btn-soft">Mobile</button>
+        <button className="btn-soft">Desktop</button>
+        <button className="btn-soft">Cloud</button>
+      </AccessNavigation>
 
-      <div className="container mt-6 grid grid-cols-2">
-        {Array.from(new Array(7)).map(() => (
-          <div className="card-effect" key={Math.random()}>
+      <div className="container mt-12 grid grid-cols-2 gap-3">
+        {Array.from({ length: 7 }).map(() => (
+          <div className="card card-thick" key={Math.random()}>
             <div className="f-align gap-3">
-              <div className="size-9 rounded-full bg-foreground-5"></div>
-              <h2 className="text-xl font-vazir-bold">اپلیکیشن فرانت اند</h2>
+              <div className="size-9 rounded-full bg-background" />
+              <h2 className="text-xl font-bold">Nest.js web app</h2>
             </div>
 
-            <ScrollX className="mt-3">
-              <ScrollXContainer className="gap-1.5 no-scrollbar">
-                <div className="badge">Javascript</div>
-                <div className="badge">React</div>
-                <div className="badge">Next</div>
-                <div className="badge">Tailwind</div>
-                <div className="badge">Chart</div>
-                <div className="badge">Astro</div>
-                <div className="badge">Vitest</div>
-                <div className="badge">Remix</div>
-                <div className="badge">Sass</div>
-                <div className="badge">Framer</div>
-                <div className="badge">PWA</div>
-              </ScrollXContainer>
-            </ScrollX>
+            <Carousel className="carousel mt-3">
+              <Carousel.Container className="carousel-container no-scrollbar gap-3">
+                <Carousel.LeftFade className="carousel-left-fade from-background-thick" />
+                <Carousel.RightFade className="carousel-right-fade from-background-thick" />
+
+                <div className="badge-ghost">Javascript</div>
+                <div className="badge-ghost">React</div>
+                <div className="badge-ghost">Next</div>
+                <div className="badge-ghost">Tailwind</div>
+                <div className="badge-ghost">Chart</div>
+                <div className="badge-ghost">Astro</div>
+                <div className="badge-ghost">Vitest</div>
+                <div className="badge-ghost">Remix</div>
+                <div className="badge-ghost">Sass</div>
+                <div className="badge-ghost">Framer</div>
+                <div className="badge-ghost">PWA</div>
+              </Carousel.Container>
+            </Carousel>
 
             <p className="mt-3 line-clamp-3">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-              گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-              شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد{" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod tempore labore
+              ipsum voluptatem odit saepe magni animi rem nesciunt voluptatibus repellendus quisquam
+              enim suscipit, molestias harum reiciendis commodi a?
             </p>
 
-            <ul className="mt-3 space-y-1.5 list-disc pr-3">
-              <li>داشبورد ادمین</li>
-              <li>پنل مدیریت مشتری</li>
-              <li>شاپینگ حرفه ای</li>
+            <ul className="mt-3 space-y-1.5 opacity-75">
+              <li className="f-align gap-1.5">
+                <CheckIcon className="icon-size-3" />
+                <span>Six month free support</span>
+              </li>
+              <li className="f-align gap-1.5">
+                <CheckIcon className="icon-size-3" />
+                <span>Six month free support</span>
+              </li>
+              <li className="f-align gap-1.5">
+                <CheckIcon className="icon-size-3" />
+                <span>Six month free support</span>
+              </li>
             </ul>
 
-            <div className="mt-6 f-align gap-3">
-              <button className="btn-fill w-1/2">
-                <span>ثبت سفارش</span>
-                <CheckCircleIcon className="btn-icon-size" />
-              </button>
-              <Link className="btn-ghost w-1/2" href={ROUTES.services + "/1"}>
-                بیشتر بخوانید
-              </Link>
-            </div>
+            <Link className="btn-outline mt-6" href={"/services/1"}>
+              <span>Read more</span>
+              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <ArrowRightIcon className="btn-icon-size" />
+              </LoaderLink>
+            </Link>
           </div>
         ))}
       </div>

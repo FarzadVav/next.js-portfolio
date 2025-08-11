@@ -8,10 +8,10 @@ import {
   SparklesIcon,
   ChevronDownIcon,
   TextIcon,
-  SendHorizontalIcon,
 } from "lucide-react";
 
 import HeroSectionLogos from "root/components/static/HeroSectionLogos/Index";
+import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 const HomePage = () => {
   return (
@@ -190,7 +190,7 @@ const HomePage = () => {
         </Carousel.Container>
       </Carousel>
 
-      <div className="container card card-lg card-thick space-y-3 mt-16">
+      <ScrollAnimation className="container card card-lg card-thick space-y-3 mt-16">
         <h5 className="text-3xl font-black">Do you want consultation?</h5>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum nostrum
@@ -220,10 +220,10 @@ const HomePage = () => {
           <span>Send a request</span>
 
           <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-            <SendHorizontalIcon className="btn-icon-size" />
+            <CheckIcon className="btn-icon-size" />
           </LoaderLink>
         </Link>
-      </div>
+      </ScrollAnimation>
 
       <h6 className="text-center font-black text-5xl mt-16">Latest articles</h6>
       <Carousel className="carousel container mt-6">

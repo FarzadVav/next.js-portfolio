@@ -8,7 +8,7 @@ import PageTitle from "root/components/modules/PageTitle/Index";
 import AccordionHeader from "root/components/ui/Accordion/Header";
 import ScrollXContainer from "root/components/ui/ScrollX/Container";
 import AccordionContent from "root/components/ui/Accordion/Content";
-import CtaAnimation from "root/components/CtaAnimation/Index";
+import CtaAnimation from "root/components/ScrollAnimation/ScrollAnimation";
 
 const AboutPage = () => {
   return (
