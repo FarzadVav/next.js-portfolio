@@ -9,7 +9,6 @@ import {
   HashIcon,
   LoaderIcon,
   Share2Icon,
-  SparklesIcon,
 } from "lucide-react";
 
 import PageHero from "root/components/PageHero/Index";
@@ -28,8 +27,8 @@ const ArticlesDetailPage = () => {
           <div className="size-16 f-center bg-background-thick rounded-full">
             <Calendar className="w-2/3" />
           </div>
-          <div className="flex gap-1.5 flex-col h-10">
-            <span className="text-lg font-vazir-bold">Release date</span>
+          <div className="flex flex-col h-10">
+            <span className="text-lg font-bold">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -38,8 +37,8 @@ const ArticlesDetailPage = () => {
           <div className="size-16 f-center bg-background-thick rounded-full">
             <Calendar className="w-2/3" />
           </div>
-          <div className="flex gap-1.5 flex-col h-10">
-            <span className="text-lg font-vazir-bold">Release date</span>
+          <div className="flex flex-col h-10">
+            <span className="text-lg font-bold">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -48,8 +47,8 @@ const ArticlesDetailPage = () => {
           <div className="size-16 f-center bg-background-thick rounded-full">
             <Calendar className="w-2/3" />
           </div>
-          <div className="flex gap-1.5 flex-col h-10">
-            <span className="text-lg font-vazir-bold">Release date</span>
+          <div className="flex flex-col h-10">
+            <span className="text-lg font-bold">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -58,8 +57,8 @@ const ArticlesDetailPage = () => {
           <div className="size-16 f-center bg-background-thick rounded-full">
             <Calendar className="w-2/3" />
           </div>
-          <div className="flex gap-1.5 flex-col h-10">
-            <span className="text-lg font-vazir-bold">Release date</span>
+          <div className="flex flex-col h-10">
+            <span className="text-lg font-bold">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -67,8 +66,7 @@ const ArticlesDetailPage = () => {
 
       <AccessNavigation className="container card card-thick mt-16 space-y-3">
         <Link href={"#"} className="btn-ghost btn-lg group">
-          <SparklesIcon className="btn-icon-size" />
-          <h2 className="text-lg font-bold">Chapter one of book</h2>
+          <h2 className="font-bold">Chapter one of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
             <ArrowDownIcon className="btn-icon-size" />
@@ -76,8 +74,7 @@ const ArticlesDetailPage = () => {
         </Link>
 
         <Link href={"#"} className="btn-ghost btn-lg group">
-          <SparklesIcon className="btn-icon-size" />
-          <h2 className="text-lg font-bold">Chapter two of book</h2>
+          <h2 className="font-bold">Chapter two of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
             <ArrowDownIcon className="btn-icon-size" />
@@ -85,8 +82,7 @@ const ArticlesDetailPage = () => {
         </Link>
 
         <Link href={"#"} className="btn-ghost btn-lg group">
-          <SparklesIcon className="btn-icon-size" />
-          <h2 className="text-lg font-bold">Chapter three of book</h2>
+          <h2 className="font-bold">Chapter three of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
             <ArrowDownIcon className="btn-icon-size" />
@@ -94,8 +90,7 @@ const ArticlesDetailPage = () => {
         </Link>
 
         <Link href={"#"} className="btn-ghost btn-lg group">
-          <SparklesIcon className="btn-icon-size" />
-          <h2 className="text-lg font-bold">Chapter four of book</h2>
+          <h2 className="font-bold">Chapter four of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
             <ArrowDownIcon className="btn-icon-size" />
@@ -103,8 +98,7 @@ const ArticlesDetailPage = () => {
         </Link>
 
         <Link href={"#"} className="btn-ghost btn-lg group">
-          <SparklesIcon className="btn-icon-size" />
-          <h2 className="text-lg font-bold">Chapter five of book</h2>
+          <h2 className="font-bold">Chapter five of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
             <ArrowDownIcon className="btn-icon-size" />

@@ -46,7 +46,7 @@ const Footer = () => {
         <Link className="size-12" href={"https://www.linkedin.com/company/arrow-up-team"}>
           <Image width={64} height={64} alt="linkedin" src={linkedinImg} className="size-full" />
         </Link>
-        <Link className="size-12" href={"https://github.com"}>
+        <Link className="size-12" href={"https://github.com/ArrowUpTeam"}>
           <Image
             width={64}
             height={64}
