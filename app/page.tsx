@@ -8,10 +8,10 @@ import {
   SparklesIcon,
   ChevronDownIcon,
   TextIcon,
-  SendHorizontalIcon
+  SendHorizontalIcon,
 } from "lucide-react";
 
-import HeroSectionLogos from "root/components/templates/Home/HeroSectionLogos/Index";
+import HeroSectionLogos from "root/components/static/HeroSectionLogos/Index";
 
 const HomePage = () => {
   return (
@@ -20,12 +20,12 @@ const HomePage = () => {
         <HeroSectionLogos />
 
         <div className="container">
-          <h1 className="text-7xl text-center font-black">
-            ArrowUp
-          </h1>
+          <h1 className="text-7xl text-center font-black">ArrowUp</h1>
 
           <p className="w-3/4 text-center mx-auto mt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 🧑‍💻 atque consectetur excepturi possimus porro culpa 🔥 quam omnis iusto ✅ ipsum saepe mollitia nesciunt hic velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 🧑‍💻 atque consectetur
+            excepturi possimus porro culpa 🔥 quam omnis iusto ✅ ipsum saepe mollitia nesciunt hic
+            velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
           </p>
 
           <div className="join-no-inner-border w-1/2 mx-auto mt-6">
@@ -104,7 +104,8 @@ const HomePage = () => {
           <div>
             <span className="font-bold">We love Javascript!</span>
             <p className="text-xs mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus nam odio molestiae.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus
+              nam odio molestiae.
             </p>
           </div>
         </div>
@@ -113,7 +114,8 @@ const HomePage = () => {
           <div className="text-right">
             <span className="font-bold">We love Javascript!</span>
             <p className="text-xs mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus nam odio molestiae.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus
+              nam odio molestiae.
             </p>
           </div>
           <div className="size-16 min-w-16 bg-background rounded-child" />
@@ -124,7 +126,8 @@ const HomePage = () => {
           <div>
             <span className="font-bold">We love Javascript!</span>
             <p className="text-xs mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus nam odio molestiae.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus
+              nam odio molestiae.
             </p>
           </div>
         </div>
@@ -133,7 +136,8 @@ const HomePage = () => {
           <div className="text-right">
             <span className="font-bold">We love Javascript!</span>
             <p className="text-xs mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus nam odio molestiae.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus
+              nam odio molestiae.
             </p>
           </div>
           <div className="size-16 min-w-16 bg-background rounded-child" />
@@ -148,7 +152,9 @@ const HomePage = () => {
             </Accordion.Toggle>
             <Accordion.Body>
               <p className="card">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore? Corrupti quasi nam, iste sint quibusdam ipsa numquam est minima libero repudiandae harum nisi nihil doloremque voluptas sed optio eum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore? Corrupti
+                quasi nam, iste sint quibusdam ipsa numquam est minima libero repudiandae harum nisi
+                nihil doloremque voluptas sed optio eum!
               </p>
             </Accordion.Body>
           </Accordion>
@@ -170,10 +176,7 @@ const HomePage = () => {
           <Carousel.RightFade className="carousel-right-fade" />
 
           {Array.from({ length: 12 }).map(() => (
-            <div
-              key={Math.random()}
-              className="w-[90%] min-w-[90%] sm:w-2/5 sm:min-w-2/5"
-            >
+            <div key={Math.random()} className="w-[90%] min-w-[90%] sm:w-2/5 sm:min-w-2/5">
               <span className="text-xl font-bold">John Doe</span>
               <p className="card card-thick mt-3">
                 {Array.from({ length: Math.ceil(Math.random() * 10) }).map(
@@ -190,7 +193,9 @@ const HomePage = () => {
       <div className="container card card-lg card-thick space-y-3 mt-16">
         <h5 className="text-3xl font-black">Do you want consultation?</h5>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum nostrum voluptates eveniet id libero incidunt enim vitae nam corporis voluptate neque sit sed maiores, saepe cumque quo.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum nostrum
+          voluptates eveniet id libero incidunt enim vitae nam corporis voluptate neque sit sed
+          maiores, saepe cumque quo.
         </p>
         <div className="f-align gap-3">
           <div className="badge-soft">
@@ -224,6 +229,7 @@ const HomePage = () => {
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
+          <Carousel.RightFade className="carousel-right-fade" />
 
           {Array.from({ length: 7 }).map(() => (
             <div className="w-2/5 card card-thick min-w-2/5 space-y-3" key={Math.random()}>
@@ -231,7 +237,9 @@ const HomePage = () => {
               <h6 className="text-xl font-bold">Our IT solutions</h6>
               <div className="badge-soft mt-3">Business</div>
               <p className="mt-3 line-clamp-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit odio nisi ad magni numquam eum animi repudiandae.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores
+                pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit
+                odio nisi ad magni numquam eum animi repudiandae.
               </p>
 
               <Link className="btn-outline w-fit" href={"/connect"}>
@@ -243,8 +251,6 @@ const HomePage = () => {
               </Link>
             </div>
           ))}
-
-          <Carousel.RightFade className="carousel-right-fade" />
         </Carousel.Container>
       </Carousel>
       <Link className="btn-ghost w-fit mx-auto mt-6" href={"/articles"}>

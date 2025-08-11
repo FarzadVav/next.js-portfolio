@@ -3,8 +3,8 @@ import { Geist } from "next/font/google";
 import { PropsWithChildren } from "react";
 
 import "./globals.css";
-import Header from "root/components/templates/Header/Header";
-import Footer from "root/components/templates/Footer/Footer";
+import Header from "root/components/static/Header/Header";
+import Footer from "root/components/static/Footer/Footer";
 
 const geist = Geist({
   subsets: ["latin"],

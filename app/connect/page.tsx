@@ -9,7 +9,7 @@ import { ROUTES } from "root/constants/routes.constants";
 import telegramImg from "root/public/logos/telegram.svg";
 import linkedinImg from "root/public/logos/linkedin.svg";
 import instagramImg from "root/public/logos/instagram.svg";
-import PageHero from "root/components/modules/PageHero/Index";
+import PageHero from "root/components/PageHero/Index";
 import PageTitle from "root/components/modules/PageTitle/Index";
 
 const ConnectPage = () => {

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowUpLeft } from "lucide-react";
 
 import { ROUTES } from "root/constants/routes.constants";
-import PageHero from "root/components/modules/PageHero/Index";
+import PageHero from "root/components/PageHero/Index";
 
 const ArticlesPage = () => {
   return (

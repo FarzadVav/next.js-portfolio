@@ -5,7 +5,7 @@ import { CheckCircleIcon } from "lucide-react";
 
 import ScrollX from "root/components/ui/ScrollX/Index";
 import { ROUTES } from "root/constants/routes.constants";
-import PageHero from "root/components/modules/PageHero/Index";
+import PageHero from "root/components/PageHero/Index";
 import ScrollXContainer from "root/components/ui/ScrollX/Container";
 
 const ServicesPage = () => {

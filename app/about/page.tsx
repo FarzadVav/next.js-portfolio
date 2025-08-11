@@ -3,12 +3,12 @@ import { AppleIcon, ArrowUpLeft, ArrowUpLeftIcon, CheckIcon, PlusIcon } from "lu
 
 import ScrollX from "root/components/ui/ScrollX/Index";
 import Accordion from "root/components/ui/Accordion/Index";
-import PageHero from "root/components/modules/PageHero/Index";
+import PageHero from "root/components/PageHero/Index";
 import PageTitle from "root/components/modules/PageTitle/Index";
 import AccordionHeader from "root/components/ui/Accordion/Header";
 import ScrollXContainer from "root/components/ui/ScrollX/Container";
 import AccordionContent from "root/components/ui/Accordion/Content";
-import CtaAnimation from "root/components/modules/CtaAnimation/Index";
+import CtaAnimation from "root/components/CtaAnimation/Index";
 
 const AboutPage = () => {
   return (

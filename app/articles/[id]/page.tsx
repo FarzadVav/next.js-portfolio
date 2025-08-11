@@ -12,7 +12,7 @@ import {
 
 import ScrollX from "root/components/ui/ScrollX/Index";
 import { ROUTES } from "root/constants/routes.constants";
-import PageHero from "root/components/modules/PageHero/Index";
+import PageHero from "root/components/PageHero/Index";
 import PageTitle from "root/components/modules/PageTitle/Index";
 import ScrollXContainer from "root/components/ui/ScrollX/Container";
 

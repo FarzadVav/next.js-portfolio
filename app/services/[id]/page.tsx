@@ -1,6 +1,6 @@
 import { PhoneIcon, SendHorizonalIcon, SparklesIcon, UserIcon } from "lucide-react";
 
-import PageHero from "root/components/modules/PageHero/Index";
+import PageHero from "root/components/PageHero/Index";
 import PageTitle from "root/components/modules/PageTitle/Index";
 
 const ServicesDetailPage = () => {
