@@ -56,7 +56,7 @@ const Header = () => {
             </LoaderLink>
           </Link>
 
-          <Link className="btn-ghost btn-link relative" href="/about">
+          <Link className="btn-ghost btn-link relative" href="/about-us">
             <LoaderLink
               loader={
                 <>
@@ -69,7 +69,7 @@ const Header = () => {
             </LoaderLink>
           </Link>
 
-          <Link className="btn-ghost btn-link relative" href="/connect">
+          <Link className="btn-ghost btn-link relative" href="/contact-us">
             <LoaderLink
               loader={
                 <>

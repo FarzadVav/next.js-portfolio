@@ -46,7 +46,7 @@ const HomePage = () => {
               <span>Our services</span>
             </Link>
 
-            <Link className="btn-fill" href={"/connect"}>
+            <Link className="btn-fill" href={"/contact-us"}>
               <span>Get start</span>
 
               <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
@@ -160,7 +160,7 @@ const HomePage = () => {
           </Accordion>
         ))}
 
-        <Link className="btn-ghost w-fit mx-auto mt-6" href={"/about"}>
+        <Link className="btn-ghost w-fit mx-auto mt-6" href={"/about-us"}>
           <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
             <TextIcon className="btn-icon-size" />
           </LoaderLink>
@@ -216,7 +216,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <Link className="btn-fill w-fit" href={"/connect"}>
+        <Link className="btn-fill w-fit" href={"/contact-us"}>
           <span>Send a request</span>
 
           <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>

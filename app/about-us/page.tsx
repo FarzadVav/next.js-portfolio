@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRightIcon, ChevronDownIcon, LoaderIcon } from "lucide-react";
+import { ArrowUpRightIcon, ChevronDownIcon, DownloadIcon, LoaderIcon } from "lucide-react";
 import { AccessNavigation, Accordion, Carousel, LoaderLink } from "@kadoui/react";
 
 import PageHero from "root/components/PageHero/Index";
@@ -17,7 +17,7 @@ const AboutPage = () => {
         <video className="w-full bg-background aspect-video rounded-child" />
       </div>
 
-      <h2 className="heading mt-16">our features</h2>
+      <h2 className="heading mt-16">our features / skills</h2>
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
@@ -77,6 +77,17 @@ const AboutPage = () => {
           </Accordion>
         ))}
       </AccessNavigation>
+
+      <h5 className="heading mt-16">download our cv</h5>
+      <p className="max-w-5xl text-center mx-auto mt-3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error lgprovident nobis quis
+        suscipit laboriosam quibusdam ad velit, amet omnis iusto! Debitis corrupti facere
+        perspiciatis suscipit. Harum ea explicabo sapiente quidem.
+      </p>
+      <button className="btn-fill btn-lg mt-6 mx-auto">
+        <span>ArrowUp-CV.pdf</span>
+        <DownloadIcon className="btn-icon-size" />
+      </button>
     </>
   );
 };
