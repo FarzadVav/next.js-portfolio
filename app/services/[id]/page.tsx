@@ -12,7 +12,7 @@ const ServicesDetailPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <div className="container grid grid-cols-3 gap-3 mt-16">
+      <div className="container grid grid-cols-3 gap-3">
         {Array.from({ length: 6 }).map(() => (
           <div className="card card-thick" key={Math.random()}>
             <div className="size-12 bg-background p-3 rounded-full f-center">
@@ -26,7 +26,7 @@ const ServicesDetailPage = () => {
         ))}
       </div>
 
-      <div className="container mt-12">
+      <div className="container mt-20">
         <h3 className="text-xl font-bold">Think to bigger things!</h3>
         <p className="mt-3">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eaque nostrum impedit ab
@@ -52,7 +52,7 @@ const ServicesDetailPage = () => {
         </p>
       </div>
 
-      <h4 className="mt-16 text-5xl font-black text-center">Request your project</h4>
+      <h4 className="heading mt-20">request your project</h4>
       <ScrollAnimation className="card card-lg card-thick container mt-6">
         <div className="f-align gap-3">
           <label className="input-outline flex-1">
@@ -68,7 +68,7 @@ const ServicesDetailPage = () => {
           <textarea className="input-field" placeholder="Request description..." />
         </label>
         <button className="mt-6 btn-fill">
-          <span className="font-bold">SUBMIT</span>
+          <span>Submit</span>
           <CheckIcon className="btn-icon-size" />
         </button>
       </ScrollAnimation>
