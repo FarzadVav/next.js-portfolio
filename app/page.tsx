@@ -23,7 +23,7 @@ const HomePage = () => {
           <h1 className="text-7xl text-center font-black">ArrowUp</h1>
 
           <p className="w-3/4 text-center mx-auto mt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita 🧑‍💻 atque consectetur
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Expedita 🧑‍💻 atque consectetur
             excepturi possimus porro culpa 🔥 quam omnis iusto ✅ ipsum saepe mollitia nesciunt hic
             velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
           </p>

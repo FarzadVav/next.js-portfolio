@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDownIcon } from "lucide-react";
-import { AccessNavigation, Popover } from "@kadoui/react";
+import { ChevronDownIcon, LoaderIcon } from "lucide-react";
+import { AccessNavigation, LoaderLink, Popover } from "@kadoui/react";
 
 const Header = () => {
   return (
@@ -13,23 +13,73 @@ const Header = () => {
 
       <div className="container f-align justify-between h-20 relative">
         <AccessNavigation className="f-align gap-3" direction="x">
-          <Link className="btn-ghost btn-link" href="/services">
-            Services
+          <Link className="btn-ghost btn-link relative" href="/services">
+            <LoaderLink
+              loader={
+                <>
+                  <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                  <span className="opacity-0">Services</span>
+                </>
+              }
+            >
+              <span>Services</span>
+            </LoaderLink>
           </Link>
+
           <button className="btn-ghost btn-link" disabled>
             Products
           </button>
-          <Link className="btn-ghost btn-link" href="/tools">
-            Tools
+
+          <Link className="btn-ghost btn-link relative" href="/tools">
+            <LoaderLink
+              loader={
+                <>
+                  <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                  <span className="opacity-0">Tools</span>
+                </>
+              }
+            >
+              <span>Tools</span>
+            </LoaderLink>
           </Link>
-          <Link className="btn-ghost btn-link" href="/articles">
-            Articles
+
+          <Link className="btn-ghost btn-link relative" href="/articles">
+            <LoaderLink
+              loader={
+                <>
+                  <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                  <span className="opacity-0">Articles</span>
+                </>
+              }
+            >
+              <span>Articles</span>
+            </LoaderLink>
           </Link>
-          <Link className="btn-ghost btn-link" href="/about">
-            About Us
+
+          <Link className="btn-ghost btn-link relative" href="/about">
+            <LoaderLink
+              loader={
+                <>
+                  <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                  <span className="opacity-0">About us</span>
+                </>
+              }
+            >
+              <span>About us</span>
+            </LoaderLink>
           </Link>
-          <Link className="btn-ghost btn-link" href="/connect">
-            Contact Us
+
+          <Link className="btn-ghost btn-link relative" href="/connect">
+            <LoaderLink
+              loader={
+                <>
+                  <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                  <span className="opacity-0">Contact us</span>
+                </>
+              }
+            >
+              <span>Contact us</span>
+            </LoaderLink>
           </Link>
         </AccessNavigation>
 
