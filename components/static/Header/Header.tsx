@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronDownIcon, LoaderIcon } from "lucide-react";
-import { AccessNavigation, LoaderLink, Popover } from "@kadoui/react";
+import { ArrowRightIcon, ChevronDownIcon, LoaderIcon, MenuIcon } from "lucide-react";
+import { AccessNavigation, LoaderLink, Popover, Sheet } from "@kadoui/react";
 
 import logoImg from "root/public/logo.png";
 
@@ -15,7 +15,7 @@ const Header = () => {
       </div>
 
       <div className="container f-align justify-between h-16 relative">
-        <AccessNavigation className="mr-auto">
+        <AccessNavigation>
           <Popover className="popover">
             <Popover.Toggle className="btn-ghost group font-bold" dir="ltr">
               <Image
@@ -49,7 +49,7 @@ const Header = () => {
           </Popover>
         </AccessNavigation>
 
-        <AccessNavigation className="f-align gap-3" direction="x">
+        <AccessNavigation className="f-align gap-3 max-md:hidden" direction="x">
           <Link className="btn-ghost btn-link relative" href="/services">
             <LoaderLink
               loader={
@@ -119,6 +119,42 @@ const Header = () => {
             </LoaderLink>
           </Link>
         </AccessNavigation>
+
+        <Sheet>
+          <Sheet.Toggle className="btn-ghost md:hidden">
+            <MenuIcon className="btn-icon-size" />
+          </Sheet.Toggle>
+
+          <Sheet.Portal className="sheet-portal md:hidden">
+            <Sheet.Body className="sheet-body">
+              <Sheet.Header className="sheet-header text-center font-bold">
+                <span className="h-1 w-1/3 rounded-full bg-background-thin" />
+              </Sheet.Header>
+              <Sheet.Content className="sheet-content space-y-3">
+                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                  <span>Services</span>
+                  <ArrowRightIcon className="btn-icon-size" />
+                </Link>
+                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                  <span>Tools</span>
+                  <ArrowRightIcon className="btn-icon-size" />
+                </Link>
+                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                  <span>Articles</span>
+                  <ArrowRightIcon className="btn-icon-size" />
+                </Link>
+                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                  <span>About us</span>
+                  <ArrowRightIcon className="btn-icon-size" />
+                </Link>
+                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                  <span>Contact us</span>
+                  <ArrowRightIcon className="btn-icon-size" />
+                </Link>
+              </Sheet.Content>
+            </Sheet.Body>
+          </Sheet.Portal>
+        </Sheet>
       </div>
     </header>
   );
