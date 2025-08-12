@@ -166,7 +166,7 @@ const HomePage = () => {
           </Accordion>
         ))}
 
-        <Link className="btn-ghost w-fit mx-auto mt-3" href={"/about-us"}>
+        <Link className="btn-ghost w-fit mx-auto mt-3" href={"/about-us#faqs"}>
           <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
             <TextIcon className="btn-icon-size" />
           </LoaderLink>

@@ -59,7 +59,9 @@ const AboutPage = () => {
         ))}
       </div>
 
-      <h5 className="heading mt-20">faqs</h5>
+      <h5 id="faqs" className="heading pt-20">
+        faqs
+      </h5>
       <AccessNavigation className="container mt-6">
         {Array.from({ length: 8 }).map(() => (
           <Accordion key={Math.random()}>

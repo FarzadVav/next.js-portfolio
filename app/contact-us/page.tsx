@@ -24,7 +24,7 @@ const ConnectPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <div className="container grid grid-cols-3 gap-9 mt-16">
+      <div className="container grid grid-cols-3 gap-6">
         <div className="f-align gap-3">
           <Image src={telegramImg} alt="ArrowUp Telegram channel" width={64} height={64} />
           <div>
@@ -89,7 +89,7 @@ const ConnectPage = () => {
         </div>
       </div>
 
-      <h2 className="heading mt-16">community events</h2>
+      <h2 className="heading mt-20">community events</h2>
       <div className="container mt-6 grid grid-cols-2 gap-3">
         {Array.from({ length: 4 }).map(() => (
           <div className="card card-thick space-y-3" key={Math.random()}>
@@ -111,7 +111,9 @@ const ConnectPage = () => {
         ))}
       </div>
 
-      <h4 id="form" className="heading pt-20">send yuor message to us</h4>
+      <h4 id="form" className="heading pt-20">
+        send yuor message to us
+      </h4>
       <ScrollAnimation className="card card-lg card-thick container mt-6">
         <div className="f-align gap-3">
           <label className="input-outline flex-1">
