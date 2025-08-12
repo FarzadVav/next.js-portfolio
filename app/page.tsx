@@ -16,7 +16,7 @@ import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation
 const HomePage = () => {
   return (
     <>
-      <div className="mt-12 overflow-hidden">
+      <div className="mt-12 pb-12 overflow-hidden">
         <HeroSectionLogos />
 
         <div className="container">

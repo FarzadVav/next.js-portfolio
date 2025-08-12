@@ -26,7 +26,7 @@ const Header = () => {
             </LoaderLink>
           </Link>
 
-          <button className="btn-ghost btn-link" disabled>
+          <button className="btn-ghost" disabled>
             Products
           </button>
 
@@ -95,13 +95,13 @@ const Header = () => {
                 <Link className="btn-ghost btn-link" href="/">
                   Home
                 </Link>
-                <Link className="btn-ghost btn-link" href="/">
+                <button className="btn-ghost" disabled>
                   Survey
-                </Link>
-                <Link className="btn-ghost btn-link" href="/">
+                </button>
+                <button className="btn-ghost" disabled>
                   Donate
-                </Link>
-                <button className="btn-ghost btn-link" disabled>
+                </button>
+                <button className="btn-ghost" disabled>
                   Hiring
                 </button>
               </div>
