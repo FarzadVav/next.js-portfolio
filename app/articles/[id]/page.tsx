@@ -21,7 +21,7 @@ const ArticlesDetailPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <div className="container grid grid-cols-4 mt-16">
+      <div className="container grid grid-cols-4">
         <div className="f-align gap-3">
           <div className="size-16 f-center bg-background-thick rounded-full">
             <Calendar className="w-2/3" />
@@ -63,7 +63,7 @@ const ArticlesDetailPage = () => {
         </div>
       </div>
 
-      <AccessNavigation className="container card card-thick mt-16 space-y-3">
+      <AccessNavigation className="container mt-20 space-y-3">
         <Link href={"#"} className="btn-ghost btn-lg group">
           <h2 className="font-bold">Chapter one of book</h2>
           <div className="btn gap-3 ml-auto">
@@ -105,7 +105,7 @@ const ArticlesDetailPage = () => {
         </Link>
       </AccessNavigation>
 
-      <div className="container card card-thick card-lg mt-16">
+      <div className="container card card-thick card-lg mt-20">
         <div className="f-align gap-3">
           <button className="btn-outline">
             <span>Full screen</span>
@@ -210,7 +210,7 @@ const ArticlesDetailPage = () => {
         </p>
       </div>
 
-      <h3 className="heading mt-16">related articles</h3>
+      <h3 className="heading mt-20">related articles</h3>
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
