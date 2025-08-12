@@ -6,7 +6,6 @@ import {
   Calendar,
   DownloadIcon,
   ExpandIcon,
-  HashIcon,
   LoaderIcon,
   Share2Icon,
 } from "lucide-react";
@@ -209,81 +208,6 @@ const ArticlesDetailPage = () => {
           voluptatum eaque soluta natus impedit voluptatem. Id delectus suscipit non doloremque iure
           minus! Quisquam?
         </p>
-
-        <div className="f-align flex-wrap mt-6 gap-1.5" dir="ltr">
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Algorithms</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Design patterns</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Golang</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Web assembly</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Algorithms</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Design patterns</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Golang</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Web assembly</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Algorithms</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Design patterns</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Golang</span>
-            </button>
-          </Link>
-          <Link href={`/articles?tag=${1}`}>
-            <button className="btn-ghost btn-sm">
-              <HashIcon className="btn-icon-size" />
-              <span>Web assembly</span>
-            </button>
-          </Link>
-        </div>
       </div>
 
       <h3 className="heading mt-16">related articles</h3>
