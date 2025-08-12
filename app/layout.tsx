@@ -5,11 +5,13 @@ import { PropsWithChildren } from "react";
 import "./globals.css";
 import Header from "root/components/static/Header/Header";
 import Footer from "root/components/static/Footer/Footer";
+import { Affix } from "@kadoui/react";
+import { ArrowUpIcon } from "lucide-react";
 
 const geist = Geist({
   subsets: ["latin"],
   variable: "--font-geist",
-  display: "swap"
+  display: "swap",
 });
 
 const themeScript = `
@@ -43,11 +45,12 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body>
-        <div className="transition-transform duration-500" id="root">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+        <Header />
+        {children}
+        <Footer />
+        <Affix className="ltr:affix-br rtl:affix-bl btn-fill btn-square">
+          <ArrowUpIcon className="btn-icon-size" />
+        </Affix>
       </body>
     </html>
   );

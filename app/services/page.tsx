@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CheckCircleIcon, CheckIcon, LoaderIcon } from "lucide-react";
+import { CheckIcon, LoaderIcon } from "lucide-react";
 import { AccessNavigation, Carousel, LoaderLink, Modal } from "@kadoui/react";
 
 import PageHero from "root/components/PageHero/Index";
@@ -73,7 +73,7 @@ const ServicesPage = () => {
               <Modal>
                 <Modal.Toggle className="btn-fill flex-1">
                   <span>Fast request</span>
-                  <CheckCircleIcon className="btn-icon-size" />
+                  <CheckIcon className="btn-icon-size" />
                 </Modal.Toggle>
 
                 <Modal.Portal className="modal-portal">
