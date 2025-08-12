@@ -1,5 +1,6 @@
 import Form from "next/form";
 import Link from "next/link";
+import Image from "next/image";
 import { AccessNavigation, Accordion, Carousel, LoaderLink } from "@kadoui/react";
 import {
   Search,
@@ -11,25 +12,26 @@ import {
   TextIcon,
 } from "lucide-react";
 
-import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
+import arrowImg from "root/public/arrow.png";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
+import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
 
 const HomePage = () => {
   return (
     <>
-      <div className="mt-20 pb-12 overflow-hidden">
+      <div className="mt-20 pb-40 overflow-hidden">
         <HeroSectionLogos />
 
         <div className="container">
-          <h1 className="text-7xl text-center font-black">ArrowUp</h1>
+          <h1 className="text-5xl md:text-7xl text-center font-black">ArrowUp</h1>
 
-          <p className="w-3/4 text-center mx-auto mt-3">
+          <p className="container md:w-3/4 text-center mx-auto mt-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit Expedita 🧑‍💻 atque consectetur
             excepturi possimus porro culpa 🔥 quam omnis iusto ✅ ipsum saepe mollitia nesciunt hic
             velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
           </p>
 
-          <Form className="join-no-inner-border w-1/2 mx-auto mt-6" action={"/search"}>
+          <Form className="join-no-inner-border container md:w-1/2 mx-auto mt-6" action={"/search"}>
             <label className="input-soft flex-1">
               <input
                 type="text"
@@ -44,13 +46,23 @@ const HomePage = () => {
           </Form>
 
           <div className="f-center gap-3 mt-6">
-            <Link className="btn-outline" href={"/services"}>
-              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                <SparklesIcon className="btn-icon-size" />
-              </LoaderLink>
+            <div className="relative">
+              <Link className="btn-outline bg-background" href={"/services"}>
+                <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                  <SparklesIcon className="btn-icon-size" />
+                </LoaderLink>
 
-              <span>Our services</span>
-            </Link>
+                <span>Our services</span>
+              </Link>
+
+              <Image
+                width={64}
+                height={64}
+                alt="Services"
+                src={arrowImg}
+                className="absolute -left-3 size-16 top-1/2 translate-y-1/3 rotate-12 dark:invert-100"
+              />
+            </div>
 
             <Link className="btn-fill" href={"/contact-us"}>
               <span>Get start</span>
@@ -63,48 +75,29 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-background-thin bg-background to-transparent rounded-t-[5%] pt-16 mt-20">
-        <div className="container mt-6 f-align gap-3">
-          <div className="card flex-1 space-y-3">
-            <p className="text-xl font-bold text-center">Front-End</p>
-            <div className="w-full aspect-square rounded-child bg-background-thin"></div>
-            <Link className="btn-outline" href={"/services"}>
-              <span>Visit</span>
+      <Carousel className="carousel container md:mt-20">
+        <Carousel.Container className="carousel-container gap-3">
+          <Carousel.LeftFade className="carousel-left-fade" />
+          <Carousel.RightFade className="carousel-right-fade" />
 
-              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                <ArrowRightIcon className="btn-icon-size" />
-              </LoaderLink>
-            </Link>
-          </div>
+          {Array.from({ length: 7 }).map(() => (
+            <div className="slidable card card-thick space-y-3" key={Math.random()}>
+              <div className="w-full aspect-video bg-background rounded-child" />
+              <h6 className="title text-center">Our IT solutions</h6>
+              <Link className="btn-outline" href={"/articles/1"}>
+                <span>Read more</span>
 
-          <div className="card flex-1 space-y-3">
-            <p className="text-xl font-bold text-center">Back-End</p>
-            <div className="w-full aspect-square rounded-child bg-background-thin"></div>
-            <Link className="btn-outline" href={"/services"}>
-              <span>Visit</span>
-
-              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                <ArrowRightIcon className="btn-icon-size" />
-              </LoaderLink>
-            </Link>
-          </div>
-
-          <div className="card flex-1 space-y-3">
-            <p className="text-xl font-bold text-center">Cloud</p>
-            <div className="w-full aspect-square rounded-child bg-background-thin"></div>
-            <Link className="btn-outline" href={"/services"}>
-              <span>Visit</span>
-
-              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                <ArrowRightIcon className="btn-icon-size" />
-              </LoaderLink>
-            </Link>
-          </div>
-        </div>
-      </div>
+                <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                  <ArrowRightIcon className="btn-icon-size" />
+                </LoaderLink>
+              </Link>
+            </div>
+          ))}
+        </Carousel.Container>
+      </Carousel>
 
       <h3 className="heading mt-20">your first look at us</h3>
-      <div className="grid mt-6 grid-cols-2 gap-3 container">
+      <div className="grid mt-6 grid-cols-1 md:grid-cols-2 gap-3 container">
         <div className="f-align card card-thick gap-3">
           <div className="size-16 min-w-16 bg-background rounded-child" />
           <div>
@@ -182,7 +175,7 @@ const HomePage = () => {
           <Carousel.RightFade className="carousel-right-fade" />
 
           {Array.from({ length: 12 }).map(() => (
-            <div key={Math.random()} className="w-[90%] min-w-[90%] sm:w-2/5 sm:min-w-2/5">
+            <div key={Math.random()} className="slidable">
               <p className="font-bold">John Doe</p>
               <p className="text-xs opacity-75">IT engineer at apple</p>
               <p className="card card-thick mt-3">
@@ -197,40 +190,42 @@ const HomePage = () => {
         </Carousel.Container>
       </Carousel>
 
-      <ScrollAnimation className="container card card-lg card-thick space-y-3 mt-20">
-        <h5 className="text-3xl font-black">do you want consultation?</h5>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum nostrum
-          voluptates eveniet id libero incidunt enim vitae nam corporis voluptate neque sit sed
-          maiores, saepe cumque quo.
-        </p>
-        <div className="f-align gap-3">
-          <div className="badge-soft">
-            <CheckIcon className="badge-icon-size" />
-            <span>Problem solving</span>
+      <div className="container">
+        <ScrollAnimation className="card card-lg card-thick space-y-3 mt-20">
+          <h5 className="title-lg">do you want consultation?</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum
+            nostrum voluptates eveniet id libero incidunt enim vitae nam corporis voluptate neque
+            sit sed maiores, saepe cumque quo.
+          </p>
+          <div className="f-align flex-wrap gap-3">
+            <div className="badge-soft">
+              <CheckIcon className="badge-icon-size" />
+              <span>Problem solving</span>
+            </div>
+            <div className="badge-soft">
+              <CheckIcon className="badge-icon-size" />
+              <span>Problem solving</span>
+            </div>
+            <div className="badge-soft">
+              <CheckIcon className="badge-icon-size" />
+              <span>Problem solving</span>
+            </div>
+            <div className="badge-soft">
+              <CheckIcon className="badge-icon-size" />
+              <span>Problem</span>
+            </div>
           </div>
-          <div className="badge-soft">
-            <CheckIcon className="badge-icon-size" />
-            <span>Problem solving</span>
-          </div>
-          <div className="badge-soft">
-            <CheckIcon className="badge-icon-size" />
-            <span>Problem solving</span>
-          </div>
-          <div className="badge-soft">
-            <CheckIcon className="badge-icon-size" />
-            <span>Problem solving</span>
-          </div>
-        </div>
 
-        <Link className="btn-fill w-fit" href={"/contact-us#form"}>
-          <span>Send a request</span>
+          <Link className="btn-fill w-fit" href={"/contact-us#form"}>
+            <span>Send a request</span>
 
-          <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-            <ArrowRightIcon className="btn-icon-size" />
-          </LoaderLink>
-        </Link>
-      </ScrollAnimation>
+            <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+              <ArrowRightIcon className="btn-icon-size" />
+            </LoaderLink>
+          </Link>
+        </ScrollAnimation>
+      </div>
 
       <h6 className="heading mt-20">Latest articles</h6>
       <Carousel className="carousel container mt-6">
@@ -239,9 +234,9 @@ const HomePage = () => {
           <Carousel.RightFade className="carousel-right-fade" />
 
           {Array.from({ length: 7 }).map(() => (
-            <div className="w-2/5 card card-thick min-w-2/5 space-y-3" key={Math.random()}>
+            <div className="slidable card card-thick space-y-3" key={Math.random()}>
               <div className="w-full aspect-video bg-background rounded-child" />
-              <h6 className="text-xl font-bold">Our IT solutions</h6>
+              <h6 className="title">Our IT solutions</h6>
               <div className="badge-soft mt-3">Business</div>
               <p className="mt-3 line-clamp-3">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores

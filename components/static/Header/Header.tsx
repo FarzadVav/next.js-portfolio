@@ -15,7 +15,22 @@ const Header = () => {
       </div>
 
       <div className="container f-align justify-between h-16 relative">
-        <AccessNavigation>
+        <Link className="f-align gap-3" href={"/"}>
+          <span className="size-9 f-center">
+            <LoaderLink loader={<LoaderIcon className="size-4.5 animate-spin" />}>
+              <Image
+                width={36}
+                height={36}
+                src={logoImg}
+                alt="ArrowUp logo"
+                className="rounded-full size-9 dark:invert-100"
+              />
+            </LoaderLink>
+          </span>
+          <span>ArrowUp</span>
+        </Link>
+
+        <AccessNavigation className="max-md:hidden">
           <Popover className="popover">
             <Popover.Toggle className="btn-ghost group font-bold" dir="ltr">
               <Image
@@ -30,10 +45,19 @@ const Header = () => {
               <ChevronDownIcon className="btn-icon-size transition-transform group-data-[state=active]:-scale-y-100" />
             </Popover.Toggle>
 
-            <Popover.Body className="popover-body-b">
+            <Popover.Body className="popover-body-b" preventClose>
               <div className="menu-y">
-                <Link className="btn-ghost btn-link" href="/">
-                  Home
+                <Link className="btn-ghost btn-link relative" href="/">
+                  <LoaderLink
+                    loader={
+                      <>
+                        <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                        <span className="opacity-0">Home</span>
+                      </>
+                    }
+                  >
+                    <span>Home</span>
+                  </LoaderLink>
                 </Link>
                 <button className="btn-ghost" disabled>
                   Survey
@@ -131,25 +155,35 @@ const Header = () => {
                 <span className="h-1 w-1/3 rounded-full bg-background-thin" />
               </Sheet.Header>
               <Sheet.Content className="sheet-content space-y-3">
-                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                <Link className="btn-ghost w-full justify-between" href={"/services"}>
                   <span>Services</span>
-                  <ArrowRightIcon className="btn-icon-size" />
+                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                    <ArrowRightIcon className="btn-icon-size" />
+                  </LoaderLink>
                 </Link>
-                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                <Link className="btn-ghost w-full justify-between" href={"/tools"}>
                   <span>Tools</span>
-                  <ArrowRightIcon className="btn-icon-size" />
+                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                    <ArrowRightIcon className="btn-icon-size" />
+                  </LoaderLink>
                 </Link>
-                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                <Link className="btn-ghost w-full justify-between" href={"/articles"}>
                   <span>Articles</span>
-                  <ArrowRightIcon className="btn-icon-size" />
+                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                    <ArrowRightIcon className="btn-icon-size" />
+                  </LoaderLink>
                 </Link>
-                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                <Link className="btn-ghost w-full justify-between" href={"/about-us"}>
                   <span>About us</span>
-                  <ArrowRightIcon className="btn-icon-size" />
+                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                    <ArrowRightIcon className="btn-icon-size" />
+                  </LoaderLink>
                 </Link>
-                <Link className="btn-ghost w-full justify-between" href={"/"}>
+                <Link className="btn-ghost w-full justify-between" href={"/contact-us"}>
                   <span>Contact us</span>
-                  <ArrowRightIcon className="btn-icon-size" />
+                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                    <ArrowRightIcon className="btn-icon-size" />
+                  </LoaderLink>
                 </Link>
               </Sheet.Content>
             </Sheet.Body>
