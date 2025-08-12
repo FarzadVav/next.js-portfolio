@@ -1,3 +1,4 @@
+import Form from "next/form";
 import Link from "next/link";
 import { AccessNavigation, Accordion, Carousel, LoaderLink } from "@kadoui/react";
 import {
@@ -16,7 +17,7 @@ import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation
 const HomePage = () => {
   return (
     <>
-      <div className="mt-12 pb-12 overflow-hidden">
+      <div className="mt-20 pb-12 overflow-hidden">
         <HeroSectionLogos />
 
         <div className="container">
@@ -28,14 +29,19 @@ const HomePage = () => {
             velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
           </p>
 
-          <div className="join-no-inner-border w-1/2 mx-auto mt-6">
+          <Form className="join-no-inner-border w-1/2 mx-auto mt-6" action={"/search"}>
             <label className="input-soft flex-1">
-              <input className="input-field" type="text" placeholder="Search your requests..." />
+              <input
+                type="text"
+                name="query"
+                className="input-field"
+                placeholder="Search your requests..."
+              />
             </label>
             <button className="btn-soft">
               <Search className="btn-icon-size" />
             </button>
-          </div>
+          </Form>
 
           <div className="f-center gap-3 mt-6">
             <Link className="btn-outline" href={"/services"}>
@@ -57,7 +63,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-background-thin bg-background to-transparent rounded-t-[5%] pt-12 mt-12">
+      <div className="bg-gradient-to-b from-background-thin bg-background to-transparent rounded-t-[5%] pt-16 mt-20">
         <div className="container mt-6 f-align gap-3">
           <div className="card flex-1 space-y-3">
             <p className="text-xl font-bold text-center">Front-End</p>
@@ -97,7 +103,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <h3 className="text-center font-black text-5xl mt-16">Your first look at us</h3>
+      <h3 className="heading mt-20">your first look at us</h3>
       <div className="grid mt-6 grid-cols-2 gap-3 container">
         <div className="f-align card card-thick gap-3">
           <div className="size-16 min-w-16 bg-background rounded-child" />
@@ -143,7 +149,7 @@ const HomePage = () => {
           <div className="size-16 min-w-16 bg-background rounded-child" />
         </div>
       </div>
-      <AccessNavigation className="container mt-12">
+      <AccessNavigation className="container mt-6">
         {Array.from({ length: 3 }).map(() => (
           <Accordion key={Math.random()}>
             <Accordion.Toggle className="btn-ghost w-full justify-between group not-first:mt-3">
@@ -160,7 +166,7 @@ const HomePage = () => {
           </Accordion>
         ))}
 
-        <Link className="btn-ghost w-fit mx-auto mt-6" href={"/about-us"}>
+        <Link className="btn-ghost w-fit mx-auto mt-3" href={"/about-us"}>
           <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
             <TextIcon className="btn-icon-size" />
           </LoaderLink>
@@ -169,7 +175,7 @@ const HomePage = () => {
         </Link>
       </AccessNavigation>
 
-      <h4 className="text-center font-black text-5xl mt-16">Customer comments</h4>
+      <h4 className="heading mt-20">customer comments</h4>
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
@@ -177,7 +183,8 @@ const HomePage = () => {
 
           {Array.from({ length: 12 }).map(() => (
             <div key={Math.random()} className="w-[90%] min-w-[90%] sm:w-2/5 sm:min-w-2/5">
-              <span className="text-xl font-bold">John Doe</span>
+              <p className="font-bold">John Doe</p>
+              <p className="text-xs opacity-75">IT engineer at apple</p>
               <p className="card card-thick mt-3">
                 {Array.from({ length: Math.ceil(Math.random() * 10) }).map(
                   () => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore"
@@ -190,8 +197,8 @@ const HomePage = () => {
         </Carousel.Container>
       </Carousel>
 
-      <ScrollAnimation className="container card card-lg card-thick space-y-3 mt-16">
-        <h5 className="text-3xl font-black">Do you want consultation?</h5>
+      <ScrollAnimation className="container card card-lg card-thick space-y-3 mt-20">
+        <h5 className="text-3xl font-black">do you want consultation?</h5>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum nostrum
           voluptates eveniet id libero incidunt enim vitae nam corporis voluptate neque sit sed
@@ -216,16 +223,16 @@ const HomePage = () => {
           </div>
         </div>
 
-        <Link className="btn-fill w-fit" href={"/contact-us"}>
+        <Link className="btn-fill w-fit" href={"/contact-us#form"}>
           <span>Send a request</span>
 
           <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-            <CheckIcon className="btn-icon-size" />
+            <ArrowRightIcon className="btn-icon-size" />
           </LoaderLink>
         </Link>
       </ScrollAnimation>
 
-      <h6 className="text-center font-black text-5xl mt-16">Latest articles</h6>
+      <h6 className="heading mt-20">Latest articles</h6>
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
@@ -253,7 +260,7 @@ const HomePage = () => {
           ))}
         </Carousel.Container>
       </Carousel>
-      <Link className="btn-ghost w-fit mx-auto mt-6" href={"/articles"}>
+      <Link className="btn-ghost w-fit mx-auto mt-3" href={"/articles"}>
         <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
           <TextIcon className="btn-icon-size" />
         </LoaderLink>

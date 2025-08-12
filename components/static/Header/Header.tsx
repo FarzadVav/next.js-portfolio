@@ -11,7 +11,7 @@ const Header = () => {
         <div className="h-[200%] top-0 left-0 right-0 bg-background/50 backdrop-blur-2xl" />
       </div>
 
-      <div className="container f-align justify-between h-20 relative">
+      <div className="container f-align justify-between h-16 relative">
         <AccessNavigation className="f-align gap-3" direction="x">
           <Link className="btn-ghost btn-link relative" href="/services">
             <LoaderLink

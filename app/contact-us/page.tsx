@@ -111,7 +111,7 @@ const ConnectPage = () => {
         ))}
       </div>
 
-      <h4 className="heading mt-16">send yuor message to us</h4>
+      <h4 id="form" className="heading pt-20">send yuor message to us</h4>
       <ScrollAnimation className="card card-lg card-thick container mt-6">
         <div className="f-align gap-3">
           <label className="input-outline flex-1">
