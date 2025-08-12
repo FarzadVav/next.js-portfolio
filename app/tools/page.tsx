@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { ArrowRightIcon, CheckIcon, LoaderIcon } from "lucide-react";
 import { AccessNavigation, Carousel, LoaderLink } from "@kadoui/react";
@@ -15,7 +13,7 @@ const ServicesPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <AccessNavigation direction="x" className="join-border mt-16 w-fit mx-auto">
+      <AccessNavigation direction="x" className="join-border w-fit mx-auto">
         <button className="btn-fill font-bold">Front-End</button>
         <button className="btn-soft">Back-End</button>
         <button className="btn-soft">Mobile</button>
@@ -23,7 +21,7 @@ const ServicesPage = () => {
         <button className="btn-soft">Cloud</button>
       </AccessNavigation>
 
-      <div className="container mt-12 grid grid-cols-2 gap-3">
+      <div className="container mt-6 grid grid-cols-2 gap-3">
         {Array.from({ length: 7 }).map(() => (
           <div className="card card-thick" key={Math.random()}>
             <div className="f-align gap-3">
