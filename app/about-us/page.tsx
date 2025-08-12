@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ArrowUpRightIcon, ChevronDownIcon, DownloadIcon, LoaderIcon } from "lucide-react";
 import { AccessNavigation, Accordion, Carousel, LoaderLink } from "@kadoui/react";
+import { ArrowUpRightIcon, ChevronDownIcon, DownloadIcon, LoaderIcon } from "lucide-react";
 
 import PageHero from "root/components/PageHero/Index";
 
@@ -13,11 +13,11 @@ const AboutPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <div className="container mt-16 card card-thick">
+      <div className="container card card-thick">
         <video className="w-full bg-background aspect-video rounded-child" />
       </div>
 
-      <h2 className="heading mt-16">our features / skills</h2>
+      <h2 className="heading mt-20">our features / skills</h2>
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
@@ -35,7 +35,7 @@ const AboutPage = () => {
         </Carousel.Container>
       </Carousel>
 
-      <h4 className="heading mt-16">our projects</h4>
+      <h4 className="heading mt-20">our projects</h4>
       <div className="container mt-6 grid grid-cols-2 gap-3">
         {Array.from({ length: 7 }).map(() => (
           <div className="card card-thick space-y-3" key={Math.random()}>
@@ -59,8 +59,8 @@ const AboutPage = () => {
         ))}
       </div>
 
-      <h5 className="heading mt-16">faqs</h5>
-      <AccessNavigation className="container mt-12">
+      <h5 className="heading mt-20">faqs</h5>
+      <AccessNavigation className="container mt-6">
         {Array.from({ length: 8 }).map(() => (
           <Accordion key={Math.random()}>
             <Accordion.Toggle className="btn-ghost w-full justify-between group not-first:mt-3">
@@ -78,7 +78,7 @@ const AboutPage = () => {
         ))}
       </AccessNavigation>
 
-      <h5 className="heading mt-16">download our cv</h5>
+      <h5 className="heading mt-20">download our cv</h5>
       <p className="max-w-5xl text-center mx-auto mt-3">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error lgprovident nobis quis
         suscipit laboriosam quibusdam ad velit, amet omnis iusto! Debitis corrupti facere
