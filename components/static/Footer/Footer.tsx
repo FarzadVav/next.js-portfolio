@@ -1,17 +1,26 @@
 import Link from "next/link";
 import Image from "next/image";
+import { LoaderLink } from "@kadoui/react";
 import { LoaderIcon, MailIcon } from "lucide-react";
 
+import logoImg from "root/public/logo.png";
 import githubImg from "root/public/logos/github.svg";
 import telegramImg from "root/public/logos/telegram.svg";
 import linkedinImg from "root/public/logos/linkedin.svg";
-import { LoaderLink } from "@kadoui/react";
 
 const Footer = () => {
   return (
     <footer className="mt-20 py-20 border-t-2 border-separator">
       <div className="container">
-        <div className="f-center gap-3">
+        <Image
+          width={112}
+          height={112}
+          src={logoImg}
+          alt="ArrowUp logo"
+          className="rounded-full w-28 mx-auto dark:invert-100"
+        />
+
+        <div className="f-center gap-3 mt-20">
           {/* <Link className="btn-ghost" href={"tel:09389461065"}>
           <PhoneIcon className="btn-icon-size" />
           <span dir="ltr">0938 0946 1065</span>

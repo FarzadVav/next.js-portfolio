@@ -1,8 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronDownIcon, LoaderIcon } from "lucide-react";
 import { AccessNavigation, LoaderLink, Popover } from "@kadoui/react";
+
+import logoImg from "root/public/logo.png";
 
 const Header = () => {
   return (
@@ -12,6 +15,40 @@ const Header = () => {
       </div>
 
       <div className="container f-align justify-between h-16 relative">
+        <AccessNavigation className="mr-auto">
+          <Popover className="popover">
+            <Popover.Toggle className="btn-ghost group font-bold" dir="ltr">
+              <Image
+                width={24}
+                height={24}
+                src={logoImg}
+                alt="ArrowUp logo"
+                className="rounded-full h-2/3 aspect-square mr-1.5 dark:invert-100"
+              />
+
+              <span>ArrowUp</span>
+              <ChevronDownIcon className="btn-icon-size transition-transform group-data-[state=active]:-scale-y-100" />
+            </Popover.Toggle>
+
+            <Popover.Body className="popover-body-b">
+              <div className="menu-y">
+                <Link className="btn-ghost btn-link" href="/">
+                  Home
+                </Link>
+                <button className="btn-ghost" disabled>
+                  Survey
+                </button>
+                <button className="btn-ghost" disabled>
+                  Donate
+                </button>
+                <button className="btn-ghost" disabled>
+                  Hiring
+                </button>
+              </div>
+            </Popover.Body>
+          </Popover>
+        </AccessNavigation>
+
         <AccessNavigation className="f-align gap-3" direction="x">
           <Link className="btn-ghost btn-link relative" href="/services">
             <LoaderLink
@@ -81,32 +118,6 @@ const Header = () => {
               <span>Contact us</span>
             </LoaderLink>
           </Link>
-        </AccessNavigation>
-
-        <AccessNavigation>
-          <Popover className="popover">
-            <Popover.Toggle className="btn-ghost group font-bold" dir="ltr">
-              <span>ArrowUp</span>
-              <ChevronDownIcon className="btn-icon-size transition-transform group-data-[state=active]:-scale-y-100" />
-            </Popover.Toggle>
-
-            <Popover.Body className="popover-body-b">
-              <div className="menu-y">
-                <Link className="btn-ghost btn-link" href="/">
-                  Home
-                </Link>
-                <button className="btn-ghost" disabled>
-                  Survey
-                </button>
-                <button className="btn-ghost" disabled>
-                  Donate
-                </button>
-                <button className="btn-ghost" disabled>
-                  Hiring
-                </button>
-              </div>
-            </Popover.Body>
-          </Popover>
         </AccessNavigation>
       </div>
     </header>
