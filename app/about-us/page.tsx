@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AccessNavigation, Accordion, Carousel, LoaderLink } from "@kadoui/react";
 import { ArrowUpRightIcon, ChevronDownIcon, DownloadIcon, LoaderIcon } from "lucide-react";
 
-import PageHero from "root/components/PageHero/Index";
+import PageHero from "root/components/PageHero/PageHero";
 
 const AboutPage = () => {
   return (

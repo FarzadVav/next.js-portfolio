@@ -1,6 +1,6 @@
 import { CheckIcon, PhoneIcon, SparklesIcon, UserIcon } from "lucide-react";
 
-import PageHero from "root/components/PageHero/Index";
+import PageHero from "root/components/PageHero/PageHero";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 const ServicesDetailPage = () => {

@@ -11,7 +11,7 @@ import {
   TextIcon,
 } from "lucide-react";
 
-import HeroSectionLogos from "root/components/static/HeroSectionLogos/Index";
+import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 const HomePage = () => {

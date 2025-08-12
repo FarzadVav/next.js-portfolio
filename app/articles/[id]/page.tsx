@@ -10,7 +10,7 @@ import {
   Share2Icon,
 } from "lucide-react";
 
-import PageHero from "root/components/PageHero/Index";
+import PageHero from "root/components/PageHero/PageHero";
 
 const ArticlesDetailPage = () => {
   return (

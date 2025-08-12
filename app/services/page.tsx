@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CheckIcon, LoaderIcon } from "lucide-react";
 import { AccessNavigation, Carousel, LoaderLink, Modal } from "@kadoui/react";
 
-import PageHero from "root/components/PageHero/Index";
+import PageHero from "root/components/PageHero/PageHero";
 
 const ServicesPage = () => {
   return (

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRightIcon, LoaderIcon } from "lucide-react";
 import { AccessNavigation, LoaderLink } from "@kadoui/react";
 
-import PageHero from "root/components/PageHero/Index";
+import PageHero from "root/components/PageHero/PageHero";
 
 const ArticlesPage = () => {
   return (

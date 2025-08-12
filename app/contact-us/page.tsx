@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 import githubImg from "root/public/logos/github.svg";
-import PageHero from "root/components/PageHero/Index";
+import PageHero from "root/components/PageHero/PageHero";
 import telegramImg from "root/public/logos/telegram.svg";
 import linkedinImg from "root/public/logos/linkedin.svg";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";

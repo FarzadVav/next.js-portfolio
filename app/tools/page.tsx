@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRightIcon, CheckIcon, LoaderIcon } from "lucide-react";
 import { AccessNavigation, Carousel, LoaderLink } from "@kadoui/react";
 
-import PageHero from "root/components/PageHero/Index";
+import PageHero from "root/components/PageHero/PageHero";
 
 const ServicesPage = () => {
   return (
@@ -69,7 +69,11 @@ const ServicesPage = () => {
               </li>
             </ul>
 
-            <Link className="btn-outline mt-6" href={"/services/1"}>
+            <Link
+              target="_blank"
+              className="btn-outline mt-6"
+              href={"https://github.com/ArrowUpTeam"}
+            >
               <span>Read more</span>
               <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                 <ArrowRightIcon className="btn-icon-size" />
