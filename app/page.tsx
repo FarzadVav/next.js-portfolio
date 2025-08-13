@@ -19,7 +19,7 @@ import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectio
 const HomePage = () => {
   return (
     <>
-      <div className="mt-20 pb-40 overflow-hidden">
+      <div className="pt-20 pb-40 overflow-hidden">
         <HeroSectionLogos />
 
         <div className="container">

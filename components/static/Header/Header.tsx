@@ -15,7 +15,7 @@ const Header = () => {
       </div>
 
       <div className="container f-align justify-between h-16 relative">
-        <Link className="f-align gap-3" href={"/"}>
+        <Link className="f-align gap-3 md:hidden" href={"/"}>
           <span className="size-9 f-center">
             <LoaderLink loader={<LoaderIcon className="size-4.5 animate-spin" />}>
               <Image
