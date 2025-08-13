@@ -24,11 +24,11 @@ const ConnectPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <div className="container grid grid-cols-3 gap-6">
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="f-align gap-3">
           <Image src={telegramImg} alt="ArrowUp Telegram channel" width={64} height={64} />
           <div>
-            <span className="text-lg font-bold">Telegram</span>
+            <span className="title-sm">Telegram</span>
             <p className="text-xs mt-0.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, in
             </p>
@@ -47,7 +47,7 @@ const ConnectPage = () => {
         <div className="f-align gap-3">
           <Image src={linkedinImg} alt="ArrowUp LinkedIn page" width={64} height={64} />
           <div>
-            <span className="text-lg font-bold">LinkedIn</span>
+            <span className="title-sm">LinkedIn</span>
             <p className="text-xs mt-0.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, in
             </p>
@@ -72,7 +72,7 @@ const ConnectPage = () => {
             alt="ArrowUp GitHub organization"
           />
           <div>
-            <span className="text-lg font-bold">GitHub</span>
+            <span className="title-sm">GitHub</span>
             <p className="text-xs mt-0.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, in
             </p>
@@ -90,7 +90,7 @@ const ConnectPage = () => {
       </div>
 
       <h2 className="heading mt-20">community events</h2>
-      <div className="container mt-6 grid grid-cols-2 gap-3">
+      <div className="container mt-6 grid-cols-1 grid md:grid-cols-2 gap-3">
         {Array.from({ length: 4 }).map(() => (
           <div className="card card-thick space-y-3" key={Math.random()}>
             <div className="w-full aspect-video bg-background rounded-child" />
@@ -112,32 +112,34 @@ const ConnectPage = () => {
       </div>
 
       <h4 id="form" className="heading pt-20">
-        send yuor message to us
+        send yuor message
       </h4>
-      <ScrollAnimation className="card card-lg card-thick container mt-6">
-        <div className="f-align gap-3">
-          <label className="input-outline flex-1">
-            <UserIcon className="input-icon-size" />
-            <input className="input-field" placeholder="Organization/Customer name" />
+      <div className="container mt-6">
+        <ScrollAnimation className="card card-lg card-thick">
+          <div className="f-align max-md:flex-col gap-3">
+            <label className="input-outline max-md:w-full md:flex-1">
+              <UserIcon className="input-icon-size" />
+              <input className="input-field" placeholder="Organization/Customer name" />
+            </label>
+            <label className="input-outline max-md:w-full md:flex-1">
+              <PhoneIcon className="input-icon-size" />
+              <input className="input-field" placeholder="---- --- ----" />
+            </label>
+          </div>
+          <label className="input-outline mt-3">
+            <textarea className="input-field" placeholder="Request description..." />
           </label>
-          <label className="input-outline flex-1">
-            <PhoneIcon className="input-icon-size" />
-            <input className="input-field" placeholder="---- --- ----" />
+          <label className="input-soft mt-3 w-max max-w-full">
+            <FilesIcon className="input-icon-size" />
+            <input className="input-field" type="file" name="1212" />
           </label>
-        </div>
-        <label className="input-outline mt-3">
-          <textarea className="input-field" placeholder="Request description..." />
-        </label>
-        <label className="input-soft mt-3 w-max max-w-full">
-          <FilesIcon className="input-icon-size" />
-          <input className="input-field" type="file" name="1212" />
-        </label>
 
-        <button className="mt-6 btn-fill">
-          <span className="font-bold">SUBMIT</span>
-          <CheckIcon className="btn-icon-size" />
-        </button>
-      </ScrollAnimation>
+          <button className="mt-6 btn-fill">
+            <span className="font-bold">SUBMIT</span>
+            <CheckIcon className="btn-icon-size" />
+          </button>
+        </ScrollAnimation>
+      </div>
     </>
   );
 };
