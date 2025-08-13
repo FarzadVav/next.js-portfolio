@@ -13,20 +13,22 @@ const ServicesPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <AccessNavigation direction="x" className="join-border w-fit mx-auto">
-        <button className="btn-fill font-bold">Front-End</button>
-        <button className="btn-soft">Back-End</button>
-        <button className="btn-soft">Mobile</button>
-        <button className="btn-soft">Desktop</button>
-        <button className="btn-soft">Cloud</button>
+      <AccessNavigation direction="x" className="f-align-scroll container">
+        <div className="join-border min-w-max">
+          <button className="btn-fill font-bold">Front-End</button>
+          <button className="btn-soft">Back-End</button>
+          <button className="btn-soft">Mobile</button>
+          <button className="btn-soft">Desktop</button>
+          <button className="btn-soft">Cloud</button>
+        </div>
       </AccessNavigation>
 
-      <div className="container mt-6 grid grid-cols-2 gap-3">
+      <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
         {Array.from({ length: 7 }).map(() => (
           <div className="card card-thick" key={Math.random()}>
             <div className="f-align gap-3">
               <div className="size-9 rounded-full bg-background" />
-              <h2 className="text-xl font-bold">Nest.js web app</h2>
+              <h2 className="title">Nest.js web app</h2>
             </div>
 
             <Carousel className="carousel mt-3">
@@ -34,17 +36,17 @@ const ServicesPage = () => {
                 <Carousel.LeftFade className="carousel-left-fade from-background-thick" />
                 <Carousel.RightFade className="carousel-right-fade from-background-thick" />
 
-                <div className="badge-ghost">Javascript</div>
-                <div className="badge-ghost">React</div>
-                <div className="badge-ghost">Next</div>
-                <div className="badge-ghost">Tailwind</div>
-                <div className="badge-ghost">Chart</div>
-                <div className="badge-ghost">Astro</div>
-                <div className="badge-ghost">Vitest</div>
-                <div className="badge-ghost">Remix</div>
-                <div className="badge-ghost">Sass</div>
-                <div className="badge-ghost">Framer</div>
-                <div className="badge-ghost">PWA</div>
+                <div className="badge badge-sm">Javascript</div>
+                <div className="badge badge-sm">React</div>
+                <div className="badge badge-sm">Next</div>
+                <div className="badge badge-sm">Tailwind</div>
+                <div className="badge badge-sm">Chart</div>
+                <div className="badge badge-sm">Astro</div>
+                <div className="badge badge-sm">Vitest</div>
+                <div className="badge badge-sm">Remix</div>
+                <div className="badge badge-sm">Sass</div>
+                <div className="badge badge-sm">Framer</div>
+                <div className="badge badge-sm">PWA</div>
               </Carousel.Container>
             </Carousel>
 
@@ -56,15 +58,15 @@ const ServicesPage = () => {
 
             <ul className="mt-3 space-y-1.5 opacity-75">
               <li className="f-align gap-1.5">
-                <CheckIcon className="icon-size-3" />
+                <CheckIcon className="icon-size-2 md:icon-size-3" />
                 <span>Six month free support</span>
               </li>
               <li className="f-align gap-1.5">
-                <CheckIcon className="icon-size-3" />
+                <CheckIcon className="icon-size-2 md:icon-size-3" />
                 <span>Six month free support</span>
               </li>
               <li className="f-align gap-1.5">
-                <CheckIcon className="icon-size-3" />
+                <CheckIcon className="icon-size-2 md:icon-size-3" />
                 <span>Six month free support</span>
               </li>
             </ul>
@@ -72,14 +74,14 @@ const ServicesPage = () => {
             <div className="mt-6 f-align gap-3">
               <Modal>
                 <Modal.Toggle className="btn-fill flex-1">
-                  <span>Fast request</span>
+                  <span>Request</span>
                   <CheckIcon className="btn-icon-size" />
                 </Modal.Toggle>
 
                 <Modal.Portal className="modal-portal">
                   <Modal.Body className="modal-body">
                     <Modal.Header className="modal-header justify-center">
-                      <p className="text-xl font-bold">Request your project</p>
+                      <p className="title">Request your project</p>
                     </Modal.Header>
 
                     <Modal.Content className="modal-content">
@@ -96,7 +98,7 @@ const ServicesPage = () => {
 
               <Link className="btn-outline flex-1" href={"/services/1"}>
                 <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                  <span>Read more</span>
+                  <span>More</span>
                 </LoaderLink>
               </Link>
             </div>
@@ -105,41 +107,41 @@ const ServicesPage = () => {
       </div>
 
       <div className="container mt-20 space-y-10">
-        <div className="f-align gap-6" dir="rtl">
+        <div className="f-align gap-3 md:gap-6" dir="rtl">
           <div className="size-16 min-w-16 rounded-full bg-background-thick" />
           <div>
-            <h3 className="text-xl font-bold">Submit a request</h3>
-            <p className="mt-1.5">
+            <h3 className="title">Submit a request</h3>
+            <p className="mt-0.5 md:mt-1.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, dolores!
             </p>
           </div>
         </div>
 
-        <div className="f-align gap-6">
+        <div className="f-align gap-3 md:gap-6">
           <div className="size-16 min-w-16 rounded-full bg-background-thick" />
           <div>
-            <h3 className="text-xl font-bold">Submit a request</h3>
-            <p className="mt-1.5">
+            <h3 className="title">Submit a request</h3>
+            <p className="mt-0.5 md:mt-1.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, dolores!
             </p>
           </div>
         </div>
 
-        <div className="f-align gap-6" dir="rtl">
+        <div className="f-align gap-3 md:gap-6" dir="rtl">
           <div className="size-16 min-w-16 rounded-full bg-background-thick" />
           <div>
-            <h3 className="text-xl font-bold">Submit a request</h3>
-            <p className="mt-1.5">
+            <h3 className="title">Submit a request</h3>
+            <p className="mt-0.5 md:mt-1.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, dolores!
             </p>
           </div>
         </div>
 
-        <div className="f-align gap-6">
+        <div className="f-align gap-3 md:gap-6">
           <div className="size-16 min-w-16 rounded-full bg-background-thick" />
           <div>
-            <h3 className="text-xl font-bold">Submit a request</h3>
-            <p className="mt-1.5">
+            <h3 className="title">Submit a request</h3>
+            <p className="mt-0.5 md:mt-1.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, dolores!
             </p>
           </div>
