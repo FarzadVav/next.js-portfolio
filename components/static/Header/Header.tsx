@@ -150,7 +150,11 @@ const Header = () => {
           </Sheet.Toggle>
 
           <Sheet.Portal className="sheet-portal md:hidden">
-            <Sheet.Body className="sheet-body w-full">
+            <Sheet.Body className="sheet-body w-full group">
+              <Sheet.Header className="sheet-header h-auto p-3">
+                <span className="w-1/4 h-1 rounded-full bg-background-thin" />
+              </Sheet.Header>
+
               <Sheet.Content className="sheet-content space-y-3">
                 <Link className="btn-ghost w-full justify-between" href={"/services"}>
                   <span>Services</span>

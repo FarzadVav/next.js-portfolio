@@ -14,7 +14,7 @@ const ServicesPage = () => {
       />
 
       <AccessNavigation direction="x" className="f-align-scroll container">
-        <div className="join-border min-w-max">
+        <div className="join-border min-w-max mx-auto">
           <button className="btn-fill font-bold">Front-End</button>
           <button className="btn-soft">Back-End</button>
           <button className="btn-soft">Mobile</button>

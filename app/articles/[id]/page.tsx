@@ -27,7 +27,7 @@ const ArticlesDetailPage = () => {
             <Calendar className="w-2/3" />
           </div>
           <div className="flex flex-col h-10">
-            <span className="title-sm line-clamp-1">Release date</span>
+            <span className="title-sm">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -37,7 +37,7 @@ const ArticlesDetailPage = () => {
             <Calendar className="w-2/3" />
           </div>
           <div className="flex flex-col h-10">
-            <span className="title-sm line-clamp-1">Release date</span>
+            <span className="title-sm">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -47,7 +47,7 @@ const ArticlesDetailPage = () => {
             <Calendar className="w-2/3" />
           </div>
           <div className="flex flex-col h-10">
-            <span className="title-sm line-clamp-1">Release date</span>
+            <span className="title-sm">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -57,7 +57,7 @@ const ArticlesDetailPage = () => {
             <Calendar className="w-2/3" />
           </div>
           <div className="flex flex-col h-10">
-            <span className="title-sm line-clamp-1">Release date</span>
+            <span className="title-sm">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
