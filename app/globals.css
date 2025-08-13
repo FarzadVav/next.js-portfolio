@@ -57,7 +57,7 @@
 }
 
 @utility title-lg {
-  @apply text-xl md:text-2xl font-bold;
+  @apply text-2xl md:text-3xl font-bold;
 }
 
 @utility slidable {
