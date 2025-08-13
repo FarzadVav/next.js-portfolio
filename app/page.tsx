@@ -98,45 +98,41 @@ const HomePage = () => {
 
       <h3 className="heading mt-20">your first look at us</h3>
       <div className="grid mt-6 grid-cols-1 md:grid-cols-2 gap-3 container">
-        <div className="f-align card card-thick gap-3">
+        <div className="f-align card max-md:card-sm card-thick gap-3">
           <div className="size-16 min-w-16 bg-background rounded-child" />
           <div>
             <span className="font-bold">We love Javascript!</span>
-            <p className="text-xs mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus
-              nam odio molestiae.
+            <p className="text-xs md:mt-0.5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
             </p>
           </div>
         </div>
 
-        <div className="f-align card card-thick gap-3">
+        <div className="f-align card max-md:card-sm card-thick gap-3">
           <div className="text-right">
             <span className="font-bold">We love Javascript!</span>
-            <p className="text-xs mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus
-              nam odio molestiae.
+            <p className="text-xs md:mt-0.5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
             </p>
           </div>
           <div className="size-16 min-w-16 bg-background rounded-child" />
         </div>
 
-        <div className="f-align card card-thick gap-3">
+        <div className="f-align card max-md:card-sm card-thick gap-3">
           <div className="size-16 min-w-16 bg-background rounded-child" />
           <div>
             <span className="font-bold">We love Javascript!</span>
-            <p className="text-xs mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus
-              nam odio molestiae.
+            <p className="text-xs md:mt-0.5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
             </p>
           </div>
         </div>
 
-        <div className="f-align card card-thick gap-3">
+        <div className="f-align card max-md:card-sm card-thick gap-3">
           <div className="text-right">
             <span className="font-bold">We love Javascript!</span>
-            <p className="text-xs mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus temporibus
-              nam odio molestiae.
+            <p className="text-xs md:mt-0.5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
             </p>
           </div>
           <div className="size-16 min-w-16 bg-background rounded-child" />
@@ -145,7 +141,7 @@ const HomePage = () => {
       <AccessNavigation className="container mt-6">
         {Array.from({ length: 3 }).map(() => (
           <Accordion key={Math.random()}>
-            <Accordion.Toggle className="btn-ghost w-full justify-between group not-first:mt-3">
+            <Accordion.Toggle className="btn-ghost md:btn-lg w-full justify-between group not-first:mt-3">
               <h6 className="font-bold">How can we work with you?</h6>
               <ChevronDownIcon className="btn-icon-size transition-transform group-[.accordion-active]:-scale-y-100" />
             </Accordion.Toggle>

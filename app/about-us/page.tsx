@@ -13,8 +13,10 @@ const AboutPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <div className="container card card-thick">
-        <video className="w-full bg-background aspect-video rounded-child" />
+      <div className="container">
+        <div className="card card-thick">
+          <video className="w-full bg-background aspect-video rounded-child" />
+        </div>
       </div>
 
       <h2 className="heading mt-20">our features / skills</h2>
@@ -24,7 +26,7 @@ const AboutPage = () => {
           <Carousel.RightFade className="carousel-right-fade" />
 
           {Array.from({ length: 7 }).map(() => (
-            <div className="card card-thick w-2/5 min-w-2/5 space-y-3" key={Math.random()}>
+            <div className="slidable card card-thick space-y-3" key={Math.random()}>
               <div className="w-full aspect-video rounded-child bg-background" />
               <p className="text-xl text-center font-bold">Attract 3,637,000 users</p>
               <p className="text-center">
@@ -36,7 +38,7 @@ const AboutPage = () => {
       </Carousel>
 
       <h4 className="heading mt-20">our projects</h4>
-      <div className="container mt-6 grid grid-cols-2 gap-3">
+      <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
         {Array.from({ length: 7 }).map(() => (
           <div className="card card-thick space-y-3" key={Math.random()}>
             <div className="w-full aspect-video bg-background rounded-child" />
@@ -65,7 +67,8 @@ const AboutPage = () => {
       <AccessNavigation className="container mt-6">
         {Array.from({ length: 8 }).map(() => (
           <Accordion key={Math.random()}>
-            <Accordion.Toggle className="btn-ghost w-full justify-between group not-first:mt-3">
+            <Accordion.Toggle className="btn-ghost md:btn-lg w-full justify-between group not-first:mt-3">
+              container
               <h6 className="font-bold">How can we work with you?</h6>
               <ChevronDownIcon className="btn-icon-size transition-transform group-[.accordion-active]:-scale-y-100" />
             </Accordion.Toggle>
@@ -86,7 +89,7 @@ const AboutPage = () => {
         suscipit laboriosam quibusdam ad velit, amet omnis iusto! Debitis corrupti facere
         perspiciatis suscipit. Harum ea explicabo sapiente quidem.
       </p>
-      <button className="btn-fill btn-lg mt-6 mx-auto">
+      <button className="btn-fill md:btn-lg mt-6 mx-auto">
         <span>ArrowUp-CV.pdf</span>
         <DownloadIcon className="btn-icon-size" />
       </button>

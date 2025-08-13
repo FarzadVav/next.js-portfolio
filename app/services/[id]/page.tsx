@@ -12,13 +12,13 @@ const ServicesDetailPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <div className="container grid grid-cols-3 gap-3">
+      <div className="container grid grid-cols-2 md:grid-cols-3 gap-3">
         {Array.from({ length: 6 }).map(() => (
           <div className="card card-thick" key={Math.random()}>
             <div className="size-12 bg-background p-3 rounded-full f-center">
               <SparklesIcon className="size-full" />
             </div>
-            <h2 className="font-bold mt-3">Fast bulding</h2>
+            <h2 className="title-sm mt-3">Fast bulding</h2>
             <p className="mt-1.5 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, in?
             </p>
@@ -52,26 +52,28 @@ const ServicesDetailPage = () => {
         </p>
       </div>
 
-      <h4 className="heading mt-20">request your project</h4>
-      <ScrollAnimation className="card card-lg card-thick container mt-6">
-        <div className="f-align gap-3">
-          <label className="input-outline flex-1">
-            <input className="input-field" placeholder="Organization/Customer name" />
-            <UserIcon className="icon-icon-size" />
+      <div className="container">
+        <h4 className="heading mt-20">request your project</h4>
+        <ScrollAnimation className="card card-lg card-thick mt-6">
+          <div className="f-align max-md:flex-col gap-3">
+            <label className="input-outline max-md:w-full md:flex-1">
+              <UserIcon className="input-icon-size" />
+              <input className="input-field" placeholder="Organization/Customer name" />
+            </label>
+            <label className="input-outline max-md:w-full md:flex-1">
+              <PhoneIcon className="input-icon-size" />
+              <input className="input-field" placeholder="---- --- ----" />
+            </label>
+          </div>
+          <label className="input-outline mt-3">
+            <textarea className="input-field" placeholder="Request description..." />
           </label>
-          <label className="input-outline flex-1">
-            <input className="input-field" placeholder="---- --- ----" />
-            <PhoneIcon className="icon-icon-size" />
-          </label>
-        </div>
-        <label className="input-outline mt-3">
-          <textarea className="input-field" placeholder="Request description..." />
-        </label>
-        <button className="mt-6 btn-fill">
-          <span>Submit</span>
-          <CheckIcon className="btn-icon-size" />
-        </button>
-      </ScrollAnimation>
+          <button className="mt-6 btn-fill">
+            <span>Submit</span>
+            <CheckIcon className="btn-icon-size" />
+          </button>
+        </ScrollAnimation>
+      </div>
     </>
   );
 };

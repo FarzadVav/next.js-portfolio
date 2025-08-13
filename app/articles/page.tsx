@@ -13,15 +13,17 @@ const ArticlesPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <AccessNavigation direction="x" className="join-border w-fit mx-auto">
-        <button className="btn-fill font-bold">Front-End</button>
-        <button className="btn-soft">Back-End</button>
-        <button className="btn-soft">Mobile</button>
-        <button className="btn-soft">Desktop</button>
-        <button className="btn-soft">Cloud</button>
+      <AccessNavigation direction="x" className="f-align-scroll container">
+        <div className="join-border min-w-max">
+          <button className="btn-fill font-bold">Front-End</button>
+          <button className="btn-soft">Back-End</button>
+          <button className="btn-soft">Mobile</button>
+          <button className="btn-soft">Desktop</button>
+          <button className="btn-soft">Cloud</button>
+        </div>
       </AccessNavigation>
 
-      <div className="container mt-6 grid grid-cols-2 gap-3">
+      <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
         {Array.from({ length: 7 }).map(() => (
           <div className="card card-thick space-y-3" key={Math.random()}>
             <div className="w-full aspect-video bg-background rounded-child" />

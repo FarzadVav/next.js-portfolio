@@ -36,17 +36,17 @@ const ServicesPage = () => {
                 <Carousel.LeftFade className="carousel-left-fade from-background-thick" />
                 <Carousel.RightFade className="carousel-right-fade from-background-thick" />
 
-                <div className="badge badge-sm">Javascript</div>
-                <div className="badge badge-sm">React</div>
-                <div className="badge badge-sm">Next</div>
-                <div className="badge badge-sm">Tailwind</div>
-                <div className="badge badge-sm">Chart</div>
-                <div className="badge badge-sm">Astro</div>
-                <div className="badge badge-sm">Vitest</div>
-                <div className="badge badge-sm">Remix</div>
-                <div className="badge badge-sm">Sass</div>
-                <div className="badge badge-sm">Framer</div>
-                <div className="badge badge-sm">PWA</div>
+                <div className="badge max-md:badge-sm">Javascript</div>
+                <div className="badge max-md:badge-sm">React</div>
+                <div className="badge max-md:badge-sm">Next</div>
+                <div className="badge max-md:badge-sm">Tailwind</div>
+                <div className="badge max-md:badge-sm">Chart</div>
+                <div className="badge max-md:badge-sm">Astro</div>
+                <div className="badge max-md:badge-sm">Vitest</div>
+                <div className="badge max-md:badge-sm">Remix</div>
+                <div className="badge max-md:badge-sm">Sass</div>
+                <div className="badge max-md:badge-sm">Framer</div>
+                <div className="badge max-md:badge-sm">PWA</div>
               </Carousel.Container>
             </Carousel>
 
