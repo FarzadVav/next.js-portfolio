@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRightIcon, ChevronDownIcon, LoaderIcon, MenuIcon } from "lucide-react";
 import { AccessNavigation, LoaderLink, Popover, Sheet } from "@kadoui/react";
+import { ArrowRightIcon, ChevronDownIcon, LoaderIcon, MenuIcon } from "lucide-react";
 
 import logoImg from "root/public/logo.png";
 
