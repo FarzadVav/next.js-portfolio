@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { Affix } from "@kadoui/react";
 import { Geist } from "next/font/google";
 import { PropsWithChildren } from "react";
+import { ArrowUpIcon } from "lucide-react";
 
 import "./globals.css";
 import Header from "root/components/static/Header/Header";
 import Footer from "root/components/static/Footer/Footer";
-import { Affix } from "@kadoui/react";
-import { ArrowUpIcon } from "lucide-react";
 
 const geist = Geist({
   subsets: ["latin"],
   variable: "--font-geist",
-  display: "swap",
 });
 
 const themeScript = `
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <html lang="en" className={`${geist.variable}`} suppressHydrationWarning>
+    <html lang="en" className={geist.variable} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
