@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { LoaderLink } from "@kadoui/react";
+import { LinkLoader } from "@kadoui/next";
 import { LoaderIcon, MailIcon } from "lucide-react";
 
 import logoImg from "root/public/logo.png";
@@ -34,7 +34,7 @@ const Footer = () => {
 
         <div className="f-center gap-3 mt-6">
           <Link className="btn-ghost btn-link relative" href="/">
-            <LoaderLink
+            <LinkLoader
               loader={
                 <>
                   <LoaderIcon className="btn-icon-size absolute animate-spin" />
@@ -43,7 +43,7 @@ const Footer = () => {
               }
             >
               <span>Home</span>
-            </LoaderLink>
+            </LinkLoader>
           </Link>
 
           <button className="btn-ghost" disabled>

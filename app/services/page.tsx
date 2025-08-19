@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { LinkLoader } from "@kadoui/next";
 import { CheckIcon, LoaderIcon } from "lucide-react";
-import { AccessNavigation, Carousel, LoaderLink, Modal } from "@kadoui/react";
+import { AccessNavigation, Carousel, Modal } from "@kadoui/react";
 
 import PageHero from "root/components/PageHero/PageHero";
 
@@ -97,9 +98,9 @@ const ServicesPage = () => {
               </Modal>
 
               <Link className="btn-outline flex-1" href={"/services/1"}>
-                <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <span>More</span>
-                </LoaderLink>
+                </LinkLoader>
               </Link>
             </div>
           </div>

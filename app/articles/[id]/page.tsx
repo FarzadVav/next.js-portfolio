@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { AccessNavigation, Carousel, LoaderLink } from "@kadoui/react";
+import { LinkLoader } from "@kadoui/next";
+import { AccessNavigation, Carousel } from "@kadoui/react";
 import {
   ArrowDownIcon,
   ArrowRightIcon,
@@ -234,9 +235,9 @@ const ArticlesDetailPage = () => {
               <Link className="btn-outline" href={"/articles/1"}>
                 <span>Read more</span>
 
-                <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <ArrowRightIcon className="btn-icon-size" />
-                </LoaderLink>
+                </LinkLoader>
               </Link>
             </div>
           ))}

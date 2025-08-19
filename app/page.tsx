@@ -1,7 +1,8 @@
 import Form from "next/form";
 import Link from "next/link";
 import Image from "next/image";
-import { AccessNavigation, Accordion, Carousel, LoaderLink } from "@kadoui/react";
+import { LinkLoader } from "@kadoui/next";
+import { AccessNavigation, Accordion, Carousel } from "@kadoui/react";
 import {
   Search,
   CheckIcon,
@@ -48,9 +49,9 @@ const HomePage = () => {
           <div className="f-center gap-3 mt-6">
             <div className="relative">
               <Link className="btn-outline bg-background" href={"/services"}>
-                <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <SparklesIcon className="btn-icon-size" />
-                </LoaderLink>
+                </LinkLoader>
 
                 <span>Our services</span>
               </Link>
@@ -67,9 +68,9 @@ const HomePage = () => {
             <Link className="btn-fill" href={"/contact-us"}>
               <span>Get start</span>
 
-              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+              <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                 <ArrowRightIcon className="btn-icon-size" />
-              </LoaderLink>
+              </LinkLoader>
             </Link>
           </div>
         </div>
@@ -87,9 +88,9 @@ const HomePage = () => {
               <Link className="btn-outline" href={"/articles/1"}>
                 <span>Read more</span>
 
-                <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <ArrowRightIcon className="btn-icon-size" />
-                </LoaderLink>
+                </LinkLoader>
               </Link>
             </div>
           ))}
@@ -156,9 +157,9 @@ const HomePage = () => {
         ))}
 
         <Link className="btn-ghost w-fit mx-auto mt-3" href={"/about-us#faqs"}>
-          <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+          <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
             <TextIcon className="btn-icon-size" />
-          </LoaderLink>
+          </LinkLoader>
 
           <span>All questions</span>
         </Link>
@@ -216,9 +217,9 @@ const HomePage = () => {
           <Link className="btn-fill w-fit" href={"/contact-us#form"}>
             <span>Send a request</span>
 
-            <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+            <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
               <ArrowRightIcon className="btn-icon-size" />
-            </LoaderLink>
+            </LinkLoader>
           </Link>
         </ScrollAnimation>
       </div>
@@ -243,18 +244,18 @@ const HomePage = () => {
               <Link className="btn-outline" href={"/articles/1"}>
                 <span>Read more</span>
 
-                <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <ArrowRightIcon className="btn-icon-size" />
-                </LoaderLink>
+                </LinkLoader>
               </Link>
             </div>
           ))}
         </Carousel.Container>
       </Carousel>
       <Link className="btn-ghost w-fit mx-auto mt-3" href={"/articles"}>
-        <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+        <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
           <TextIcon className="btn-icon-size" />
-        </LoaderLink>
+        </LinkLoader>
 
         <span>All articles</span>
       </Link>

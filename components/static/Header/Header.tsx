@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { AccessNavigation, LoaderLink, Popover, Sheet } from "@kadoui/react";
+import { LinkLoader } from "@kadoui/next";
+import { AccessNavigation, Popover, Sheet } from "@kadoui/react";
 import { ArrowRightIcon, ChevronDownIcon, LoaderIcon, MenuIcon } from "lucide-react";
 
 import logoImg from "root/public/logo.png";
@@ -17,7 +18,7 @@ const Header = () => {
       <div className="container f-align justify-between h-16 relative">
         <Link className="f-align gap-3 md:hidden" href={"/"}>
           <span className="size-9 f-center">
-            <LoaderLink loader={<LoaderIcon className="size-4.5 animate-spin" />}>
+            <LinkLoader loader={<LoaderIcon className="size-4.5 animate-spin" />}>
               <Image
                 width={36}
                 height={36}
@@ -25,7 +26,7 @@ const Header = () => {
                 alt="ArrowUp logo"
                 className="rounded-full size-9 dark:invert-100"
               />
-            </LoaderLink>
+            </LinkLoader>
           </span>
           <span>ArrowUp</span>
         </Link>
@@ -48,7 +49,7 @@ const Header = () => {
             <Popover.Body className="popover-body-b" preventClose>
               <div className="menu-y">
                 <Link className="btn-ghost btn-link relative" href="/">
-                  <LoaderLink
+                  <LinkLoader
                     loader={
                       <>
                         <LoaderIcon className="btn-icon-size absolute animate-spin" />
@@ -57,7 +58,7 @@ const Header = () => {
                     }
                   >
                     <span>Home</span>
-                  </LoaderLink>
+                  </LinkLoader>
                 </Link>
                 <button className="btn-ghost" disabled>
                   Survey
@@ -75,7 +76,7 @@ const Header = () => {
 
         <AccessNavigation className="f-align gap-3 max-md:hidden" direction="x">
           <Link className="btn-ghost btn-link relative" href="/services">
-            <LoaderLink
+            <LinkLoader
               loader={
                 <>
                   <LoaderIcon className="btn-icon-size absolute animate-spin" />
@@ -84,7 +85,7 @@ const Header = () => {
               }
             >
               <span>Services</span>
-            </LoaderLink>
+            </LinkLoader>
           </Link>
 
           <button className="btn-ghost" disabled>
@@ -92,7 +93,7 @@ const Header = () => {
           </button>
 
           <Link className="btn-ghost btn-link relative" href="/tools">
-            <LoaderLink
+            <LinkLoader
               loader={
                 <>
                   <LoaderIcon className="btn-icon-size absolute animate-spin" />
@@ -101,11 +102,11 @@ const Header = () => {
               }
             >
               <span>Tools</span>
-            </LoaderLink>
+            </LinkLoader>
           </Link>
 
           <Link className="btn-ghost btn-link relative" href="/articles">
-            <LoaderLink
+            <LinkLoader
               loader={
                 <>
                   <LoaderIcon className="btn-icon-size absolute animate-spin" />
@@ -114,11 +115,11 @@ const Header = () => {
               }
             >
               <span>Articles</span>
-            </LoaderLink>
+            </LinkLoader>
           </Link>
 
           <Link className="btn-ghost btn-link relative" href="/about-us">
-            <LoaderLink
+            <LinkLoader
               loader={
                 <>
                   <LoaderIcon className="btn-icon-size absolute animate-spin" />
@@ -127,11 +128,11 @@ const Header = () => {
               }
             >
               <span>About us</span>
-            </LoaderLink>
+            </LinkLoader>
           </Link>
 
           <Link className="btn-ghost btn-link relative" href="/contact-us">
-            <LoaderLink
+            <LinkLoader
               loader={
                 <>
                   <LoaderIcon className="btn-icon-size absolute animate-spin" />
@@ -140,7 +141,7 @@ const Header = () => {
               }
             >
               <span>Contact us</span>
-            </LoaderLink>
+            </LinkLoader>
           </Link>
         </AccessNavigation>
 
@@ -158,33 +159,33 @@ const Header = () => {
               <Sheet.Content className="sheet-content space-y-3">
                 <Link className="btn-ghost w-full justify-between" href={"/services"}>
                   <span>Services</span>
-                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                  <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                     <ArrowRightIcon className="btn-icon-size" />
-                  </LoaderLink>
+                  </LinkLoader>
                 </Link>
                 <Link className="btn-ghost w-full justify-between" href={"/tools"}>
                   <span>Tools</span>
-                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                  <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                     <ArrowRightIcon className="btn-icon-size" />
-                  </LoaderLink>
+                  </LinkLoader>
                 </Link>
                 <Link className="btn-ghost w-full justify-between" href={"/articles"}>
                   <span>Articles</span>
-                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                  <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                     <ArrowRightIcon className="btn-icon-size" />
-                  </LoaderLink>
+                  </LinkLoader>
                 </Link>
                 <Link className="btn-ghost w-full justify-between" href={"/about-us"}>
                   <span>About us</span>
-                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                  <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                     <ArrowRightIcon className="btn-icon-size" />
-                  </LoaderLink>
+                  </LinkLoader>
                 </Link>
                 <Link className="btn-ghost w-full justify-between" href={"/contact-us"}>
                   <span>Contact us</span>
-                  <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                  <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                     <ArrowRightIcon className="btn-icon-size" />
-                  </LoaderLink>
+                  </LinkLoader>
                 </Link>
               </Sheet.Content>
             </Sheet.Body>

@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { LinkLoader } from "@kadoui/next";
+import { AccessNavigation} from "@kadoui/react";
 import { ArrowRightIcon, LoaderIcon } from "lucide-react";
-import { AccessNavigation, LoaderLink } from "@kadoui/react";
 
 import PageHero from "root/components/PageHero/PageHero";
 
@@ -38,9 +39,9 @@ const ArticlesPage = () => {
             <Link className="btn-outline" href={"/articles/1"}>
               <span>Read more</span>
 
-              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+              <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                 <ArrowRightIcon className="btn-icon-size" />
-              </LoaderLink>
+              </LinkLoader>
             </Link>
           </div>
         ))}

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { AccessNavigation, Accordion, Carousel, LoaderLink } from "@kadoui/react";
+import { LinkLoader } from "@kadoui/next";
+import { AccessNavigation, Accordion, Carousel } from "@kadoui/react";
 import { ArrowUpRightIcon, ChevronDownIcon, DownloadIcon, LoaderIcon } from "lucide-react";
 
 import PageHero from "root/components/PageHero/PageHero";
@@ -53,9 +54,9 @@ const AboutPage = () => {
             <Link className="btn-outline" href={"https://github.com/ArrowUpTeam"}>
               <span>Visit</span>
 
-              <LoaderLink loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+              <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                 <ArrowUpRightIcon className="btn-icon-size" />
-              </LoaderLink>
+              </LinkLoader>
             </Link>
           </div>
         ))}

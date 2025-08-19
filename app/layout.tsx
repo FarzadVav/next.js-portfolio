@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { Affix} from "@kadoui/react";
 import { Geist } from "next/font/google";
 import { PropsWithChildren } from "react";
 import { ArrowUpIcon } from "lucide-react";
-import { Affix, ThemeAdapter } from "@kadoui/react";
+import { ThemeAdapter } from "@kadoui/next";
 
 import "./globals.css";
 import Header from "root/components/static/Header/Header";
