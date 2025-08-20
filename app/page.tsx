@@ -33,7 +33,7 @@ const HomePage = () => {
           </p>
 
           <Form className="join-no-inner-border container md:w-1/2 mx-auto mt-6" action={"/search"}>
-            <label className="input-soft flex-1">
+            <label className="input input-soft flex-1">
               <input
                 type="text"
                 name="query"
@@ -41,14 +41,14 @@ const HomePage = () => {
                 placeholder="Search your requests..."
               />
             </label>
-            <button className="btn-soft">
+            <button className="btn btn-soft">
               <Search className="btn-icon-size" />
             </button>
           </Form>
 
           <div className="f-center gap-3 mt-6">
             <div className="relative">
-              <Link className="btn-outline bg-background" href={"/services"}>
+              <Link className="btn btn-outline" href={"/services"}>
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <SparklesIcon className="btn-icon-size" />
                 </LinkLoader>
@@ -65,7 +65,7 @@ const HomePage = () => {
               />
             </div>
 
-            <Link className="btn-fill" href={"/contact-us"}>
+            <Link className="btn btn-fill" href={"/contact-us"}>
               <span>Get start</span>
 
               <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
@@ -82,10 +82,10 @@ const HomePage = () => {
           <Carousel.RightFade className="carousel-right-fade" />
 
           {Array.from({ length: 7 }).map(() => (
-            <div className="slidable card card-thick space-y-3" key={Math.random()}>
+            <div className="slidable card space-y-3" key={Math.random()}>
               <div className="w-full aspect-video bg-background rounded-lg" />
               <h6 className="title text-center">Our IT solutions</h6>
-              <Link className="btn-outline" href={"/articles/1"}>
+              <Link className="btn btn-outline" href={"/articles/1"}>
                 <span>Read more</span>
 
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
@@ -142,7 +142,7 @@ const HomePage = () => {
       <AccessNavigation className="container mt-6">
         {Array.from({ length: 3 }).map(() => (
           <Accordion key={Math.random()}>
-            <Accordion.Toggle className="btn-ghost md:btn-lg w-full justify-between group not-first:mt-3">
+            <Accordion.Toggle className="btn btn-ghost md:btn-lg w-full justify-between group not-first:mt-3">
               <h6 className="font-bold">How can we work with you?</h6>
               <ChevronDownIcon className="btn-icon-size transition-transform group-[.accordion-active]:-scale-y-100" />
             </Accordion.Toggle>
@@ -156,7 +156,7 @@ const HomePage = () => {
           </Accordion>
         ))}
 
-        <Link className="btn-ghost w-fit mx-auto mt-3" href={"/about-us#faqs"}>
+        <Link className="btn btn-ghost w-fit mx-auto mt-3" href={"/about-us#faqs"}>
           <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
             <TextIcon className="btn-icon-size" />
           </LinkLoader>
@@ -196,25 +196,25 @@ const HomePage = () => {
             sit sed maiores, saepe cumque quo.
           </p>
           <div className="f-align flex-wrap gap-3">
-            <div className="badge-soft">
+            <div className="badge badge-soft">
               <CheckIcon className="badge-icon-size" />
               <span>Problem solving</span>
             </div>
-            <div className="badge-soft">
+            <div className="badge badge-soft">
               <CheckIcon className="badge-icon-size" />
               <span>Problem solving</span>
             </div>
-            <div className="badge-soft">
+            <div className="badge badge-soft">
               <CheckIcon className="badge-icon-size" />
               <span>Problem solving</span>
             </div>
-            <div className="badge-soft">
+            <div className="badge badge-soft">
               <CheckIcon className="badge-icon-size" />
               <span>Problem</span>
             </div>
           </div>
 
-          <Link className="btn-fill w-fit" href={"/contact-us#form"}>
+          <Link className="btn btn-fill w-fit" href={"/contact-us#form"}>
             <span>Send a request</span>
 
             <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
@@ -234,14 +234,14 @@ const HomePage = () => {
             <div className="slidable card card-thick space-y-3" key={Math.random()}>
               <div className="w-full aspect-video bg-background rounded-lg" />
               <h6 className="title">Our IT solutions</h6>
-              <div className="badge-soft mt-3">Business</div>
+              <div className="badge badge-soft mt-3">Business</div>
               <p className="mt-3 line-clamp-3">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores
                 pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit
                 odio nisi ad magni numquam eum animi repudiandae.
               </p>
 
-              <Link className="btn-outline" href={"/articles/1"}>
+              <Link className="btn btn-outline" href={"/articles/1"}>
                 <span>Read more</span>
 
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
@@ -252,7 +252,7 @@ const HomePage = () => {
           ))}
         </Carousel.Container>
       </Carousel>
-      <Link className="btn-ghost w-fit mx-auto mt-3" href={"/articles"}>
+      <Link className="btn btn-ghost w-fit mx-auto mt-3" href={"/articles"}>
         <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
           <TextIcon className="btn-icon-size" />
         </LinkLoader>

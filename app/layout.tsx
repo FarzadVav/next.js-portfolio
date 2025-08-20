@@ -31,7 +31,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         {children}
         <Footer />
 
-        <Affix className="ltr:affix-br rtl:affix-bl btn-fill btn-square group not-[.affix-active]:scale-90">
+        <Affix className="ltr:affix-br rtl:affix-bl btn btn-fill btn-square group not-[.affix-active]:scale-90">
           <ArrowUpIcon className="btn-icon-size transition-transform duration-300 group-not-[.affix-active]:translate-y-full" />
         </Affix>
       </body>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { LinkLoader } from "@kadoui/next";
-import { LoaderIcon, MailIcon } from "lucide-react";
+import { LoaderIcon, MailIcon, PhoneIcon } from "lucide-react";
 
 import logoImg from "root/public/logo.png";
 import githubImg from "root/public/logos/github.svg";
@@ -21,19 +21,19 @@ const Footer = () => {
         />
 
         <div className="f-center gap-3 mt-20">
-          {/* <Link className="btn-ghost" href={"tel:09389461065"}>
-          <PhoneIcon className="btn-icon-size" />
-          <span dir="ltr">0938 0946 1065</span>
-        </Link> */}
+          <Link className="btn btn-ghost" href={"tel:09389461065"}>
+            <PhoneIcon className="btn-icon-size" />
+            <span dir="ltr">0938 0946 1065</span>
+          </Link>
 
-          <Link className="btn-ghost" href={"mailto:farzad.vav.work@gmail"}>
+          <Link className="btn btn-ghost" href={"mailto:farzad.vav.work@gmail"}>
             <MailIcon className="btn-icon-size" />
             <span>arrowupteam@gmail.com</span>
           </Link>
         </div>
 
         <div className="f-center gap-3 mt-6">
-          <Link className="btn-ghost btn-link relative" href="/">
+          <Link className="btn btn-ghost btn-link relative" href="/">
             <LinkLoader
               loader={
                 <>
@@ -46,15 +46,15 @@ const Footer = () => {
             </LinkLoader>
           </Link>
 
-          <button className="btn-ghost" disabled>
+          <button className="btn btn-ghost" disabled>
             <span>Survey</span>
           </button>
 
-          <button className="btn-ghost" disabled>
+          <button className="btn btn-ghost" disabled>
             <span>Donate</span>
           </button>
 
-          <button className="btn-ghost" disabled>
+          <button className="btn btn-ghost" disabled>
             Hiring
           </button>
         </div>

@@ -90,7 +90,7 @@ const AboutPage = () => {
         suscipit laboriosam quibusdam ad velit, amet omnis iusto! Debitis corrupti facere
         perspiciatis suscipit. Harum ea explicabo sapiente quidem.
       </p>
-      <button className="btn-fill md:btn-lg mt-6 mx-auto">
+      <button className="btn btn-fill md:btn-lg mt-6 mx-auto">
         <span>ArrowUp-CV.pdf</span>
         <DownloadIcon className="btn-icon-size" />
       </button>
