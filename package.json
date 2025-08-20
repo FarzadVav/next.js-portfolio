@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@kadoui/css": "^1.3.42",
+    "@kadoui/css": "^1.3.46",
     "@kadoui/react": "1.8.0",
     "@kadoui/next": "^1.0.0",
     "@mantine/hooks": "^7.17.3",
