@@ -36,7 +36,7 @@ const ConnectPage = () => {
             <Link
               target="_blank"
               href={"https://t.me/arrowupteam"}
-              className="btn-outline btn-sm w-max max-w-full mt-3"
+              className="btn btn-outline btn-sm mt-3"
             >
               <span>Visit</span>
               <ArrowUpRightIcon className="btn-icon-size" />
@@ -54,7 +54,7 @@ const ConnectPage = () => {
 
             <Link
               target="_blank"
-              className="btn-outline btn-sm w-max max-w-full mt-3"
+              className="btn btn-outline btn-sm mt-3"
               href={"https://www.linkedin.com/company/arrow-up-team"}
             >
               <span>Visit</span>
@@ -80,7 +80,7 @@ const ConnectPage = () => {
             <Link
               target="_blank"
               href={"https://github.com/ArrowUpTeam"}
-              className="btn-outline btn-sm w-max max-w-full mt-3"
+              className="btn btn-outline btn-sm mt-3"
             >
               <span>Visit</span>
               <ArrowUpRightIcon className="btn-icon-size" />
@@ -103,7 +103,7 @@ const ConnectPage = () => {
               perspiciatis consequatur aperiam nulla itaque!
             </p>
 
-            <button className="btn-outline w-full">
+            <button className="btn btn-outline btn-full">
               <span>Join</span>
               <UserPenIcon className="btn-icon-size" />
             </button>
@@ -115,27 +115,27 @@ const ConnectPage = () => {
         send yuor message
       </h4>
       <div className="container mt-6">
-        <ScrollAnimation className="card card-lg card-thick">
+        <ScrollAnimation className="card card-thick">
           <div className="f-align max-md:flex-col gap-3">
-            <label className="input-outline max-md:w-full md:flex-1">
+            <label className="input input-outline max-md:w-full md:flex-1">
               <UserIcon className="input-icon-size" />
               <input className="input-field" placeholder="Organization/Customer name" />
             </label>
-            <label className="input-outline max-md:w-full md:flex-1">
+            <label className="input input-outline max-md:w-full md:flex-1">
               <PhoneIcon className="input-icon-size" />
               <input className="input-field" placeholder="---- --- ----" />
             </label>
           </div>
-          <label className="input-outline mt-3">
+          <label className="input input-outline mt-3">
             <textarea className="input-field" placeholder="Request description..." />
           </label>
-          <label className="input-soft mt-3 w-max max-w-full">
+          <label className="input input-soft mt-3 w-max max-w-full">
             <FilesIcon className="input-icon-size" />
             <input className="input-field" type="file" name="1212" />
           </label>
 
-          <button className="mt-6 btn-fill">
-            <span className="font-bold">SUBMIT</span>
+          <button className="btn mt-6 btn-fill">
+            <span>Submit</span>
             <CheckIcon className="btn-icon-size" />
           </button>
         </ScrollAnimation>

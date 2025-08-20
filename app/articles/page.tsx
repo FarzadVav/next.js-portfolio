@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { LinkLoader } from "@kadoui/next";
-import { AccessNavigation} from "@kadoui/react";
+import { AccessNavigation } from "@kadoui/react";
 import { ArrowRightIcon, LoaderIcon } from "lucide-react";
 
 import PageHero from "root/components/PageHero/PageHero";
@@ -16,11 +16,11 @@ const ArticlesPage = () => {
 
       <AccessNavigation direction="x" className="f-align-scroll container">
         <div className="join-border min-w-max mx-auto">
-          <button className="btn-fill font-bold">Front-End</button>
-          <button className="btn-soft">Back-End</button>
-          <button className="btn-soft">Mobile</button>
-          <button className="btn-soft">Desktop</button>
-          <button className="btn-soft">Cloud</button>
+          <button className="btn btn-fill font-bold">Front-End</button>
+          <button className="btn btn-soft">Back-End</button>
+          <button className="btn btn-soft">Mobile</button>
+          <button className="btn btn-soft">Desktop</button>
+          <button className="btn btn-soft">Cloud</button>
         </div>
       </AccessNavigation>
 
@@ -29,14 +29,14 @@ const ArticlesPage = () => {
           <div className="card card-thick space-y-3" key={Math.random()}>
             <div className="w-full aspect-video bg-background rounded-lg" />
             <h6 className="text-xl font-bold">Our IT solutions</h6>
-            <div className="badge-soft mt-3">Business</div>
+            <div className="badge badge-soft badge-sm mt-3">Business</div>
             <p className="mt-3 line-clamp-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores
               pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit
               odio nisi ad magni numquam eum animi repudiandae.
             </p>
 
-            <Link className="btn-outline" href={"/articles/1"}>
+            <Link className="btn btn-outline btn-full" href={"/articles/1"}>
               <span>Read more</span>
 
               <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>

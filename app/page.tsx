@@ -85,7 +85,7 @@ const HomePage = () => {
             <div className="slidable card space-y-3" key={Math.random()}>
               <div className="w-full aspect-video bg-background rounded-lg" />
               <h6 className="title text-center">Our IT solutions</h6>
-              <Link className="btn btn-outline" href={"/articles/1"}>
+              <Link className="btn btn-outline btn-full" href={"/articles/1"}>
                 <span>Read more</span>
 
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
@@ -142,12 +142,12 @@ const HomePage = () => {
       <AccessNavigation className="container mt-6">
         {Array.from({ length: 3 }).map(() => (
           <Accordion key={Math.random()}>
-            <Accordion.Toggle className="btn btn-ghost md:btn-lg w-full justify-between group not-first:mt-3">
+            <Accordion.Toggle className="btn btn-ghost md:btn-lg btn-full justify-between group not-first:mt-3">
               <h6 className="font-bold">How can we work with you?</h6>
               <ChevronDownIcon className="btn-icon-size transition-transform group-[.accordion-active]:-scale-y-100" />
             </Accordion.Toggle>
             <Accordion.Body>
-              <p className="card">
+              <p className="p-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore? Corrupti
                 quasi nam, iste sint quibusdam ipsa numquam est minima libero repudiandae harum nisi
                 nihil doloremque voluptas sed optio eum!
@@ -234,15 +234,15 @@ const HomePage = () => {
             <div className="slidable card card-thick space-y-3" key={Math.random()}>
               <div className="w-full aspect-video bg-background rounded-lg" />
               <h6 className="title">Our IT solutions</h6>
-              <div className="badge badge-soft mt-3">Business</div>
+              <div className="badge badge-soft badge-sm mt-3">Business</div>
               <p className="mt-3 line-clamp-3">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores
                 pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit
                 odio nisi ad magni numquam eum animi repudiandae.
               </p>
 
-              <Link className="btn btn-outline" href={"/articles/1"}>
-                <span>Read more</span>
+              <Link className="btn btn-outline btn-full" href={"/articles/1"}>
+                <span>Lorem</span>
 
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <ArrowRightIcon className="btn-icon-size" />

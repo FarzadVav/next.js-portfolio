@@ -46,7 +46,7 @@ const Header = () => {
               <ChevronDownIcon className="btn-icon-size transition-transform group-data-[state=active]:-scale-y-100" />
             </Popover.Toggle>
 
-            <Popover.Body className="popover-body-b" preventClose>
+            <Popover.Body className="popover-body popover-body-b" preventClose>
               <div className="menu menu-y">
                 <Link className="btn btn-ghost btn-link relative" href="/">
                   <LinkLoader

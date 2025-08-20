@@ -16,11 +16,11 @@ const ServicesPage = () => {
 
       <AccessNavigation direction="x" className="f-align-scroll container">
         <div className="join-border min-w-max mx-auto">
-          <button className="btn-fill font-bold">Front-End</button>
-          <button className="btn-soft">Back-End</button>
-          <button className="btn-soft">Mobile</button>
-          <button className="btn-soft">Desktop</button>
-          <button className="btn-soft">Cloud</button>
+          <button className="btn btn-fill font-bold">Front-End</button>
+          <button className="btn btn-soft">Back-End</button>
+          <button className="btn btn-soft">Mobile</button>
+          <button className="btn btn-soft">Desktop</button>
+          <button className="btn btn-soft">Cloud</button>
         </div>
       </AccessNavigation>
 
@@ -37,17 +37,17 @@ const ServicesPage = () => {
                 <Carousel.LeftFade className="carousel-left-fade from-background-thick" />
                 <Carousel.RightFade className="carousel-right-fade from-background-thick" />
 
-                <div className="badge max-md:badge-sm">Javascript</div>
-                <div className="badge max-md:badge-sm">React</div>
-                <div className="badge max-md:badge-sm">Next</div>
-                <div className="badge max-md:badge-sm">Tailwind</div>
-                <div className="badge max-md:badge-sm">Chart</div>
-                <div className="badge max-md:badge-sm">Astro</div>
-                <div className="badge max-md:badge-sm">Vitest</div>
-                <div className="badge max-md:badge-sm">Remix</div>
-                <div className="badge max-md:badge-sm">Sass</div>
-                <div className="badge max-md:badge-sm">Framer</div>
-                <div className="badge max-md:badge-sm">PWA</div>
+                <div className="badge badge-sm">Javascript</div>
+                <div className="badge badge-sm">React</div>
+                <div className="badge badge-sm">Next</div>
+                <div className="badge badge-sm">Tailwind</div>
+                <div className="badge badge-sm">Chart</div>
+                <div className="badge badge-sm">Astro</div>
+                <div className="badge badge-sm">Vitest</div>
+                <div className="badge badge-sm">Remix</div>
+                <div className="badge badge-sm">Sass</div>
+                <div className="badge badge-sm">Framer</div>
+                <div className="badge badge-sm">PWA</div>
               </Carousel.Container>
             </Carousel>
 
@@ -59,22 +59,22 @@ const ServicesPage = () => {
 
             <ul className="mt-3 space-y-1.5 opacity-75">
               <li className="f-align gap-1.5">
-                <CheckIcon className="icon-size-2 md:icon-size-3" />
+                <CheckIcon className="size-4" />
                 <span>Six month free support</span>
               </li>
               <li className="f-align gap-1.5">
-                <CheckIcon className="icon-size-2 md:icon-size-3" />
+                <CheckIcon className="size-4" />
                 <span>Six month free support</span>
               </li>
               <li className="f-align gap-1.5">
-                <CheckIcon className="icon-size-2 md:icon-size-3" />
+                <CheckIcon className="size-4" />
                 <span>Six month free support</span>
               </li>
             </ul>
 
             <div className="mt-6 f-align gap-3">
               <Modal>
-                <Modal.Toggle className="btn-fill flex-1">
+                <Modal.Toggle className="btn btn-fill flex-1">
                   <span>Request</span>
                   <CheckIcon className="btn-icon-size" />
                 </Modal.Toggle>
@@ -97,7 +97,7 @@ const ServicesPage = () => {
                 </Modal.Portal>
               </Modal>
 
-              <Link className="btn-outline flex-1" href={"/services/1"}>
+              <Link className="btn btn-outline flex-1" href={"/services/1"}>
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <span>More</span>
                 </LinkLoader>

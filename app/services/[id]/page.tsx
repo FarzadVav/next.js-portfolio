@@ -54,21 +54,21 @@ const ServicesDetailPage = () => {
 
       <div className="container">
         <h4 className="heading mt-20">request your project</h4>
-        <ScrollAnimation className="card card-lg card-thick mt-6">
+        <ScrollAnimation className="card card-lg mt-6">
           <div className="f-align max-md:flex-col gap-3">
-            <label className="input-outline max-md:w-full md:flex-1">
+            <label className="input input-outline max-md:w-full md:flex-1">
               <UserIcon className="input-icon-size" />
               <input className="input-field" placeholder="Organization/Customer name" />
             </label>
-            <label className="input-outline max-md:w-full md:flex-1">
+            <label className="input input-outline max-md:w-full md:flex-1">
               <PhoneIcon className="input-icon-size" />
               <input className="input-field" placeholder="---- --- ----" />
             </label>
           </div>
-          <label className="input-outline mt-3">
+          <label className="input input-outline mt-3">
             <textarea className="input-field" placeholder="Request description..." />
           </label>
-          <button className="mt-6 btn-fill">
+          <button className="btn mt-6 btn-fill">
             <span>Submit</span>
             <CheckIcon className="btn-icon-size" />
           </button>

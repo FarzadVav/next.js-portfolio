@@ -43,16 +43,15 @@ const AboutPage = () => {
         {Array.from({ length: 7 }).map(() => (
           <div className="card card-thick space-y-3" key={Math.random()}>
             <div className="w-full aspect-video bg-background rounded-lg" />
-            <h6 className="text-xl font-bold">Our IT solutions</h6>
-            <div className="badge-soft mt-3">Business</div>
+            <h6 className="title">Our IT solutions</h6>
             <p className="mt-3 line-clamp-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores
               pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit
               odio nisi ad magni numquam eum animi repudiandae.
             </p>
 
-            <Link className="btn-outline" href={"https://github.com/ArrowUpTeam"}>
-              <span>Visit</span>
+            <Link className="btn btn-outline btn-full" href={"/articles/1"}>
+              <span>Lorem</span>
 
               <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                 <ArrowUpRightIcon className="btn-icon-size" />
@@ -68,13 +67,12 @@ const AboutPage = () => {
       <AccessNavigation className="container mt-6">
         {Array.from({ length: 8 }).map(() => (
           <Accordion key={Math.random()}>
-            <Accordion.Toggle className="btn-ghost md:btn-lg w-full justify-between group not-first:mt-3">
-              container
+            <Accordion.Toggle className="btn btn-ghost md:btn-lg btn-full justify-between group not-first:mt-3">
               <h6 className="font-bold">How can we work with you?</h6>
               <ChevronDownIcon className="btn-icon-size transition-transform group-[.accordion-active]:-scale-y-100" />
             </Accordion.Toggle>
             <Accordion.Body>
-              <p className="card">
+              <p className="p-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore? Corrupti
                 quasi nam, iste sint quibusdam ipsa numquam est minima libero repudiandae harum nisi
                 nihil doloremque voluptas sed optio eum!
@@ -85,7 +83,7 @@ const AboutPage = () => {
       </AccessNavigation>
 
       <h5 className="heading mt-20">download our cv</h5>
-      <p className="max-w-5xl text-center mx-auto mt-3">
+      <p className="container text-center mt-3">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error lgprovident nobis quis
         suscipit laboriosam quibusdam ad velit, amet omnis iusto! Debitis corrupti facere
         perspiciatis suscipit. Harum ea explicabo sapiente quidem.

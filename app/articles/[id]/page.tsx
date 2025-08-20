@@ -65,7 +65,7 @@ const ArticlesDetailPage = () => {
       </div>
 
       <AccessNavigation className="container mt-20 space-y-3">
-        <Link href={"#"} className="btn-ghost md:btn-lg group">
+        <Link href={"#"} className="btn btn-ghost md:btn-lg group btn-full">
           <h2 className="font-bold">Chapter one of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
@@ -73,7 +73,7 @@ const ArticlesDetailPage = () => {
           </div>
         </Link>
 
-        <Link href={"#"} className="btn-ghost md:btn-lg group">
+        <Link href={"#"} className="btn btn-ghost md:btn-lg group btn-full">
           <h2 className="font-bold">Chapter two of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
@@ -81,7 +81,7 @@ const ArticlesDetailPage = () => {
           </div>
         </Link>
 
-        <Link href={"#"} className="btn-ghost md:btn-lg group">
+        <Link href={"#"} className="btn btn-ghost md:btn-lg group btn-full">
           <h2 className="font-bold">Chapter three of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
@@ -89,7 +89,7 @@ const ArticlesDetailPage = () => {
           </div>
         </Link>
 
-        <Link href={"#"} className="btn-ghost md:btn-lg group">
+        <Link href={"#"} className="btn btn-ghost md:btn-lg group btn-full">
           <h2 className="font-bold">Chapter four of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
@@ -97,7 +97,7 @@ const ArticlesDetailPage = () => {
           </div>
         </Link>
 
-        <Link href={"#"} className="btn-ghost md:btn-lg group">
+        <Link href={"#"} className="btn btn-ghost md:btn-lg group btn-full">
           <h2 className="font-bold">Chapter five of book</h2>
           <div className="btn gap-3 ml-auto">
             <span className="not-group-focus-visible:not-group-hover:ignore">Reading</span>
@@ -107,16 +107,16 @@ const ArticlesDetailPage = () => {
       </AccessNavigation>
 
       <div className="container mt-20">
-        <div className="card card-thick md:card-lg">
+        <div className="card md:card-lg">
           <div className="f-align gap-3">
-            <button className="btn-outline">
+            <button className="btn btn-outline">
               <span>Full screen</span>
               <ExpandIcon className="btn-icon-size" />
             </button>
-            <button className="btn-outline btn-square">
+            <button className="btn btn-outline btn-square">
               <DownloadIcon className="btn-icon-size" />
             </button>
-            <button className="btn-outline btn-square">
+            <button className="btn btn-outline btn-square">
               <Share2Icon className="btn-icon-size" />
             </button>
           </div>
@@ -224,16 +224,16 @@ const ArticlesDetailPage = () => {
           {Array.from({ length: 7 }).map(() => (
             <div className="slidable card card-thick space-y-3" key={Math.random()}>
               <div className="w-full aspect-video bg-background rounded-lg" />
-              <h6 className="text-xl font-bold">Our IT solutions</h6>
-              <div className="badge-soft mt-3">Business</div>
+              <h6 className="title">Our IT solutions</h6>
+              <div className="badge badge-soft badge-sm mt-3">Business</div>
               <p className="mt-3 line-clamp-3">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores
                 pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit
                 odio nisi ad magni numquam eum animi repudiandae.
               </p>
 
-              <Link className="btn-outline" href={"/articles/1"}>
-                <span>Read more</span>
+              <Link className="btn btn-outline btn-full" href={"/articles/1"}>
+                <span>Lorem</span>
 
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <ArrowRightIcon className="btn-icon-size" />
