@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Affix} from "@kadoui/react";
+import { Affix } from "@kadoui/react";
 import { Geist } from "next/font/google";
 import { PropsWithChildren } from "react";
 import { ArrowUpIcon } from "lucide-react";
@@ -24,6 +24,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     <html lang="en" className={geist.variable} suppressHydrationWarning>
       <head>
         <ThemeAdapter />
+        <link rel="icon" href="/favicon.png" sizes="any" />
       </head>
       <body>
         <Header />
