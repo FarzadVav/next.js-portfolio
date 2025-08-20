@@ -28,7 +28,7 @@ const ConnectPage = () => {
         <div className="f-align gap-3">
           <Image src={telegramImg} alt="ArrowUp Telegram channel" width={64} height={64} />
           <div>
-            <span className="title-sm">Telegram</span>
+            <span className="title">Telegram</span>
             <p className="text-xs mt-0.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, in
             </p>
@@ -47,7 +47,7 @@ const ConnectPage = () => {
         <div className="f-align gap-3">
           <Image src={linkedinImg} alt="ArrowUp LinkedIn page" width={64} height={64} />
           <div>
-            <span className="title-sm">LinkedIn</span>
+            <span className="title">LinkedIn</span>
             <p className="text-xs mt-0.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, in
             </p>
@@ -72,7 +72,7 @@ const ConnectPage = () => {
             alt="ArrowUp GitHub organization"
           />
           <div>
-            <span className="title-sm">GitHub</span>
+            <span className="title">GitHub</span>
             <p className="text-xs mt-0.5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, in
             </p>
@@ -93,7 +93,7 @@ const ConnectPage = () => {
       <div className="container mt-6 grid-cols-1 grid md:grid-cols-2 gap-3">
         {Array.from({ length: 4 }).map(() => (
           <div className="card card-thick space-y-3" key={Math.random()}>
-            <div className="w-full aspect-video bg-background rounded-child" />
+            <div className="w-full aspect-video bg-background rounded-lg" />
 
             <h2 className="mt-3 text-xl font-bold">Talking about Mashhad startups</h2>
 

@@ -83,7 +83,7 @@ const HomePage = () => {
 
           {Array.from({ length: 7 }).map(() => (
             <div className="slidable card card-thick space-y-3" key={Math.random()}>
-              <div className="w-full aspect-video bg-background rounded-child" />
+              <div className="w-full aspect-video bg-background rounded-lg" />
               <h6 className="title text-center">Our IT solutions</h6>
               <Link className="btn-outline" href={"/articles/1"}>
                 <span>Read more</span>
@@ -100,7 +100,7 @@ const HomePage = () => {
       <h3 className="heading mt-20">your first look at us</h3>
       <div className="grid mt-6 grid-cols-1 md:grid-cols-2 gap-3 container">
         <div className="f-align card max-md:card-sm card-thick gap-3">
-          <div className="size-16 min-w-16 bg-background rounded-child" />
+          <div className="size-16 min-w-16 bg-background rounded-lg" />
           <div>
             <span className="font-bold">We love Javascript!</span>
             <p className="text-xs md:mt-0.5">
@@ -116,11 +116,11 @@ const HomePage = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
             </p>
           </div>
-          <div className="size-16 min-w-16 bg-background rounded-child" />
+          <div className="size-16 min-w-16 bg-background rounded-lg" />
         </div>
 
         <div className="f-align card max-md:card-sm card-thick gap-3">
-          <div className="size-16 min-w-16 bg-background rounded-child" />
+          <div className="size-16 min-w-16 bg-background rounded-lg" />
           <div>
             <span className="font-bold">We love Javascript!</span>
             <p className="text-xs md:mt-0.5">
@@ -136,7 +136,7 @@ const HomePage = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
             </p>
           </div>
-          <div className="size-16 min-w-16 bg-background rounded-child" />
+          <div className="size-16 min-w-16 bg-background rounded-lg" />
         </div>
       </div>
       <AccessNavigation className="container mt-6">
@@ -189,7 +189,7 @@ const HomePage = () => {
 
       <div className="container">
         <ScrollAnimation className="card card-lg card-thick space-y-3 mt-20">
-          <h5 className="title-lg">do you want consultation?</h5>
+          <h5 className="title">do you want consultation?</h5>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum
             nostrum voluptates eveniet id libero incidunt enim vitae nam corporis voluptate neque
@@ -232,7 +232,7 @@ const HomePage = () => {
 
           {Array.from({ length: 7 }).map(() => (
             <div className="slidable card card-thick space-y-3" key={Math.random()}>
-              <div className="w-full aspect-video bg-background rounded-child" />
+              <div className="w-full aspect-video bg-background rounded-lg" />
               <h6 className="title">Our IT solutions</h6>
               <div className="badge-soft mt-3">Business</div>
               <p className="mt-3 line-clamp-3">

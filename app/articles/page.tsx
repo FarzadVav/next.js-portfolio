@@ -27,7 +27,7 @@ const ArticlesPage = () => {
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
         {Array.from({ length: 7 }).map(() => (
           <div className="card card-thick space-y-3" key={Math.random()}>
-            <div className="w-full aspect-video bg-background rounded-child" />
+            <div className="w-full aspect-video bg-background rounded-lg" />
             <h6 className="text-xl font-bold">Our IT solutions</h6>
             <div className="badge-soft mt-3">Business</div>
             <p className="mt-3 line-clamp-3">

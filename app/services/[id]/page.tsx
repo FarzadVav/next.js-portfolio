@@ -18,7 +18,7 @@ const ServicesDetailPage = () => {
             <div className="size-12 bg-background p-3 rounded-full f-center">
               <SparklesIcon className="size-full" />
             </div>
-            <h2 className="title-sm mt-3">Fast bulding</h2>
+            <h2 className="title mt-3">Fast bulding</h2>
             <p className="mt-1.5 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, in?
             </p>

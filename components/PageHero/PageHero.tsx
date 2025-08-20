@@ -10,7 +10,7 @@ const PageHero: React.FC<PageHeroProps> = ({ src, title, description, ...props }
       <div className="size-44 min-w-44 rounded-full bg-background-thin" title={src} />
 
       <div className="max-md:text-center">
-        <h1 className="title-lg font-black">{title}</h1>
+        <h1 className="title">{title}</h1>
         <p className="mt-3">{description}</p>
       </div>
     </div>

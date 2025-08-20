@@ -27,8 +27,8 @@ const ArticlesDetailPage = () => {
           <div className="size-12 md:size-16 f-center bg-background-thick rounded-full">
             <Calendar className="w-2/3" />
           </div>
-          <div className="flex flex-col h-10">
-            <span className="title-sm">Release date</span>
+          <div className="flex flex-col">
+            <span className="title">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -37,8 +37,8 @@ const ArticlesDetailPage = () => {
           <div className="size-12 md:size-16 f-center bg-background-thick rounded-full">
             <Calendar className="w-2/3" />
           </div>
-          <div className="flex flex-col h-10">
-            <span className="title-sm">Release date</span>
+          <div className="flex flex-col">
+            <span className="title">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -47,8 +47,8 @@ const ArticlesDetailPage = () => {
           <div className="size-12 md:size-16 f-center bg-background-thick rounded-full">
             <Calendar className="w-2/3" />
           </div>
-          <div className="flex flex-col h-10">
-            <span className="title-sm">Release date</span>
+          <div className="flex flex-col">
+            <span className="title">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -57,8 +57,8 @@ const ArticlesDetailPage = () => {
           <div className="size-12 md:size-16 f-center bg-background-thick rounded-full">
             <Calendar className="w-2/3" />
           </div>
-          <div className="flex flex-col h-10">
-            <span className="title-sm">Release date</span>
+          <div className="flex flex-col">
+            <span className="title">Release date</span>
             <span className="text-sm">{new Date().toLocaleDateString("en")}</span>
           </div>
         </div>
@@ -223,7 +223,7 @@ const ArticlesDetailPage = () => {
 
           {Array.from({ length: 7 }).map(() => (
             <div className="slidable card card-thick space-y-3" key={Math.random()}>
-              <div className="w-full aspect-video bg-background rounded-child" />
+              <div className="w-full aspect-video bg-background rounded-lg" />
               <h6 className="text-xl font-bold">Our IT solutions</h6>
               <div className="badge-soft mt-3">Business</div>
               <p className="mt-3 line-clamp-3">
