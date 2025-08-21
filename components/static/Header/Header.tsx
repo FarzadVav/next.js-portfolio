@@ -72,7 +72,7 @@ const Header = () => {
         </AccessNavigation> */}
 
         <AccessNavigation className="f-align justify-between flex-1" direction="x">
-          <Link className="btn btn-ghost btn-link relative" href="/services">
+          <Link className="btn btn-ghost btn-link relative" href="/">
             <LinkLoader
               loader={
                 <>
@@ -129,29 +129,29 @@ const Header = () => {
               </LinkLoader>
             </Link>
 
-            <Link className="btn btn-ghost btn-link relative" href="/about-us">
+            <Link className="btn btn-ghost btn-link relative" href="/about-me">
               <LinkLoader
                 loader={
                   <>
                     <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                    <span className="opacity-0">About us</span>
+                    <span className="opacity-0">About me</span>
                   </>
                 }
               >
-                <span>About us</span>
+                <span>About me</span>
               </LinkLoader>
             </Link>
 
-            <Link className="btn btn-ghost btn-link relative" href="/contact-us">
+            <Link className="btn btn-ghost btn-link relative" href="/contact-me">
               <LinkLoader
                 loader={
                   <>
                     <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                    <span className="opacity-0">Contact us</span>
+                    <span className="opacity-0">Contact me</span>
                   </>
                 }
               >
-                <span>Contact us</span>
+                <span>Contact me</span>
               </LinkLoader>
             </Link>
           </div>
@@ -187,14 +187,14 @@ const Header = () => {
                     <ArrowRightIcon className="btn-icon-size" />
                   </LinkLoader>
                 </Link>
-                <Link className="btn btn-ghost w-full justify-between" href={"/about-us"}>
-                  <span>About us</span>
+                <Link className="btn btn-ghost w-full justify-between" href={"/about-me"}>
+                  <span>About me</span>
                   <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                     <ArrowRightIcon className="btn-icon-size" />
                   </LinkLoader>
                 </Link>
-                <Link className="btn btn-ghost w-full justify-between" href={"/contact-us"}>
-                  <span>Contact us</span>
+                <Link className="btn btn-ghost w-full justify-between" href={"/contact-me"}>
+                  <span>Contact me</span>
                   <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                     <ArrowRightIcon className="btn-icon-size" />
                   </LinkLoader>

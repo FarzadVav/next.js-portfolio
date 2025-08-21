@@ -46,7 +46,7 @@ const Footer = () => {
             </LinkLoader>
           </Link>
 
-          <Link className="btn btn-ghost btn-link relative" href="/about-us">
+          <Link className="btn btn-ghost btn-link relative" href="/about-me">
             <LinkLoader
               loader={
                 <>
@@ -59,7 +59,7 @@ const Footer = () => {
             </LinkLoader>
           </Link>
 
-          <Link className="btn btn-ghost btn-link relative" href="/contact-us">
+          <Link className="btn btn-ghost btn-link relative" href="/contact-me">
             <LinkLoader
               loader={
                 <>
