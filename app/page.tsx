@@ -19,7 +19,7 @@ import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSe
 const HomePage = () => {
   return (
     <>
-      <div className="pt-20 overflow-hidden">
+      <div className="py-20 overflow-hidden">
         <HeroSectionLogos />
 
         <div className="container">
@@ -67,7 +67,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <Carousel className="carousel container mt-20">
+      <Carousel className="carousel container">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
           <Carousel.RightFade className="carousel-right-fade" />
