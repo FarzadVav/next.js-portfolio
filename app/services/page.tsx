@@ -1,9 +1,12 @@
 import Link from "next/link";
+import { Modal } from "@kadoui/react";
 import { LinkLoader } from "@kadoui/next";
-import { CheckIcon, LoaderIcon } from "lucide-react";
-import { AccessNavigation, Carousel, Modal } from "@kadoui/react";
+import { CheckIcon, DotIcon, HashIcon, LoaderIcon } from "lucide-react";
 
+import nextJsImg from "root/public/next-js.svg";
+import { SERVICES } from "root/constants/services";
 import PageHero from "root/components/PageHero/PageHero";
+import Image from "next/image";
 
 const ServicesPage = () => {
   return (
@@ -14,65 +17,35 @@ const ServicesPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <AccessNavigation direction="x" className="f-align-scroll container">
-        <div className="join-border min-w-max mx-auto">
-          <button className="btn btn-fill font-bold">Front-End</button>
-          <button className="btn btn-soft">Back-End</button>
-          <button className="btn btn-soft">Mobile</button>
-          <button className="btn btn-soft">Desktop</button>
-          <button className="btn btn-soft">Cloud</button>
-        </div>
-      </AccessNavigation>
-
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
-        {Array.from({ length: 7 }).map(() => (
-          <div className="card card-thick" key={Math.random()}>
+        {SERVICES.map((service) => (
+          <div className="card group space-y-3" key={service.id}>
             <div className="f-align gap-3">
-              <div className="size-9 rounded-full bg-background" />
-              <h2 className="title">Nest.js web app</h2>
+              <div className="avatar" />
+              <h2 className="title">{service.title}</h2>
             </div>
 
-            <Carousel className="carousel mt-3">
-              <Carousel.Container className="carousel-container no-scrollbar gap-3">
-                <Carousel.LeftFade className="carousel-left-fade from-background-thick" />
-                <Carousel.RightFade className="carousel-right-fade from-background-thick" />
+            <div className="f-align gap-1.5 flex-wrap mt-6">
+              {service.techStack.map((item) => (
+                <div className="badge badge-soft badge-sm" key={item}>
+                  <HashIcon className="badge-icon-size" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
 
-                <div className="badge badge-sm">Javascript</div>
-                <div className="badge badge-sm">React</div>
-                <div className="badge badge-sm">Next</div>
-                <div className="badge badge-sm">Tailwind</div>
-                <div className="badge badge-sm">Chart</div>
-                <div className="badge badge-sm">Astro</div>
-                <div className="badge badge-sm">Vitest</div>
-                <div className="badge badge-sm">Remix</div>
-                <div className="badge badge-sm">Sass</div>
-                <div className="badge badge-sm">Framer</div>
-                <div className="badge badge-sm">PWA</div>
-              </Carousel.Container>
-            </Carousel>
+            <p className="mt-6">Also you{"'"}l get these features:</p>
 
-            <p className="mt-3 line-clamp-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod tempore labore
-              ipsum voluptatem odit saepe magni animi rem nesciunt voluptatibus repellendus quisquam
-              enim suscipit, molestias harum reiciendis commodi a?
-            </p>
+            <div className="f-align gap-1.5 flex-wrap mt-3">
+              {service.features.map((item) => (
+                <div className="badge badge-sm" key={item}>
+                  <DotIcon className="badge-icon-size" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
 
-            <ul className="mt-3 space-y-1.5 opacity-75">
-              <li className="f-align gap-1.5">
-                <CheckIcon className="size-4" />
-                <span>Six month free support</span>
-              </li>
-              <li className="f-align gap-1.5">
-                <CheckIcon className="size-4" />
-                <span>Six month free support</span>
-              </li>
-              <li className="f-align gap-1.5">
-                <CheckIcon className="size-4" />
-                <span>Six month free support</span>
-              </li>
-            </ul>
-
-            <div className="mt-6 f-align gap-3">
+            <div className="f-align mt-6 gap-3">
               <Modal>
                 <Modal.Toggle className="btn btn-fill flex-1">
                   <span>Request</span>
@@ -105,6 +78,63 @@ const ServicesPage = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="container card card-lg mt-20">
+        <Image
+          width={64}
+          height={64}
+          src={nextJsImg}
+          className="avatar avatar-lg mx-auto"
+          alt="Next.js application service"
+        />
+        <h3 className="title text-center mt-3">Do you want a Next.js application?</h3>
+        <p className="text-center mt-3">
+          My main specialty is Next.js developemtn and... Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Commodi impedit porro corrupti quisquam aperiam dicta adipisci. Debitis
+          officia praesentium quasi ullam nulla ea corporis perferendis tempora modi nisi? Corrupti,
+          nam?
+        </p>
+        <div className="f-center mt-6 gap-3">
+          <Modal>
+            <Modal.Toggle className="btn btn-fill">
+              <span>Request</span>
+              <CheckIcon className="btn-icon-size" />
+            </Modal.Toggle>
+
+            <Modal.Portal className="modal-portal">
+              <Modal.Body className="modal-body">
+                <Modal.Header className="modal-header justify-center">
+                  <p className="title">Request your project</p>
+                </Modal.Header>
+
+                <Modal.Content className="modal-content">
+                  <p className="max-w-lg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi
+                    exercitationem, assumenda cumque quo quibusdam necessitatibus molestiae nostrum
+                    nemo, culpa dolore possimus corrupti blanditiis corporis illo fugit autem
+                    voluptates sed?
+                  </p>
+                </Modal.Content>
+              </Modal.Body>
+            </Modal.Portal>
+          </Modal>
+
+          <Link className="btn btn-outline" href={"/services/1"}>
+            <span className="f-center">
+              <LinkLoader
+                loader={
+                  <>
+                    <span className="opacity-0">More</span>
+                    <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                  </>
+                }
+              >
+                <span>More</span>
+              </LinkLoader>
+            </span>
+          </Link>
+        </div>
       </div>
 
       <div className="container mt-20 space-y-10">

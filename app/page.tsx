@@ -28,9 +28,9 @@ const HomePage = () => {
           <h1 className="heading mt-9">farzad vahdati</h1>
 
           <p className="container md:w-4/5 text-center mx-auto mt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit Expedita 🧑‍💻 atque consectetur
-            excepturi possimus porro culpa 🔥 quam omnis iusto ✅ ipsum saepe mollitia nesciunt hic
-            velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
+            Hi, I{"'"}m a fullstack web developer focused on Next.js 💻 My expertise is building
+            powerful applications with Javascript ✌️ I work on optimizing web applications for SEO,
+            performance, state management, accessibility, and other important web parameters ✅
           </p>
 
           <Form className="join-no-inner-border container md:w-1/2 mx-auto mt-6" action={"/search"}>
@@ -39,7 +39,7 @@ const HomePage = () => {
                 type="text"
                 name="query"
                 className="input-field"
-                placeholder="Search your requests..."
+                placeholder="Search your request..."
               />
             </label>
             <button className="btn btn-soft">
@@ -53,11 +53,11 @@ const HomePage = () => {
                 <SparklesIcon className="btn-icon-size" />
               </LinkLoader>
 
-              <span>Our services</span>
+              <span>My services</span>
             </Link>
 
             <Link className="btn btn-fill" href={"/contact-me"}>
-              <span>Get start</span>
+              <span>Contact me</span>
 
               <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                 <ArrowRightIcon className="btn-icon-size" />
