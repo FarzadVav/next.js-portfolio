@@ -10,14 +10,14 @@ import linkedinImg from "root/public/linkedin.svg";
 
 const Footer = () => {
   return (
-    <footer className="mt-20 py-20 border-t-2 border-separator">
+    <footer className="mt-20 py-20 border-t-2 border-separator group">
       <div className="container">
         <Image
           width={108}
           height={108}
           src={profileImg}
           alt="Farzad Vahdati"
-          className="size-27 rounded-full mx-auto saturate-0"
+          className="size-27 rounded-full mx-auto transition-all not-group-hover:saturate-0"
         />
 
         <div className="f-center flex-wrap gap-3 mt-6">
