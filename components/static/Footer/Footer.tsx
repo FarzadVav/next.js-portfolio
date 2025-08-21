@@ -12,21 +12,15 @@ const Footer = () => {
   return (
     <footer className="mt-20 py-20 border-t-2 border-separator">
       <div className="container">
-        <div className="size-27 relative mx-auto">
-          <div className="w-full h-full bg-foreground dark:bg-foreground/25 top-1/3 left-0 right-0 rounded-full blur-3xl absolute -z-10" />
+        <Image
+          width={108}
+          height={108}
+          src={profileImg}
+          alt="Farzad Vahdati"
+          className="size-27 rounded-full mx-auto saturate-0"
+        />
 
-          <div className="size-full ring-4 ring-background-thick rounded-full overflow-hidden">
-            <Image
-              width={108}
-              height={108}
-              src={profileImg}
-              alt="Farzad Vahdati"
-              className="size-full"
-            />
-          </div>
-        </div>
-
-        <div className="f-center flex-wrap gap-3 mt-20">
+        <div className="f-center flex-wrap gap-3 mt-6">
           <Link className="btn btn-ghost" href={"tel:09389461065"}>
             <PhoneIcon className="btn-icon-size" />
             <span dir="ltr">0938 0946 1065</span>
