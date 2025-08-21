@@ -24,7 +24,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     <html lang="en" className={geist.variable} suppressHydrationWarning>
       <head>
         <ThemeAdapter />
-        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <body>
         <Header />

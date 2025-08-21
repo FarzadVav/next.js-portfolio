@@ -1,12 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { LinkLoader } from "@kadoui/next";
-import { AccessNavigation, Popover, Sheet } from "@kadoui/react";
-import { ArrowRightIcon, ChevronDownIcon, LoaderIcon, MenuIcon } from "lucide-react";
-
-import logoImg from "root/public/logo.png";
+import { AccessNavigation, Sheet } from "@kadoui/react";
+import { ArrowRightIcon, LoaderIcon, MenuIcon } from "lucide-react";
 
 const Header = () => {
   return (
@@ -16,30 +13,30 @@ const Header = () => {
       </div>
 
       <div className="container f-align justify-between h-16 relative">
-        <Link className="f-align gap-3 md:hidden" href={"/"}>
+        {/* <Link className="f-align gap-3 md:hidden" href={"/"}>
           <span className="size-9 f-center">
             <LinkLoader loader={<LoaderIcon className="size-4.5 animate-spin" />}>
               <Image
                 width={36}
                 height={36}
-                src={logoImg}
+                src={profileImg}
                 alt="ArrowUp logo"
                 className="rounded-full size-9 dark:invert-100"
               />
             </LinkLoader>
           </span>
           <span>ArrowUp</span>
-        </Link>
+        </Link> */}
 
-        <AccessNavigation className="max-md:hidden">
+        {/* <AccessNavigation className="max-md:hidden">
           <Popover className="popover">
             <Popover.Toggle className="btn btn-ghost group font-bold" dir="ltr">
               <Image
                 width={24}
                 height={24}
-                src={logoImg}
+                src={profileImg}
                 alt="ArrowUp logo"
-                className="rounded-full h-2/3 aspect-square mr-1.5 dark:invert-100"
+                className="rounded-full h-full aspect-square mr-1.5 "
               />
 
               <span>ArrowUp</span>
@@ -72,77 +69,92 @@ const Header = () => {
               </div>
             </Popover.Body>
           </Popover>
-        </AccessNavigation>
+        </AccessNavigation> */}
 
-        <AccessNavigation className="f-align gap-3 max-md:hidden" direction="x">
+        <AccessNavigation className="f-align justify-between flex-1" direction="x">
           <Link className="btn btn-ghost btn-link relative" href="/services">
             <LinkLoader
               loader={
                 <>
                   <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                  <span className="opacity-0">Services</span>
+                  <span className="opacity-0">Home</span>
                 </>
               }
             >
-              <span>Services</span>
+              <span>Home</span>
             </LinkLoader>
           </Link>
 
-          <button className="btn btn-ghost" disabled>
-            Products
-          </button>
+          <div className="f-align gap-3 max-md:hidden">
+            <Link className="btn btn-ghost btn-link relative" href="/services">
+              <LinkLoader
+                loader={
+                  <>
+                    <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                    <span className="opacity-0">Services</span>
+                  </>
+                }
+              >
+                <span>Services</span>
+              </LinkLoader>
+            </Link>
 
-          <Link className="btn btn-ghost btn-link relative" href="/tools">
-            <LinkLoader
-              loader={
-                <>
-                  <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                  <span className="opacity-0">Tools</span>
-                </>
-              }
-            >
-              <span>Tools</span>
-            </LinkLoader>
-          </Link>
+            <button className="btn btn-ghost" disabled>
+              Products
+            </button>
 
-          <Link className="btn btn-ghost btn-link relative" href="/articles">
-            <LinkLoader
-              loader={
-                <>
-                  <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                  <span className="opacity-0">Articles</span>
-                </>
-              }
-            >
-              <span>Articles</span>
-            </LinkLoader>
-          </Link>
+            <Link className="btn btn-ghost btn-link relative" href="/tools">
+              <LinkLoader
+                loader={
+                  <>
+                    <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                    <span className="opacity-0">Tools</span>
+                  </>
+                }
+              >
+                <span>Tools</span>
+              </LinkLoader>
+            </Link>
 
-          <Link className="btn btn-ghost btn-link relative" href="/about-us">
-            <LinkLoader
-              loader={
-                <>
-                  <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                  <span className="opacity-0">About us</span>
-                </>
-              }
-            >
-              <span>About us</span>
-            </LinkLoader>
-          </Link>
+            <Link className="btn btn-ghost btn-link relative" href="/articles">
+              <LinkLoader
+                loader={
+                  <>
+                    <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                    <span className="opacity-0">Articles</span>
+                  </>
+                }
+              >
+                <span>Articles</span>
+              </LinkLoader>
+            </Link>
 
-          <Link className="btn btn-ghost btn-link relative" href="/contact-us">
-            <LinkLoader
-              loader={
-                <>
-                  <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                  <span className="opacity-0">Contact us</span>
-                </>
-              }
-            >
-              <span>Contact us</span>
-            </LinkLoader>
-          </Link>
+            <Link className="btn btn-ghost btn-link relative" href="/about-us">
+              <LinkLoader
+                loader={
+                  <>
+                    <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                    <span className="opacity-0">About us</span>
+                  </>
+                }
+              >
+                <span>About us</span>
+              </LinkLoader>
+            </Link>
+
+            <Link className="btn btn-ghost btn-link relative" href="/contact-us">
+              <LinkLoader
+                loader={
+                  <>
+                    <LoaderIcon className="btn-icon-size absolute animate-spin" />
+                    <span className="opacity-0">Contact us</span>
+                  </>
+                }
+              >
+                <span>Contact us</span>
+              </LinkLoader>
+            </Link>
+          </div>
         </AccessNavigation>
 
         <Sheet>

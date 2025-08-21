@@ -1,129 +1,147 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { HashIcon } from "lucide-react";
 
 const HeroSectionLogos = () => {
   return (
-    <div className="container relative dark:invert-100 max-lg:hidden">
+    <div className="container relative uppercase max-lg:hidden">
       {/* Right */}
       <motion.div
-        transition={{ delay: 0.1 }}
+        className="absolute top-0 right-0"
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
-        className="size-12 absolute top-0 right-23"
+        transition={{ delay: 0.1 }}
         whileHover="groupHover"
       >
-        <motion.div
+        <motion.span
+          className="badge"
           style={createLogoStyles("right").style}
           variants={createLogoStyles("right").variant}
         >
-          <Image src={"/logos/javascript.svg"} alt="JS" fill />
-        </motion.div>
+          <HashIcon className="badge-icon-size" />
+          <span>javascript</span>
+        </motion.span>
       </motion.div>
 
       <motion.div
-        className="size-20 absolute top-22 right-3"
+        className="absolute top-18 right-27"
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.2 }}
         whileHover="groupHover"
       >
-        <motion.div
+        <motion.span
+          className="badge"
           style={createLogoStyles("right").style}
           variants={createLogoStyles("right").variant}
         >
-          <Image src={"/logos/react.svg"} alt="React" fill />
-        </motion.div>
+          <HashIcon className="badge-icon-size" />
+          <span>react.js</span>
+        </motion.span>
       </motion.div>
 
       <motion.div
-        className="size-12  absolute top-47 right-33"
+        className="absolute top-27 right-0"
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
+        transition={{ delay: 0.4 }}
         whileHover="groupHover"
       >
-        <motion.div
+        <motion.span
+          className="badge"
           style={createLogoStyles("right").style}
           variants={createLogoStyles("right").variant}
         >
-          <Image src={"/logos/angular.svg"} alt="Angular" fill />
-        </motion.div>
+          <HashIcon className="badge-icon-size" />
+          <span>tailwind</span>
+        </motion.span>
       </motion.div>
 
       <motion.div
-        className="size-16 absolute top-65 right-3"
+        className="absolute top-45 right-27"
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.3 }}
         whileHover="groupHover"
       >
-        <motion.div
+        <motion.span
+          className="badge"
           style={createLogoStyles("right").style}
           variants={createLogoStyles("right").variant}
         >
-          <Image src={"/logos/tailwind.svg"} alt="Tailwind" fill />
-        </motion.div>
+          <HashIcon className="badge-icon-size" />
+          <span>node.js</span>
+        </motion.span>
       </motion.div>
 
       {/* Left */}
       <motion.div
-        className="size-12 absolute top-0 left-23"
+        className="absolute top-0 left-0"
         initial={{ x: -500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.1 }}
         whileHover="groupHover"
       >
-        <motion.div
+        <motion.span
+          className="badge"
           style={createLogoStyles("left").style}
           variants={createLogoStyles("left").variant}
         >
-          <Image src={"/logos/node.svg"} alt="Node" fill />
-        </motion.div>
+          <HashIcon className="badge-icon-size" />
+          <span>typescript</span>
+        </motion.span>
       </motion.div>
 
       <motion.div
-        className="size-20 absolute top-22 left-3"
+        className="absolute top-18 left-27"
         initial={{ x: -500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.2 }}
         whileHover="groupHover"
       >
-        <motion.div
+        <motion.span
+          className="badge"
           style={createLogoStyles("left").style}
           variants={createLogoStyles("left").variant}
         >
-          <Image src={"/logos/docker.svg"} alt="Docker" fill />
-        </motion.div>
+          <HashIcon className="badge-icon-size" />
+          <span>next.js</span>
+        </motion.span>
       </motion.div>
 
       <motion.div
-        className="size-12  absolute top-47 left-33"
+        className="absolute top-27 left-0"
         initial={{ x: -500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
+        transition={{ delay: 0.4 }}
         whileHover="groupHover"
       >
-        <motion.div
+        <motion.span
+          className="badge"
           style={createLogoStyles("left").style}
           variants={createLogoStyles("left").variant}
         >
-          <Image src={"/logos/nest.svg"} alt="Nest" fill />
-        </motion.div>
+          <HashIcon className="badge-icon-size" />
+          <span>tanstack</span>
+        </motion.span>
       </motion.div>
 
       <motion.div
-        className="size-16 absolute top-65 left-3"
+        className="absolute top-45 left-27"
         initial={{ x: -500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.3 }}
         whileHover="groupHover"
       >
-        <motion.div
+        <motion.span
+          className="badge"
           style={createLogoStyles("left").style}
           variants={createLogoStyles("left").variant}
         >
-          <Image src={"/logos/pgsql.svg"} alt="PostgreSQL" fill />
-        </motion.div>
+          <HashIcon className="badge-icon-size" />
+          <span>postgresql</span>
+        </motion.span>
       </motion.div>
     </div>
   );
@@ -134,11 +152,11 @@ const createLogoStyles = (side: "left" | "right") => {
     style: {
       width: "100%",
       height: "100%",
-      filter: "blur(2px)",
+      filter: "blur(1px)",
       opacity: 0.5,
       perspective: 800,
       rotateY: 25,
-      rotateX: side === "left" ? 15 : -15,
+      rotateX: side === "left" ? 5 : -5,
     },
     variant: {
       groupHover: {

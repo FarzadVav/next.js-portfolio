@@ -1,6 +1,5 @@
 import Form from "next/form";
 import Link from "next/link";
-import Image from "next/image";
 import { LinkLoader } from "@kadoui/next";
 import { AccessNavigation, Accordion, Carousel } from "@kadoui/react";
 import {
@@ -13,20 +12,22 @@ import {
   TextIcon,
 } from "lucide-react";
 
-import arrowImg from "root/public/arrow.png";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
+import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSectionProfile";
 
 const HomePage = () => {
   return (
     <>
-      <div className="pt-20 pb-40 overflow-hidden">
+      <div className="pt-20 overflow-hidden">
         <HeroSectionLogos />
 
         <div className="container">
-          <h1 className="text-5xl md:text-7xl text-center font-black">ArrowUp</h1>
+          <HeroSectionProfile />
 
-          <p className="container md:w-3/4 text-center mx-auto mt-3">
+          <h1 className="heading mt-9">farzad vahdati</h1>
+
+          <p className="container md:w-4/5 text-center mx-auto mt-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit Expedita 🧑‍💻 atque consectetur
             excepturi possimus porro culpa 🔥 quam omnis iusto ✅ ipsum saepe mollitia nesciunt hic
             velit commodi aliquid deleniti? Architecto ✌️ dolorum praesentium
@@ -47,23 +48,13 @@ const HomePage = () => {
           </Form>
 
           <div className="f-center gap-3 mt-6">
-            <div className="relative">
-              <Link className="btn btn-outline" href={"/services"}>
-                <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                  <SparklesIcon className="btn-icon-size" />
-                </LinkLoader>
+            <Link className="btn btn-outline" href={"/services"}>
+              <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
+                <SparklesIcon className="btn-icon-size" />
+              </LinkLoader>
 
-                <span>Our services</span>
-              </Link>
-
-              <Image
-                width={64}
-                height={64}
-                alt="Services"
-                src={arrowImg}
-                className="absolute -left-3 size-16 top-1/2 translate-y-1/3 rotate-12 dark:invert-100"
-              />
-            </div>
+              <span>Our services</span>
+            </Link>
 
             <Link className="btn btn-fill" href={"/contact-us"}>
               <span>Get start</span>
@@ -76,7 +67,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <Carousel className="carousel container md:mt-20">
+      <Carousel className="carousel container mt-20">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
           <Carousel.RightFade className="carousel-right-fade" />
