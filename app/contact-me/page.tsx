@@ -10,16 +10,18 @@ import {
 } from "lucide-react";
 
 import githubImg from "root/public/github.svg";
-import PageHero from "root/components/PageHero/PageHero";
 import telegramImg from "root/public/telegram.svg";
 import linkedinImg from "root/public/linkedin.svg";
+import contactMeImg from "root/public/contact-me.png";
+import PageHero from "root/components/PageHero/PageHero";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 const ConnectPage = () => {
   return (
     <>
       <PageHero
-        src=""
+        darkInvert
+        src={contactMeImg}
         title="Let's do some perfect projects"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
@@ -111,33 +113,35 @@ const ConnectPage = () => {
         ))}
       </div>
 
-      <h4 id="form" className="heading pt-20">
-        send yuor message
-      </h4>
-      <div className="container mt-6">
-        <ScrollAnimation className="card card-thick">
-          <div className="f-align max-md:flex-col gap-3">
-            <label className="input input-outline max-md:w-full md:flex-1">
-              <UserIcon className="input-icon-size" />
-              <input className="input-field" placeholder="Organization/Customer name" />
-            </label>
-            <label className="input input-outline max-md:w-full md:flex-1">
-              <PhoneIcon className="input-icon-size" />
-              <input className="input-field" placeholder="---- --- ----" />
-            </label>
-          </div>
-          <label className="input input-outline mt-3">
-            <textarea className="input-field" placeholder="Request description..." />
-          </label>
-          <label className="input input-soft mt-3 w-max max-w-full">
-            <FilesIcon className="input-icon-size" />
-            <input className="input-field" type="file" name="1212" />
-          </label>
+      <div id="form" className="pt-20">
+        <ScrollAnimation className="container">
+          <h4 className="heading">send yuor message</h4>
+          <ScrollAnimation className=" mt-6">
+            <ScrollAnimation className="card card-thick">
+              <div className="f-align max-md:flex-col gap-3">
+                <label className="input input-outline max-md:w-full md:flex-1">
+                  <UserIcon className="input-icon-size" />
+                  <input className="input-field" placeholder="Organization/Customer name" />
+                </label>
+                <label className="input input-outline max-md:w-full md:flex-1">
+                  <PhoneIcon className="input-icon-size" />
+                  <input className="input-field" placeholder="---- --- ----" />
+                </label>
+              </div>
+              <label className="input input-outline mt-3">
+                <textarea className="input-field" placeholder="Request description..." />
+              </label>
+              <label className="input input-soft mt-3 w-max max-w-full">
+                <FilesIcon className="input-icon-size" />
+                <input className="input-field" type="file" name="1212" />
+              </label>
 
-          <button className="btn mt-6 btn-fill">
-            <span>Submit</span>
-            <CheckIcon className="btn-icon-size" />
-          </button>
+              <button className="btn mt-6 btn-fill">
+                <span>Submit</span>
+                <CheckIcon className="btn-icon-size" />
+              </button>
+            </ScrollAnimation>
+          </ScrollAnimation>
         </ScrollAnimation>
       </div>
     </>

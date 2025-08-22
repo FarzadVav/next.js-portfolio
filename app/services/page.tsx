@@ -1,27 +1,36 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Modal } from "@kadoui/react";
 import { LinkLoader } from "@kadoui/next";
 import { CheckIcon, DotIcon, HashIcon, LoaderIcon } from "lucide-react";
 
 import nextJsImg from "root/public/next-js.svg";
+import servicesImg from "root/public/services.png";
 import { SERVICES } from "root/constants/services";
 import PageHero from "root/components/PageHero/PageHero";
-import Image from "next/image";
+import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 const ServicesPage = () => {
   return (
     <>
       <PageHero
-        src=""
+        darkInvert
+        src={servicesImg}
         title="Let's do some perfect projects"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
         {SERVICES.map((service) => (
-          <div className="card group space-y-3" key={service.id}>
+          <div className="card space-y-3" key={service.id}>
             <div className="f-align gap-3">
-              <div className="avatar" />
+              <Image
+                width={48}
+                height={48}
+                className="size-12"
+                alt={service.title}
+                src={service.thumbnail}
+              />
               <h2 className="title">{service.title}</h2>
             </div>
 
@@ -36,7 +45,7 @@ const ServicesPage = () => {
 
             <p className="mt-6">Also you{"'"}l get these features:</p>
 
-            <div className="f-align gap-1.5 flex-wrap mt-3">
+            <div className="f-align flex-wrap mt-3">
               {service.features.map((item) => (
                 <div className="badge badge-sm" key={item}>
                   <DotIcon className="badge-icon-size" />
@@ -70,7 +79,7 @@ const ServicesPage = () => {
                 </Modal.Portal>
               </Modal>
 
-              <Link className="btn btn-outline flex-1" href={"/services/1"}>
+              <Link className="btn btn-outline flex-1" href={`/services/${service.id}`}>
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <span>More</span>
                 </LinkLoader>
@@ -80,7 +89,7 @@ const ServicesPage = () => {
         ))}
       </div>
 
-      <div className="container card card-lg mt-20">
+      <ScrollAnimation className="container card card-lg mt-20">
         <Image
           width={64}
           height={64}
@@ -135,7 +144,7 @@ const ServicesPage = () => {
             </span>
           </Link>
         </div>
-      </div>
+      </ScrollAnimation>
 
       <div className="container mt-20 space-y-10">
         <div className="f-align gap-3 md:gap-6" dir="rtl">

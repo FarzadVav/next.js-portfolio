@@ -1,13 +1,20 @@
 import { CheckIcon, PhoneIcon, SparklesIcon, UserIcon } from "lucide-react";
 
+import { PageProps } from "root/types";
+import { SERVICES } from "root/constants/services";
+import servicesImg from "root/public/services.png";
 import PageHero from "root/components/PageHero/PageHero";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
-const ServicesDetailPage = () => {
+async function ServicesDetailPage({ params }: PageProps) {
+  const paramId = parseInt((await params).id);
+  const pageHeroSrc = SERVICES.find((item) => item.id === paramId)?.thumbnail;
+
   return (
     <>
       <PageHero
-        src=""
+        darkInvert={!pageHeroSrc}
+        src={pageHeroSrc || servicesImg}
         title="Let's do some perfect projects"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
@@ -52,8 +59,8 @@ const ServicesDetailPage = () => {
         </p>
       </div>
 
-      <div className="container">
-        <h4 className="heading mt-20">request your project</h4>
+      <ScrollAnimation className="container mt-20">
+        <h4 className="heading">request your project</h4>
         <ScrollAnimation className="card card-lg mt-6">
           <div className="f-align max-md:flex-col gap-3">
             <label className="input input-outline max-md:w-full md:flex-1">
@@ -73,9 +80,9 @@ const ServicesDetailPage = () => {
             <CheckIcon className="btn-icon-size" />
           </button>
         </ScrollAnimation>
-      </div>
+      </ScrollAnimation>
     </>
   );
-};
+}
 
 export default ServicesDetailPage;

@@ -2,13 +2,15 @@ import Link from "next/link";
 import { ArrowUpRightIcon, CheckIcon } from "lucide-react";
 import { AccessNavigation, Carousel } from "@kadoui/react";
 
+import labImg from "root/public/lab.png";
 import PageHero from "root/components/PageHero/PageHero";
 
 const ServicesPage = () => {
   return (
     <>
       <PageHero
-        src=""
+        darkInvert
+        src={labImg}
         title="Let's do some perfect projects"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />

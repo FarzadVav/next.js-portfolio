@@ -103,16 +103,16 @@ const Header = () => {
               Products
             </button>
 
-            <Link className="btn btn-ghost btn-link relative" href="/tools">
+            <Link className="btn btn-ghost btn-link relative" href="/lab">
               <LinkLoader
                 loader={
                   <>
                     <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                    <span className="opacity-0">Tools</span>
+                    <span className="opacity-0">Lab</span>
                   </>
                 }
               >
-                <span>Tools</span>
+                <span>Lab</span>
               </LinkLoader>
             </Link>
 
@@ -175,8 +175,8 @@ const Header = () => {
                     <ArrowRightIcon className="btn-icon-size" />
                   </LinkLoader>
                 </Link>
-                <Link className="btn btn-ghost w-full justify-between" href={"/tools"}>
-                  <span>Tools</span>
+                <Link className="btn btn-ghost w-full justify-between" href={"/lab"}>
+                  <span>Lab</span>
                   <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                     <ArrowRightIcon className="btn-icon-size" />
                   </LinkLoader>

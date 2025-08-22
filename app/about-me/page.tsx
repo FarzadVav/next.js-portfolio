@@ -3,13 +3,15 @@ import { LinkLoader } from "@kadoui/next";
 import { AccessNavigation, Accordion, Carousel } from "@kadoui/react";
 import { ArrowUpRightIcon, ChevronDownIcon, DownloadIcon, LoaderIcon } from "lucide-react";
 
+import aboutMeImg from "root/public/about-me.png";
 import PageHero from "root/components/PageHero/PageHero";
 
 const AboutPage = () => {
   return (
     <>
       <PageHero
-        src=""
+        darkInvert
+        src={aboutMeImg}
         title="Let's do some perfect projects"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />

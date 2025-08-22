@@ -22,8 +22,8 @@ model Users {
   ticketsMessages  TicketsMessages[]
 }
 
-// ---------- Tools
-model Tools {
+// ---------- Lab
+model Lab {
   id          Int     @id @default(autoincrement())
   name        String
   description String  @db.Text
