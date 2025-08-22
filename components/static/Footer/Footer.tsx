@@ -17,7 +17,7 @@ const Footer = () => {
           height={108}
           src={profileImg}
           alt="Farzad Vahdati"
-          className="size-27 rounded-full mx-auto transition-all not-group-hover:saturate-0"
+          className="size-27 rounded-full mx-auto transition-all md:not-group-hover:saturate-0"
         />
 
         <div className="f-center flex-wrap gap-3 mt-6">

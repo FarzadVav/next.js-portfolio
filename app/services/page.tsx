@@ -22,7 +22,7 @@ const ServicesPage = () => {
 
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
         {SERVICES.map((service) => (
-          <div className="card space-y-3" key={service.id}>
+          <div className="card flex flex-col gap-0" key={service.id}>
             <div className="f-align gap-3">
               <Image
                 width={48}
@@ -43,9 +43,9 @@ const ServicesPage = () => {
               ))}
             </div>
 
-            <p className="mt-6">Also you{"'"}l get these features:</p>
+            <p className="pt-6 mt-auto">Also you{"'"}l get these features:</p>
 
-            <div className="f-align flex-wrap mt-3">
+            <div className="f-align flex-wrap mt-1.5">
               {service.features.map((item) => (
                 <div className="badge badge-sm" key={item}>
                   <DotIcon className="badge-icon-size" />
@@ -54,7 +54,7 @@ const ServicesPage = () => {
               ))}
             </div>
 
-            <div className="f-align mt-6 gap-3">
+            <div className="f-align mt-auto pt-6 gap-3">
               <Modal>
                 <Modal.Toggle className="btn btn-fill flex-1">
                   <span>Request</span>
