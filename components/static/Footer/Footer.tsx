@@ -74,13 +74,13 @@ const Footer = () => {
         </div>
 
         <div className="f-center gap-6 mt-6">
-          <Link className="size-9" href={"https://t.me/arrowupteam"}>
+          <Link className="size-9" href={"https://t.me/farzad_vav"}>
             <Image width={64} height={64} alt="telegram" src={telegramImg} className="size-full" />
           </Link>
-          <Link className="size-9" href={"https://www.linkedin.com/company/arrow-up-team"}>
+          <Link className="size-9" href={"https://www.linkedin.com/in/farzad-vahdati"}>
             <Image width={64} height={64} alt="linkedin" src={linkedinImg} className="size-full" />
           </Link>
-          <Link className="size-9" href={"https://github.com/ArrowUpTeam"}>
+          <Link className="size-9" href={"https://github.com/FarzadVav"}>
             <Image
               width={64}
               height={64}

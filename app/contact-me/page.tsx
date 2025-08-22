@@ -28,7 +28,7 @@ const ConnectPage = () => {
 
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="f-align gap-3">
-          <Image src={telegramImg} alt="ArrowUp Telegram channel" width={64} height={64} />
+          <Image src={telegramImg} alt="Telegram" width={64} height={64} />
           <div>
             <span className="title">Telegram</span>
             <p className="text-xs mt-0.5">
@@ -37,7 +37,7 @@ const ConnectPage = () => {
 
             <Link
               target="_blank"
-              href={"https://t.me/arrowupteam"}
+              href={"https://t.me/farzad_vav"}
               className="btn btn-outline btn-sm mt-3"
             >
               <span>Visit</span>
@@ -47,7 +47,7 @@ const ConnectPage = () => {
         </div>
 
         <div className="f-align gap-3">
-          <Image src={linkedinImg} alt="ArrowUp LinkedIn page" width={64} height={64} />
+          <Image src={linkedinImg} alt="LinkedIn" width={64} height={64} />
           <div>
             <span className="title">LinkedIn</span>
             <p className="text-xs mt-0.5">
@@ -57,7 +57,7 @@ const ConnectPage = () => {
             <Link
               target="_blank"
               className="btn btn-outline btn-sm mt-3"
-              href={"https://www.linkedin.com/company/arrow-up-team"}
+              href={"https://www.linkedin.com/in/farzad-vahdati"}
             >
               <span>Visit</span>
               <ArrowUpRightIcon className="btn-icon-size" />
@@ -66,13 +66,7 @@ const ConnectPage = () => {
         </div>
 
         <div className="f-align gap-3">
-          <Image
-            width={64}
-            height={64}
-            src={githubImg}
-            className="dark:invert-100"
-            alt="ArrowUp GitHub organization"
-          />
+          <Image width={64} height={64} src={githubImg} className="dark:invert-100" alt="GitHub" />
           <div>
             <span className="title">GitHub</span>
             <p className="text-xs mt-0.5">
@@ -81,7 +75,7 @@ const ConnectPage = () => {
 
             <Link
               target="_blank"
-              href={"https://github.com/ArrowUpTeam"}
+              href={"https://github.com/FarzadVav"}
               className="btn btn-outline btn-sm mt-3"
             >
               <span>Visit</span>

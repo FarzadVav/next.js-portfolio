@@ -17,7 +17,7 @@ function HeroSectionProfile() {
       <motion.div
         initial={{ scale: 0, opacity: 0, y: "100%" }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
-        className="size-full ring-8 ring-background-thick rounded-full overflow-hidden"
+        className="size-full ring-8 ring-background-thick  rounded-full overflow-hidden"
       >
         <Image
           width={208}
