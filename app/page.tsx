@@ -16,6 +16,7 @@ import { ARTICLES } from "root/constants/articles";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
 import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSectionProfile";
+import { ABOUT_ME, NAME } from "root/constants/about";
 
 const HomePage = () => {
   return (
@@ -26,13 +27,9 @@ const HomePage = () => {
         <div className="container">
           <HeroSectionProfile />
 
-          <h1 className="heading mt-9">farzad vahdati</h1>
+          <h1 className="heading mt-9">{NAME}</h1>
 
-          <p className="container md:w-4/5 text-center mx-auto mt-3">
-            Hi, I{"'"}m a fullstack web developer focused on Next.js 💻 My expertise is building
-            powerful applications with Javascript ✌️ I work on optimizing web applications for SEO,
-            performance, state management, accessibility, and other important web parameters ✅
-          </p>
+          <p className="container md:w-4/5 text-center mx-auto mt-3">{ABOUT_ME}</p>
 
           <Form className="join-no-inner-border container md:w-1/2 mx-auto mt-6" action={"/search"}>
             <label className="input input-soft flex-1">

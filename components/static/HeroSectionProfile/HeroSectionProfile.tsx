@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-import profileImg from "root/public/profile.jpg";
+import { PROFILE } from "root/constants/about";
 
 function HeroSectionProfile() {
   return (
@@ -19,13 +18,7 @@ function HeroSectionProfile() {
         animate={{ scale: 1, opacity: 1, y: 0 }}
         className="size-full ring-8 ring-background-thick  rounded-full overflow-hidden"
       >
-        <Image
-          width={208}
-          height={208}
-          src={profileImg}
-          alt="Farzad Vahdati"
-          className="size-full"
-        />
+        <Image width={208} height={208} src={PROFILE} alt="Farzad Vahdati" className="size-full" />
       </motion.div>
     </div>
   );

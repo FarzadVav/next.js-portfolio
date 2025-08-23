@@ -3,8 +3,8 @@ import Image from "next/image";
 import { LinkLoader } from "@kadoui/next";
 import { LoaderIcon, MailIcon, PhoneIcon } from "lucide-react";
 
-import profileImg from "root/public/profile.jpg";
 import githubImg from "root/public/github.svg";
+import { PROFILE } from "root/constants/about";
 import telegramImg from "root/public/telegram.svg";
 import linkedinImg from "root/public/linkedin.svg";
 
@@ -15,7 +15,7 @@ const Footer = () => {
         <Image
           width={108}
           height={108}
-          src={profileImg}
+          src={PROFILE}
           alt="Farzad Vahdati"
           className="size-27 rounded-full mx-auto transition-all md:not-group-hover:saturate-0"
         />
