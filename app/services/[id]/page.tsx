@@ -20,12 +20,12 @@ async function ServicesDetailPage({ params }: PageProps) {
 
       <div className="container grid grid-cols-2 md:grid-cols-3 gap-3">
         {service.features.map((item) => (
-          <div className="card" key={item.name}>
+          <div className="card flex flex-col" key={item.name}>
             <div className="size-12 bg-background p-3 rounded-full f-center">
               <SparklesIcon className="size-full" />
             </div>
-            <h2 className="title mt-3">{item.name}</h2>
-            <p className="mt-1.5 text-sm">{item.description}</p>
+            <h2 className="title mt-auto pt-3">{item.name}</h2>
+            <p className="text-sm pt-1.5">{item.description}</p>
           </div>
         ))}
       </div>
