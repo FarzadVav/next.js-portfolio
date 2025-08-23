@@ -88,7 +88,7 @@ const ConnectPage = () => {
       <h2 className="heading mt-20">community events</h2>
       <div className="container mt-6 grid-cols-1 grid md:grid-cols-2 gap-3">
         {Array.from({ length: 4 }).map(() => (
-          <div className="card card-thick space-y-3" key={Math.random()}>
+          <div className="card space-y-3" key={Math.random()}>
             <div className="w-full aspect-video bg-background rounded-lg" />
 
             <h2 className="mt-3 text-xl font-bold">Talking about Mashhad startups</h2>
@@ -111,7 +111,7 @@ const ConnectPage = () => {
         <ScrollAnimation className="container">
           <h4 className="heading">send yuor message</h4>
           <ScrollAnimation className=" mt-6">
-            <ScrollAnimation className="card card-thick">
+            <ScrollAnimation className="card">
               <div className="f-align max-md:flex-col gap-3">
                 <label className="input input-outline max-md:w-full md:flex-1">
                   <UserIcon className="input-icon-size" />

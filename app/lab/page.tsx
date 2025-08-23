@@ -27,7 +27,7 @@ const ServicesPage = () => {
 
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
         {Array.from({ length: 7 }).map(() => (
-          <div className="card card-thick" key={Math.random()}>
+          <div className="card" key={Math.random()}>
             <div className="f-align gap-3">
               <div className="size-9 rounded-full bg-background" />
               <h2 className="title">Nest.js web app</h2>

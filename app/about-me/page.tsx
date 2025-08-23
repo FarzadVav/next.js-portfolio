@@ -17,7 +17,7 @@ const AboutPage = () => {
       />
 
       <div className="container">
-        <div className="card card-thick">
+        <div className="card">
           <video className="w-full bg-background aspect-video rounded-lg" />
         </div>
       </div>
@@ -29,7 +29,7 @@ const AboutPage = () => {
           <Carousel.RightFade className="carousel-right-fade" />
 
           {Array.from({ length: 7 }).map(() => (
-            <div className="slidable card card-thick space-y-3" key={Math.random()}>
+            <div className="slidable card space-y-3" key={Math.random()}>
               <div className="w-full aspect-video rounded-lg bg-background" />
               <p className="text-xl text-center font-bold">Attract 3,637,000 users</p>
               <p className="text-center">
@@ -43,7 +43,7 @@ const AboutPage = () => {
       <h4 className="heading mt-20">our projects</h4>
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
         {Array.from({ length: 7 }).map(() => (
-          <div className="card card-thick space-y-3" key={Math.random()}>
+          <div className="card space-y-3" key={Math.random()}>
             <div className="w-full aspect-video bg-background rounded-lg" />
             <h6 className="title">Our IT solutions</h6>
             <p className="mt-3 line-clamp-3">

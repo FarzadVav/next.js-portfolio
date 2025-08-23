@@ -224,7 +224,7 @@ const ArticlesDetailPage = () => {
           <Carousel.RightFade className="carousel-right-fade" />
 
           {Array.from({ length: 7 }).map(() => (
-            <div className="slidable card card-thick space-y-3" key={Math.random()}>
+            <div className="slidable card space-y-3" key={Math.random()}>
               <div className="w-full aspect-video bg-background rounded-lg" />
               <h6 className="title">Our IT solutions</h6>
               <div className="badge badge-soft badge-sm mt-3">Business</div>

@@ -1,62 +1,42 @@
+import { notFound } from "next/navigation";
 import { CheckIcon, PhoneIcon, SparklesIcon, UserIcon } from "lucide-react";
 
 import { PageProps } from "root/types";
 import { SERVICES } from "root/constants/services";
-import servicesImg from "root/public/services.png";
 import PageHero from "root/components/PageHero/PageHero";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 async function ServicesDetailPage({ params }: PageProps) {
   const paramId = parseInt((await params).id);
-  const pageHeroSrc = SERVICES.find((item) => item.id === paramId)?.thumbnail;
+  const service = SERVICES.find((item) => item.id === paramId);
+
+  if (!service) {
+    return notFound();
+  }
 
   return (
     <>
-      <PageHero
-        darkInvert={!pageHeroSrc}
-        src={pageHeroSrc || servicesImg}
-        title="Let's do some perfect projects"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
-      />
+      <PageHero title={service.title} src={service.thumbnail} description={service.description} />
 
       <div className="container grid grid-cols-2 md:grid-cols-3 gap-3">
-        {Array.from({ length: 6 }).map(() => (
-          <div className="card card-thick" key={Math.random()}>
+        {service.features.map((item) => (
+          <div className="card" key={item.name}>
             <div className="size-12 bg-background p-3 rounded-full f-center">
               <SparklesIcon className="size-full" />
             </div>
-            <h2 className="title mt-3">Fast bulding</h2>
-            <p className="mt-1.5 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, in?
-            </p>
+            <h2 className="title mt-3">{item.name}</h2>
+            <p className="mt-1.5 text-sm">{item.description}</p>
           </div>
         ))}
       </div>
 
       <div className="container mt-20">
-        <h3 className="text-xl font-bold">Think to bigger things!</h3>
-        <p className="mt-3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eaque nostrum impedit ab
-          tempora labore aliquam temporibus amet, velit deserunt mollitia? Esse error distinctio
-          rem. Cumque repudiandae magnam, earum esse corrupti laudantium, eos quaerat quod ab optio
-          dolore molestias tenetur. Enim obcaecati aperiam, nemo quod in odio id ducimus maiores.
-        </p>
-
-        <h3 className="text-xl mt-6 font-bold">Think to bigger things!</h3>
-        <p className="mt-3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eaque nostrum impedit ab
-          tempora labore aliquam temporibus amet, velit deserunt mollitia? Esse error distinctio
-          rem. Cumque repudiandae magnam, earum esse corrupti laudantium, eos quaerat quod ab optio
-          dolore molestias tenetur. Enim obcaecati aperiam, nemo quod in odio id ducimus maiores.
-        </p>
-
-        <h3 className="text-xl mt-6 font-bold">Think to bigger things!</h3>
-        <p className="mt-3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eaque nostrum impedit ab
-          tempora labore aliquam temporibus amet, velit deserunt mollitia? Esse error distinctio
-          rem. Cumque repudiandae magnam, earum esse corrupti laudantium, eos quaerat quod ab optio
-          dolore molestias tenetur. Enim obcaecati aperiam, nemo quod in odio id ducimus maiores.
-        </p>
+        {service.questions.map((item) => (
+          <div className="not-first:mt-6" key={item.title}>
+            <h3 className="title">{item.title}</h3>
+            <p className="mt-3">{item.description}</p>
+          </div>
+        ))}
       </div>
 
       <ScrollAnimation className="container mt-20">

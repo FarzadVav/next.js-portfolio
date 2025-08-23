@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { LinkLoader } from "@kadoui/next";
 import { AccessNavigation, Sheet } from "@kadoui/react";
-import { ArrowRightIcon, LoaderIcon, MenuIcon } from "lucide-react";
+import { ChevronRightIcon, LoaderIcon, MenuIcon } from "lucide-react";
 
 const Header = () => {
   return (
@@ -165,38 +165,38 @@ const Header = () => {
           <Sheet.Portal className="sheet-portal md:hidden">
             <Sheet.Body className="sheet-body w-full group">
               <Sheet.Header className="sheet-header h-auto p-3">
-                <span className="w-1/4 h-1 rounded-full bg-background-thin" />
+                <span className="w-1/4 h-1 rounded-full bg-background-thick" />
               </Sheet.Header>
 
-              <Sheet.Content className="sheet-content space-y-3">
+              <Sheet.Content className="sheet-content space-y-6">
                 <Link className="btn btn-ghost w-full justify-between" href={"/services"}>
                   <span>Services</span>
                   <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                    <ArrowRightIcon className="btn-icon-size" />
+                    <ChevronRightIcon className="btn-icon-size" />
                   </LinkLoader>
                 </Link>
                 <Link className="btn btn-ghost w-full justify-between" href={"/lab"}>
                   <span>Lab</span>
                   <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                    <ArrowRightIcon className="btn-icon-size" />
+                    <ChevronRightIcon className="btn-icon-size" />
                   </LinkLoader>
                 </Link>
                 <Link className="btn btn-ghost w-full justify-between" href={"/articles"}>
                   <span>Articles</span>
                   <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                    <ArrowRightIcon className="btn-icon-size" />
+                    <ChevronRightIcon className="btn-icon-size" />
                   </LinkLoader>
                 </Link>
                 <Link className="btn btn-ghost w-full justify-between" href={"/about-me"}>
                   <span>About me</span>
                   <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                    <ArrowRightIcon className="btn-icon-size" />
+                    <ChevronRightIcon className="btn-icon-size" />
                   </LinkLoader>
                 </Link>
                 <Link className="btn btn-ghost w-full justify-between" href={"/contact-me"}>
                   <span>Contact me</span>
                   <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                    <ArrowRightIcon className="btn-icon-size" />
+                    <ChevronRightIcon className="btn-icon-size" />
                   </LinkLoader>
                 </Link>
               </Sheet.Content>
