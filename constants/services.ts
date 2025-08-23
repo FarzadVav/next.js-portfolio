@@ -9,6 +9,7 @@ import discordImg from "root/public/discord.png";
 import webScrapingImg from "root/public/web-scraping.png";
 import cliImg from "root/public/cli.png";
 import engineeringImg from "root/public/engineering.png";
+import nextJsImg from "root/public/next-js.svg";
 
 export type ServiceT = {
   id: number;
@@ -464,3 +465,64 @@ export const SERVICES: ServiceT[] = [
     ],
   },
 ];
+
+export const NEXT_JS: ServiceT = {
+  id: 10,
+  thumbnail: nextJsImg,
+  title: "Next.js Development",
+  description:
+    "Build cutting-edge web applications with Next.js, the leading React framework for server-side rendering and static site generation. We create high-performance, SEO-friendly websites that deliver exceptional user experiences across all devices",
+  techStack: [
+    "Next.js",
+    "React.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "SWR",
+    "Zustand",
+    "Zod",
+    "Prisma",
+    "GraphQL",
+    "WebRTC",
+    "WebSocket",
+  ],
+  features: [
+    {
+      name: "Server-Side Rendering",
+      description: "Improve SEO and load times with dynamic server-side content rendering",
+    },
+    {
+      name: "Static Site Generation",
+      description: "Deliver blazing-fast static pages with Next.js’s SSG capabilities",
+    },
+    {
+      name: "API Routes",
+      description: "Build backend functionality directly into your Next.js app with API routes",
+    },
+    {
+      name: "Image Optimization",
+      description: "Automatically optimize images for faster load times and better performance",
+    },
+    {
+      name: "Incremental Static Regeneration",
+      description:
+        "Update static content on-demand without rebuilding the entire site, ensuring fresh content",
+    },
+  ],
+  questions: [
+    {
+      title: "Why choose Next.js for our project?",
+      description:
+        "Next.js offers a powerful combination of performance, SEO, and developer experience, making it ideal for modern web applications",
+    },
+    {
+      title: "Can you integrate with our existing systems?",
+      description:
+        "Yes, we can connect Next.js apps to your existing APIs, databases, or third-party services seamlessly",
+    },
+    {
+      title: "How do you ensure scalability?",
+      description:
+        "We design Next.js applications with scalability in mind, using best practices and cloud-ready architectures",
+    },
+  ],
+};
