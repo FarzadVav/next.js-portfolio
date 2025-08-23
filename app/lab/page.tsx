@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { ArrowUpRightIcon, CheckIcon } from "lucide-react";
-import { AccessNavigation, Carousel } from "@kadoui/react";
+import { Carousel } from "@kadoui/react";
+import { ArrowUpRightIcon } from "lucide-react";
 
 import labImg from "root/public/lab.png";
+import { LAB } from "root/constants/lab";
 import PageHero from "root/components/PageHero/PageHero";
 
 const ServicesPage = () => {
@@ -11,76 +12,39 @@ const ServicesPage = () => {
       <PageHero
         darkInvert
         src={labImg}
-        title="Let's do some perfect projects"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
+        title="My open-source laboratory"
+        description="A showcase of my open-source projects and experiments, featuring various web technologies and frameworks. Come explore my coding playground where I test new ideas and push the boundaries of web development."
       />
 
-      <AccessNavigation direction="x" className="f-align-scroll container">
-        <div className="join-border min-w-max mx-auto">
-          <button className="btn btn-fill font-bold">Front-End</button>
-          <button className="btn btn-soft">Back-End</button>
-          <button className="btn btn-soft">Mobile</button>
-          <button className="btn btn-soft">Desktop</button>
-          <button className="btn btn-soft">Cloud</button>
-        </div>
-      </AccessNavigation>
-
-      <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
-        {Array.from({ length: 7 }).map(() => (
-          <div className="card" key={Math.random()}>
+      <div className="container grid grid-cols-1 md:grid-cols-2 gap-3">
+        {LAB.map((item) => (
+          <div className="card flex flex-col gap-3" key={item.id}>
             <div className="f-align gap-3">
-              <div className="size-9 rounded-full bg-background" />
-              <h2 className="title">Nest.js web app</h2>
+              <div className="size-12 rounded-full bg-background p-3">{item.icon}</div>
+              <h2 className="title">{item.title}</h2>
             </div>
 
-            <Carousel className="carousel mt-3">
+            <Carousel className="carousel">
               <Carousel.Container className="carousel-container no-scrollbar gap-3">
                 <Carousel.LeftFade className="carousel-left-fade from-background-thick" />
                 <Carousel.RightFade className="carousel-right-fade from-background-thick" />
 
-                <div className="badge badge-sm">Javascript</div>
-                <div className="badge badge-sm">React</div>
-                <div className="badge badge-sm">Next</div>
-                <div className="badge badge-sm">Tailwind</div>
-                <div className="badge badge-sm">Chart</div>
-                <div className="badge badge-sm">Astro</div>
-                <div className="badge badge-sm">Vitest</div>
-                <div className="badge badge-sm">Remix</div>
-                <div className="badge badge-sm">Sass</div>
-                <div className="badge badge-sm">Framer</div>
-                <div className="badge badge-sm">PWA</div>
+                {item.techStack.map((tech) => (
+                  <div className="badge badge-sm min-w-max" key={tech}>
+                    {tech}
+                  </div>
+                ))}
               </Carousel.Container>
             </Carousel>
 
-            <p className="mt-3 line-clamp-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod tempore labore
-              ipsum voluptatem odit saepe magni animi rem nesciunt voluptatibus repellendus quisquam
-              enim suscipit, molestias harum reiciendis commodi a?
-            </p>
+            <p className="mt-auto">{item.description}</p>
 
-            <ul className="mt-3 space-y-1.5 opacity-75">
-              <li className="f-align gap-1.5">
-                <CheckIcon className="size-4" />
-                <span>Six month free support</span>
-              </li>
-              <li className="f-align gap-1.5">
-                <CheckIcon className="size-4" />
-                <span>Six month free support</span>
-              </li>
-              <li className="f-align gap-1.5">
-                <CheckIcon className="size-4" />
-                <span>Six month free support</span>
-              </li>
-            </ul>
-
-            <Link
-              target="_blank"
-              className="btn btn-outline btn-full mt-6"
-              href={"https://github.com/ArrowUpTeam"}
-            >
-              <span>Read more</span>
-              <ArrowUpRightIcon className="btn-icon-size" />
-            </Link>
+            <div className="pt-3 mt-auto">
+              <Link target="_blank" href={item.link} className="btn btn-outline btn-full">
+                <span>Read more</span>
+                <ArrowUpRightIcon className="btn-icon-size" />
+              </Link>
+            </div>
           </div>
         ))}
       </div>

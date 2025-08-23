@@ -20,9 +20,9 @@ const ServicesPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div className="container grid grid-cols-1 md:grid-cols-2 gap-3">
         {SERVICES.map((service) => (
-          <div className="card flex flex-col gap-0" key={service.id}>
+          <div className="card flex flex-col" key={service.id}>
             <div className="f-align gap-3">
               <Image
                 width={48}
