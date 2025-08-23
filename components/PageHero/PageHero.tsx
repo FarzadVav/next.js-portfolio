@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { cn } from "@kadoui/react/utils";
 import Image, { StaticImageData } from "next/image";
 
 type PageHeroProps = Omit<React.HTMLAttributes<HTMLDivElement>, "children" | "title"> & {
@@ -24,7 +25,7 @@ const PageHero: React.FC<PageHeroProps> = ({ src, title, description, darkInvert
           alt={title}
           width={160}
           height={160}
-          className={`size-full ${darkInvert ? "dark:invert-100" : ""}`}
+          className={cn("size-full rounded-lg", darkInvert ? "dark:invert-100" : null)}
         />
       </motion.div>
 

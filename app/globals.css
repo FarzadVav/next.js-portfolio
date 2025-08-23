@@ -51,3 +51,26 @@
 @utility title {
   @apply text-lg md:text-xl font-bold;
 }
+
+@utility article {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply title not-first:mt-12;
+  }
+
+  ul {
+    @apply list-disc pl-3 mt-3 space-y-3;
+  }
+
+  p {
+    @apply leading-relaxed mt-6;
+  }
+
+  b {
+    @apply font-semibold;
+  }
+}

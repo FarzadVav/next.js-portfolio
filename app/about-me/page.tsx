@@ -17,8 +17,9 @@ const AboutPage = () => {
       />
 
       <div className="container">
-        <div className="card">
+        <div className="card relative">
           <video className="w-full bg-background aspect-video rounded-lg" />
+          <p className="absolute inset-center animate-pulse">Comming soon</p>
         </div>
       </div>
 

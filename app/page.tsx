@@ -12,6 +12,7 @@ import {
   TextIcon,
 } from "lucide-react";
 
+import { ARTICLES } from "root/constants/articles";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
 import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSectionProfile";
@@ -221,25 +222,26 @@ const HomePage = () => {
           <Carousel.LeftFade className="carousel-left-fade" />
           <Carousel.RightFade className="carousel-right-fade" />
 
-          {Array.from({ length: 7 }).map(() => (
-            <div className="slidable card space-y-3" key={Math.random()}>
+          {ARTICLES.slice(0, 6).map((item) => (
+            <article className="card slidable space-y-3" key={item.id}>
               <div className="w-full aspect-video bg-background rounded-lg" />
-              <h6 className="title">Our IT solutions</h6>
-              <div className="badge badge-soft badge-sm mt-3">Business</div>
-              <p className="mt-3 line-clamp-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores
-                pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit
-                odio nisi ad magni numquam eum animi repudiandae.
-              </p>
 
-              <Link className="btn btn-outline btn-full" href={"/articles/1"}>
-                <span>Lorem</span>
+              <h6 className="text-xl font-bold">{item.title}</h6>
+
+              <div className="badge badge-soft badge-sm mt-3">
+                {item.createdAt.toLocaleDateString()}
+              </div>
+
+              <p className="mt-3">{item.description}</p>
+
+              <Link className="btn btn-outline btn-full" href={`/articles/${item.id}`}>
+                <span>Read more</span>
 
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                   <ArrowRightIcon className="btn-icon-size" />
                 </LinkLoader>
               </Link>
-            </div>
+            </article>
           ))}
         </Carousel.Container>
       </Carousel>

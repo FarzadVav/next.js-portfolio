@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { LinkLoader } from "@kadoui/next";
-import { AccessNavigation } from "@kadoui/react";
 import { ArrowRightIcon, LoaderIcon } from "lucide-react";
 
+import Image from "next/image";
 import articlesImg from "root/public/articles.png";
 import PageHero from "root/components/PageHero/PageHero";
+import { ARTICLES } from "root/constants/articles";
 
 const ArticlesPage = () => {
   return (
@@ -16,36 +17,33 @@ const ArticlesPage = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
       />
 
-      <AccessNavigation direction="x" className="f-align-scroll container">
-        <div className="join-border min-w-max mx-auto">
-          <button className="btn btn-fill font-bold">Front-End</button>
-          <button className="btn btn-soft">Back-End</button>
-          <button className="btn btn-soft">Mobile</button>
-          <button className="btn btn-soft">Desktop</button>
-          <button className="btn btn-soft">Cloud</button>
-        </div>
-      </AccessNavigation>
-
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
-        {Array.from({ length: 7 }).map(() => (
-          <div className="card space-y-3" key={Math.random()}>
-            <div className="w-full aspect-video bg-background rounded-lg" />
-            <h6 className="text-xl font-bold">Our IT solutions</h6>
-            <div className="badge badge-soft badge-sm mt-3">Business</div>
-            <p className="mt-3 line-clamp-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores
-              pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit
-              odio nisi ad magni numquam eum animi repudiandae.
-            </p>
+        {ARTICLES.map((article) => (
+          <article className="card space-y-3" key={article.id}>
+            <Image
+              width={470}
+              height={265}
+              alt={article.title}
+              src={article.thumbnail}
+              className="w-full aspect-video rounded-lg"
+            />
 
-            <Link className="btn btn-outline btn-full" href={"/articles/1"}>
+            <h6 className="text-xl font-bold">{article.title}</h6>
+
+            <div className="badge badge-soft badge-sm mt-3">
+              {article.createdAt.toLocaleDateString()}
+            </div>
+
+            <p className="mt-3">{article.description}</p>
+
+            <Link className="btn btn-outline btn-full" href={`/articles/${article.id}`}>
               <span>Read more</span>
 
               <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                 <ArrowRightIcon className="btn-icon-size" />
               </LinkLoader>
             </Link>
-          </div>
+          </article>
         ))}
       </div>
     </>
