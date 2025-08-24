@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { LinkLoader } from "@kadoui/next";
 import { AccessNavigation, Accordion } from "@kadoui/react";
 import {
   ArrowUpRightIcon,
@@ -9,13 +8,13 @@ import {
   HourglassIcon,
   LanguagesIcon,
   LaptopIcon,
-  LoaderIcon,
   MapPinIcon,
 } from "lucide-react";
 
 import aboutMeImg from "root/public/about-me.png";
 import PageHero from "root/components/PageHero/PageHero";
-import { DETAIL, SKILLS } from "root/constants/about";
+import { DETAIL, FAQS, PROJECTS, SKILLS } from "root/constants/about";
+import Image from "next/image";
 
 const AboutPage = () => {
   return (
@@ -76,7 +75,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <h3 className="heading mt-40">My skills</h3>
+      <h3 className="heading mt-40">my skills</h3>
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="h-max f-center gap-3 flex-wrap">
           {SKILLS.professional.map((item) => (
@@ -99,24 +98,25 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <h4 className="heading mt-20">our projects</h4>
+      <h4 className="heading mt-20">my projects</h4>
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
-        {Array.from({ length: 7 }).map(() => (
-          <div className="card space-y-3" key={Math.random()}>
-            <div className="w-full aspect-video bg-background rounded-lg" />
-            <h6 className="title">Our IT solutions</h6>
-            <p className="mt-3 line-clamp-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nihil omnis, dolores
-              pariatur sed distinctio praesentium quam? Dignissimos officia, assumenda alias sit
-              odio nisi ad magni numquam eum animi repudiandae.
-            </p>
+        {PROJECTS.map((item) => (
+          <div className="card flex flex-col gap-3" key={item.id}>
+            <Image
+              width={705}
+              height={397}
+              alt={item.title}
+              src={item.thumbnail}
+              className="w-full aspect-video rounded-lg"
+            />
 
-            <Link className="btn btn-outline btn-full" href={"/articles/1"}>
-              <span>Lorem</span>
+            <h6 className="title">{item.title}</h6>
 
-              <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                <ArrowUpRightIcon className="btn-icon-size" />
-              </LinkLoader>
+            <p>{item.description}</p>
+
+            <Link className="btn btn-outline btn-full mt-auto" href={item.link} target="_blank">
+              <span>Visitm</span>
+              <ArrowUpRightIcon className="btn-icon-size" />
             </Link>
           </div>
         ))}
@@ -126,18 +126,14 @@ const AboutPage = () => {
         faqs
       </h5>
       <AccessNavigation className="container mt-6">
-        {Array.from({ length: 8 }).map(() => (
-          <Accordion key={Math.random()}>
+        {FAQS.map((item) => (
+          <Accordion key={item.id}>
             <Accordion.Toggle className="btn btn-ghost md:btn-lg btn-full justify-between group not-first:mt-3">
-              <h6 className="font-bold">How can we work with you?</h6>
+              <h6 className="font-bold">{item.question}</h6>
               <ChevronDownIcon className="btn-icon-size transition-transform group-[.accordion-active]:-scale-y-100" />
             </Accordion.Toggle>
             <Accordion.Body>
-              <p className="p-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore? Corrupti
-                quasi nam, iste sint quibusdam ipsa numquam est minima libero repudiandae harum nisi
-                nihil doloremque voluptas sed optio eum!
-              </p>
+              <p className="p-3">{item.answer}</p>
             </Accordion.Body>
           </Accordion>
         ))}
