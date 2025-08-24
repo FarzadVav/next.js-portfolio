@@ -3,10 +3,9 @@
 import { shuffle } from "lodash";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { HashIcon } from "lucide-react";
+import { useMounted } from "@mantine/hooks";
 
 import { SKILLS, TechnicalSkillT } from "root/constants/about";
-import { useMounted } from "@mantine/hooks";
 
 const HeroSectionLogos = () => {
   const isMounted = useMounted();
@@ -23,7 +22,7 @@ const HeroSectionLogos = () => {
     <div className="container relative uppercase max-lg:hidden">
       {/* Right */}
       <motion.div
-        className="absolute top-0 right-0"
+        className="absolute top-0 right-0 cursor-pointer"
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.1 }}
@@ -32,7 +31,7 @@ const HeroSectionLogos = () => {
         onClick={setRandomSkills}
       >
         <motion.span
-          className="badge"
+          className="badge badge-lg"
           style={{
             ...createLogoStyles("right").style,
             backgroundColor: skills[0].color.bg,
@@ -40,13 +39,12 @@ const HeroSectionLogos = () => {
           }}
           variants={createLogoStyles("right").variant}
         >
-          <HashIcon className="badge-icon-size" />
-          <span>{skills[0].name}</span>
+          {skills[0].name}
         </motion.span>
       </motion.div>
 
       <motion.div
-        className="absolute top-18 right-27"
+        className="absolute top-15 right-30 cursor-pointer"
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.2 }}
@@ -55,7 +53,7 @@ const HeroSectionLogos = () => {
         onClick={setRandomSkills}
       >
         <motion.span
-          className="badge"
+          className="badge badge-lg"
           style={{
             ...createLogoStyles("right").style,
             backgroundColor: skills[1].color.bg,
@@ -63,13 +61,12 @@ const HeroSectionLogos = () => {
           }}
           variants={createLogoStyles("right").variant}
         >
-          <HashIcon className="badge-icon-size" />
-          <span>{skills[1].name}</span>
+          {skills[1].name}
         </motion.span>
       </motion.div>
 
       <motion.div
-        className="absolute top-27 right-0"
+        className="absolute top-30 right-0 cursor-pointer"
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.4 }}
@@ -78,7 +75,7 @@ const HeroSectionLogos = () => {
         onClick={setRandomSkills}
       >
         <motion.span
-          className="badge"
+          className="badge badge-lg"
           style={{
             ...createLogoStyles("right").style,
             backgroundColor: skills[2].color.bg,
@@ -86,13 +83,12 @@ const HeroSectionLogos = () => {
           }}
           variants={createLogoStyles("right").variant}
         >
-          <HashIcon className="badge-icon-size" />
-          <span>{skills[2].name}</span>
+          {skills[2].name}
         </motion.span>
       </motion.div>
 
       <motion.div
-        className="absolute top-45 right-27"
+        className="absolute top-45 right-30 cursor-pointer"
         initial={{ x: 500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.3 }}
@@ -101,7 +97,7 @@ const HeroSectionLogos = () => {
         onClick={setRandomSkills}
       >
         <motion.span
-          className="badge"
+          className="badge badge-lg"
           style={{
             ...createLogoStyles("right").style,
             backgroundColor: skills[3].color.bg,
@@ -109,14 +105,13 @@ const HeroSectionLogos = () => {
           }}
           variants={createLogoStyles("right").variant}
         >
-          <HashIcon className="badge-icon-size" />
-          <span>{skills[3].name}</span>
+          {skills[3].name}
         </motion.span>
       </motion.div>
 
       {/* Left */}
       <motion.div
-        className="absolute top-0 left-0"
+        className="absolute top-0 left-0 cursor-pointer"
         initial={{ x: -500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.1 }}
@@ -125,7 +120,7 @@ const HeroSectionLogos = () => {
         onClick={setRandomSkills}
       >
         <motion.span
-          className="badge"
+          className="badge badge-lg"
           style={{
             ...createLogoStyles("left").style,
             backgroundColor: skills[4].color.bg,
@@ -133,13 +128,12 @@ const HeroSectionLogos = () => {
           }}
           variants={createLogoStyles("left").variant}
         >
-          <HashIcon className="badge-icon-size" />
-          <span>{skills[4].name}</span>
+          {skills[4].name}
         </motion.span>
       </motion.div>
 
       <motion.div
-        className="absolute top-18 left-27"
+        className="absolute top-15 left-30 cursor-pointer"
         initial={{ x: -500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.2 }}
@@ -148,7 +142,7 @@ const HeroSectionLogos = () => {
         onClick={setRandomSkills}
       >
         <motion.span
-          className="badge"
+          className="badge badge-lg"
           style={{
             ...createLogoStyles("left").style,
             backgroundColor: skills[5].color.bg,
@@ -156,13 +150,12 @@ const HeroSectionLogos = () => {
           }}
           variants={createLogoStyles("left").variant}
         >
-          <HashIcon className="badge-icon-size" />
-          <span>{skills[5].name}</span>
+          {skills[5].name}
         </motion.span>
       </motion.div>
 
       <motion.div
-        className="absolute top-27 left-0"
+        className="absolute top-30 left-0 cursor-pointer"
         initial={{ x: -500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.4 }}
@@ -171,7 +164,7 @@ const HeroSectionLogos = () => {
         onClick={setRandomSkills}
       >
         <motion.span
-          className="badge"
+          className="badge badge-lg"
           style={{
             ...createLogoStyles("left").style,
             backgroundColor: skills[6].color.bg,
@@ -179,13 +172,12 @@ const HeroSectionLogos = () => {
           }}
           variants={createLogoStyles("left").variant}
         >
-          <HashIcon className="badge-icon-size" />
-          <span>{skills[6].name}</span>
+          {skills[6].name}
         </motion.span>
       </motion.div>
 
       <motion.div
-        className="absolute top-45 left-27"
+        className="absolute top-45 left-30 cursor-pointer"
         initial={{ x: -500, y: 100, scale: 0, opacity: 0 }}
         animate={{ x: 0, y: 0, scale: 1, opacity: 1 }}
         transition={{ delay: 0.3 }}
@@ -194,7 +186,7 @@ const HeroSectionLogos = () => {
         onClick={setRandomSkills}
       >
         <motion.span
-          className="badge"
+          className="badge badge-lg"
           style={{
             ...createLogoStyles("left").style,
             backgroundColor: skills[7].color.bg,
@@ -202,8 +194,7 @@ const HeroSectionLogos = () => {
           }}
           variants={createLogoStyles("left").variant}
         >
-          <HashIcon className="badge-icon-size" />
-          <span>{skills[7].name}</span>
+          {skills[7].name}
         </motion.span>
       </motion.div>
     </div>
@@ -228,7 +219,6 @@ const createLogoStyles = (side: "left" | "right") => {
         scale: 1.15,
         rotateY: -10,
         y: -20,
-        cursor: "pointer",
       },
       groupTap: {
         scale: 0.9,
