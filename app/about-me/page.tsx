@@ -1,10 +1,21 @@
 import Link from "next/link";
 import { LinkLoader } from "@kadoui/next";
-import { AccessNavigation, Accordion, Carousel } from "@kadoui/react";
-import { ArrowUpRightIcon, ChevronDownIcon, DownloadIcon, LoaderIcon } from "lucide-react";
+import { AccessNavigation, Accordion } from "@kadoui/react";
+import {
+  ArrowUpRightIcon,
+  CakeIcon,
+  ChevronDownIcon,
+  DownloadIcon,
+  HourglassIcon,
+  LanguagesIcon,
+  LaptopIcon,
+  LoaderIcon,
+  MapPinIcon,
+} from "lucide-react";
 
 import aboutMeImg from "root/public/about-me.png";
 import PageHero from "root/components/PageHero/PageHero";
+import { DETAIL, SKILLS } from "root/constants/about";
 
 const AboutPage = () => {
   return (
@@ -23,23 +34,70 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <h2 className="heading mt-20">our features / skills</h2>
-      <Carousel className="carousel container mt-6">
-        <Carousel.Container className="carousel-container gap-3">
-          <Carousel.LeftFade className="carousel-left-fade" />
-          <Carousel.RightFade className="carousel-right-fade" />
+      <div className="container mt-40 grid grid-cols-2 md:grid-cols-6 gap-y-20">
+        <div className="md:col-span-2 f-center flex-col">
+          <div className="f-center gap-3">
+            <CakeIcon className="size-6" />
+            <h2 className="title">Birthday</h2>
+          </div>
+          <p className="mt-1.5">{DETAIL.birthday}</p>
+        </div>
 
-          {Array.from({ length: 7 }).map(() => (
-            <div className="slidable card space-y-3" key={Math.random()}>
-              <div className="w-full aspect-video rounded-lg bg-background" />
-              <p className="text-xl text-center font-bold">Attract 3,637,000 users</p>
-              <p className="text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, pariatur!
-              </p>
-            </div>
+        <div className="md:col-span-2 f-center flex-col">
+          <div className="f-center gap-3">
+            <MapPinIcon className="size-6" />
+            <h2 className="title">Location</h2>
+          </div>
+          <p className="mt-1.5">{DETAIL.location}</p>
+        </div>
+
+        <div className="md:col-span-2 f-center flex-col">
+          <div className="f-center gap-3">
+            <LanguagesIcon className="size-6" />
+            <h2 className="title">English lvl</h2>
+          </div>
+          <p className="mt-1.5">{DETAIL.english}</p>
+        </div>
+
+        <div className="md:col-span-3 f-center flex-col">
+          <div className="f-center gap-3">
+            <LaptopIcon className="size-6" />
+            <h2 className="title">Scope</h2>
+          </div>
+          <p className="mt-1.5">{DETAIL.scope}</p>
+        </div>
+
+        <div className="md:col-span-3 max-md:col-span-2 f-center flex-col">
+          <div className="f-center gap-3">
+            <HourglassIcon className="size-6" />
+            <h2 className="title">Experience</h2>
+          </div>
+          <p className="mt-1.5">+{DETAIL.experience} Years</p>
+        </div>
+      </div>
+
+      <h3 className="heading mt-40">My skills</h3>
+      <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="h-max f-center gap-3 flex-wrap">
+          {SKILLS.professional.map((item) => (
+            <p className="badge badge-soft min-w-max" key={item}>
+              {item}
+            </p>
           ))}
-        </Carousel.Container>
-      </Carousel>
+        </div>
+
+        <div className="h-max f-center gap-3 flex-wrap">
+          {SKILLS.technical.map((item) => (
+            <p
+              style={{ backgroundColor: item.color.bg, color: item.color.fr }}
+              className="badge min-w-max"
+              key={item.id}
+            >
+              {item.name}
+            </p>
+          ))}
+        </div>
+      </div>
 
       <h4 className="heading mt-20">our projects</h4>
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">

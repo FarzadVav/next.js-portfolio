@@ -95,7 +95,7 @@ const HomePage = () => {
         </Carousel.Container>
       </Carousel>
 
-      <h3 className="heading mt-20">your first look at us</h3>
+      <h3 className="heading mt-20">your first look at me</h3>
       <div className="grid mt-6 grid-cols-1 md:grid-cols-2 gap-3 container">
         <div className="f-align card max-md:card-sm gap-3">
           <div className="size-16 min-w-16 bg-background rounded-lg" />
