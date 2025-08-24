@@ -17,6 +17,8 @@ import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation
 import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
 import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSectionProfile";
 import { ABOUT_ME, NAME } from "root/constants/about";
+import { SERVICES } from "root/constants/services";
+import Image from "next/image";
 
 const HomePage = () => {
   return (
@@ -70,11 +72,18 @@ const HomePage = () => {
           <Carousel.LeftFade className="carousel-left-fade" />
           <Carousel.RightFade className="carousel-right-fade" />
 
-          {Array.from({ length: 7 }).map(() => (
-            <div className="slidable card space-y-3" key={Math.random()}>
-              <div className="w-full aspect-video bg-background rounded-lg" />
-              <h6 className="title text-center">Our IT solutions</h6>
-              <Link className="btn btn-outline btn-full" href={"/articles/1"}>
+          {SERVICES.map((item) => (
+            <div className="slidable card space-y-3" key={item.id}>
+              <Image
+                width={48}
+                height={48}
+                alt={item.title}
+                className="size-12 mx-auto"
+                src={item.thumbnail}
+              />
+
+              <h6 className="title text-center">{item.title}</h6>
+              <Link className="btn btn-outline btn-full" href={`/services/${item.id}`}>
                 <span>Read more</span>
 
                 <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
