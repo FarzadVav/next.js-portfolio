@@ -9,9 +9,7 @@ import {
   UserPenIcon,
 } from "lucide-react";
 
-import githubImg from "root/public/github.svg";
-import telegramImg from "root/public/telegram.svg";
-import linkedinImg from "root/public/linkedin.svg";
+import { EVENTS, LINKS } from "root/constants/contact-me";
 import contactMeImg from "root/public/contact-me.png";
 import PageHero from "root/components/PageHero/PageHero";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
@@ -27,80 +25,46 @@ const ConnectPage = () => {
       />
 
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="f-align gap-3">
-          <Image src={telegramImg} alt="Telegram" width={64} height={64} />
-          <div>
-            <span className="title">Telegram</span>
-            <p className="text-xs mt-0.5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, in
-            </p>
+        {LINKS.map((item) => (
+          <div className="f-align gap-3" key={item.id}>
+            <Image
+              width={64}
+              height={64}
+              src={item.logo}
+              alt={item.name}
+              className={item.invert ? "dark:invert-100" : undefined}
+            />
+            <div>
+              <span className="title">{item.name}</span>
+              <p className="text-xs mt-0.5">{item.description}</p>
 
-            <Link
-              target="_blank"
-              href={"https://t.me/farzad_vav"}
-              className="btn btn-outline btn-sm mt-3"
-            >
-              <span>Visit</span>
-              <ArrowUpRightIcon className="btn-icon-size" />
-            </Link>
+              <Link target="_blank" href={item.link} className="btn btn-outline btn-sm mt-3">
+                <span>Visit</span>
+                <ArrowUpRightIcon className="btn-icon-size" />
+              </Link>
+            </div>
           </div>
-        </div>
-
-        <div className="f-align gap-3">
-          <Image src={linkedinImg} alt="LinkedIn" width={64} height={64} />
-          <div>
-            <span className="title">LinkedIn</span>
-            <p className="text-xs mt-0.5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, in
-            </p>
-
-            <Link
-              target="_blank"
-              className="btn btn-outline btn-sm mt-3"
-              href={"https://www.linkedin.com/in/farzad-vahdati"}
-            >
-              <span>Visit</span>
-              <ArrowUpRightIcon className="btn-icon-size" />
-            </Link>
-          </div>
-        </div>
-
-        <div className="f-align gap-3">
-          <Image width={64} height={64} src={githubImg} className="dark:invert-100" alt="GitHub" />
-          <div>
-            <span className="title">GitHub</span>
-            <p className="text-xs mt-0.5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, in
-            </p>
-
-            <Link
-              target="_blank"
-              href={"https://github.com/FarzadVav"}
-              className="btn btn-outline btn-sm mt-3"
-            >
-              <span>Visit</span>
-              <ArrowUpRightIcon className="btn-icon-size" />
-            </Link>
-          </div>
-        </div>
+        ))}
       </div>
 
       <h2 className="heading mt-20">community events</h2>
       <div className="container mt-6 grid-cols-1 grid md:grid-cols-2 gap-3">
-        {Array.from({ length: 4 }).map(() => (
-          <div className="card space-y-3" key={Math.random()}>
-            <div className="w-full aspect-video bg-background rounded-lg" />
+        {EVENTS.map((item) => (
+          <div className="card flex flex-col gap-3" key={item.id}>
+            <Image
+              width={705}
+              height={397}
+              alt={item.title}
+              src={item.thumbnail}
+              className="w-full aspect-video rounded-lg"
+            />
 
-            <h2 className="mt-3 text-xl font-bold">Talking about Mashhad startups</h2>
+            <h2 className="title">{item.title}</h2>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, explicabo obcaecati
-              neque nemo non ipsam quod? Eos alias ipsam laborum facilis! Cum, ipsum eius quia
-              perspiciatis consequatur aperiam nulla itaque!
-            </p>
+            <p>{item.description}</p>
 
-            <button className="btn btn-outline btn-full">
-              <span>Join</span>
+            <button className="btn btn-outline btn-full mt-auto">
+              <span>Join us</span>
               <UserPenIcon className="btn-icon-size" />
             </button>
           </div>

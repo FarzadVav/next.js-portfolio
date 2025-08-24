@@ -16,7 +16,7 @@ import { ARTICLES } from "root/constants/articles";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
 import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSectionProfile";
-import { ABOUT_ME, NAME } from "root/constants/about";
+import { ABOUT_ME, NAME } from "root/constants/about-me";
 import { SERVICES } from "root/constants/services";
 import Image from "next/image";
 

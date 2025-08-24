@@ -3,10 +3,8 @@ import Image from "next/image";
 import { LinkLoader } from "@kadoui/next";
 import { LoaderIcon, MailIcon, PhoneIcon } from "lucide-react";
 
-import githubImg from "root/public/github.svg";
-import { PROFILE } from "root/constants/about";
-import telegramImg from "root/public/telegram.svg";
-import linkedinImg from "root/public/linkedin.svg";
+import { NAME, PROFILE } from "root/constants/about-me";
+import { EMAIL, LINKS, PHONE_NUMBER } from "root/constants/contact-me";
 
 const Footer = () => {
   return (
@@ -21,14 +19,14 @@ const Footer = () => {
         />
 
         <div className="f-center flex-wrap gap-3 mt-6">
-          <Link className="btn btn-ghost" href={"tel:09389461065"}>
+          <Link className="btn btn-ghost" href={`tel:${PHONE_NUMBER}`}>
             <PhoneIcon className="btn-icon-size" />
-            <span dir="ltr">0938 0946 1065</span>
+            <span dir="ltr">{PHONE_NUMBER}</span>
           </Link>
 
-          <Link className="btn btn-ghost" href={"mailto:farzad.vav.work@gmail"}>
+          <Link className="btn btn-ghost" href={`mailto:${EMAIL}`}>
             <MailIcon className="btn-icon-size" />
-            <span>farzad.vav.work@gmail.com</span>
+            <span>{EMAIL}</span>
           </Link>
         </div>
 
@@ -74,25 +72,27 @@ const Footer = () => {
         </div>
 
         <div className="f-center gap-6 mt-6">
-          <Link className="size-9" href={"https://t.me/farzad_vav"}>
-            <Image width={64} height={64} alt="telegram" src={telegramImg} className="size-full" />
-          </Link>
-          <Link className="size-9" href={"https://www.linkedin.com/in/farzad-vahdati"}>
-            <Image width={64} height={64} alt="linkedin" src={linkedinImg} className="size-full" />
-          </Link>
-          <Link className="size-9" href={"https://github.com/FarzadVav"}>
-            <Image
-              width={64}
-              height={64}
-              alt="github"
-              src={githubImg}
-              className="size-full dark:invert-100"
-            />
-          </Link>
+          {LINKS.map((item) => (
+            <Link
+              key={item.id}
+              target="_blank"
+              href={item.link}
+              title={item.name}
+              className="size-9"
+            >
+              <Image
+                width={64}
+                height={64}
+                alt={item.name}
+                src={item.logo}
+                className={`size-full ${item.invert ? "dark:invert-100" : ""}`}
+              />
+            </Link>
+          ))}
         </div>
 
         <p className="text-center text-xs mt-20">
-          All rights and ownership of this site belong to Farzad Vahdati ©
+          All rights and ownership of this site belong to {NAME} ©
         </p>
       </div>
     </footer>

@@ -13,7 +13,7 @@ import {
 
 import aboutMeImg from "root/public/about-me.png";
 import PageHero from "root/components/PageHero/PageHero";
-import { DETAIL, FAQS, PROJECTS, SKILLS } from "root/constants/about";
+import { DETAIL, FAQS, PROJECTS, SKILLS } from "root/constants/about-me";
 import Image from "next/image";
 
 const AboutPage = () => {

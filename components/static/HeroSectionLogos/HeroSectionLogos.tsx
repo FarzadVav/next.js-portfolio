@@ -5,7 +5,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useMounted } from "@mantine/hooks";
 
-import { SKILLS, TechnicalSkillT } from "root/constants/about";
+import { SKILLS, TechnicalSkillT } from "root/constants/about-me";
 
 const HeroSectionLogos = () => {
   const isMounted = useMounted();
