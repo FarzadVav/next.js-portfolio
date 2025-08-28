@@ -8,7 +8,7 @@ import { EMAIL, LINKS, PHONE_NUMBER } from "root/constants/contact-me";
 
 const Footer = () => {
   return (
-    <footer className="mt-20 py-20 border-t-2 border-separator group">
+    <footer className="mt-40 py-40 border-t-2 border-separator group">
       <div className="container">
         <Image
           width={108}

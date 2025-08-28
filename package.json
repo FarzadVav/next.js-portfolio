@@ -1,5 +1,5 @@
 {
-  "name": "next.js-business-portfolio",
+  "name": "next.js-portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",

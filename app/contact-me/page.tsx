@@ -47,7 +47,7 @@ const ConnectPage = () => {
         ))}
       </div>
 
-      <h2 className="heading mt-20">community events</h2>
+      <h2 className="heading mt-40">community events</h2>
       <div className="container mt-6 grid-cols-1 grid md:grid-cols-2 gap-3">
         {EVENTS.map((item) => (
           <div className="card flex flex-col gap-3" key={item.id}>
@@ -71,7 +71,7 @@ const ConnectPage = () => {
         ))}
       </div>
 
-      <div id="form" className="pt-20">
+      <div id="form" className="pt-40">
         <ScrollAnimation className="container">
           <h4 className="heading">send yuor message</h4>
           <ScrollAnimation className=" mt-6">

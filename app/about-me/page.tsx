@@ -98,7 +98,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <h4 className="heading mt-20">my projects</h4>
+      <h4 className="heading mt-40">my projects</h4>
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
         {PROJECTS.map((item) => (
           <div className="card flex flex-col gap-3" key={item.id}>
@@ -122,7 +122,7 @@ const AboutPage = () => {
         ))}
       </div>
 
-      <h5 id="faqs" className="heading pt-20">
+      <h5 id="faqs" className="heading pt-40">
         faqs
       </h5>
       <AccessNavigation className="container mt-6">
@@ -141,7 +141,7 @@ const AboutPage = () => {
         ))}
       </AccessNavigation>
 
-      <h5 className="heading mt-20">download our cv</h5>
+      <h5 className="heading mt-40">download our cv</h5>
       <p className="container text-center mt-3">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error lgprovident nobis quis
         suscipit laboriosam quibusdam ad velit, amet omnis iusto! Debitis corrupti facere

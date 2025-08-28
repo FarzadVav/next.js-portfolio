@@ -1,29 +1,32 @@
 import Form from "next/form";
 import Link from "next/link";
+import Image from "next/image";
+import { Carousel } from "@kadoui/react";
 import { LinkLoader } from "@kadoui/next";
-import { AccessNavigation, Accordion, Carousel } from "@kadoui/react";
 import {
   Search,
   CheckIcon,
   LoaderIcon,
   ArrowRightIcon,
   SparklesIcon,
-  ChevronDownIcon,
   TextIcon,
+  ArrowUpRightIcon,
+  SparkleIcon,
+  LightbulbIcon,
 } from "lucide-react";
 
+import { LAB } from "root/constants/lab";
 import { ARTICLES } from "root/constants/articles";
+import { SERVICES } from "root/constants/services";
+import { ABOUT_ME, NAME } from "root/constants/about-me";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
 import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSectionProfile";
-import { ABOUT_ME, NAME } from "root/constants/about-me";
-import { SERVICES } from "root/constants/services";
-import Image from "next/image";
 
 const HomePage = () => {
   return (
     <>
-      <div className="py-20 overflow-hidden">
+      <div className="pt-30 pb-40 overflow-hidden">
         <HeroSectionLogos />
 
         <div className="container">
@@ -73,7 +76,7 @@ const HomePage = () => {
           <Carousel.RightFade className="carousel-right-fade" />
 
           {SERVICES.map((item) => (
-            <div className="slidable card space-y-3" key={item.id}>
+            <div className="slidable card card-lg space-y-6" key={item.id}>
               <Image
                 width={48}
                 height={48}
@@ -82,7 +85,8 @@ const HomePage = () => {
                 src={item.thumbnail}
               />
 
-              <h6 className="title text-center">{item.title}</h6>
+              <p className="title text-center">{item.title}</p>
+
               <Link className="btn btn-outline btn-full" href={`/services/${item.id}`}>
                 <span>Read more</span>
 
@@ -95,75 +99,76 @@ const HomePage = () => {
         </Carousel.Container>
       </Carousel>
 
-      <h3 className="heading mt-20">your first look at me</h3>
-      <div className="grid mt-6 grid-cols-1 md:grid-cols-2 gap-3 container">
-        <div className="f-align card max-md:card-sm gap-3">
-          <div className="size-16 min-w-16 bg-background rounded-lg" />
-          <div>
-            <span className="font-bold">We love Javascript!</span>
-            <p className="text-xs md:mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
-            </p>
-          </div>
-        </div>
+      <h3 className="heading mt-40">my open-source lab</h3>
+      <Carousel className="carousel container mt-6">
+        <Carousel.Container className="carousel-container gap-3">
+          <Carousel.LeftFade className="carousel-left-fade" />
+          <Carousel.RightFade className="carousel-right-fade" />
 
-        <div className="f-align card max-md:card-sm gap-3">
-          <div className="text-right">
-            <span className="font-bold">We love Javascript!</span>
-            <p className="text-xs md:mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
-            </p>
-          </div>
-          <div className="size-16 min-w-16 bg-background rounded-lg" />
-        </div>
+          {LAB.map((item) => (
+            <div className="slidable card card-lg space-y-6" key={item.id}>
+              <div className="size-12 rounded-full bg-background p-3 mx-auto">{item.icon}</div>
 
-        <div className="f-align card max-md:card-sm gap-3">
-          <div className="size-16 min-w-16 bg-background rounded-lg" />
-          <div>
-            <span className="font-bold">We love Javascript!</span>
-            <p className="text-xs md:mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
-            </p>
-          </div>
-        </div>
+              <p className="title text-center">{item.title}</p>
 
-        <div className="f-align card max-md:card-sm gap-3">
-          <div className="text-right">
-            <span className="font-bold">We love Javascript!</span>
-            <p className="text-xs md:mt-0.5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, accusamus.
-            </p>
-          </div>
-          <div className="size-16 min-w-16 bg-background rounded-lg" />
-        </div>
+              <Link target="_blank" href={item.link} className="btn btn-outline btn-full">
+                <span>Read more</span>
+                <ArrowUpRightIcon className="btn-icon-size" />
+              </Link>
+            </div>
+          ))}
+        </Carousel.Container>
+      </Carousel>
+
+      <h4 className="heading mt-40">Read more about me</h4>
+      <div className="md:w-3/5 f-center flex-wrap md:mx-auto mt-6">
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>Intro video</span>
+        </p>
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>Birthday</span>
+        </p>
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>Location</span>
+        </p>
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>Language lvl</span>
+        </p>
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>Scope</span>
+        </p>
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>Experience</span>
+        </p>
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>My skills</span>
+        </p>
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>My projects</span>
+        </p>
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>FAQs</span>
+        </p>
+        <p className="badge">
+          <SparkleIcon className="badge-icon-size" />
+          <span>Download my CV</span>
+        </p>
       </div>
-      <AccessNavigation className="container mt-6">
-        {Array.from({ length: 3 }).map(() => (
-          <Accordion key={Math.random()}>
-            <Accordion.Toggle className="btn btn-ghost md:btn-lg btn-full justify-between group not-first:mt-3">
-              <h6 className="font-bold">How can we work with you?</h6>
-              <ChevronDownIcon className="btn-icon-size transition-transform group-[.accordion-active]:-scale-y-100" />
-            </Accordion.Toggle>
-            <Accordion.Body>
-              <p className="p-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore? Corrupti
-                quasi nam, iste sint quibusdam ipsa numquam est minima libero repudiandae harum nisi
-                nihil doloremque voluptas sed optio eum!
-              </p>
-            </Accordion.Body>
-          </Accordion>
-        ))}
+      <Link className="btn btn-fill mt-6 mx-auto" href={"/about-me"}>
+        <span>About me</span>
+        <ArrowRightIcon className="btn-icon-size" />
+      </Link>
 
-        <Link className="btn btn-ghost w-fit mx-auto mt-3" href={"/about-me#faqs"}>
-          <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-            <TextIcon className="btn-icon-size" />
-          </LinkLoader>
-
-          <span>All questions</span>
-        </Link>
-      </AccessNavigation>
-
-      <h4 className="heading mt-20">customer comments</h4>
+      <h4 className="heading mt-40">customer comments</h4>
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
@@ -185,44 +190,53 @@ const HomePage = () => {
         </Carousel.Container>
       </Carousel>
 
-      <div className="container">
-        <ScrollAnimation className="card card-lg space-y-3 mt-20">
-          <h5 className="title">do you want consultation?</h5>
-          <p>
+      <ScrollAnimation className="container mt-40">
+        <div className="card card-lg">
+          <div className="size-12 bg-background rounded-full mx-auto p-3">
+            <LightbulbIcon className="size-full" />
+          </div>
+          <h5 className="title text-center mt-3">do you want a consulting?</h5>
+
+          <p className="text-center mt-6">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum
             nostrum voluptates eveniet id libero incidunt enim vitae nam corporis voluptate neque
-            sit sed maiores, saepe cumque quo.
+            sit sed maiores, saepe cumque quo two arms at laptop.
           </p>
-          <div className="f-align flex-wrap gap-3">
-            <div className="badge badge-soft">
+
+          <div className="md:w-3/5 f-center flex-wrap md:mx-auto mt-3">
+            <p className="badge">
               <CheckIcon className="badge-icon-size" />
               <span>Problem solving</span>
-            </div>
-            <div className="badge badge-soft">
+            </p>
+            <p className="badge">
               <CheckIcon className="badge-icon-size" />
               <span>Problem solving</span>
-            </div>
-            <div className="badge badge-soft">
+            </p>
+            <p className="badge">
               <CheckIcon className="badge-icon-size" />
               <span>Problem solving</span>
-            </div>
-            <div className="badge badge-soft">
+            </p>
+            <p className="badge">
               <CheckIcon className="badge-icon-size" />
               <span>Problem</span>
-            </div>
+            </p>
+            <p className="badge">
+              <CheckIcon className="badge-icon-size" />
+              <span>Problem</span>
+            </p>
           </div>
 
-          <Link className="btn btn-fill w-fit" href={"/contact-me#form"}>
+          <Link className="btn btn-fill mt-6 mx-auto" href={"/contact-me#form"}>
             <span>Send a request</span>
 
             <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
               <ArrowRightIcon className="btn-icon-size" />
             </LinkLoader>
           </Link>
-        </ScrollAnimation>
-      </div>
+        </div>
+      </ScrollAnimation>
 
-      <h6 className="heading mt-20">Latest articles</h6>
+      <h6 className="heading mt-40">Latest articles</h6>
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />

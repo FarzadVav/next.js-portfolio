@@ -25,7 +25,7 @@ async function ArticlesDetailPage({ params }: PageProps) {
         description={article.description}
       />
 
-      <div className="container mt-20">
+      <div className="container mt-40">
         <div className="card md:card-lg">
           <div className="f-align gap-3">
             <button className="btn btn-outline">
@@ -46,7 +46,7 @@ async function ArticlesDetailPage({ params }: PageProps) {
         </div>
       </div>
 
-      <h3 className="heading mt-20">related articles</h3>
+      <h3 className="heading mt-40">related articles</h3>
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />

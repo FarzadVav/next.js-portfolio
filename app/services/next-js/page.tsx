@@ -21,7 +21,7 @@ function ServicesDetailPage() {
         ))}
       </div>
 
-      <div className="container mt-20">
+      <div className="container mt-40">
         {NEXT_JS.questions.map((item) => (
           <div className="not-first:mt-6" key={item.title}>
             <h3 className="title">{item.title}</h3>
@@ -30,7 +30,7 @@ function ServicesDetailPage() {
         ))}
       </div>
 
-      <ScrollAnimation className="container mt-20">
+      <ScrollAnimation className="container mt-40">
         <h4 className="heading">request your project</h4>
         <ScrollAnimation className="card card-lg mt-6">
           <div className="f-align max-md:flex-col gap-3">

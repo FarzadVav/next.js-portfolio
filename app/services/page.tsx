@@ -89,7 +89,7 @@ const ServicesPage = () => {
         ))}
       </div>
 
-      <ScrollAnimation className="container mt-20">
+      <ScrollAnimation className="container mt-40">
         <div className="card card-lg">
           <Image
             width={64}
@@ -148,7 +148,7 @@ const ServicesPage = () => {
         </div>
       </ScrollAnimation>
 
-      <div className="container mt-20 space-y-20">
+      <div className="container mt-40 space-y-20">
         <div className="f-align gap-3 md:gap-6" dir="rtl">
           <div className="size-16 min-w-16 rounded-full bg-background-thick f-center font-bold">
             1
