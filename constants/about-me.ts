@@ -169,3 +169,55 @@ export const FAQS: FaqT[] = [
 ];
 
 export const CV = null; // TODO: add CV file
+
+type CommentT = {
+  id: number;
+  fullname: string;
+  position: string;
+  link: UrlObject | __next_route_internal_types__.RouteImpl<string>;
+  text: string;
+};
+export const COMMENTS: CommentT[] = [
+  {
+    id: 1,
+    fullname: "Alireza Nemati",
+    position: "CEO",
+    link: "https://instagram.com",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quo provident error maiores neque tenetur sunt molestiae sed excepturi corrupti perspiciatis laudantium ab aliquid tempore magnam! Ad dolores sapiente consequuntur",
+  },
+  {
+    id: 2,
+    fullname: "Hadi Varazgani",
+    position: "Co-Founder, Tech lead",
+    link: "https://instagram.com",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quo provident error maiores neque tenetur sunt molestiae sed excepturi corrupti perspiciatis laudantium ab aliquid tempore magnam! Ad dolores sapiente consequuntur",
+  },
+  {
+    id: 3,
+    fullname: "Shahriar Vaziri",
+    position: "Co-Founder, Graphic Designer",
+    link: "https://instagram.com",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quo provident error maiores neque tenetur sunt molestiae sed excepturi corrupti perspiciatis laudantium ab aliquid tempore magnam! Ad dolores sapiente consequuntur",
+  },
+  {
+    id: 4,
+    fullname: "Younes Hajizadeh",
+    position: "Fullstack JS developer",
+    link: "https://linkedin.com",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quo provident error maiores neque tenetur sunt molestiae sed excepturi corrupti perspiciatis laudantium ab aliquid tempore magnam! Ad dolores sapiente consequuntur",
+  },
+  {
+    id: 5,
+    fullname: "Alireza Gholami",
+    position: "Software engineer",
+    link: "https://linkedin.com",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quo provident error maiores neque tenetur sunt molestiae sed excepturi corrupti perspiciatis laudantium ab aliquid tempore magnam! Ad dolores sapiente consequuntur",
+  },
+  {
+    id: 6,
+    fullname: "Puuya Ghasemi",
+    position: "IT admin",
+    link: "https://instagram.com",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quo provident error maiores neque tenetur sunt molestiae sed excepturi corrupti perspiciatis laudantium ab aliquid tempore magnam! Ad dolores sapiente consequuntur",
+  },
+];

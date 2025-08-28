@@ -18,7 +18,7 @@ import {
 import { LAB } from "root/constants/lab";
 import { ARTICLES } from "root/constants/articles";
 import { SERVICES } from "root/constants/services";
-import { ABOUT_ME, NAME } from "root/constants/about-me";
+import { ABOUT_ME, COMMENTS, NAME } from "root/constants/about-me";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
 import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSectionProfile";
@@ -168,23 +168,25 @@ const HomePage = () => {
         <ArrowRightIcon className="btn-icon-size" />
       </Link>
 
-      <h4 className="heading mt-40">customer comments</h4>
+      <h4 className="heading mt-40">people comments</h4>
       <Carousel className="carousel container mt-6">
         <Carousel.Container className="carousel-container gap-3">
           <Carousel.LeftFade className="carousel-left-fade" />
           <Carousel.RightFade className="carousel-right-fade" />
 
-          {Array.from({ length: 12 }).map(() => (
-            <div key={Math.random()} className="slidable">
-              <p className="font-bold">John Doe</p>
-              <p className="text-xs opacity-75">IT engineer at apple</p>
-              <p className="card mt-3">
-                {Array.from({ length: Math.ceil(Math.random() * 10) }).map(
-                  () => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore"
-                )}
+          {COMMENTS.map((item) => (
+            <div key={item.id} className="slidable">
+              <Link
+                target="_blank"
+                href={item.link}
+                className="font-bold transition-colors btn-link"
+              >
+                {item.fullname}
+              </Link>
 
-                {"..."}
-              </p>
+              <p className="text-xs opacity-75">{item.position}</p>
+
+              <p className="card mt-3">{item.text}</p>
             </div>
           ))}
         </Carousel.Container>

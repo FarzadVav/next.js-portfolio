@@ -62,12 +62,3 @@ export const EVENTS: EventT[] = [
     date: new Date("2025-11-05"),
   },
 ];
-
-export type CommentT = {
-  id: number;
-  fullname: string;
-  link: UrlObject | __next_route_internal_types__.RouteImpl<string>;
-  text: string;
-  createdAt: string;
-};
-export const COMMENTS: CommentT[] = [];
