@@ -404,7 +404,7 @@ export const SERVICES: ServiceT[] = [
   {
     id: 9,
     thumbnail: engineeringImg,
-    title: "Software Engineering & DevOps",
+    title: "Software Engineering",
     description:
       "Deliver reliable, scalable software with our comprehensive engineering services. From Agile project management to DevOps and testing, we ensure your projects are built efficiently, tested thoroughly, and maintained for long-term success",
     techStack: [

@@ -26,7 +26,7 @@ const ConnectPage = () => {
 
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
         {LINKS.map((item) => (
-          <div className="f-align gap-3" key={item.id}>
+          <div className="f-align max-md:flex-col gap-3" key={item.id}>
             <Image
               width={64}
               height={64}
@@ -34,9 +34,9 @@ const ConnectPage = () => {
               alt={item.name}
               className={item.invert ? "dark:invert-100" : undefined}
             />
-            <div>
+            <div className="max-md:f-center max-md:flex-col">
               <span className="title">{item.name}</span>
-              <p className="text-xs mt-0.5">{item.description}</p>
+              <p className="text-xs mt-0.5 max-md:w-3/4 max-md:text-center">{item.description}</p>
 
               <Link target="_blank" href={item.link} className="btn btn-outline btn-sm mt-3">
                 <span>Visit</span>
@@ -89,7 +89,7 @@ const ConnectPage = () => {
               <label className="input input-outline mt-3">
                 <textarea className="input-field" placeholder="Request description..." />
               </label>
-              <label className="input input-soft mt-3 w-max max-w-full">
+              <label className="input input-soft mt-3 w-full md:w-max md:max-w-full">
                 <FilesIcon className="input-icon-size" />
                 <input className="input-field" type="file" name="1212" />
               </label>

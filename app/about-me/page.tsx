@@ -124,7 +124,7 @@ const AboutPage = () => {
         {FAQS.map((item) => (
           <Accordion key={item.id}>
             <Accordion.Toggle className="btn btn-ghost md:btn-lg btn-full justify-between group not-first:mt-3">
-              <h6 className="font-bold line-clamp-1">{item.question}</h6>
+              <h6 className="font-bold line-clamp-1 text-left">{item.question}</h6>
               <ChevronDownIcon className="btn-icon-size shrink-0 transition-transform group-[.accordion-active]:-scale-y-100" />
             </Accordion.Toggle>
             <Accordion.Body>

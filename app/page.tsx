@@ -121,44 +121,44 @@ const HomePage = () => {
       </Carousel>
 
       <h4 className="heading mt-40">Read more about me</h4>
-      <div className="md:w-3/5 f-center flex-wrap md:mx-auto mt-6">
-        <p className="badge">
+      <div className="md:w-3/5 f-center flex-wrap max-md:gap-y-3 md:mx-auto mt-6">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>Intro video</span>
         </p>
-        <p className="badge">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>Birthday</span>
         </p>
-        <p className="badge">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>Location</span>
         </p>
-        <p className="badge">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>Language lvl</span>
         </p>
-        <p className="badge">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>Scope</span>
         </p>
-        <p className="badge">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>Experience</span>
         </p>
-        <p className="badge">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>My skills</span>
         </p>
-        <p className="badge">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>My projects</span>
         </p>
-        <p className="badge">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>FAQs</span>
         </p>
-        <p className="badge">
+        <p className="badge max-md:badge-sm max-md:flex-1/3">
           <SparkleIcon className="badge-icon-size" />
           <span>Download my CV</span>
         </p>
@@ -203,25 +203,24 @@ const HomePage = () => {
             The first step to creating a compelling story is to start a conversation. So let{"'"}s
             chat and see how I can help you.
           </p>
-
-          <div className="md:w-3/5 f-center flex-wrap md:mx-auto mt-3">
-            <p className="badge">
+          <div className="md:w-3/5 f-center flex-wrap max-md:gap-y-3 md:mx-auto mt-3">
+            <p className="badge max-md:badge-sm max-md:flex-1/2">
               <CheckIcon className="badge-icon-size" />
               <span>Problem solving</span>
             </p>
-            <p className="badge">
+            <p className="badge max-md:badge-sm max-md:flex-1/2">
               <CheckIcon className="badge-icon-size" />
-              <span>Project design</span>
+              <span>Design</span>
             </p>
-            <p className="badge">
+            <p className="badge max-md:badge-sm max-md:flex-1/2">
               <CheckIcon className="badge-icon-size" />
-              <span>Learning roadmap</span>
+              <span>Roadmap</span>
             </p>
-            <p className="badge">
+            <p className="badge max-md:badge-sm max-md:flex-1/2">
               <CheckIcon className="badge-icon-size" />
               <span>Software issues</span>
             </p>
-            <p className="badge">
+            <p className="badge max-md:badge-sm">
               <CheckIcon className="badge-icon-size" />
               <span>Start of cooperation</span>
             </p>

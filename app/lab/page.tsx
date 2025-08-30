@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { Carousel } from "@kadoui/react";
-import { ArrowUpRightIcon } from "lucide-react";
+import { ArrowUpRightIcon, HashIcon } from "lucide-react";
 
 import labImg from "root/public/lab.png";
 import { LAB } from "root/constants/lab";
@@ -24,18 +23,14 @@ const ServicesPage = () => {
               <h2 className="title">{item.title}</h2>
             </div>
 
-            <Carousel className="carousel">
-              <Carousel.Container className="carousel-container no-scrollbar gap-3">
-                <Carousel.LeftFade className="carousel-left-fade from-background-thick" />
-                <Carousel.RightFade className="carousel-right-fade from-background-thick" />
-
-                {item.techStack.map((tech) => (
-                  <div className="badge badge-sm min-w-max" key={tech}>
-                    {tech}
-                  </div>
-                ))}
-              </Carousel.Container>
-            </Carousel>
+            <div className="f-align gap-1.5 flex-wrap">
+              {item.techStack.map((itemStack) => (
+                <div className="badge badge-soft badge-sm" key={itemStack}>
+                  <HashIcon className="badge-icon-size" />
+                  <span>{itemStack}</span>
+                </div>
+              ))}
+            </div>
 
             <p className="mt-auto">{item.description}</p>
 
