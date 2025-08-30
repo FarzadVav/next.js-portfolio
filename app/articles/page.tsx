@@ -13,8 +13,8 @@ const ArticlesPage = () => {
       <PageHero
         darkInvert
         src={articlesImg}
-        title="Let's do some perfect projects"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
+        title="My technical articles"
+        description="I am trying to publish useful articles here based on my personal learning journey and the experiences I gain"
       />
 
       <div className="container mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">

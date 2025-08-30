@@ -34,7 +34,7 @@ const HomePage = () => {
 
           <h1 className="heading mt-9">{NAME}</h1>
 
-          <p className="container md:w-4/5 text-center mx-auto mt-3">{ABOUT_ME}</p>
+          <p className="container md:w-4/5 text-center mx-auto mt-3">Hi, {ABOUT_ME}</p>
 
           <Form className="join-no-inner-border container md:w-1/2 mx-auto mt-6" action={"/search"}>
             <label className="input input-soft flex-1">

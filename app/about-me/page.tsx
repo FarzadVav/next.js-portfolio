@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { AccessNavigation, Accordion } from "@kadoui/react";
 import {
   ArrowUpRightIcon,
@@ -13,18 +14,12 @@ import {
 
 import aboutMeImg from "root/public/about-me.png";
 import PageHero from "root/components/PageHero/PageHero";
-import { DETAIL, FAQS, PROJECTS, SKILLS } from "root/constants/about-me";
-import Image from "next/image";
+import { ABOUT_ME, DETAIL, FAQS, PROJECTS, SKILLS } from "root/constants/about-me";
 
 const AboutPage = () => {
   return (
     <>
-      <PageHero
-        darkInvert
-        src={aboutMeImg}
-        title="Let's do some perfect projects"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
-      />
+      <PageHero darkInvert src={aboutMeImg} title="Come get to know me" description={ABOUT_ME} />
 
       <div className="container">
         <div className="card relative">
@@ -143,14 +138,17 @@ const AboutPage = () => {
 
       <h5 className="heading mt-40">download our cv</h5>
       <p className="container text-center mt-3">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error lgprovident nobis quis
-        suscipit laboriosam quibusdam ad velit, amet omnis iusto! Debitis corrupti facere
-        perspiciatis suscipit. Harum ea explicabo sapiente quidem.
+        To see a complete and comprehensive resume from me, please download and view the pdf file
+        below
       </p>
-      <button className="btn btn-fill md:btn-lg mt-6 mx-auto">
-        <span>ArrowUp-CV.pdf</span>
+      <Link
+        download
+        href={"/farzad-vahdati-cv.pdf" as "/"}
+        className="btn btn-fill md:btn-lg mt-6 mx-auto"
+      >
+        <span>farzad-vahdati-cv.pdf</span>
         <DownloadIcon className="btn-icon-size" />
-      </button>
+      </Link>
     </>
   );
 };

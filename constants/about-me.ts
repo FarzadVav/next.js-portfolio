@@ -13,7 +13,7 @@ export const PROFILE = profileImg;
 export const NAME = "Farzad Vahdati";
 
 export const ABOUT_ME =
-  "Hi, I'm a fullstack web developer focused on Next.js 💻 My expertise is building powerful applications with Javascript ✌️ I work on optimizing web applications for SEO, performance, state management, accessibility, and other important web parameters ✅";
+  "I am a web developer 💻 with over 3 years of experience focusing on React and Next 🔥 I work on optimizing web applications for SEO, better performance, state management, accessibility and other important web parameters ✅";
 
 export const DETAIL = {
   birthday: "1384/8/5",

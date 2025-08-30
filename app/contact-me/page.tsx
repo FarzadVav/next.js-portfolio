@@ -20,8 +20,8 @@ const ConnectPage = () => {
       <PageHero
         darkInvert
         src={contactMeImg}
-        title="Let's do some perfect projects"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
+        title="Stay in touch with me"
+        description="Follow me on the social networks below. If you have a message, write in the form and I will also be happy to have you participate in community events"
       />
 
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -75,7 +75,7 @@ const ConnectPage = () => {
         <ScrollAnimation className="container">
           <h4 className="heading">send yuor message</h4>
           <ScrollAnimation className=" mt-6">
-            <ScrollAnimation className="card">
+            <ScrollAnimation className="card card-lg">
               <div className="f-align max-md:flex-col gap-3">
                 <label className="input input-outline max-md:w-full md:flex-1">
                   <UserIcon className="input-icon-size" />

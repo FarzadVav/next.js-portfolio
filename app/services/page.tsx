@@ -17,7 +17,7 @@ const ServicesPage = () => {
         darkInvert
         src={servicesImg}
         title="Let's do some perfect projects"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos, eligendi laborum molestiae eius odio nisi earum culpa optio omnis reiciendis mollitia recusandae error eum porro exercitationem temporibus vitae dolore!"
+        description="Here you can view my software services and order one of them if you want"
       />
 
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-3">
