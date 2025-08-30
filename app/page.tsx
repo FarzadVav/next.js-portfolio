@@ -200,9 +200,8 @@ const HomePage = () => {
           <h5 className="title text-center mt-3">do you want a consulting?</h5>
 
           <p className="text-center mt-6">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa fugit eum
-            nostrum voluptates eveniet id libero incidunt enim vitae nam corporis voluptate neque
-            sit sed maiores, saepe cumque quo two arms at laptop.
+            The first step to creating a compelling story is to start a conversation. So let{"'"}s
+            chat and see how I can help you.
           </p>
 
           <div className="md:w-3/5 f-center flex-wrap md:mx-auto mt-3">
@@ -212,24 +211,24 @@ const HomePage = () => {
             </p>
             <p className="badge">
               <CheckIcon className="badge-icon-size" />
-              <span>Problem solving</span>
+              <span>Project design</span>
             </p>
             <p className="badge">
               <CheckIcon className="badge-icon-size" />
-              <span>Problem solving</span>
+              <span>Learning roadmap</span>
             </p>
             <p className="badge">
               <CheckIcon className="badge-icon-size" />
-              <span>Problem</span>
+              <span>Software issues</span>
             </p>
             <p className="badge">
               <CheckIcon className="badge-icon-size" />
-              <span>Problem</span>
+              <span>Start of cooperation</span>
             </p>
           </div>
 
           <Link className="btn btn-fill mt-6 mx-auto" href={"/contact-me#form"}>
-            <span>Send a request</span>
+            <span>Contact me</span>
 
             <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
               <ArrowRightIcon className="btn-icon-size" />
