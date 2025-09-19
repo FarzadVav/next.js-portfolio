@@ -3,8 +3,9 @@ import { notFound } from "next/navigation";
 import { ArrowUpRightIcon, SparklesIcon } from "lucide-react";
 
 import { PageProps } from "root/types";
-import { SERVICES, SERVICES_CTA_TEXT } from "root/constants/services";
 import PageHero from "root/components/PageHero/PageHero";
+import { TELEGRAM_USERNAME } from "root/constants/contact-me";
+import { SERVICES, SERVICES_CTA_TEXT } from "root/constants/services";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 async function ServicesDetailPage({ params }: PageProps) {
@@ -46,11 +47,7 @@ async function ServicesDetailPage({ params }: PageProps) {
 
           <p className="max-w-lg text-center mx-auto mt-6">{SERVICES_CTA_TEXT}</p>
 
-          <Link
-            className="btn btn-fill mt-6 mx-auto"
-            href={"https://t.me/farzad_vav"}
-            target="_blank"
-          >
+          <Link className="btn btn-fill mt-6 mx-auto" href={TELEGRAM_USERNAME} target="_blank">
             <span>Go to Telegram</span>
             <ArrowUpRightIcon className="btn-icon-size" />
           </Link>

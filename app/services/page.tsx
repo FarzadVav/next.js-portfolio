@@ -8,6 +8,7 @@ import servicesImg from "root/public/services.png";
 import PageHero from "root/components/PageHero/PageHero";
 import { SERVICES, SERVICES_CTA_TEXT } from "root/constants/services";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
+import { TELEGRAM_USERNAME } from "root/constants/contact-me";
 
 const ModalBody = ({ serviceTitle }: { serviceTitle: string }) => {
   return (
@@ -19,11 +20,7 @@ const ModalBody = ({ serviceTitle }: { serviceTitle: string }) => {
       <Modal.Content className="modal-content">
         <p className="text-center max-w-lg">{SERVICES_CTA_TEXT}</p>
 
-        <Link
-          className="btn btn-fill mt-6 mx-auto"
-          href={"https://t.me/farzad_vav"}
-          target="_blank"
-        >
+        <Link href={TELEGRAM_USERNAME} className="btn btn-fill mt-6 mx-auto" target="_blank">
           <span>Go to Telegram</span>
           <ArrowUpRightIcon className="btn-icon-size" />
         </Link>

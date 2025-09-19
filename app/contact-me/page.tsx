@@ -1,17 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  ArrowUpRightIcon,
-  CheckIcon,
-  FilesIcon,
-  PhoneIcon,
-  UserIcon,
-  UserPenIcon,
-} from "lucide-react";
+import { ArrowUpRightIcon, UserPenIcon } from "lucide-react";
 
-import { EVENTS, LINKS } from "root/constants/contact-me";
 import contactMeImg from "root/public/contact-me.png";
 import PageHero from "root/components/PageHero/PageHero";
+import { EVENTS, LINKS, TELEGRAM_USERNAME } from "root/constants/contact-me";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 const ConnectPage = () => {
@@ -63,43 +56,35 @@ const ConnectPage = () => {
 
             <p>{item.description}</p>
 
-            <button className="btn btn-outline btn-full mt-auto">
+            <Link
+              className="btn btn-outline btn-full mt-auto"
+              href={TELEGRAM_USERNAME}
+              target="_blank"
+            >
               <span>Join us</span>
               <UserPenIcon className="btn-icon-size" />
-            </button>
+            </Link>
           </div>
         ))}
       </div>
 
-      <div id="form" className="pt-40">
-        <ScrollAnimation className="container">
-          <h4 className="heading">send yuor message</h4>
-          <ScrollAnimation className=" mt-6">
-            <ScrollAnimation className="card card-lg">
-              <div className="f-align max-md:flex-col gap-3">
-                <label className="input input-outline max-md:w-full md:flex-1">
-                  <UserIcon className="input-icon-size" />
-                  <input className="input-field" placeholder="Organization/Customer name" />
-                </label>
-                <label className="input input-outline max-md:w-full md:flex-1">
-                  <PhoneIcon className="input-icon-size" />
-                  <input className="input-field" placeholder="---- --- ----" />
-                </label>
-              </div>
-              <label className="input input-outline mt-3">
-                <textarea className="input-field" placeholder="Request description..." />
-              </label>
-              <label className="input input-soft mt-3 w-full md:w-max md:max-w-full">
-                <FilesIcon className="input-icon-size" />
-                <input className="input-field" type="file" name="1212" />
-              </label>
+      <div id="cta" className="container pt-40">
+        <ScrollAnimation className="card card-lg">
+          <h4 className="heading">send your message</h4>
 
-              <button className="btn mt-6 btn-fill">
-                <span>Submit</span>
-                <CheckIcon className="btn-icon-size" />
-              </button>
-            </ScrollAnimation>
-          </ScrollAnimation>
+          <p className="text-center mx-auto mt-6">
+            Have an idea or a project in mind? Let{"'s"} bring it to life together. As a full-stack
+            developer and project lead, I focus on building modern, scalable, and user-friendly
+            solutions. Whether you{"'re"} looking for a technical partner to develop your idea,
+            someone to guide your team, or just need simple and clear consulting to move forward, I
+            {"'m"} here to help. Share your project with me, and let{"'s"} discuss how we can turn
+            your vision into reality
+          </p>
+
+          <Link className="btn btn-fill mt-6 mx-auto" href={TELEGRAM_USERNAME} target="_blank">
+            <span>Go to Telegram</span>
+            <ArrowUpRightIcon className="btn-icon-size" />
+          </Link>
         </ScrollAnimation>
       </div>
     </>

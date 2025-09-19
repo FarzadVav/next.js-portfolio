@@ -10,6 +10,8 @@ export const EMAIL = "farzad.vav.work@gmail.com";
 
 export const PHONE_NUMBER = "0938 0946 1065";
 
+export const TELEGRAM_USERNAME = "https://t.me/farzad_vav"
+
 export type LinkT = {
   id: number;
   logo: StaticImageData;

@@ -1,7 +1,9 @@
-import { CheckIcon, PhoneIcon, SparklesIcon, UserIcon } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRightIcon, SparklesIcon } from "lucide-react";
 
-import { NEXT_JS } from "root/constants/services";
 import PageHero from "root/components/PageHero/PageHero";
+import { TELEGRAM_USERNAME } from "root/constants/contact-me";
+import { NEXT_JS, SERVICES_CTA_TEXT } from "root/constants/services";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 function ServicesDetailPage() {
@@ -23,35 +25,25 @@ function ServicesDetailPage() {
 
       <div className="container mt-40">
         {NEXT_JS.questions.map((item) => (
-          <div className="not-first:mt-6" key={item.title}>
+          <div className="not-first:mt-16" key={item.title}>
             <h3 className="title">{item.title}</h3>
             <p className="mt-3">{item.description}</p>
           </div>
         ))}
       </div>
 
-      <ScrollAnimation className="container mt-40">
-        <h4 className="heading">request your project</h4>
-        <ScrollAnimation className="card card-lg mt-6">
-          <div className="f-align max-md:flex-col gap-3">
-            <label className="input input-outline max-md:w-full md:flex-1">
-              <UserIcon className="input-icon-size" />
-              <input className="input-field" placeholder="Organization/Customer name" />
-            </label>
-            <label className="input input-outline max-md:w-full md:flex-1">
-              <PhoneIcon className="input-icon-size" />
-              <input className="input-field" placeholder="---- --- ----" />
-            </label>
-          </div>
-          <label className="input input-outline mt-3">
-            <textarea className="input-field" placeholder="Request description..." />
-          </label>
-          <button className="btn mt-6 btn-fill">
-            <span>Submit</span>
-            <CheckIcon className="btn-icon-size" />
-          </button>
+      <div className="container mt-40">
+        <ScrollAnimation className="card card-lg">
+          <h4 className="heading">request your project</h4>
+
+          <p className="max-w-lg text-center mx-auto mt-6">{SERVICES_CTA_TEXT}</p>
+
+          <Link className="btn btn-fill mt-6 mx-auto" href={TELEGRAM_USERNAME} target="_blank">
+            <span>Go to Telegram</span>
+            <ArrowUpRightIcon className="btn-icon-size" />
+          </Link>
         </ScrollAnimation>
-      </ScrollAnimation>
+      </div>
     </>
   );
 }

@@ -207,7 +207,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <Link className="btn btn-fill mt-6 mx-auto" href={"/contact-me#form"}>
+          <Link className="btn btn-fill mt-6 mx-auto" href={"/contact-me#cta"}>
             <span>Contact me</span>
 
             <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
