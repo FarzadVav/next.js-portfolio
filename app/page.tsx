@@ -11,9 +11,9 @@ import {
   LightbulbIcon,
 } from "lucide-react";
 
-import { LAB } from "root/constants/lab";
-import { SERVICES } from "root/constants/services";
-import { ABOUT_ME, COMMENTS, NAME } from "root/constants/about-me";
+import { LAB } from "root/constants/lab.constant";
+import { SERVICES } from "root/constants/services.constant";
+import { ABOUT_ME, COMMENTS, NAME } from "root/constants/aboutMe.constant";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 import HeroSectionLogos from "root/components/static/HeroSectionLogos/HeroSectionLogos";
 import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSectionProfile";

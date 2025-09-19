@@ -14,7 +14,7 @@ import {
 
 import aboutMeImg from "root/public/about-me.png";
 import PageHero from "root/components/PageHero/PageHero";
-import { ABOUT_ME, DETAIL, FAQS, PROJECTS, SKILLS } from "root/constants/about-me";
+import { ABOUT_ME, DETAIL, FAQS, PROJECTS, SKILLS } from "root/constants/aboutMe.constant";
 
 const AboutPage = () => {
   return (

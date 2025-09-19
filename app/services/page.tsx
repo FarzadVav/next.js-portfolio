@@ -6,9 +6,9 @@ import { ArrowUpIcon, ArrowUpRightIcon, DotIcon, HashIcon, LoaderIcon } from "lu
 import nextJsImg from "root/public/next-js.svg";
 import servicesImg from "root/public/services.png";
 import PageHero from "root/components/PageHero/PageHero";
-import { SERVICES, SERVICES_CTA_TEXT } from "root/constants/services";
+import { SERVICES, SERVICES_CTA_TEXT } from "root/constants/services.constant";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
-import { TELEGRAM_USERNAME } from "root/constants/contact-me";
+import { TELEGRAM_USERNAME } from "root/constants/contactMe.constant";
 
 const ModalBody = ({ serviceTitle }: { serviceTitle: string }) => {
   return (

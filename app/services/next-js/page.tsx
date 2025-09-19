@@ -2,8 +2,8 @@ import Link from "next/link";
 import { ArrowUpRightIcon, SparklesIcon } from "lucide-react";
 
 import PageHero from "root/components/PageHero/PageHero";
-import { TELEGRAM_USERNAME } from "root/constants/contact-me";
-import { NEXT_JS, SERVICES_CTA_TEXT } from "root/constants/services";
+import { TELEGRAM_USERNAME } from "root/constants/contactMe.constant";
+import { NEXT_JS, SERVICES_CTA_TEXT } from "root/constants/services.constant";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 function ServicesDetailPage() {

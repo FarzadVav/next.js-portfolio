@@ -4,7 +4,7 @@ import { ArrowUpRightIcon, UserPenIcon } from "lucide-react";
 
 import contactMeImg from "root/public/contact-me.png";
 import PageHero from "root/components/PageHero/PageHero";
-import { EVENTS, LINKS, TELEGRAM_USERNAME } from "root/constants/contact-me";
+import { EVENTS, LINKS, TELEGRAM_USERNAME } from "root/constants/contactMe.constant";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 const ConnectPage = () => {

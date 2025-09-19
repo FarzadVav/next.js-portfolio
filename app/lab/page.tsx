@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowUpRightIcon, HashIcon } from "lucide-react";
 
 import labImg from "root/public/lab.png";
-import { LAB } from "root/constants/lab";
+import { LAB } from "root/constants/lab.constant";
 import PageHero from "root/components/PageHero/PageHero";
 
 const ServicesPage = () => {

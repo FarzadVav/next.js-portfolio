@@ -2,10 +2,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRightIcon, SparklesIcon } from "lucide-react";
 
-import { PageProps } from "root/types";
+import { PageProps } from "root/types/app.type";
 import PageHero from "root/components/PageHero/PageHero";
-import { TELEGRAM_USERNAME } from "root/constants/contact-me";
-import { SERVICES, SERVICES_CTA_TEXT } from "root/constants/services";
+import { TELEGRAM_USERNAME } from "root/constants/contactMe.constant";
+import { SERVICES, SERVICES_CTA_TEXT } from "root/constants/services.constant";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 async function ServicesDetailPage({ params }: PageProps) {

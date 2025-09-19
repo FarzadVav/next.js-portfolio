@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { PROFILE } from "root/constants/about-me";
+import { PROFILE } from "root/constants/aboutMe.constant";
 
 function HeroSectionProfile() {
   return (
