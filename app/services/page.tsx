@@ -5,8 +5,8 @@ import { ArrowUpIcon, ArrowUpRightIcon, DotIcon, HashIcon, LoaderIcon } from "lu
 
 import nextJsImg from "root/public/next-js.svg";
 import servicesImg from "root/public/services.png";
-import { SERVICES } from "root/constants/services";
 import PageHero from "root/components/PageHero/PageHero";
+import { SERVICES, SERVICES_CTA_TEXT } from "root/constants/services";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
 
 const ModalBody = ({ serviceTitle }: { serviceTitle: string }) => {
@@ -17,10 +17,7 @@ const ModalBody = ({ serviceTitle }: { serviceTitle: string }) => {
       </Modal.Header>
 
       <Modal.Content className="modal-content">
-        <p className="text-center max-w-lg">
-          Let{"'s"} discuss your project in detail — I{"'ll"} provide you with clear insights and
-          simple, personalized consulting to get started
-        </p>
+        <p className="text-center max-w-lg">{SERVICES_CTA_TEXT}</p>
 
         <Link
           className="btn btn-fill mt-6 mx-auto"

@@ -21,6 +21,9 @@ export type ServiceT = {
   questions: { title: string; description: string }[];
 };
 
+export const SERVICES_CTA_TEXT =
+  "Let's discuss your project in detail — I'll provide you with clear insights and simple, personalized consulting to get started";
+
 export const SERVICES: ServiceT[] = [
   {
     id: 1,
