@@ -1,13 +1,39 @@
 import Link from "next/link";
 import Image from "next/image";
 import { LinkLoader, Modal } from "@kadoui/react";
-import { CheckIcon, DotIcon, HashIcon, LoaderIcon } from "lucide-react";
+import { ArrowUpIcon, ArrowUpRightIcon, DotIcon, HashIcon, LoaderIcon } from "lucide-react";
 
 import nextJsImg from "root/public/next-js.svg";
 import servicesImg from "root/public/services.png";
 import { SERVICES } from "root/constants/services";
 import PageHero from "root/components/PageHero/PageHero";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
+
+const ModalBody = ({ serviceTitle }: { serviceTitle: string }) => {
+  return (
+    <Modal.Body className="modal-body">
+      <Modal.Header className="modal-header justify-center">
+        <p className="title">{serviceTitle}</p>
+      </Modal.Header>
+
+      <Modal.Content className="modal-content">
+        <p className="text-center max-w-lg">
+          Let{"'s"} discuss your project in detail — I{"'ll"} provide you with clear insights and
+          simple, personalized consulting to get started
+        </p>
+
+        <Link
+          className="btn btn-fill mt-6 mx-auto"
+          href={"https://t.me/farzad_vav"}
+          target="_blank"
+        >
+          <span>Go to Telegram</span>
+          <ArrowUpRightIcon className="btn-icon-size" />
+        </Link>
+      </Modal.Content>
+    </Modal.Body>
+  );
+};
 
 const ServicesPage = () => {
   return (
@@ -57,24 +83,11 @@ const ServicesPage = () => {
               <Modal>
                 <Modal.Toggle className="btn btn-fill flex-1">
                   <span>Request</span>
-                  <CheckIcon className="btn-icon-size" />
+                  <ArrowUpIcon className="btn-icon-size" />
                 </Modal.Toggle>
 
                 <Modal.Portal className="modal-portal">
-                  <Modal.Body className="modal-body">
-                    <Modal.Header className="modal-header justify-center">
-                      <p className="title">Request your project</p>
-                    </Modal.Header>
-
-                    <Modal.Content className="modal-content">
-                      <p className="max-w-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi
-                        exercitationem, assumenda cumque quo quibusdam necessitatibus molestiae
-                        nostrum nemo, culpa dolore possimus corrupti blanditiis corporis illo fugit
-                        autem voluptates sed?
-                      </p>
-                    </Modal.Content>
-                  </Modal.Body>
+                  <ModalBody serviceTitle={service.title} />
                 </Modal.Portal>
               </Modal>
 
@@ -97,7 +110,7 @@ const ServicesPage = () => {
             className="avatar avatar-lg mx-auto"
             alt="Next.js application service"
           />
-          <h3 className="title text-center mt-3">Do you want a Next.js application?</h3>
+          <h3 className="title text-center mt-3">Do you want a Next.js web application?</h3>
           <p className="text-center mt-3">
             My main specialty is Next.js developemtn and... Lorem ipsum dolor sit, amet consectetur
             adipisicing elit. Commodi impedit porro corrupti quisquam aperiam dicta adipisci.
@@ -108,24 +121,11 @@ const ServicesPage = () => {
             <Modal>
               <Modal.Toggle className="btn btn-fill">
                 <span>Request</span>
-                <CheckIcon className="btn-icon-size" />
+                <ArrowUpIcon className="btn-icon-size" />
               </Modal.Toggle>
 
               <Modal.Portal className="modal-portal">
-                <Modal.Body className="modal-body">
-                  <Modal.Header className="modal-header justify-center">
-                    <p className="title">Request your project</p>
-                  </Modal.Header>
-
-                  <Modal.Content className="modal-content">
-                    <p className="max-w-lg">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi
-                      exercitationem, assumenda cumque quo quibusdam necessitatibus molestiae
-                      nostrum nemo, culpa dolore possimus corrupti blanditiis corporis illo fugit
-                      autem voluptates sed?
-                    </p>
-                  </Modal.Content>
-                </Modal.Body>
+                <ModalBody serviceTitle={"Next.js web application"} />
               </Modal.Portal>
             </Modal>
 
