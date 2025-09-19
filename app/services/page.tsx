@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Modal } from "@kadoui/react";
-import { LinkLoader } from "@kadoui/next";
+import { LinkLoader, Modal } from "@kadoui/react";
 import { CheckIcon, DotIcon, HashIcon, LoaderIcon } from "lucide-react";
 
 import nextJsImg from "root/public/next-js.svg";

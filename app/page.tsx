@@ -1,22 +1,17 @@
-import Form from "next/form";
 import Link from "next/link";
 import Image from "next/image";
-import { Carousel } from "@kadoui/react";
-import { LinkLoader } from "@kadoui/next";
+import { Carousel, LinkLoader } from "@kadoui/react";
 import {
-  Search,
   CheckIcon,
   LoaderIcon,
   ArrowRightIcon,
   SparklesIcon,
-  TextIcon,
   ArrowUpRightIcon,
   SparkleIcon,
   LightbulbIcon,
 } from "lucide-react";
 
 import { LAB } from "root/constants/lab";
-import { ARTICLES } from "root/constants/articles";
 import { SERVICES } from "root/constants/services";
 import { ABOUT_ME, COMMENTS, NAME } from "root/constants/about-me";
 import { ScrollAnimation } from "root/components/ScrollAnimation/ScrollAnimation";
@@ -26,7 +21,7 @@ import HeroSectionProfile from "root/components/static/HeroSectionProfile/HeroSe
 const HomePage = () => {
   return (
     <>
-      <div className="pt-30 pb-40 overflow-hidden">
+      <div className="py-30 overflow-hidden">
         <HeroSectionLogos />
 
         <div className="container">
@@ -35,20 +30,6 @@ const HomePage = () => {
           <h1 className="heading mt-9">{NAME}</h1>
 
           <p className="container md:w-4/5 text-center mx-auto mt-3">Hi, {ABOUT_ME}</p>
-
-          <Form className="join-no-inner-border container md:w-1/2 mx-auto mt-6" action={"/search"}>
-            <label className="input input-soft flex-1">
-              <input
-                type="text"
-                name="query"
-                className="input-field"
-                placeholder="Search your request..."
-              />
-            </label>
-            <button className="btn btn-soft">
-              <Search className="btn-icon-size" />
-            </button>
-          </Form>
 
           <div className="f-center gap-3 mt-6">
             <Link className="btn btn-outline" href={"/services"}>
@@ -235,43 +216,6 @@ const HomePage = () => {
           </Link>
         </div>
       </ScrollAnimation>
-
-      <h6 className="heading mt-40">Latest articles</h6>
-      <Carousel className="carousel container mt-6">
-        <Carousel.Container className="carousel-container gap-3">
-          <Carousel.LeftFade className="carousel-left-fade" />
-          <Carousel.RightFade className="carousel-right-fade" />
-
-          {ARTICLES.slice(0, 6).map((item) => (
-            <article className="card slidable space-y-3" key={item.id}>
-              <div className="w-full aspect-video bg-background rounded-lg" />
-
-              <h6 className="text-xl font-bold">{item.title}</h6>
-
-              <div className="badge badge-soft badge-sm mt-3">
-                {item.createdAt.toLocaleDateString()}
-              </div>
-
-              <p className="mt-3">{item.description}</p>
-
-              <Link className="btn btn-outline btn-full" href={`/articles/${item.id}`}>
-                <span>Read more</span>
-
-                <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                  <ArrowRightIcon className="btn-icon-size" />
-                </LinkLoader>
-              </Link>
-            </article>
-          ))}
-        </Carousel.Container>
-      </Carousel>
-      <Link className="btn btn-ghost w-fit mx-auto mt-3" href={"/articles"}>
-        <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-          <TextIcon className="btn-icon-size" />
-        </LinkLoader>
-
-        <span>All articles</span>
-      </Link>
     </>
   );
 };

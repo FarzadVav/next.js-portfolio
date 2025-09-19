@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { LinkLoader } from "@kadoui/next";
-import { AccessNavigation, Sheet } from "@kadoui/react";
+import { AccessNavigation, LinkLoader, Sheet } from "@kadoui/react";
 import { ChevronRightIcon, LoaderIcon, MenuIcon } from "lucide-react";
 
 const Header = () => {
@@ -13,64 +12,6 @@ const Header = () => {
       </div>
 
       <div className="container f-align justify-between h-16 relative">
-        {/* <Link className="f-align gap-3 md:hidden" href={"/"}>
-          <span className="size-9 f-center">
-            <LinkLoader loader={<LoaderIcon className="size-4.5 animate-spin" />}>
-              <Image
-                width={36}
-                height={36}
-                src={profileImg}
-                alt="ArrowUp logo"
-                className="rounded-full size-9 dark:invert-100"
-              />
-            </LinkLoader>
-          </span>
-          <span>ArrowUp</span>
-        </Link> */}
-
-        {/* <AccessNavigation className="max-md:hidden">
-          <Popover className="popover">
-            <Popover.Toggle className="btn btn-ghost group font-bold" dir="ltr">
-              <Image
-                width={24}
-                height={24}
-                src={profileImg}
-                alt="ArrowUp logo"
-                className="rounded-full h-full aspect-square mr-1.5 "
-              />
-
-              <span>ArrowUp</span>
-              <ChevronDownIcon className="btn-icon-size transition-transform group-data-[state=active]:-scale-y-100" />
-            </Popover.Toggle>
-
-            <Popover.Body className="popover-body popover-body-b" preventClose>
-              <div className="menu menu-y">
-                <Link className="btn btn-ghost btn-link relative" href="/">
-                  <LinkLoader
-                    loader={
-                      <>
-                        <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                        <span className="opacity-0">Home</span>
-                      </>
-                    }
-                  >
-                    <span>Home</span>
-                  </LinkLoader>
-                </Link>
-                <button className="btn btn-ghost" disabled>
-                  Survey
-                </button>
-                <button className="btn btn-ghost" disabled>
-                  Donate
-                </button>
-                <button className="btn btn-ghost" disabled>
-                  Hiring
-                </button>
-              </div>
-            </Popover.Body>
-          </Popover>
-        </AccessNavigation> */}
-
         <AccessNavigation className="f-align justify-between flex-1" direction="x">
           <Link className="btn btn-ghost btn-link relative" href="/">
             <LinkLoader
@@ -113,19 +54,6 @@ const Header = () => {
                 }
               >
                 <span>Lab</span>
-              </LinkLoader>
-            </Link>
-
-            <Link className="btn btn-ghost btn-link relative" href="/articles">
-              <LinkLoader
-                loader={
-                  <>
-                    <LoaderIcon className="btn-icon-size absolute animate-spin" />
-                    <span className="opacity-0">Articles</span>
-                  </>
-                }
-              >
-                <span>Articles</span>
               </LinkLoader>
             </Link>
 
@@ -177,12 +105,6 @@ const Header = () => {
                 </Link>
                 <Link className="btn btn-ghost w-full justify-between" href={"/lab"}>
                   <span>Lab</span>
-                  <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
-                    <ChevronRightIcon className="btn-icon-size" />
-                  </LinkLoader>
-                </Link>
-                <Link className="btn btn-ghost w-full justify-between" href={"/articles"}>
-                  <span>Articles</span>
                   <LinkLoader loader={<LoaderIcon className="btn-icon-size animate-spin" />}>
                     <ChevronRightIcon className="btn-icon-size" />
                   </LinkLoader>

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Affix } from "@kadoui/react";
 import { Geist } from "next/font/google";
 import { PropsWithChildren } from "react";
 import { ArrowUpIcon } from "lucide-react";
-import { ThemeAdapter } from "@kadoui/next";
+import { Affix, ThemeAdapter } from "@kadoui/react";
 
 import "./globals.css";
 import Header from "root/components/static/Header/Header";
@@ -31,8 +30,8 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         {children}
         <Footer />
 
-        <Affix className="ltr:affix-br rtl:affix-bl btn btn-fill btn-square group not-[.affix-active]:scale-90">
-          <ArrowUpIcon className="btn-icon-size transition-transform duration-300 group-not-[.affix-active]:translate-y-full" />
+        <Affix className="affix bottom-3 ltr:left-3 rtl:right-3 btn btn-fill btn-square group data-[state=false]:scale-90">
+          <ArrowUpIcon className="btn-icon-size transition-transform duration-300 group-data-[state=false]:translate-y-full" />
         </Affix>
       </body>
     </html>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { LinkLoader } from "@kadoui/next";
+import { LinkLoader } from "@kadoui/react";
 import { LoaderIcon, MailIcon, PhoneIcon } from "lucide-react";
 
 import { NAME, PROFILE } from "root/constants/about-me";
